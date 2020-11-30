@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="20" gr:y="270" id="sv1#area2#page7" name="Lista annunci pi&#249; appuntamenti">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv1#area2#page7#inu7" name="Lista annunci pi&#249; appuntamenti" entity="ent15" linkOrder="sv1#area2#page7#inu7#ln12" displayAttributes="ent1#att2 ent1#att8 ent1#att9 ent1#att5">
+      <Link id="sv1#area2#page7#inu7#ln12" name="Flow12" to="sv1#area2#page4#dau1" automaticCoupling="true" type="normal" validate="true"/>
+      <Selector id="sv1#area2#page7#inu7#su10" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area2#page7#inu7#su10#acond4" name="AttCondition4" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att39" value="true"/>
+      </Selector>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page7#inu7">
+          <layout:Link link="sv1#area2#page7#inu7#ln12"/>
+          <layout:Attribute attribute="ent1#att2"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att5"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
