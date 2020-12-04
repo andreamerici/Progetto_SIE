@@ -1,0 +1,67 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="375" id="sv2#area4#page15" name="Lista storico appuntamenti">
+  <ContentUnits>
+    <IndexUnit gr:x="430" gr:y="0" id="sv2#area4#page15#inu10" name="Lista storico" entity="ent8" linkOrder="sv2#area4#page15#inu10#ln23" displayAttributes="ent8#att38 ent8#att4">
+      <Selector id="sv2#area4#page15#inu10#su8" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area4#page15#inu10#su8#rcond2" name="RoleCondition2" predicate="notIn" implied="false" role="rel9#role18"/>
+      </Selector>
+      <Link id="sv2#area4#page15#inu10#ln23" name="Flow23" to="sv2#area4#page17#dau6" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <GetUnit id="sv2#area4#page15#gtu3" name="utente loggato" gr:x="25" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv2#area4#page15#gtu3#ln28" name="Flow24" to="sv2#area4#page15#seu9" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+    <SelectorUnit id="sv2#area4#page15#seu9" name="seleziona Filiale" gr:x="0" gr:y="135" entity="ent2">
+      <Selector id="sv2#area4#page15#seu9#su20" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area4#page15#seu9#su20#rcond12" name="RoleCondition3" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <Link id="sv2#area4#page15#seu9#ln35" name="Flow35" to="sv2#area4#page15#seu10" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area4#page15#seu10" name="Zona" gr:x="245" gr:y="140" entity="ent5">
+      <Selector id="sv2#area4#page15#seu10#su21" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area4#page15#seu10#su21#rcond13" name="RoleCondition10" predicate="in" implied="false" role="rel12#role23"/>
+      </Selector>
+      <Link id="sv2#area4#page15#seu10#ln38" name="Flow38" to="sv2#area4#page15#seu11" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area4#page15#seu11" name="Annuncio" gr:x="465" gr:y="150" entity="ent1">
+      <Selector id="sv2#area4#page15#seu11#su22" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area4#page15#seu11#su22#rcond14" name="RoleCondition11" predicate="in" implied="false" role="rel5#role9"/>
+      </Selector>
+      <Link id="sv2#area4#page15#seu11#ln39" name="Flow39" to="sv2#area4#page15#inu10" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page15#inu10">
+          <layout:Link link="sv2#area4#page15#inu10#ln23"/>
+          <layout:Attribute attribute="ent8#att38"/>
+          <layout:Attribute attribute="ent8#att4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
