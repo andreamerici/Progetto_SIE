@@ -1,0 +1,10 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="55" gr:y="180" id="sv3#area2" name="Home" landmark="true" defaultPage="sv3#area2#page20">
+  <OperationUnits>
+    <GetUnit gr:x="0" gr:y="40" id="sv3#area2#gtu3" name="Utente loggato" contextParameters="UserCtxParam" linkOrder="sv3#area2#gtu3#ln35">
+      <Link id="sv3#area2#gtu3#ln35" name="Flow35" to="sv3#area2#page20#dau5" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <LogoutUnit gr:x="40" gr:y="200" id="sv3#area2#lou1" name="Logout" siteView="sv1">
+      <KOLink id="sv3#area2#lou1#kln24" name="KOFlow24" to="sv3#area2#page20" automaticCoupling="true" gr:bendpoints="78,23,-232,43"/>
+    </LogoutUnit>
+  </OperationUnits>
+</Area>
