@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area6#page31" name="Modifica dati profilo" gr:x="280" gr:y="165">
+  <ContentUnits>
+    <EntryUnit id="sv2#area6#page31#enu11" name="Modifica dati profilo" linkOrder="sv2#area6#page31#enu11#ln65" gr:x="0" gr:y="0" entity="ent8">
+      <Field id="sv2#area6#page31#enu11#fld22" name="password" type="string" modifiable="true"/>
+      <Field id="sv2#area6#page31#enu11#fld23" name="data assunzione" type="string" modifiable="true"/>
+      <Field id="sv2#area6#page31#enu11#fld24" name="foto" type="string" modifiable="true"/>
+      <Link id="sv2#area6#page31#enu11#ln65" name="Flow41" to="sv2#area6#mfu1" type="normal" validate="true">
+        <LinkParameter id="sv2#area6#page31#enu11#ln65#par40" name="CapoFiliale Object_CapoFiliale Object" source="entityBean" target="sv2#area6#mfu1.entityBeans"/>
+        <LinkParameter id="sv2#area6#page31#enu11#ln65#par43" name="Key [oid]_KeyCondition16 [oid]" source="key.userOID" target="sv2#area6#mfu1#su45#kcond22.userOID"/>
+        <LinkParameter id="sv2#area6#page31#enu11#ln65#par44" name="password_password" source="sv2#area6#page31#enu11#fld22" target="sv2#area6#mfu1.password"/>
+        <LinkParameter id="sv2#area6#page31#enu11#ln65#par45" name="Key [oid]_PASSING" source="key.userOID" passing="true"/>
+        <LinkParameter id="sv2#area6#page31#enu11#ln65#par46" name="data assunzione_dataAssunzione" source="sv2#area6#page31#enu11#fld23" target="sv2#area6#mfu1.ent8#att15"/>
+        <LinkParameter id="sv2#area6#page31#enu11#ln65#par47" name="foto_foto" source="sv2#area6#page31#enu11#fld24" target="sv2#area6#mfu1.ent8#att62"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area6#page31#enu11">
+          <layout:Field field="sv2#area6#page31#enu11#fld22"/>
+          <layout:Field field="sv2#area6#page31#enu11#fld23"/>
+          <layout:Field field="sv2#area6#page31#enu11#fld24"/>
+          <layout:Link link="sv2#area6#page31#enu11#ln65"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

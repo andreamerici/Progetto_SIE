@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page27" name="Dettagli zona" gr:x="2805" gr:y="-755">
+  <ContentUnits>
+    <DataUnit id="sv1#page27#dau9" name="Zona" gr:x="0" gr:y="0" entity="ent5" displayAttributes="ent5#att24" linkOrder="sv1#page27#dau9#ln55">
+      <Selector id="sv1#page27#dau9#su38" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#page27#dau9#su38#rcond20" name="RoleCondition13" predicate="in" implied="false" role="rel5#role9"/>
+        <RelationshipRoleCondition id="sv1#page27#dau9#su38#rcond21" name="RoleCondition21" predicate="in" implied="false" role="rel6#role11"/>
+      </Selector>
+      <Link id="sv1#page27#dau9#ln55" name="Flow53" to="sv1#area1#page2#dau1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-210,250,190,-280"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#page27#dau9">
+          <layout:Attribute attribute="ent5#att24"/>
+          <layout:Link link="sv1#page27#dau9#ln55"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

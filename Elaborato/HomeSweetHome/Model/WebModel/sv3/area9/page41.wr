@@ -1,0 +1,52 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="230" gr:y="0" id="sv3#area9#page41" name="Appuntamenti richiesti">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv3#area9#page41#seu25" name="Seleziona Appuntamenti" entity="ent10">
+      <Selector id="sv3#area9#page41#seu25#su65" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area9#page41#seu25#su65#rcond36" name="RoleCondition36" predicate="in" implied="false" role="rel7#role13"/>
+      </Selector>
+      <Link id="sv3#area9#page41#seu25#ln89" name="Flow89" to="sv3#area9#page41#mdu5" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <MultiDataUnit gr:x="245" gr:y="15" id="sv3#area9#page41#mdu5" name="Lista Appuntamenti" entity="ent10">
+      <Link id="sv3#area9#page41#mdu5#ln111" name="Flow111" to="sv3#area9#page41#dau21" automaticCoupling="true" type="transport" validate="true"/>
+    </MultiDataUnit>
+    <DataUnit gr:x="445" gr:y="5" id="sv3#area9#page41#dau21" name="Dettagli Annunci" entity="ent1">
+      <Selector id="sv3#area9#page41#dau21#su83" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area9#page41#dau21#su83#rcond41" name="RoleCondition41" predicate="in" implied="false" role="rel8#role15"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area9#page41#mdu5"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area9#page41#dau21"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

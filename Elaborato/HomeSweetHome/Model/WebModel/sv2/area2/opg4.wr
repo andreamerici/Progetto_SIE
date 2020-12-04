@@ -1,0 +1,25 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="675" gr:y="650" id="sv2#area2#opg4" name="Modifica Annuncio" transaction="true">
+  <OperationUnits>
+    <ModifyUnit gr:x="180" gr:y="0" id="sv2#area2#opg4#mfu4" name="Modifica Annuncio" entity="ent1">
+      <Selector id="sv2#area2#opg4#mfu4#su81" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area2#opg4#mfu4#su81#kcond46" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area2#opg4#mfu4#oln37" name="OKFlow13" to="sv2#area2#page9#dau3" automaticCoupling="true" gr:bendpoints="-176,-131,449,-96"/>
+      <KOLink id="sv2#area2#opg4#mfu4#kln30" name="KOFlow30" to="sv2#area2#page11#alt2#page48#mssu13" automaticCoupling="true"/>
+    </ModifyUnit>
+    <CreateUnit gr:x="0" gr:y="10" id="sv2#area2#opg4#cru4" name="Modifica Indirizzo" entity="ent14">
+      <OKLink id="sv2#area2#opg4#cru4#oln38" name="OKFlow38" to="sv2#area2#opg4#mfu4">
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par168" name="Anno Costruzione_PASSING_annoCostruzione" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par157" target="sv2#area2#opg4#mfu4.ent1#att11"/>
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par169" name="Descrizione_PASSING_descrizione" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par160" target="sv2#area2#opg4#mfu4.ent1#att8"/>
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par170" name="Disponibilit&#224;_PASSING_disponibile" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par161" target="sv2#area2#opg4#mfu4.ent1#att3"/>
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par171" name="Foto_PASSING_foto" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par163" target="sv2#area2#opg4#mfu4.ent1#att9"/>
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par172" name="Numero Locali_PASSING_numeroLocali" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par164" target="sv2#area2#opg4#mfu4.ent1#att7"/>
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par173" name="Prezzo_PASSING_prezzo" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par165" target="sv2#area2#opg4#mfu4.ent1#att4"/>
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par174" name="Superficie_PASSING_superficie" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par166" target="sv2#area2#opg4#mfu4.ent1#att6"/>
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par175" name="Titolo_PASSING_titolo" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par167" target="sv2#area2#opg4#mfu4.ent1#att5"/>
+        <LinkParameter id="sv2#area2#opg4#cru4#oln38#par178" name="dataPubblicazione_PASSING_dataPubblicazione" sourceLinkParameter="sv2#area2#page10#meu4#ln110#par177" target="sv2#area2#opg4#mfu4.ent1#att10"/>
+      </OKLink>
+      <KOLink id="sv2#area2#opg4#cru4#kln29" name="KOFlow29" to="sv2#area2#page11#alt2#page48#mssu13" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>

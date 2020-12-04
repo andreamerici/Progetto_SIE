@@ -1,5 +1,3 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="5" gr:y="-135" id="sv1#area1" name="Filiale" landmark="true" landmarks="sv1#area1#page1" defaultPage="sv1#area1#stu1">
-  <OperationUnits>
-    <SetUnit gr:x="485" gr:y="155" id="sv1#area1#stu1" name="Set1"/>
-  </OperationUnits>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1905" gr:y="-565" id="sv1#area1" name="Filiale" landmark="true">
+  <OperationUnits/>
 </Area>

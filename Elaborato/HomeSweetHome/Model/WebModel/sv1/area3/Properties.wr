@@ -1,0 +1,55 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area3" name="Home" landmark="true" protected="false" gr:x="5" gr:y="-1505">
+  <OperationUnits>
+    <SelectorUnit id="sv1#area3#seu2" name="Seleziona annunci per contratto" gr:x="445" gr:y="65" entity="ent1">
+      <Selector id="sv1#area3#seu2#su4" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area3#seu2#su4#rcond1" name="RoleCondition1" predicate="in" implied="false" role="rel1#role2"/>
+        <AttributesCondition id="sv1#area3#seu2#su4#acond1" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att3"/>
+      </Selector>
+      <KOLink id="sv1#area3#seu2#kln3" name="KOFlow1" to="sv1#area3#page14#mssu4" automaticCoupling="true"/>
+      <OKLink id="sv1#area3#seu2#oln1" name="OKFlow12" to="sv1#area3#page15#scu3" automaticCoupling="true" gr:bendpoints="56,-82,-944,-86;476,-73,-524,-77;896,-65,-104,-69"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv1#area3#seu3" name="Seleziona annunci per categoria" gr:x="710" gr:y="70" entity="ent1">
+      <Selector id="sv1#area3#seu3#su9" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area3#seu3#su9#rcond19" name="RoleCondition19" predicate="in" implied="false" role="rel3#role5"/>
+        <AttributesCondition id="sv1#area3#seu3#su9#acond9" name="AttCondition9" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att3" value="true"/>
+      </Selector>
+      <KOLink id="sv1#area3#seu3#kln5" name="KOFlow3" to="sv1#area3#page14#mssu4" automaticCoupling="true" gr:bendpoints="-79,61,486,141;-556,60,9,140"/>
+      <OKLink id="sv1#area3#seu3#oln2" name="OKFlow11" to="sv1#area3#page15#scu3" automaticCoupling="true" gr:bendpoints="78,-79,-658,-79;631,-69,-105,-69"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv1#area3#seu6" name="Seleziona annunci per zona" gr:x="960" gr:y="70" entity="ent1">
+      <Selector id="sv1#area3#seu6#su22" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area3#seu6#su22#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel5#role10"/>
+        <AttributesCondition id="sv1#area3#seu6#su22#acond3" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att3"/>
+      </Selector>
+      <KOLink id="sv1#area3#seu6#kln6" name="KOFlow4" to="sv1#area3#page14#mssu4" automaticCoupling="true" gr:bendpoints="-34,64,756,144;-406,66,384,146;-903,77,57,127;-925,29,35,79"/>
+      <OKLink id="sv1#area3#seu6#oln3" name="OKFlow13" to="sv1#area3#page15#scu3" automaticCoupling="true" gr:bendpoints="58,-78,-442,-78;386,-70,-114,-70"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv1#area3#seu7" name="Selezione annunci avanzata" gr:x="1220" gr:y="65" entity="ent1">
+      <Selector id="sv1#area3#seu7#su26" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area3#seu7#su26#rcond7" name="RoleCondition7" predicate="in" implied="false" role="rel1#role2"/>
+        <RelationshipRoleCondition id="sv1#area3#seu7#su26#rcond11" name="RoleCondition8" predicate="in" implied="false" role="rel3#role5"/>
+        <RelationshipRoleCondition id="sv1#area3#seu7#su26#rcond15" name="RoleCondition9" predicate="in" implied="false" role="rel5#role10"/>
+        <RelationshipRoleCondition id="sv1#area3#seu7#su26#rcond16" name="RoleCondition2" predicate="in" implied="false" role="rel9#role18"/>
+        <AttributesCondition id="sv1#area3#seu7#su26#acond4" name="AttCondition8" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att3"/>
+      </Selector>
+      <KOLink id="sv1#area3#seu7#kln7" name="KOFlow6" to="sv1#area3#page14#mssu4" automaticCoupling="true" gr:bendpoints="-69,85,1201,149;-1160,68,60,128"/>
+      <OKLink id="sv1#area3#seu7#oln9" name="OKFlow1" to="sv1#area3#page15#scu3" automaticCoupling="true"/>
+    </SelectorUnit>
+    <SwitchUnit id="sv1#area3#switch1" name="Ricerca da eseguire" gr:x="0" gr:y="680">
+      <Case value="1"/>
+      <Case value="2"/>
+      <Case value="3"/>
+      <Case value="4"/>
+      <OKLink id="sv1#area3#switch1#oln12" name="OKFlow3" to="sv1#area3#page16#alt1#page17#enu6" code="1" automaticCoupling="true"/>
+      <OKLink id="sv1#area3#switch1#oln14" name="OKFlow8" to="sv1#area3#page16#alt1#page18#enu7" code="2" automaticCoupling="true" gr:bendpoints="289,-20,-367,90;599,-52,-57,58"/>
+      <OKLink id="sv1#area3#switch1#oln15" name="OKFlow9" to="sv1#area3#page16#alt1#page19#enu8" code="3" automaticCoupling="true" gr:bendpoints="110,14,-766,130;861,-36,-15,74"/>
+      <OKLink id="sv1#area3#switch1#oln16" name="OKFlow10" to="sv1#area3#page16#alt1#page20#enu9" code="4" automaticCoupling="true" gr:bendpoints="108,35,-1102,81"/>
+    </SwitchUnit>
+    <LoginUnit id="sv1#area3#lgu1" name="Accesso login" gr:x="20" gr:y="835">
+      <KOLink id="sv1#area3#lgu1#kln8" name="KOFlow5" to="sv1#area3#page13" automaticCoupling="true" gr:bendpoints="-52,58,-27,-87"/>
+    </LoginUnit>
+    <LoginUnit id="sv1#area3#lgu2" name="Accesso registrazione" gr:x="205" gr:y="1185">
+      <KOLink id="sv1#area3#lgu2#kln9" name="KOFlow7" to="sv1#area3#page22" automaticCoupling="true" gr:bendpoints="-109,-35,101,-10"/>
+    </LoginUnit>
+  </OperationUnits>
+</Area>

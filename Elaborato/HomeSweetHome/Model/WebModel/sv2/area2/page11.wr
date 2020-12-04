@@ -1,0 +1,189 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="690" gr:y="365" id="sv2#area2#page11" name="Error Page">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area2#page11#alt2#page45">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area2#page11#alt2#page45#mssu14"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area2#page11#alt2#page46">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area2#page11#alt2#page46#mssu12"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area2#page11#alt2#page48">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area2#page11#alt2#page48#mssu13"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="0" gr:y="0" id="sv2#area2#page11#alt2" name="Messaggi di Errore" defaultPage="sv2#area2#page11#alt2#page45">
+    <Page gr:x="205" gr:y="0" id="sv2#area2#page11#alt2#page45" name="Errore Eliminazione">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area2#page11#alt2#page45#mssu14" name="Messaggio Errore Eliminazione">
+          <Message xml:space="preserve">Non &#232; stato possibile rimuovere l'annuncio selezionato</Message>
+        </MultiMessageUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="430" gr:y="0" id="sv2#area2#page11#alt2#page46" name="Errore Inserimento">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area2#page11#alt2#page46#mssu12" name="Messaggio Errore Inserimento">
+          <Message xml:space="preserve">Non &#232; stato possibile inserire l'annuncio</Message>
+        </MultiMessageUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="0" gr:y="0" id="sv2#area2#page11#alt2#page48" name="Errore Modifica">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area2#page11#alt2#page48#mssu13" name="Messaggio Errore Modifica">
+          <Message xml:space="preserve">Non &#232; stato possibile modificare l'annuncio selezionato</Message>
+        </MultiMessageUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

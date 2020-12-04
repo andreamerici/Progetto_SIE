@@ -1,0 +1,45 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page40" name="Modifica dati profilo" gr:x="0" gr:y="210">
+  <ContentUnits>
+    <EntryUnit id="sv3#area9#page40#enu12" name="Modifica dati profilo" linkOrder="sv3#area9#page40#enu12#ln84" gr:x="0" gr:y="0" entity="ent7">
+      <Field id="sv3#area9#page40#enu12#fld25" name="password" type="string" modifiable="true"/>
+      <Link id="sv3#area9#page40#enu12#ln84" name="Flow41" to="sv3#area9#mfu3" type="normal" validate="true">
+        <LinkParameter id="sv3#area9#page40#enu12#ln84#par48" name="CapoFiliale Object_CapoFiliale Object" source="entityBean" target="sv3#area9#mfu3.entityBeans"/>
+        <LinkParameter id="sv3#area9#page40#enu12#ln84#par51" name="Key [oid]_KeyCondition16 [oid]" source="key.userOID" target="sv3#area9#mfu3#su63#kcond32.userOID"/>
+        <LinkParameter id="sv3#area9#page40#enu12#ln84#par52" name="password_password" source="sv3#area9#page40#enu12#fld25" target="sv3#area9#mfu3.password"/>
+        <LinkParameter id="sv3#area9#page40#enu12#ln84#par54" name="cognome_cognome" source="sv3#area9#page40#enu12#fld30" target="sv3#area9#mfu3.ent7#att35"/>
+        <LinkParameter id="sv3#area9#page40#enu12#ln84#par55" name="nome_nome" source="sv3#area9#page40#enu12#fld29" target="sv3#area9#mfu3.ent7#att34"/>
+        <LinkParameter id="sv3#area9#page40#enu12#ln84#par56" name="telefono_telefono" source="sv3#area9#page40#enu12#fld28" target="sv3#area9#mfu3.ent7#att36"/>
+        <LinkParameter id="sv3#area9#page40#enu12#ln84#par57" name="dataNascita_dataNascita" source="sv3#area9#page40#enu12#fld31" target="sv3#area9#mfu3.ent7#att58"/>
+      </Link>
+      <Field id="sv3#area9#page40#enu12#fld28" name="telefono" type="integer" modifiable="true"/>
+      <Field id="sv3#area9#page40#enu12#fld29" name="nome" type="string" modifiable="true"/>
+      <Field id="sv3#area9#page40#enu12#fld30" name="cognome" type="string" modifiable="true"/>
+      <Field id="sv3#area9#page40#enu12#fld31" name="dataNascita" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area9#page40#enu12">
+          <layout:Link link="sv3#area9#page40#enu12#ln84"/>
+          <layout:Field field="sv3#area9#page40#enu12#fld25"/>
+          <layout:Field field="sv3#area9#page40#enu12#fld28"/>
+          <layout:Field field="sv3#area9#page40#enu12#fld29"/>
+          <layout:Field field="sv3#area9#page40#enu12#fld30"/>
+          <layout:Field field="sv3#area9#page40#enu12#fld31"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

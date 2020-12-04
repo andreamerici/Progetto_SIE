@@ -1,23 +1,26 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="135" id="sv1#area1#page1" name="Elenco Filiali" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="165" id="sv1#area1#page1" name="Elenco Filiali" landmark="false" linkOrder="sv1#area3#page16#ln45">
   <ContentUnits>
-    <IndexUnit gr:x="10" gr:y="0" id="sv1#area1#page1#inu1" name="Lista Filiali" entity="ent2" linkOrder="sv1#area1#page1#inu1#ln1" displayAttributes="ent2#att13">
-      <Link id="sv1#area1#page1#inu1#ln1" name="Flow1" to="sv1#area1#page2#dau1" automaticCoupling="true" type="normal" validate="true"/>
+    <IndexUnit gr:x="230" gr:y="0" id="sv1#area1#page1#inu1" name="Lista Filiali" entity="ent2" displayAttributes="ent2#att13" linkOrder="sv1#area1#page1#inu1#ln4">
+      <Link id="sv1#area1#page1#inu1#ln4" name="Flow4" to="sv1#area1#page2#dau1" type="normal" validate="true" automaticCoupling="true"/>
     </IndexUnit>
-    <SelectorUnit gr:x="0" gr:y="95" id="sv1#area1#page1#seu1" name="Seleziona Zona" entity="ent5">
+    <SelectorUnit gr:x="0" gr:y="100" id="sv1#area1#page1#seu1" name="Selettore Zona" entity="ent5" customDescriptor="false">
       <Link id="sv1#area1#page1#seu1#ln2" name="Flow2" to="sv1#area1#page1#enu1" type="transport" validate="true">
         <LinkParameter id="sv1#area1#page1#seu1#ln2#par1" name="oid_PASSING" source="ent5#att23Array" passing="true"/>
+        <LinkParameter id="sv1#area1#page1#seu1#ln2#par2" name="nome_Zona [label]" source="ent5#att24Array" target="sv1#area1#page1#enu1#sfld1_label"/>
+        <LinkParameter id="sv1#area1#page1#seu1#ln2#par3" name="oid_Zona [output]" source="ent5#att23Array" target="sv1#area1#page1#enu1#sfld1_output"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit gr:x="215" gr:y="115" id="sv1#area1#page1#enu1" name="Ricerca per Zona" linkOrder="sv1#area1#page1#enu1#ln14">
+    <EntryUnit gr:x="215" gr:y="110" id="sv1#area1#page1#enu1" name="Ricerca per Zona" linkOrder="sv1#area1#page1#enu1#ln14">
       <Link id="sv1#area1#page1#enu1#ln14" name="Flow14" to="sv1#area1#page6#scu2" automaticCoupling="true" type="normal" validate="true"/>
+      <SelectionField id="sv1#area1#page1#enu1#sfld1" name="Zona" type="string"/>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area1#page1#inu1">
-          <layout:Link link="sv1#area1#page1#inu1#ln1"/>
           <layout:Attribute attribute="ent2#att13"/>
+          <layout:Link link="sv1#area1#page1#inu1#ln4"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -36,6 +39,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area1#page1#enu1">
           <layout:Link link="sv1#area1#page1#enu1#ln14"/>
+          <layout:Field field="sv1#area1#page1#enu1#sfld1"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

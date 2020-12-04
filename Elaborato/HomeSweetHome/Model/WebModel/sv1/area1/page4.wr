@@ -1,11 +1,15 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="830" gr:y="145" id="sv1#area1#page4" name="Recensioni">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="875" gr:y="80" id="sv1#area1#page4" name="Recensioni">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv1#area1#page4#inu5" name="Lista Recensioni" entity="ent17"/>
+    <MultiDataUnit gr:x="0" gr:y="0" id="sv1#area1#page4#mdu2" name="Recensioni" entity="ent17">
+      <Selector id="sv1#area1#page4#mdu2#su25" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area1#page4#mdu2#su25#rcond14" name="RoleCondition14" predicate="in" implied="false" role="rel14#role28"/>
+      </Selector>
+    </MultiDataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area1#page4#inu5"/>
+        <layout:Unit unitId="sv1#area1#page4#mdu2"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

@@ -1,9 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="45" gr:y="425" id="sv1#area1#page6" name="Ricerca Filiali">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="45" gr:y="450" id="sv1#area1#page6" name="Ricerca Filiali">
   <ContentUnits>
-    <ScrollerUnit gr:x="0" gr:y="0" id="sv1#area1#page6#scu2" name="Scroller2" useCountQuery="false" linkOrder="sv1#area1#page6#scu2#ln15">
+    <ScrollerUnit gr:x="0" gr:y="0" id="sv1#area1#page6#scu2" name="Scroller Filiali" useCountQuery="false" linkOrder="sv1#area1#page6#scu2#ln15" entity="ent2" blockFactor="5">
       <Link id="sv1#area1#page6#scu2#ln15" name="Flow15" to="sv1#area1#page6#inu10" automaticCoupling="true" type="automatic" validate="true"/>
+      <Selector id="sv1#area1#page6#scu2#su5" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area1#page6#scu2#su5#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel6#role12"/>
+      </Selector>
     </ScrollerUnit>
-    <IndexUnit gr:x="140" gr:y="90" id="sv1#area1#page6#inu10" name="Lista Filiali per Zona" linkOrder="sv1#area1#page6#inu10#ln16">
+    <IndexUnit gr:x="185" gr:y="10" id="sv1#area1#page6#inu10" name="Lista Filiali per Zona" linkOrder="sv1#area1#page6#inu10#ln16" entity="ent2">
       <Link id="sv1#area1#page6#inu10#ln16" name="Flow16" to="sv1#area1#page2#dau1" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
   </ContentUnits>

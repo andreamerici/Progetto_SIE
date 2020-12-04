@@ -1,0 +1,57 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area7#page33" name="Dettagli annuncio" gr:x="740" gr:y="0">
+  <ContentUnits>
+    <DataUnit id="sv2#area7#page33#dau14" name="Dettagli" gr:x="0" gr:y="0" entity="ent1" displayAttributes="ent1#att5 ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att10 ent1#att11">
+      <Selector id="sv2#area7#page33#dau14#su49" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area7#page33#dau14#su49#rcond26" name="RoleCondition1" predicate="in" implied="false" role="rel8#role15"/>
+      </Selector>
+      <Link id="sv2#area7#page33#dau14#ln66" name="Flow18" to="sv2#area7#page33#dau15" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <DataUnit id="sv2#area7#page33#dau15" name="Dettagli indirizzo " gr:x="275" gr:y="0" entity="ent14">
+      <Selector id="sv2#area7#page33#dau15#su50" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area7#page33#dau15#su50#rcond27" name="RoleCondition9" predicate="in" implied="false" role="rel11#role21"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area7#page33#dau14">
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att7"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att11"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area7#page33#dau15"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
