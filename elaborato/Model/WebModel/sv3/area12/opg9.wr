@@ -1,0 +1,35 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area12#opg9" name="Elimina filiale" transaction="true" gr:x="75" gr:y="355">
+  <OperationUnits>
+    <DeleteUnit id="sv3#area12#opg9#dlu3" name="Elimina Filiale" gr:x="830" gr:y="5" entity="ent1">
+      <Selector id="sv3#area12#opg9#dlu3#su130" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg9#dlu3#su130#kcond79" name="KeyCondition10" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area12#opg9#dlu3#oln61" name="OKFlow61" to="sv3#area12#page74#inu30" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg9#dlu3#kln51" name="KOFlow51" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DisconnectUnit id="sv3#area12#opg9#dcnu9" name="Disconnetti Zona" gr:x="0" gr:y="0" relationship="rel12#role24">
+      <SourceSelector id="sv3#area12#opg9#dcnu9#su131" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg9#dcnu9#su131#kcond80" name="KeyCondition11" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area12#opg9#dcnu9#su132" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg9#dcnu9#su132#kcond81" name="KeyCondition12" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area12#opg9#dcnu9#oln59" name="OKFlow59" to="sv3#area12#opg9#dlu4" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg9#dcnu9#kln48" name="KOFlow48" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <DeleteUnit id="sv3#area12#opg9#dlu4" name="Elimina Indirizzo" gr:x="260" gr:y="10" entity="ent14">
+      <Selector id="sv3#area12#opg9#dlu4#su137" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#opg9#dlu4#su137#rcond48" name="RoleCondition40" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+      <OKLink id="sv3#area12#opg9#dlu4#oln60" name="OKFlow60" to="sv3#area12#opg9#dlu5" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg9#dlu4#kln49" name="KOFlow49" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DeleteUnit gr:x="575" gr:y="15" id="sv3#area12#opg9#dlu5" name="Elimina orario" entity="ent12">
+      <Selector id="sv3#area12#opg9#dlu5#su140" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#opg9#dlu5#su140#rcond50" role="rel11#role21" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area12#opg9#dlu5#oln62" name="OKFlow62" to="sv3#area12#opg9#dlu3" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg9#dlu5#kln50" name="KOFlow50" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

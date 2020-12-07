@@ -1,0 +1,524 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#page9" name="Homepage" linkOrder="sv1#area6#page9#ln62" gr:x="155" gr:y="290">
+  <ContentUnits>
+    <IndexUnit id="sv1#area6#page9#inu3" name="Lista annunci scontati" gr:x="1145" gr:y="560" entity="ent16" displayAttributes="ent1#att9">
+      <Selector id="sv1#area6#page9#inu3#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area6#page9#inu3#su16#kcond3" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <IndexUnit id="sv1#area6#page9#inu4" name="Lista nuovi annunci" gr:x="1155" gr:y="695" entity="ent9" displayAttributes="ent1#att6 ent1#att9">
+      <Selector id="sv1#area6#page9#inu4#su37" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area6#page9#inu4#su37#kcond4" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <ScrollerUnit id="sv1#area6#page9#scu1" name="Scorri annunci scontati" linkOrder="sv1#area6#page9#scu1#ln7" gr:x="925" gr:y="560" useCountQuery="false" entity="ent16" blockFactor="1">
+      <Link id="sv1#area6#page9#scu1#ln7" name="Flow2" to="sv1#area6#page9#inu3" type="automatic" automaticCoupling="true" validate="true"/>
+      <Selector id="sv1#area6#page9#scu1#su38" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area6#page9#scu1#su38#acond11" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+      </Selector>
+    </ScrollerUnit>
+    <ScrollerUnit id="sv1#area6#page9#scu2" name="Scorri nuovi annunci" linkOrder="sv1#area6#page9#scu2#ln8" gr:x="930" gr:y="695" useCountQuery="false" entity="ent9" blockFactor="1">
+      <Link id="sv1#area6#page9#scu2#ln8" name="Flow3" to="sv1#area6#page9#inu4" type="automatic" automaticCoupling="true" validate="true"/>
+      <Selector id="sv1#area6#page9#scu2#su39" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area6#page9#scu2#su39#acond12" name="AttCondition2" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+      </Selector>
+    </ScrollerUnit>
+    <EntryUnit id="sv1#area6#page9#enu5" name="Tipologia di ricerca" linkOrder="sv1#area6#page9#enu5#ln9" gr:x="120" gr:y="580">
+      <SelectionField id="sv1#area6#page9#enu5#sfld1" name="tipologia" type="string"/>
+      <Link id="sv1#area6#page9#enu5#ln9" name="Flow5" to="sv1#area6#switch1" type="normal" automaticCoupling="true" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#page9#inu3">
+          <layout:Attribute attribute="ent1#att9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#page9#inu4">
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#page9#scu1">
+          <layout:Link link="sv1#area6#page9#scu1First"/>
+          <layout:Link link="sv1#area6#page9#scu1Previous"/>
+          <layout:Link link="sv1#area6#page9#scu1Block"/>
+          <layout:Link link="sv1#area6#page9#scu1Next"/>
+          <layout:Link link="sv1#area6#page9#scu1Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#page9#scu2">
+          <layout:Link link="sv1#area6#page9#scu2First"/>
+          <layout:Link link="sv1#area6#page9#scu2Previous"/>
+          <layout:Link link="sv1#area6#page9#scu2Block"/>
+          <layout:Link link="sv1#area6#page9#scu2Next"/>
+          <layout:Link link="sv1#area6#page9#scu2Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#area6#page9#alt1#page10">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#area6#page9#alt1#page10#enu6">
+                  <layout:Link link="sv1#area6#page9#alt1#page10#enu6#ln10"/>
+                  <layout:Field field="sv1#area6#page9#alt1#page10#enu6#sfld2"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#area6#page9#alt1#page11">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#area6#page9#alt1#page11#enu7">
+                  <layout:Link link="sv1#area6#page9#alt1#page11#enu7#ln15"/>
+                  <layout:Field field="sv1#area6#page9#alt1#page11#enu7#sfld3"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#area6#page9#alt1#page17">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#area6#page9#alt1#page17#enu8">
+                  <layout:Link link="sv1#area6#page9#alt1#page17#enu8#ln23"/>
+                  <layout:Field field="sv1#area6#page9#alt1#page17#enu8#sfld4"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#area6#page9#alt1#page33">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv1#area6#page9#alt1#page33#enu9">
+                  <layout:Link link="sv1#area6#page9#alt1#page33#enu9#ln57"/>
+                  <layout:Field field="sv1#area6#page9#alt1#page33#enu9#sfld5"/>
+                  <layout:Field field="sv1#area6#page9#alt1#page33#enu9#sfld6"/>
+                  <layout:Field field="sv1#area6#page9#alt1#page33#enu9#sfld7"/>
+                  <layout:Field field="sv1#area6#page9#alt1#page33#enu9#sfld8"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#page9#enu5">
+          <layout:Field field="sv1#area6#page9#enu5#sfld1"/>
+          <layout:Link link="sv1#area6#page9#enu5#ln9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv1#area6#page9#alt1#page34">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative id="sv1#area6#page9#alt1" name="Ricerca" defaultPage="sv1#area6#page9#alt1#page34" gr:x="0" gr:y="0">
+    <Page id="sv1#area6#page9#alt1#page10" name="Ricerca per contratto" gr:x="235" gr:y="0">
+      <ContentUnits>
+        <EntryUnit id="sv1#area6#page9#alt1#page10#enu6" name="Ricerca per contratto" linkOrder="sv1#area6#page9#alt1#page10#enu6#ln10" gr:x="0" gr:y="190">
+          <Link id="sv1#area6#page9#alt1#page10#enu6#ln10" name="Flow7" to="sv1#area6#seu1" type="normal" validate="true" gr:bendpoints="68,-101,58,333;74,-363,44,61">
+            <LinkParameter id="sv1#area6#page9#alt1#page10#enu6#ln10#par8" name="Contratto_RoleCondition1 [oid]" source="sv1#area6#page9#alt1#page10#enu6#sfld2" target="sv1#area6#seu1#su1#rcond17.ent3#att18"/>
+          </Link>
+          <SelectionField id="sv1#area6#page9#alt1#page10#enu6#sfld2" name="Contratto" type="string"/>
+        </EntryUnit>
+        <SelectorUnit id="sv1#area6#page9#alt1#page10#seu13" name="Seleziona contratto" gr:x="0" gr:y="0" entity="ent3">
+          <Link id="sv1#area6#page9#alt1#page10#seu13#ln13" name="Flow4" to="sv1#area6#page9#alt1#page10#enu6" type="transport" validate="true">
+            <LinkParameter id="sv1#area6#page9#alt1#page10#seu13#ln13#par9" name="tipologia_Contratto [label]" source="ent3#att19Array" target="sv1#area6#page9#alt1#page10#enu6#sfld2_label"/>
+            <LinkParameter id="sv1#area6#page9#alt1#page10#seu13#ln13#par10" name="oid_Contratto [output]" source="ent3#att18Array" target="sv1#area6#page9#alt1#page10#enu6#sfld2_output"/>
+          </Link>
+        </SelectorUnit>
+      </ContentUnits>
+    </Page>
+    <Page id="sv1#area6#page9#alt1#page11" name="Ricerca per categoria" gr:x="490" gr:y="10">
+      <ContentUnits>
+        <SelectorUnit id="sv1#area6#page9#alt1#page11#seu14" name="Seleziona categoria" gr:x="10" gr:y="0" entity="ent4">
+          <Link id="sv1#area6#page9#alt1#page11#seu14#ln14" name="Flow8" to="sv1#area6#page9#alt1#page11#enu7" type="transport" validate="true">
+            <LinkParameter id="sv1#area6#page9#alt1#page11#seu14#ln14#par17" name="nome_Categoria [label]" source="ent4#att21Array" target="sv1#area6#page9#alt1#page11#enu7#sfld3_label"/>
+            <LinkParameter id="sv1#area6#page9#alt1#page11#seu14#ln14#par18" name="oid_Categoria [output]" source="ent4#att20Array" target="sv1#area6#page9#alt1#page11#enu7#sfld3_output"/>
+          </Link>
+        </SelectorUnit>
+        <EntryUnit id="sv1#area6#page9#alt1#page11#enu7" name="Ricerca per categoria" linkOrder="sv1#area6#page9#alt1#page11#enu7#ln15" gr:x="0" gr:y="185">
+          <Link id="sv1#area6#page9#alt1#page11#enu7#ln15" name="Flow9" to="sv1#area6#seu4" type="normal" validate="true" gr:bendpoints="68,-66,4,360;101,-358,37,68">
+            <LinkParameter id="sv1#area6#page9#alt1#page11#enu7#ln15#par19" name="Categoria_RoleCondition3 [oid]" source="sv1#area6#page9#alt1#page11#enu7#sfld3" target="sv1#area6#seu4#su3#rcond18.ent4#att20"/>
+          </Link>
+          <SelectionField id="sv1#area6#page9#alt1#page11#enu7#sfld3" name="Categoria" type="string"/>
+        </EntryUnit>
+      </ContentUnits>
+    </Page>
+    <Page id="sv1#area6#page9#alt1#page17" name="Ricerca per zona" gr:x="750" gr:y="20">
+      <ContentUnits>
+        <SelectorUnit id="sv1#area6#page9#alt1#page17#seu15" name="Seleziona zona" gr:x="5" gr:y="0" entity="ent5">
+          <Link id="sv1#area6#page9#alt1#page17#seu15#ln16" name="Flow11" to="sv1#area6#page9#alt1#page17#enu8" type="transport" validate="true">
+            <LinkParameter id="sv1#area6#page9#alt1#page17#seu15#ln16#par20" name="nome_Zona [label]" source="ent5#att23Array" target="sv1#area6#page9#alt1#page17#enu8#sfld4_label"/>
+            <LinkParameter id="sv1#area6#page9#alt1#page17#seu15#ln16#par21" name="oid_Zona [output]" source="ent5#att22Array" target="sv1#area6#page9#alt1#page17#enu8#sfld4_output"/>
+          </Link>
+        </SelectorUnit>
+        <EntryUnit id="sv1#area6#page9#alt1#page17#enu8" name="Ricerca per zona" linkOrder="sv1#area6#page9#alt1#page17#enu8#ln23" gr:x="0" gr:y="185">
+          <Link id="sv1#area6#page9#alt1#page17#enu8#ln23" name="Flow12" to="sv1#area6#seu8" type="normal" validate="true" gr:bendpoints="53,-100,23,336">
+            <LinkParameter id="sv1#area6#page9#alt1#page17#enu8#ln23#par22" name="Zona_RoleCondition4 [oid]" source="sv1#area6#page9#alt1#page17#enu8#sfld4" target="sv1#area6#seu8#su14#rcond19.ent5#att22"/>
+          </Link>
+          <SelectionField id="sv1#area6#page9#alt1#page17#enu8#sfld4" name="Zona" type="string"/>
+        </EntryUnit>
+      </ContentUnits>
+    </Page>
+    <Page id="sv1#area6#page9#alt1#page33" name="Ricerca avanzata" gr:x="950" gr:y="5">
+      <ContentUnits>
+        <SelectorUnit id="sv1#area6#page9#alt1#page33#seu16" name="Seleziona contratto" gr:x="265" gr:y="0" entity="ent3">
+          <Link id="sv1#area6#page9#alt1#page33#seu16#ln27" name="Flow17" to="sv1#area6#page9#alt1#page33#enu9" type="transport" validate="true">
+            <LinkParameter id="sv1#area6#page9#alt1#page33#seu16#ln27#par23" name="tipologia_Contratto [label]" source="ent3#att19Array" target="sv1#area6#page9#alt1#page33#enu9#sfld5_label"/>
+            <LinkParameter id="sv1#area6#page9#alt1#page33#seu16#ln27#par24" name="oid_Contratto [output]" source="ent3#att18Array" target="sv1#area6#page9#alt1#page33#enu9#sfld5_output"/>
+          </Link>
+        </SelectorUnit>
+        <SelectorUnit id="sv1#area6#page9#alt1#page33#seu17" name="Seleziona categoria" gr:x="60" gr:y="10" entity="ent4">
+          <Link id="sv1#area6#page9#alt1#page33#seu17#ln30" name="Flow18" to="sv1#area6#page9#alt1#page33#enu9" type="transport" validate="true">
+            <LinkParameter id="sv1#area6#page9#alt1#page33#seu17#ln30#par25" name="nome_Categoria [label]" source="ent4#att21Array" target="sv1#area6#page9#alt1#page33#enu9#sfld6_label"/>
+            <LinkParameter id="sv1#area6#page9#alt1#page33#seu17#ln30#par26" name="oid_Categoria [output]" source="ent4#att20Array" target="sv1#area6#page9#alt1#page33#enu9#sfld6_output"/>
+          </Link>
+        </SelectorUnit>
+        <SelectorUnit id="sv1#area6#page9#alt1#page33#seu18" name="Seleziona zona" gr:x="0" gr:y="120" entity="ent5">
+          <Link id="sv1#area6#page9#alt1#page33#seu18#ln46" name="Flow19" to="sv1#area6#page9#alt1#page33#enu9" type="transport" validate="true">
+            <LinkParameter id="sv1#area6#page9#alt1#page33#seu18#ln46#par27" name="nome_Zona [label]" source="ent5#att23Array" target="sv1#area6#page9#alt1#page33#enu9#sfld7_label"/>
+            <LinkParameter id="sv1#area6#page9#alt1#page33#seu18#ln46#par28" name="oid_Zona [output]" source="ent5#att22Array" target="sv1#area6#page9#alt1#page33#enu9#sfld7_output"/>
+          </Link>
+        </SelectorUnit>
+        <EntryUnit id="sv1#area6#page9#alt1#page33#enu9" name="Ricerca avanzata" linkOrder="sv1#area6#page9#alt1#page33#enu9#ln57" gr:x="130" gr:y="260">
+          <Link id="sv1#area6#page9#alt1#page33#enu9#ln57" name="Flow20" to="sv1#area6#seu12" type="normal" validate="true" gr:bendpoints="48,-264,-28,292">
+            <LinkParameter id="sv1#area6#page9#alt1#page33#enu9#ln57#par29" name="Contratto_RoleCondition7 [oid]" source="sv1#area6#page9#alt1#page33#enu9#sfld5" target="sv1#area6#seu12#su15#rcond20.ent3#att18"/>
+            <LinkParameter id="sv1#area6#page9#alt1#page33#enu9#ln57#par30" name="Categoria_RoleCondition8 [oid]" source="sv1#area6#page9#alt1#page33#enu9#sfld6" target="sv1#area6#seu12#su15#rcond21.ent4#att20"/>
+            <LinkParameter id="sv1#area6#page9#alt1#page33#enu9#ln57#par31" name="Zona_RoleCondition9 [oid]" source="sv1#area6#page9#alt1#page33#enu9#sfld7" target="sv1#area6#seu12#su15#rcond22.ent5#att22"/>
+          </Link>
+          <SelectionField id="sv1#area6#page9#alt1#page33#enu9#sfld5" name="Contratto" type="string"/>
+          <SelectionField id="sv1#area6#page9#alt1#page33#enu9#sfld6" name="Categoria" type="string"/>
+          <SelectionField id="sv1#area6#page9#alt1#page33#enu9#sfld7" name="Zona" type="string"/>
+          <SelectionField id="sv1#area6#page9#alt1#page33#enu9#sfld8" name="Fascia prezzo" type="string"/>
+        </EntryUnit>
+        <SelectorUnit id="sv1#area6#page9#alt1#page33#seu19" name="Seleziona fascia prezzo" gr:x="385" gr:y="155" entity="ent11">
+          <Link id="sv1#area6#page9#alt1#page33#seu19#ln58" name="Flow1" to="sv1#area6#page9#alt1#page33#enu9" type="transport" validate="true">
+            <LinkParameter id="sv1#area6#page9#alt1#page33#seu19#ln58#par33" name="oid_Fascia prezzo [output]" source="ent11#att55Array" target="sv1#area6#page9#alt1#page33#enu9#sfld8_output"/>
+          </Link>
+        </SelectorUnit>
+      </ContentUnits>
+    </Page>
+    <Page id="sv1#area6#page9#alt1#page34" name="Nessuna ricerca" gr:x="0" gr:y="25">
+      <ContentUnits/>
+    </Page>
+  </Alternative>
+  <Link id="sv1#area6#page9#ln62" name="Flow40" to="sv1#area6#page8" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

@@ -1,30 +1,31 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="40" id="sv2#area4#page12" name="Lista nuove richieste appuntamenti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="20" id="sv2#area4#page12" name="Lista nuove richieste appuntamenti">
   <ContentUnits>
-    <IndexUnit gr:x="430" gr:y="0" id="sv2#area4#page12#inu9" name="Lista appuntamenti nuovi" entity="ent8" displayAttributes="ent8#att38 ent8#att4" linkOrder="sv2#area4#page12#inu9#ln34">
+    <IndexUnit gr:x="430" gr:y="5" id="sv2#area4#page12#inu9" name="Lista appuntamenti nuovi" entity="ent8" displayAttributes="ent8#att38 ent8#att4" linkOrder="sv2#area4#page12#inu9#ln89">
       <Selector id="sv2#area4#page12#inu9#su18" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area4#page12#inu9#su18#rcond7" name="RoleCondition7" predicate="in" implied="false" role="rel9#role18"/>
+        <AttributesCondition id="sv2#area4#page12#inu9#su18#acond5" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" attributes="ent8#att16" value="false"/>
       </Selector>
-      <Link id="sv2#area4#page12#inu9#ln34" name="Flow22" to="sv2#area4#page19#dau7" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area4#page12#inu9#ln89" name="Flow89" to="sv2#area4#page46#alt2#page49#dau18" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
-    <SelectorUnit id="sv2#area4#page12#seu5" name="seleziona Filiale" gr:x="0" gr:y="150" entity="ent2">
+    <SelectorUnit id="sv2#area4#page12#seu5" name="seleziona Filiale" gr:x="0" gr:y="170" entity="ent2">
       <Selector id="sv2#area4#page12#seu5#su17" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area4#page12#seu5#su17#rcond4" name="RoleCondition3" predicate="in" implied="false" role="rel2#role3"/>
       </Selector>
       <Link id="sv2#area4#page12#seu5#ln19" name="Flow19" to="sv2#area4#page12#seu6" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="230" gr:y="150" id="sv2#area4#page12#seu6" name="Zona" entity="ent5">
+    <SelectorUnit gr:x="240" gr:y="170" id="sv2#area4#page12#seu6" name="Zona" entity="ent5">
       <Selector id="sv2#area4#page12#seu6#su12" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area4#page12#seu6#su12#rcond10" name="RoleCondition10" predicate="in" implied="false" role="rel12#role23"/>
       </Selector>
       <Link id="sv2#area4#page12#seu6#ln22" name="Flow22" to="sv2#area4#page12#seu7" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="455" gr:y="145" id="sv2#area4#page12#seu7" name="Annuncio" entity="ent1">
+    <SelectorUnit gr:x="460" gr:y="170" id="sv2#area4#page12#seu7" name="Annuncio" entity="ent1">
       <Selector id="sv2#area4#page12#seu7#su13" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area4#page12#seu7#su13#rcond11" name="RoleCondition11" predicate="in" implied="false" role="rel5#role9"/>
       </Selector>
       <Link id="sv2#area4#page12#seu7#ln25" name="Flow25" to="sv2#area4#page12#inu9" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <GetUnit gr:x="20" gr:y="0" id="sv2#area4#page12#gtu2" name="utente loggato" contextParameters="UserCtxParam">
+    <GetUnit gr:x="0" gr:y="0" id="sv2#area4#page12#gtu2" name="utente loggato" contextParameters="UserCtxParam">
       <Link id="sv2#area4#page12#gtu2#ln24" name="Flow24" to="sv2#area4#page12#seu5" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
   </ContentUnits>
@@ -46,9 +47,9 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area4#page12#inu9">
-          <layout:Link link="sv2#area4#page12#inu9#ln34"/>
           <layout:Attribute attribute="ent8#att38"/>
           <layout:Attribute attribute="ent8#att4"/>
+          <layout:Link link="sv2#area4#page12#inu9#ln89"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

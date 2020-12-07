@@ -1,10 +1,13 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area5#page26" name="Ricerca Filiali" gr:x="45" gr:y="425">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area5#page26" name="Ricerca Filiali" gr:x="30" gr:y="595">
   <ContentUnits>
     <ScrollerUnit id="sv4#area5#page26#scu6" name="Scroller2" linkOrder="sv4#area5#page26#scu6#ln49" gr:x="0" gr:y="0" useCountQuery="false" entity="ent2">
       <Link id="sv4#area5#page26#scu6#ln49" name="Flow15" to="sv4#area5#page26#inu18" type="automatic" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
     <IndexUnit id="sv4#area5#page26#inu18" name="Lista Filiali per Zona" linkOrder="sv4#area5#page26#inu18#ln50" gr:x="140" gr:y="90" entity="ent2">
       <Link id="sv4#area5#page26#inu18#ln50" name="Flow16" to="sv4#area5#page25#dau12" type="normal" automaticCoupling="true" validate="true"/>
+      <Selector id="sv4#area5#page26#inu18#su129" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area5#page26#inu18#su129#kcond78" name="KeyCondition78" predicate="in" implied="false"/>
+      </Selector>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

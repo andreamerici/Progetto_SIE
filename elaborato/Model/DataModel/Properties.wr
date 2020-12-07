@@ -52,15 +52,15 @@
     <Attribute id="ent2#att17" name="email" type="string"/>
     <Attribute id="ent2#att62" name="mediavoti" type="float" derivationQuery="calculated::avg(Self.rel16#role32(as Var1).ent18#att59)"/>
   </Entity>
-  <Entity gr:x="275" gr:y="560" id="ent3" name="Contratto" duration="persistent" attributeOrder="ent3#att18 ent3#att20">
+  <Entity gr:x="290" gr:y="545" id="ent3" name="Contratto" duration="persistent" attributeOrder="ent3#att18 ent3#att20">
     <Attribute id="ent3#att18" key="true" name="oid" type="integer"/>
     <Attribute id="ent3#att20" name="tipologia" type="string"/>
   </Entity>
-  <Entity gr:x="445" gr:y="785" id="ent4" duration="persistent" name="Categoria" attributeOrder="ent4#att21 ent4#att22">
+  <Entity gr:x="490" gr:y="795" id="ent4" duration="persistent" name="Categoria" attributeOrder="ent4#att21 ent4#att22">
     <Attribute id="ent4#att21" key="true" name="oid" type="integer"/>
     <Attribute id="ent4#att22" name="nome" type="string"/>
   </Entity>
-  <Entity gr:x="1205" gr:y="650" id="ent5" name="Zona" duration="persistent" attributeOrder="ent5#att23 ent5#att24 ent5#att25 ent5#att49 ent5#att50 ent5#att51">
+  <Entity gr:x="1220" gr:y="635" id="ent5" name="Zona" duration="persistent" attributeOrder="ent5#att23 ent5#att24 ent5#att25 ent5#att49 ent5#att50 ent5#att51">
     <Attribute id="ent5#att23" key="true" name="oid" type="integer"/>
     <Attribute id="ent5#att24" name="nome" type="string"/>
     <Attribute id="ent5#att25" name="citt&#224;" type="string"/>
@@ -82,10 +82,11 @@
     <Attribute id="ent7#att3" name="dataAssunzione" type="date"/>
     <Attribute id="ent7#att63" name="foto" type="blob"/>
   </Entity>
-  <Entity gr:x="0" gr:y="470" id="ent8" name="Appuntamento" duration="persistent" attributeOrder="ent8#att37 ent8#att38 ent8#att4">
+  <Entity gr:x="0" gr:y="455" id="ent8" name="Appuntamento" duration="persistent" attributeOrder="ent8#att37 ent8#att38 ent8#att4 ent8#att16">
     <Attribute id="ent8#att37" key="true" name="oid" type="integer"/>
     <Attribute id="ent8#att38" name="dataFissata" type="date"/>
     <Attribute id="ent8#att4" name="note" type="text"/>
+    <Attribute id="ent8#att16" name="gestito" type="boolean"/>
   </Entity>
   <Entity gr:x="645" gr:y="735" id="ent9" name="NuovoAnnuncio" duration="persistent" derivationQuery="derived::ent1(as SuperEntity) where SuperEntity.ent1#att10 &gt;= '30-7'">
     <Generalization superEntity="ent1"/>
@@ -101,9 +102,9 @@
     <RelationshipRole1 id="rel3#role5" name="AnnuncioToContratto" maxCard="1"/>
     <RelationshipRole2 id="rel3#role6" name="ContrattoToAnnuncio" maxCard="N"/>
   </Relationship>
-  <Relationship id="rel4" name="Annuncio_Tipologia" sourceEntity="ent1" targetEntity="ent4">
-    <RelationshipRole1 id="rel4#role7" name="AnnuncioToTipologia" maxCard="1"/>
-    <RelationshipRole2 id="rel4#role8" name="TipologiaToAnnuncio" maxCard="N"/>
+  <Relationship id="rel4" name="Annuncio_Categoria" sourceEntity="ent1" targetEntity="ent4">
+    <RelationshipRole1 id="rel4#role7" name="AnnuncioToCategoria" maxCard="1"/>
+    <RelationshipRole2 id="rel4#role8" name="CategoriaToAnnuncio" maxCard="N"/>
   </Relationship>
   <Relationship id="rel5" name="Zona_Annuncio" sourceEntity="ent5" targetEntity="ent1">
     <RelationshipRole1 id="rel5#role9" name="ZonaToAnnuncio" maxCard="N"/>
@@ -117,13 +118,14 @@
     <RelationshipRole1 id="rel9#role17" name="AppuntamentoToAnnuncio" maxCard="1"/>
     <RelationshipRole2 id="rel9#role18" name="AnnuncioToAppuntamento" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="280" gr:y="670" id="ent11" duration="persistent" name="FasciaPrezzo" attributeOrder="ent11#att15 ent11#att27 ent11#att44">
+  <Entity gr:x="280" gr:y="645" id="ent11" duration="persistent" name="FasciaPrezzo" attributeOrder="ent11#att15 ent11#att27 ent11#att44 ent11#att55">
     <Attribute id="ent11#att15" key="true" name="oid" type="integer"/>
-    <Attribute id="ent11#att27" name="valoreMinimo" type="integer"/>
-    <Attribute id="ent11#att44" name="valoreMassimo" type="integer"/>
+    <Attribute id="ent11#att27" name="valoreMinimo" type="integer" key="false"/>
+    <Attribute id="ent11#att44" name="valoreMassimo" type="integer" key="false"/>
+    <Attribute id="ent11#att55" name="nome" type="string" key="false"/>
   </Entity>
-  <Relationship id="rel10" name="Annuncio_Prezzo" sourceEntity="ent1" targetEntity="ent11">
-    <RelationshipRole1 id="rel10#role19" name="AnnuncioToPrezzo" maxCard="1"/>
+  <Relationship id="rel10" name="Annuncio_FasciaPrezzo" sourceEntity="ent1" targetEntity="ent11">
+    <RelationshipRole1 id="rel10#role19" name="AnnuncioToFasciaPrezzo" maxCard="1"/>
     <RelationshipRole2 id="rel10#role20" name="PrezzoToAnnuncio" maxCard="N"/>
   </Relationship>
   <Entity gr:x="1435" gr:y="195" id="ent12" name="Orario" duration="persistent" attributeOrder="ent12#att28 ent12#att29 ent12#att32 ent12#att34">

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#page1" name="Errore recensione" layout:style="WebRatio" layout:pageLayout="WebRatio/Basic" gr:x="1650" gr:y="765">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#page1" name="Errore recensione" layout:style="WebRatio" layout:pageLayout="WebRatio/Basic" gr:x="1800" gr:y="2130">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page1#mssu2" name="Messaggio errore"/>
   </ContentUnits>

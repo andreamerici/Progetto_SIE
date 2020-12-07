@@ -1,0 +1,120 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="815" gr:y="225" id="sv2#area4#page46" name="Dettagli appuntamento">
+  <ContentUnits/>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area4#page46#alt2#page47">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area4#page46#alt2#page49">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area4#page46#alt2#page49#dau18">
+                  <layout:Link link="sv2#area4#page46#alt2#page49#dau18#ln87"/>
+                  <layout:Link link="sv2#area4#page46#alt2#page49#dau18#ln91"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area4#page46#alt2#page47#dau19">
+          <layout:Link link="sv2#area4#page46#alt2#page47#dau19#ln90"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Alternative gr:x="0" gr:y="0" id="sv2#area4#page46#alt2" defaultPage="sv2#area4#page46#alt2#page47">
+    <Page gr:x="10" gr:y="215" id="sv2#area4#page46#alt2#page47" name="Dettagli appuntamento gestito">
+      <ContentUnits>
+        <DataUnit id="sv2#area4#page46#alt2#page47#dau19" name=" gestito" gr:x="0" gr:y="0" entity="ent8" linkOrder="sv2#area4#page46#alt2#page47#dau19#ln90">
+          <Selector id="sv2#area4#page46#alt2#page47#dau19#su56" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv2#area4#page46#alt2#page47#dau19#su56#kcond28" name="KeyCondition27" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv2#area4#page46#alt2#page47#dau19#ln90" name="Flow90" to="sv2#area4#page14#dau5" automaticCoupling="true" type="normal" validate="true"/>
+        </DataUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="0" gr:y="0" id="sv2#area4#page46#alt2#page49" name="Dettagli appuntamento non gestito">
+      <ContentUnits>
+        <DataUnit gr:x="0" gr:y="0" id="sv2#area4#page46#alt2#page49#dau18" name="non gestito" entity="ent8" linkOrder="sv2#area4#page46#alt2#page49#dau18#ln87 sv2#area4#page46#alt2#page49#dau18#ln91">
+          <Selector id="sv2#area4#page46#alt2#page49#dau18#su55" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv2#area4#page46#alt2#page49#dau18#su55#kcond27" name="KeyCondition27" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv2#area4#page46#alt2#page49#dau18#ln87" name="Flow87" to="sv2#area4#mfu2" type="normal" validate="true">
+            <LinkParameter id="sv2#area4#page46#alt2#page49#dau18#ln87#par51" name="true_gestito" sourceValue="true" target="sv2#area4#mfu2.ent8#att16"/>
+            <LinkParameter id="sv2#area4#page46#alt2#page49#dau18#ln87#par52" name="oid_PASSING" source="data.ent8#att37" passing="true"/>
+          </Link>
+          <Link id="sv2#area4#page46#alt2#page49#dau18#ln91" name="Flow91" to="sv2#area4#page14#dau5" automaticCoupling="true" type="normal" validate="true"/>
+        </DataUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
+</Page>

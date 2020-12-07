@@ -1,0 +1,6 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-320" gr:y="-30" id="sv3#area12" name="Filiale" landmark="true" landmarks="sv3#area12#page74" defaultPage="sv3#area12#cru11">
+  <OperationUnits>
+    <CreateUnit gr:x="1335" gr:y="510" id="sv3#area12#cru11" name="Crea orario giorno 1" entity="ent12"/>
+    <CreateUnit gr:x="1335" gr:y="620" id="sv3#area12#cru12" name="crea orario "/>
+  </OperationUnits>
+</Area>

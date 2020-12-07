@@ -1,0 +1,71 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="685" gr:y="560" id="sv3#area12#page84" name="Modifica filiale">
+  <ContentUnits>
+    <SelectorUnit id="sv3#area12#page84#seu42" name="Seleziona capo filiale" gr:x="0" gr:y="0" entity="ent7">
+      <Link id="sv3#area12#page84#seu42#ln146" name="Flow146" to="sv3#area12#page84#meu5" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page84#seu42#ln146#par125" name="nome_capo filiale [label]" source="ent7#att36Array" target="sv3#area12#page84#meu5#sfld21_label"/>
+        <LinkParameter id="sv3#area12#page84#seu42#ln146#par127" name="oid_capo filiale [output]" source="userOIDArray" target="sv3#area12#page84#meu5#sfld21_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area12#page84#seu43" name="Seleziona zona" gr:x="235" gr:y="0" entity="ent5">
+      <Link id="sv3#area12#page84#seu43#ln150" name="Flow150" to="sv3#area12#page84#meu5" type="transport" validate="true">
+        <LinkParameter id="sv3#area12#page84#seu43#ln150#par133" name="nome_zona [label]" source="ent5#att24Array" target="sv3#area12#page84#meu5#sfld22_label"/>
+        <LinkParameter id="sv3#area12#page84#seu43#ln150#par134" name="oid_zona [output]" source="ent5#att23Array" target="sv3#area12#page84#meu5#sfld22_output"/>
+      </Link>
+    </SelectorUnit>
+    <MultiEntryUnit gr:x="135" gr:y="145" id="sv3#area12#page84#meu5" name="Inserisci dati" minLength="1" linkOrder="sv3#area12#page84#meu5#ln155">
+      <SelectionField id="sv3#area12#page84#meu5#sfld21" name="capo filiale" type="string"/>
+      <SelectionField id="sv3#area12#page84#meu5#sfld22" name="zona" type="string"/>
+      <Field id="sv3#area12#page84#meu5#fld45" name="cap" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page84#meu5#fld46" name="chiusura" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page84#meu5#fld47" name="via" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page84#meu5#fld48" name="civico" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page84#meu5#fld49" name="giorno" type="string" modifiable="true"/>
+      <Link id="sv3#area12#page84#meu5#ln155" name="Flow155" to="sv3#area12#opg7#cru10" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par203" name="cap_cap" source="sv3#area12#page84#meu5#fld45" target="sv3#area12#opg7#cru10.ent14#att48"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par204" name="civico_civico" source="sv3#area12#page84#meu5#fld48" target="sv3#area12#opg7#cru10.ent14#att47"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par205" name="FilialeToIndirizzo sede.oid_PASSING_Filiale.oid(Indirizzo sedeToFiliale)" sourceLinkParameter="sv3#area12#page76#dau25#ln151#par139" target="sv3#area12#opg7#cru10.rel14#role28.ent2#att12"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par206" name="via_via" source="sv3#area12#page84#meu5#fld47" target="sv3#area12#opg7#cru10.ent14#att46"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par207" name="capo filiale_PASSING" source="sv3#area12#page84#meu5#sfld21" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par215" name="chiusura_PASSING" source="sv3#area12#page84#meu5#fld46" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par216" name="giorno_PASSING" source="sv3#area12#page84#meu5#fld49" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par217" name="zona_PASSING" source="sv3#area12#page84#meu5#sfld22" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par223" name="email_PASSING" source="sv3#area12#page84#meu5#fld61" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par224" name="nome_PASSING" source="sv3#area12#page84#meu5#fld50" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par225" name="telefono_PASSING" source="sv3#area12#page84#meu5#fld51" passing="true"/>
+      </Link>
+      <Field id="sv3#area12#page84#meu5#fld50" name="nome" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page84#meu5#fld51" name="telefono" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page84#meu5#fld61" name="email" type="string" modifiable="true"/>
+    </MultiEntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page84#meu5">
+          <layout:Link link="sv3#area12#page84#meu5#ln155"/>
+          <layout:Field field="sv3#area12#page84#meu5#sfld21"/>
+          <layout:Field field="sv3#area12#page84#meu5#sfld22"/>
+          <layout:Field field="sv3#area12#page84#meu5#fld45"/>
+          <layout:Field field="sv3#area12#page84#meu5#fld46"/>
+          <layout:Field field="sv3#area12#page84#meu5#fld47"/>
+          <layout:Field field="sv3#area12#page84#meu5#fld48"/>
+          <layout:Field field="sv3#area12#page84#meu5#fld49"/>
+          <layout:Field field="sv3#area12#page84#meu5#fld50"/>
+          <layout:Field field="sv3#area12#page84#meu5#fld51"/>
+          <layout:Field field="sv3#area12#page84#meu5#fld61"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

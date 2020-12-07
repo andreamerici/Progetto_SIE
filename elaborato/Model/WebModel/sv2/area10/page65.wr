@@ -1,0 +1,76 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area10#page65" name="Mostra Annunci" landmark="false" gr:x="30" gr:y="85">
+  <ContentUnits>
+    <IndexUnit id="sv2#area10#page65#inu27" name="Lista Annunci" linkOrder="sv2#area10#page65#inu27#ln123" gr:x="485" gr:y="0" entity="ent1">
+      <Selector id="sv2#area10#page65#inu27#su101" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area10#page65#inu27#su101#rcond42" name="RoleCondition6" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area10#page65#inu27#ln123" name="Flow12" to="sv2#area10#page64#dau21" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+    <SelectorUnit id="sv2#area10#page65#seu33" name="Selettore Filiali" gr:x="185" gr:y="0" entity="ent2">
+      <Selector id="sv2#area10#page65#seu33#su102" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area10#page65#seu33#su102#rcond43" name="RoleCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area10#page65#seu33#ln124" name="Flow9" to="sv2#area10#page65#inu27" type="transport" validate="true">
+        <LinkParameter id="sv2#area10#page65#seu33#ln124#par137" name="FilialeToZona.oid_RoleCondition6 [oid]" source="rel6#role11_ent5#att23Array" target="sv2#area10#page65#inu27#su101#rcond42.ent5#att23"/>
+      </Link>
+    </SelectorUnit>
+    <GetUnit id="sv2#area10#page65#gtu12" name="Utente loggato" gr:x="0" gr:y="10" contextParameters="UserCtxParam">
+      <Link id="sv2#area10#page65#gtu12#ln125" name="Flow7" to="sv2#area10#page65#seu33" type="transport" validate="true">
+        <LinkParameter id="sv2#area10#page65#gtu12#ln125#par138" name="UserCtxParam.oid_RoleCondition5 [oid]" source="sv2#area10#page65#gtu12.UserCtxParam" target="sv2#area10#page65#seu33#su102#rcond43.userOID"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area10#page65#inu27">
+          <layout:Link link="sv2#area10#page65#inu27#ln123"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area10#page66#meu2">
+          <layout:Link link="sv2#area10#page66#meu2#ln128"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld28"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld29"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld30"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld31"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld32"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld33"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld34"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld35"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld36"/>
+          <layout:Field field="sv2#area10#page66#meu2#sfld19"/>
+          <layout:Field field="sv2#area10#page66#meu2#sfld20"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld37"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld38"/>
+          <layout:Field field="sv2#area10#page66#meu2#fld39"/>
+          <layout:Field field="sv2#area10#page66#meu2#sfld25"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

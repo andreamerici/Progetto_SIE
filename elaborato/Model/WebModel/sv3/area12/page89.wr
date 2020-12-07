@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1145" gr:y="410" id="sv3#area12#page89">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv3#area12#page89#enu21" name="orario" linkOrder="sv3#area12#page89#enu21#ln167">
+      <Field id="sv3#area12#page89#enu21#fld62" name="giorno1" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page89#enu21#fld63" name="giorno2" type="string" modifiable="true"/>
+      <Link id="sv3#area12#page89#enu21#ln167" name="Flow167" to="sv3#area12#cru11" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page89#enu21#ln167#par191" name="giorno1_giorno" source="sv3#area12#page89#enu21#fld62" target="sv3#area12#cru11.ent12#att34"/>
+        <LinkParameter id="sv3#area12#page89#enu21#ln167#par192" name="giorno2_PASSING" source="sv3#area12#page89#enu21#fld63" passing="true"/>
+        <LinkParameter id="sv3#area12#page89#enu21#ln167#par193" name="apertura1_orarioApertura" source="sv3#area12#page89#enu21#fld64" target="sv3#area12#cru11.ent12#att29"/>
+        <LinkParameter id="sv3#area12#page89#enu21#ln167#par194" name="chiusura1_orarioChiusura" source="sv3#area12#page89#enu21#fld65" target="sv3#area12#cru11.ent12#att32"/>
+      </Link>
+      <Field id="sv3#area12#page89#enu21#fld64" name="apertura1" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page89#enu21#fld65" name="chiusura1" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page89#enu21">
+          <layout:Link link="sv3#area12#page89#enu21#ln167"/>
+          <layout:Field field="sv3#area12#page89#enu21#fld62"/>
+          <layout:Field field="sv3#area12#page89#enu21#fld63"/>
+          <layout:Field field="sv3#area12#page89#enu21#fld64"/>
+          <layout:Field field="sv3#area12#page89#enu21#fld65"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

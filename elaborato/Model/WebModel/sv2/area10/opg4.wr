@@ -1,0 +1,79 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area10#opg4" name="Crea Annuncio" transaction="true" gr:x="1505" gr:y="0">
+  <OperationUnits>
+    <TimeUnit id="sv2#area10#opg4#tmu1" name="Data di pubblicazione" gr:x="0" gr:y="0">
+      <OKLink id="sv2#area10#opg4#tmu1#oln35" name="OKFlow33" to="sv2#area10#opg4#cru4">
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par107" name="Cap_PASSING_cap" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par144" target="sv2#area10#opg4#cru4.ent14#att46"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par110" name="Anno Costruzione_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par143" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par111" name="Categoria_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par145" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par112" name="Contratto_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par147" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par113" name="Current/Input Date_PASSING" source="currentDate" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par114" name="Descrizione_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par148" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par115" name="Disponibilit&#224;_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par149" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par116" name="Fascia Prezzo_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par150" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par117" name="Foto_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par151" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par118" name="Numero Locali_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par152" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par119" name="Prezzo_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par153" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par120" name="Superficie_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par154" passing="true"/>
+        <LinkParameter id="sv2#area10#opg4#tmu1#oln35#par121" name="Titolo_PASSING" sourceLinkParameter="sv2#area10#page66#meu2#ln128#par155" passing="true"/>
+      </OKLink>
+      <KOLink id="sv2#area10#opg4#tmu1#kln31" name="KOFlow31" to="sv2#area10#page59#alt4#page61#mssu10" automaticCoupling="true"/>
+    </TimeUnit>
+    <ConnectUnit id="sv2#area10#opg4#cnu6" name="Connetti Zona" gr:x="10" gr:y="350" relationship="rel5#role9">
+      <SourceSelector id="sv2#area10#opg4#cnu6#su91" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#opg4#cnu6#su91#kcond52" name="KeyCondition38" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area10#opg4#cnu6#su92" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#opg4#cnu6#su92#kcond53" name="KeyCondition39" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#area10#opg4#cnu6#oln36" name="OKFlow25" to="sv2#area10#opg4#cnu7" automaticCoupling="true"/>
+      <KOLink id="sv2#area10#opg4#cnu6#kln32" name="KOFlow34" to="sv2#area10#page59#alt4#page61#mssu10" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit id="sv2#area10#opg4#cnu7" name="Connetti Contratti" gr:x="5" gr:y="520" relationship="rel3#role5">
+      <SourceSelector id="sv2#area10#opg4#cnu7#su93" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#opg4#cnu7#su93#kcond54" name="KeyCondition40" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area10#opg4#cnu7#su94" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#opg4#cnu7#su94#kcond55" name="KeyCondition41" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#area10#opg4#cnu7#oln37" name="OKFlow26" to="sv2#area10#opg4#cnu8" automaticCoupling="true"/>
+      <KOLink id="sv2#area10#opg4#cnu7#kln33" name="KOFlow37" to="sv2#area10#page59#alt4#page61#mssu10" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit id="sv2#area10#opg4#cnu8" name="Connetti Categorie" gr:x="10" gr:y="675" relationship="rel4#role7">
+      <SourceSelector id="sv2#area10#opg4#cnu8#su95" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#opg4#cnu8#su95#kcond56" name="KeyCondition42" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area10#opg4#cnu8#su96" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#opg4#cnu8#su96#kcond57" name="KeyCondition43" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#area10#opg4#cnu8#oln38" name="OKFlow27" to="sv2#area10#opg4#cnu9" automaticCoupling="true"/>
+      <KOLink id="sv2#area10#opg4#cnu8#kln34" name="KOFlow36" to="sv2#area10#page59#alt4#page61#mssu10" automaticCoupling="true"/>
+    </ConnectUnit>
+    <CreateUnit id="sv2#area10#opg4#cru4" name="Crea Indirizzo" gr:x="25" gr:y="100" entity="ent14">
+      <OKLink id="sv2#area10#opg4#cru4#oln39" name="OKFlow34" to="sv2#area10#opg4#cru5">
+        <LinkParameter id="sv2#area10#opg4#cru4#oln39#par122" name="Anno Costruzione_PASSING_annoCostruzione" sourceLinkParameter="sv2#area10#opg4#tmu1#oln35#par110" target="sv2#area10#opg4#cru5.ent1#att11"/>
+        <LinkParameter id="sv2#area10#opg4#cru4#oln39#par123" name="Current/Input Date_PASSING_dataPubblicazione" sourceLinkParameter="sv2#area10#opg4#tmu1#oln35#par113" target="sv2#area10#opg4#cru5.ent1#att10"/>
+        <LinkParameter id="sv2#area10#opg4#cru4#oln39#par124" name="Descrizione_PASSING_descrizione" sourceLinkParameter="sv2#area10#opg4#tmu1#oln35#par114" target="sv2#area10#opg4#cru5.ent1#att8"/>
+        <LinkParameter id="sv2#area10#opg4#cru4#oln39#par126" name="Foto_PASSING_foto" sourceLinkParameter="sv2#area10#opg4#tmu1#oln35#par117" target="sv2#area10#opg4#cru5.ent1#att9"/>
+        <LinkParameter id="sv2#area10#opg4#cru4#oln39#par128" name="Numero Locali_PASSING_numeroLocali" sourceLinkParameter="sv2#area10#opg4#tmu1#oln35#par118" target="sv2#area10#opg4#cru5.ent1#att7"/>
+        <LinkParameter id="sv2#area10#opg4#cru4#oln39#par130" name="Superficie_PASSING_superficie" sourceLinkParameter="sv2#area10#opg4#tmu1#oln35#par120" target="sv2#area10#opg4#cru5.ent1#att6"/>
+        <LinkParameter id="sv2#area10#opg4#cru4#oln39#par131" name="Titolo_PASSING_titolo" sourceLinkParameter="sv2#area10#opg4#tmu1#oln35#par121" target="sv2#area10#opg4#cru5.ent1#att5"/>
+        <LinkParameter id="sv2#area10#opg4#cru4#oln39#par91" name="oid_Indirizzo.oid(AnnuncioToIndirizzo)" source="ent14#att41Array" target="sv2#area10#opg4#cru5.rel13#role25.ent13#att40"/>
+      </OKLink>
+      <KOLink id="sv2#area10#opg4#cru4#kln35" name="KOFlow32" to="sv2#area10#page59#alt4#page61#mssu10" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit id="sv2#area10#opg4#cnu9" name="Connetti Fascia Prezzo" gr:x="5" gr:y="840" relationship="rel9#role17">
+      <SourceSelector id="sv2#area10#opg4#cnu9#su97" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#opg4#cnu9#su97#kcond58" name="KeyCondition44" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv2#area10#opg4#cnu9#su98" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#opg4#cnu9#su98#kcond59" name="KeyCondition45" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv2#area10#opg4#cnu9#oln40" name="OKFlow36" to="sv2#area10#page65#inu27" automaticCoupling="true"/>
+      <KOLink id="sv2#area10#opg4#cnu9#kln36" name="KOFlow35" to="sv2#area10#page59#alt4#page61#mssu10" automaticCoupling="true"/>
+    </ConnectUnit>
+    <CreateUnit id="sv2#area10#opg4#cru5" name="Crea Annuncio" gr:x="20" gr:y="235" entity="ent1">
+      <OKLink id="sv2#area10#opg4#cru5#oln41" name="OKFlow35" to="sv2#area10#opg4#cnu6" automaticCoupling="true"/>
+      <KOLink id="sv2#area10#opg4#cru5#kln37" name="KOFlow33" to="sv2#area10#page59#alt4#page61#mssu10" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>

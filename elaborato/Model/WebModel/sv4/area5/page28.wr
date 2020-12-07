@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area5#page28" name="Elenco Filiali" landmark="true" gr:x="0" gr:y="125">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area5#page28" name="Elenco Filiali" landmark="true" gr:x="0" gr:y="165">
   <ContentUnits>
     <IndexUnit id="sv4#area5#page28#inu20" name="Lista Filiali" linkOrder="sv4#area5#page28#inu20#ln52" gr:x="5" gr:y="0" entity="ent2" displayAttributes="ent2#att13">
       <Link id="sv4#area5#page28#inu20#ln52" name="Flow1" to="sv4#area5#page25#dau12" type="normal" automaticCoupling="true" validate="true"/>
@@ -8,7 +8,7 @@
         <LinkParameter id="sv4#area5#page28#seu3#ln53#par5" name="oid_PASSING" source="ent5#att23Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit id="sv4#area5#page28#enu3" name="Ricerca per Zona" linkOrder="sv4#area5#page28#enu3#ln54" gr:x="215" gr:y="125">
+    <EntryUnit id="sv4#area5#page28#enu3" name="Ricerca per Zona" linkOrder="sv4#area5#page28#enu3#ln54" gr:x="205" gr:y="150">
       <Link id="sv4#area5#page28#enu3#ln54" name="Flow14" to="sv4#area5#page26#scu6" type="normal" automaticCoupling="true" validate="true"/>
     </EntryUnit>
   </ContentUnits>

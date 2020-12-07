@@ -1,0 +1,50 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1600" gr:y="5" id="sv3#area12#opg6" name="Creazione filiale" transaction="true">
+  <OperationUnits>
+    <CreateUnit gr:x="20" gr:y="0" id="sv3#area12#opg6#cru7" name="Crea indirizzo" entity="ent14">
+      <OKLink id="sv3#area12#opg6#cru7#oln47" name="OKFlow47" to="sv3#area12#opg6#cru8">
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par208" name="Giorno_PASSING_giorno" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par181" target="sv3#area12#opg6#cru8.ent12#att34"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par209" name="Apertura_PASSING_orarioApertura" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par175" target="sv3#area12#opg6#cru8.ent12#att29"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par210" name="Chiusura_PASSING_orarioChiusura" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par178" target="sv3#area12#opg6#cru8.ent12#att32"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par211" name="Email_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par180" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par212" name="Nome_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par182" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par213" name="oid_PASSING" source="ent14#att41Array" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par214" name="Telefono_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par183" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par188" name="oid_Filiale.oid(OrarioToFiliale)" source="ent14#att41Array" target="sv3#area12#opg6#cru8.rel11#role22.ent2#att12"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg6#cru7#kln41" name="KOFlow41" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit gr:x="25" gr:y="145" id="sv3#area12#opg6#cru8" name="Crea orario" entity="ent12">
+      <OKLink id="sv3#area12#opg6#cru8#oln46" name="OKFlow46" to="sv3#area12#opg6#cru9">
+        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par218" name="Email_PASSING_email" sourceLinkParameter="sv3#area12#opg6#cru7#oln47#par211" target="sv3#area12#opg6#cru9.ent2#att17"/>
+        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par219" name="Nome_PASSING_nome" sourceLinkParameter="sv3#area12#opg6#cru7#oln47#par212" target="sv3#area12#opg6#cru9.ent2#att13"/>
+        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par220" name="Telefono_PASSING_telefono" sourceLinkParameter="sv3#area12#opg6#cru7#oln47#par214" target="sv3#area12#opg6#cru9.ent2#att14"/>
+        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par92" name="oid_IndirizzoSede.oid(FilialeToIndirizzo sede)" source="ent12#att28Array" target="sv3#area12#opg6#cru9.rel14#role27.ent14#att41"/>
+        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par93" name="oid_Orario.oid(FilialeToOrario)" source="ent12#att28Array" target="sv3#area12#opg6#cru9.rel11#role21.ent12#att28"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg6#cru8#kln42" name="KOFlow42" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit gr:x="30" gr:y="280" id="sv3#area12#opg6#cru9" name="Crea filiale" entity="ent2">
+      <OKLink id="sv3#area12#opg6#cru9#oln45" name="OKFlow45" to="sv3#area12#opg6#cnu10" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg6#cru9#kln43" name="KOFlow43" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit gr:x="10" gr:y="415" id="sv3#area12#opg6#cnu10" name="Connetti zona" relationship="rel12#role23">
+      <SourceSelector id="sv3#area12#opg6#cnu10#su117" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg6#cnu10#su117#kcond67" name="KeyCondition67" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area12#opg6#cnu10#su118" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg6#cnu10#su118#kcond68" name="KeyCondition68" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area12#opg6#cnu10#oln48" name="OKFlow48" to="sv3#area12#opg6#cnu12" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg6#cnu10#kln44" name="KOFlow44" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="0" gr:y="580" id="sv3#area12#opg6#cnu12" name="Connetti capoFiliale" relationship="rel2#role3">
+      <SourceSelector id="sv3#area12#opg6#cnu12#su123" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg6#cnu12#su123#kcond72" name="KeyCondition72" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area12#opg6#cnu12#su124" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg6#cnu12#su124#kcond73" name="KeyCondition73" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area12#opg6#cnu12#oln49" name="OKFlow49" to="sv3#area12#page74#inu30" automaticCoupling="true"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

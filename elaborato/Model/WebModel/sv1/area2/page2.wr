@@ -1,11 +1,17 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="5" id="sv1#area2#page2" name="Lista annunci pi&#249; richiesti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="60" gr:y="0" id="sv1#area2#page2" name="Lista annunci pi&#249; richiesti">
   <ContentUnits>
-    <IndexUnit gr:x="0" gr:y="0" id="sv1#area2#page2#inu6" name="lista annunci pi&#249; richiesti" entity="ent10" linkOrder="sv1#area2#page2#inu6#ln11" displayAttributes="ent1#att2 ent1#att8 ent1#att9 ent1#att5">
+    <IndexUnit gr:x="270" gr:y="0" id="sv1#area2#page2#inu6" name="lista annunci pi&#249; richiesti" entity="ent10" linkOrder="sv1#area2#page2#inu6#ln11" displayAttributes="ent1#att2 ent1#att8 ent1#att9 ent1#att5">
       <Selector id="sv1#area2#page2#inu6#su9" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#area2#page2#inu6#su9#acond3" name="AttCondition3" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att39" value="true"/>
       </Selector>
       <Link id="sv1#area2#page2#inu6#ln11" name="Flow11" to="sv1#area2#page4#dau1" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
+    <ScrollerUnit id="sv1#area2#page2#scu10" name="Scorri annunci pi&#249; richiesti" gr:x="0" gr:y="5" useCountQuery="false" entity="ent10" blockFactor="10" linkOrder="sv1#area2#page2#scu10#ln4">
+      <Selector id="sv1#area2#page2#scu10#su4" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area2#page2#scu10#su4#acond13" name="AttCondition17" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+      </Selector>
+      <Link id="sv1#area2#page2#scu10#ln4" name="Flow4" to="sv1#area2#page2#inu6" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -31,7 +37,15 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page2#scu10">
+          <layout:Link link="sv1#area2#page2#scu10First"/>
+          <layout:Link link="sv1#area2#page2#scu10Previous"/>
+          <layout:Link link="sv1#area2#page2#scu10Block"/>
+          <layout:Link link="sv1#area2#page2#scu10Next"/>
+          <layout:Link link="sv1#area2#page2#scu10Last"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page75" name="Ricerca Filiali" gr:x="1770" gr:y="790">
+  <ContentUnits>
+    <ScrollerUnit id="sv3#area12#page75#scu18" name="Scroller2" linkOrder="sv3#area12#page75#scu18#ln141" gr:x="0" gr:y="0" useCountQuery="false" entity="ent2">
+      <Link id="sv3#area12#page75#scu18#ln141" name="Flow15" to="sv3#area12#page75#inu31" type="automatic" automaticCoupling="true" validate="true"/>
+    </ScrollerUnit>
+    <IndexUnit id="sv3#area12#page75#inu31" name="Lista Filiali per Zona" gr:x="145" gr:y="95" entity="ent2"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page75#scu18">
+          <layout:Link link="sv3#area12#page75#scu18First"/>
+          <layout:Link link="sv3#area12#page75#scu18Previous"/>
+          <layout:Link link="sv3#area12#page75#scu18Block"/>
+          <layout:Link link="sv3#area12#page75#scu18Next"/>
+          <layout:Link link="sv3#area12#page75#scu18Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page75#inu31"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

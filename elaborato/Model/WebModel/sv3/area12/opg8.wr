@@ -1,0 +1,14 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1650" gr:y="1565" id="sv3#area12#opg8" transaction="true" name="Dissocia capo filiale da filiale">
+  <OperationUnits>
+    <DisconnectUnit gr:x="0" gr:y="0" id="sv3#area12#opg8#dcnu7" name="Libera capo filiale da filiale" relationship="rel2#role3">
+      <SourceSelector id="sv3#area12#opg8#dcnu7#su126" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg8#dcnu7#su126#kcond75" name="KeyCondition75" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area12#opg8#dcnu7#su127" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#opg8#dcnu7#su127#kcond76" name="KeyCondition76" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area12#opg8#dcnu7#oln52" name="OKFlow52" to="sv3#area12#page74" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg8#dcnu7#kln46" name="KOFlow46" to="sv3#area12#page77#mssu16" automaticCoupling="true"/>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>

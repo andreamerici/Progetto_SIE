@@ -1,14 +1,3 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Capo filiale" landmarks="sv2#area4" homePage="sv2#area4#page12">
-  <OperationUnits>
-    <DisconnectUnit id="sv2#dcnu2" name="Appuntamento gestito" gr:x="1475" gr:y="60" relationship="rel9#role18">
-      <SourceSelector id="sv2#dcnu2#su11" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#dcnu2#su11#kcond2" name="KeyCondition9" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv2#dcnu2#su23" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#dcnu2#su23#kcond5" name="KeyCondition10" predicate="in" implied="false"/>
-      </TargetSelector>
-      <KOLink id="sv2#dcnu2#kln2" name="KOFlow1" to="sv2#page18" automaticCoupling="true"/>
-      <OKLink id="sv2#dcnu2#oln1" name="OKFlow3" to="sv2#area4#page12" automaticCoupling="true"/>
-    </DisconnectUnit>
-  </OperationUnits>
+<SiteView id="sv2" name="Capo filiale" landmarks="sv2#area4 sv2#area7 sv2#area8 sv2#area10" homePage="sv2#area4#page12">
+  <OperationUnits/>
 </SiteView>

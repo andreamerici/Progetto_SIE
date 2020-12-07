@@ -1,0 +1,8 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area10" name="Gestione Annunci" defaultPage="sv2#area10#page65" landmark="true" gr:x="-35" gr:y="740">
+  <OperationUnits>
+    <SetUnit id="sv2#area10#stu3" name="Annuncio Selezionato" gr:x="230" gr:y="295" contextParameters="ctx1"/>
+    <GetUnit id="sv2#area10#gtu11" name="Annuncio Selezionato" gr:x="20" gr:y="385" contextParameters="ctx1">
+      <Link id="sv2#area10#gtu11#ln115" name="Flow120" to="sv2#area10#page64#dau21" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+  </OperationUnits>
+</Area>

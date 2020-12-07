@@ -1,0 +1,43 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page70" name="Recensioni" gr:x="525" gr:y="395">
+  <ContentUnits>
+    <SelectorUnit id="sv4#area11#page70#seu37" name="Seleziona Recensioni" gr:x="0" gr:y="0">
+      <Selector id="sv4#area11#page70#seu37#su107" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area11#page70#seu37#su107#rcond46" name="RoleCondition39" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#area11#page70#seu37#ln133" name="Flow93" to="sv4#area11#page70#mdu5" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <MultiDataUnit id="sv4#area11#page70#mdu5" name="Lista Recensioni" gr:x="290" gr:y="10"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area11#page70#mdu5"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

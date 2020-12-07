@@ -1,12 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="590" gr:y="655" id="sv4#area5#page32" name="Scrivi una recensione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="600" gr:y="815" id="sv4#area5#page32" name="Scrivi una recensione">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="95" id="sv4#area5#page32#dau14" name="Filiale" entity="ent2">
+    <DataUnit gr:x="0" gr:y="110" id="sv4#area5#page32#dau14" name="Filiale" entity="ent2">
       <Selector id="sv4#area5#page32#dau14#su32" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area5#page32#dau14#su32#kcond10" name="KeyCondition10" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv4#area5#page32#dau14#ln2" name="Flow2" to="sv4#opg2#cnu2" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <EntryUnit gr:x="225" gr:y="0" id="sv4#area5#page32#enu4" name="scrivi recensione" linkOrder="sv4#area5#page32#enu4#ln59">
+    <EntryUnit gr:x="180" gr:y="0" id="sv4#area5#page32#enu4" name="scrivi recensione" linkOrder="sv4#area5#page32#enu4#ln59">
       <Field id="sv4#area5#page32#enu4#fld1" name="commento" type="string" modifiable="true"/>
       <Field id="sv4#area5#page32#enu4#fld2" name="voto" type="string" modifiable="true"/>
       <Link id="sv4#area5#page32#enu4#ln59" name="Flow59" to="sv4#opg2#tmu3" type="normal" validate="true">
@@ -14,7 +14,7 @@
         <LinkParameter id="sv4#area5#page32#enu4#ln59#par13" name="voto_PASSING" source="sv4#area5#page32#enu4#fld2" passing="true"/>
       </Link>
     </EntryUnit>
-    <GetUnit id="sv4#area5#page32#gtu5" name="Utente corrente" gr:x="230" gr:y="85" contextParameters="UserCtxParam">
+    <GetUnit id="sv4#area5#page32#gtu5" name="Utente corrente" gr:x="180" gr:y="125" contextParameters="UserCtxParam">
       <Link id="sv4#area5#page32#gtu5#ln61" name="Flow61" to="sv4#opg2#cnu1" type="transport" validate="true">
         <LinkParameter id="sv4#area5#page32#gtu5#ln61#par6" name="UserCtxParam.oid_KeyCondition36 [oid] [Recensione] [Source]" source="sv4#area5#page32#gtu5.UserCtxParam" target="sv4#opg2#cnu1#su33#kcond13.ent18#att57"/>
       </Link>
