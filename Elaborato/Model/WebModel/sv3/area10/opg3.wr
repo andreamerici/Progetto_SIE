@@ -1,0 +1,61 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area10#opg3" name="Elimina Annuncio" transaction="true" gr:x="190" gr:y="1040">
+  <OperationUnits>
+    <DisconnectUnit id="sv3#area10#opg3#dcnu2" name="Disconnetti Utenti" gr:x="0" gr:y="0" relationship="rel11#role21">
+      <SourceSelector id="sv3#area10#opg3#dcnu2#su87" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu2#su87#kcond38" name="KeyCondition8" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area10#opg3#dcnu2#su88" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu2#su88#kcond39" name="KeyCondition9" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area10#opg3#dcnu2#oln26" name="OKFlow5" to="sv3#area10#opg3#dcnu3" automaticCoupling="true"/>
+      <KOLink id="sv3#area10#opg3#dcnu2#kln12" name="KOFlow46" to="sv3#area10#page58#alt3#page59#mssu7" automaticCoupling="true" gr:bendpoints="1005,-196,170,279"/>
+    </DisconnectUnit>
+    <DeleteUnit id="sv3#area10#opg3#dlu1" name="Elimina Annuncio" gr:x="1145" gr:y="5" entity="ent1">
+      <Selector id="sv3#area10#opg3#dlu1#su89" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dlu1#su89#kcond40" name="KeyCondition10" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area10#opg3#dlu1#oln27" name="OKFlow4" to="sv3#area10#page57#inu23" automaticCoupling="true" gr:bendpoints="42,-161,827,399"/>
+      <KOLink id="sv3#area10#opg3#dlu1#kln13" name="KOFlow38" to="sv3#area10#page58#alt3#page59#mssu7" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DisconnectUnit id="sv3#area10#opg3#dcnu3" name="Disconnetti Zona" gr:x="210" gr:y="0" relationship="rel5#role9">
+      <SourceSelector id="sv3#area10#opg3#dcnu3#su90" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu3#su90#kcond41" name="KeyCondition11" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area10#opg3#dcnu3#su91" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu3#su91#kcond42" name="KeyCondition12" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area10#opg3#dcnu3#oln28" name="OKFlow6" to="sv3#area10#opg3#dcnu4" automaticCoupling="true"/>
+      <KOLink id="sv3#area10#opg3#dcnu3#kln19" name="KOFlow45" to="sv3#area10#page58#alt3#page59#mssu7" automaticCoupling="true" gr:bendpoints="808,-195,168,280"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="sv3#area10#opg3#dcnu4" name="Disconnetti Contratto" gr:x="380" gr:y="0" relationship="rel3#role6">
+      <SourceSelector id="sv3#area10#opg3#dcnu4#su92" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu4#su92#kcond43" name="KeyCondition13" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area10#opg3#dcnu4#su93" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu4#su93#kcond44" name="KeyCondition14" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area10#opg3#dcnu4#oln29" name="OKFlow21" to="sv3#area10#opg3#dcnu6" automaticCoupling="true"/>
+      <KOLink id="sv3#area10#opg3#dcnu4#kln20" name="KOFlow44" to="sv3#area10#page58#alt3#page59#mssu7" automaticCoupling="true" gr:bendpoints="636,-193,171,282"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="sv3#area10#opg3#dcnu5" name="Disconnetti Fascia Prezzo" gr:x="755" gr:y="0" relationship="rel9#role18">
+      <SourceSelector id="sv3#area10#opg3#dcnu5#su94" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu5#su94#kcond45" name="KeyCondition15" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area10#opg3#dcnu5#su95" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu5#su95#kcond46" name="KeyCondition16" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv3#area10#opg3#dcnu5#kln21" name="KOFlow42" to="sv3#area10#page58#alt3#page59#mssu7" automaticCoupling="true" gr:bendpoints="249,-196,169,279"/>
+      <OKLink id="sv3#area10#opg3#dcnu5#oln40" name="OKFlow40" to="sv3#area10#dlu3" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <DisconnectUnit id="sv3#area10#opg3#dcnu6" name="Disconnetti Categoria" gr:x="565" gr:y="0" relationship="rel4#role8">
+      <SourceSelector id="sv3#area10#opg3#dcnu6#su97" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu6#su97#kcond47" name="KeyCondition34" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area10#opg3#dcnu6#su98" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#opg3#dcnu6#su98#kcond48" name="KeyCondition35" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area10#opg3#dcnu6#oln32" name="OKFlow22" to="sv3#area10#opg3#dcnu5" automaticCoupling="true"/>
+      <KOLink id="sv3#area10#opg3#dcnu6#kln27" name="KOFlow43" to="sv3#area10#page58#alt3#page59#mssu7" automaticCoupling="true" gr:bendpoints="450,-196,170,279"/>
+    </DisconnectUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -1,0 +1,35 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page64" name="Modifica dati profilo" gr:x="0" gr:y="210">
+  <ContentUnits>
+    <EntryUnit id="sv4#area11#page64#enu16" name="Modifica dati profilo" linkOrder="sv4#area11#page64#enu16#ln132" gr:x="0" gr:y="0" entity="ent6">
+      <Field id="sv4#area11#page64#enu16#fld39" name="password" type="string" modifiable="true"/>
+      <Link id="sv4#area11#page64#enu16#ln132" name="Flow41" to="sv4#area11#mfu4" type="normal" validate="true">
+        <LinkParameter id="sv4#area11#page64#enu16#ln132#par208" name="Key [oid]_KeyCondition16 [oid]" source="key.userOID" target="sv4#area11#mfu4#su110#kcond60.userOID"/>
+        <LinkParameter id="sv4#area11#page64#enu16#ln132#par209" name="password_password" source="sv4#area11#page64#enu16#fld39" target="sv4#area11#mfu4.password"/>
+        <LinkParameter id="sv4#area11#page64#enu16#ln132#par217" name="telefono_telefono" source="sv4#area11#page64#enu16#fld40" target="sv4#area11#mfu4.ent6#att28"/>
+      </Link>
+      <Field id="sv4#area11#page64#enu16#fld40" name="telefono" type="integer" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area11#page64#enu16">
+          <layout:Link link="sv4#area11#page64#enu16#ln132"/>
+          <layout:Field field="sv4#area11#page64#enu16#fld39"/>
+          <layout:Field field="sv4#area11#page64#enu16#fld40"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

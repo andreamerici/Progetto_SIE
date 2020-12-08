@@ -1,0 +1,27 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page52" name="Dettagli appuntamento gestito" gr:x="755" gr:y="530">
+  <ContentUnits>
+    <DataUnit id="sv3#area9#page52#dau21" name="Dettagli" gr:x="0" gr:y="0" entity="ent8">
+      <Selector id="sv3#area9#page52#dau21#su75" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area9#page52#dau21#su75#kcond35" name="KeyCondition11" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area9#page52#dau21"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

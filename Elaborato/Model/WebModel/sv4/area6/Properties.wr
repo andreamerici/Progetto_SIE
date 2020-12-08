@@ -1,6 +1,6 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area6" name="Annuncio" landmark="true" gr:x="1830" gr:y="190">
   <OperationUnits>
-    <ConnectUnit gr:x="795" gr:y="475" id="sv4#area6#cnu2" name="Connetti annuncio preferito ad utente" relationship="rel11#role21">
+    <ConnectUnit gr:x="900" gr:y="465" id="sv4#area6#cnu2" name="Connetti annuncio preferito ad utente" relationship="rel11#role21">
       <SourceSelector id="sv4#area6#cnu2#su42" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area6#cnu2#su42#kcond18" name="KeyCondition18" predicate="in" implied="false"/>
       </SourceSelector>
@@ -21,7 +21,7 @@
         <LinkParameter id="sv4#area6#gtu5#ln69#par49" name="UserCtxParam.oid_KeyCondition24 [oid] [UtenteEsterno] [Target]" source="sv4#area6#gtu5.UserCtxParam" target="sv4#area6#opg1#cnu3#su47#kcond24.userOID"/>
       </Link>
     </GetUnit>
-    <DisconnectUnit gr:x="800" gr:y="780" id="sv4#area6#dcnu1" name="Diconnetti annuncio preferito da utente" relationship="rel11#role21">
+    <DisconnectUnit gr:x="880" gr:y="785" id="sv4#area6#dcnu1" name="Diconnetti annuncio preferito da utente" relationship="rel11#role21">
       <SourceSelector id="sv4#area6#dcnu1#su44" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area6#dcnu1#su44#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
       </SourceSelector>

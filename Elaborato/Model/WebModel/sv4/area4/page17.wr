@@ -537,7 +537,7 @@
         </EntryUnit>
         <SelectorUnit id="sv4#area4#page17#alt2#page27#seu22" name="Seleziona fascia prezzo" gr:x="300" gr:y="160" entity="ent11">
           <Link id="sv4#area4#page17#alt2#page27#seu22#ln53" name="Flow1" to="sv4#area4#page17#alt2#page27#enu15" type="transport" validate="true">
-            <LinkParameter id="sv4#area4#page17#alt2#page27#seu22#ln53#par45" name="valoreMassimo_Fascia prezzo [label]" source="ent11#att16Array" target="sv4#area4#page17#alt2#page27#enu15#sfld16_label"/>
+            <LinkParameter id="sv4#area4#page17#alt2#page27#seu22#ln53#par45" name="valoreMassimo_Fascia prezzo [label]" source="ent11#att54Array" target="sv4#area4#page17#alt2#page27#enu15#sfld16_label"/>
             <LinkParameter id="sv4#area4#page17#alt2#page27#seu22#ln53#par46" name="oid_Fascia prezzo [output]" source="ent11#att27Array" target="sv4#area4#page17#alt2#page27#enu15#sfld16_output"/>
           </Link>
         </SelectorUnit>

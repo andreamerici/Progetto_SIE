@@ -1,0 +1,80 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page51" name="Lista nuove richieste appuntamenti" gr:x="0" gr:y="40">
+  <ContentUnits>
+    <IndexUnit id="sv3#area9#page51#inu21" name="Lista appuntamenti nuovi" linkOrder="sv3#area9#page51#inu21#ln104" gr:x="355" gr:y="10" entity="ent8" displayAttributes="ent8#att4">
+      <Selector id="sv3#area9#page51#inu21#su71" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area9#page51#inu21#su71#rcond40" name="RoleCondition7" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <Link id="sv3#area9#page51#inu21#ln104" name="Flow22" to="sv3#area9#page50#dau20" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+    <SelectorUnit id="sv3#area9#page51#seu25" name="Seleziona filiale" gr:x="0" gr:y="150" entity="ent2">
+      <Selector id="sv3#area9#page51#seu25#su72" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area9#page51#seu25#su72#rcond41" name="RoleCondition3" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <Link id="sv3#area9#page51#seu25#ln105" name="Flow19" to="sv3#area9#page51#seu26" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area9#page51#seu26" name="Seleziona zona" gr:x="195" gr:y="150" entity="ent5">
+      <Selector id="sv3#area9#page51#seu26#su73" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area9#page51#seu26#su73#rcond42" name="RoleCondition10" predicate="in" implied="false" role="rel6#role11"/>
+      </Selector>
+      <Link id="sv3#area9#page51#seu26#ln106" name="Flow22" to="sv3#area9#page51#seu27" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <SelectorUnit id="sv3#area9#page51#seu27" name="Seleziona annuncio" gr:x="380" gr:y="150" entity="ent1">
+      <Selector id="sv3#area9#page51#seu27#su74" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area9#page51#seu27#su74#rcond43" name="RoleCondition11" predicate="in" implied="false" role="rel5#role10"/>
+      </Selector>
+      <Link id="sv3#area9#page51#seu27#ln107" name="Flow25" to="sv3#area9#page51#inu21" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <GetUnit id="sv3#area9#page51#gtu7" name="Utente loggato" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv3#area9#page51#gtu7#ln108" name="Flow24" to="sv3#area9#page51#seu25" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area9#page51#inu21">
+          <layout:Link link="sv3#area9#page51#inu21#ln104"/>
+          <layout:Attribute attribute="ent8#att4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

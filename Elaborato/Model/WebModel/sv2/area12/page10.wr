@@ -1,0 +1,36 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area12#page10" name="Lista capi filiale" linkOrder="sv2#area12#page10#ln141">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv2#area12#page10#seu39" name="Seleziona capi filiale" entity="ent7">
+      <Link id="sv2#area12#page10#seu39#ln150" name="Flow150" to="sv2#area12#page10#inu25" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <IndexUnit gr:x="185" gr:y="0" id="sv2#area12#page10#inu25" name="Lista capi filiale" entity="ent7" displayAttributes="ent7#att32 ent7#att33" linkOrder="sv2#area12#page10#inu25#ln153">
+      <Selector id="sv2#area12#page10#inu25#su112" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area12#page10#inu25#su112#kcond70" name="KeyCondition70" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area12#page10#inu25#ln153" name="Flow151" to="sv2#area12#page72#dau3" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area12#page10#inu25">
+          <layout:Attribute attribute="ent7#att32"/>
+          <layout:Attribute attribute="ent7#att33"/>
+          <layout:Link link="sv2#area12#page10#inu25#ln153"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv2#area12#page10#ln141" name="Flow141" to="sv2#area12#page29" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

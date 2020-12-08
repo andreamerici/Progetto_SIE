@@ -1,13 +1,13 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page9" name="Dettagli annuncio" gr:x="655" gr:y="0">
   <ContentUnits>
-    <DataUnit id="sv1#area3#page9#dau1" name="Annuncio" linkOrder="sv1#area3#page9#dau1#ln10" gr:x="0" gr:y="0" entity="ent1" displayAttributes="ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att11">
+    <DataUnit id="sv1#area3#page9#dau1" name="Annuncio" gr:x="0" gr:y="0" entity="ent1" displayAttributes="ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att11 ent1#att3 ent1#att12 ent1#att36 ent1#att37 ent1#att25 ent1#att26" linkOrder="sv1#area3#page9#dau1#ln101">
       <Selector id="sv1#area3#page9#dau1#su7" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area3#page9#dau1#su7#kcond4" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv1#area3#page9#dau1#ln10" name="Flow5" to="sv1#area3#page10#dau2" type="normal" automaticCoupling="true" validate="true"/>
       <Link id="sv1#area3#page9#dau1#ln33" name="Flow33" to="sv1#area3#page9#dau7" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area3#page9#dau1#ln101" name="Flow101" to="sv1#page49#dau19" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="56,419,56,-111"/>
     </DataUnit>
-    <DataUnit gr:x="125" gr:y="0" id="sv1#area3#page9#dau7" entity="ent13" name="Indirizzo">
+    <DataUnit gr:x="125" gr:y="0" id="sv1#area3#page9#dau7" entity="ent13" name="Indirizzo" displayAttributes="ent13#att44 ent13#att45 ent13#att46">
       <Selector id="sv1#area3#page9#dau7#su19" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area3#page9#dau7#su19#rcond14" name="RoleCondition14" role="rel18#role36" predicate="in" implied="false"/>
       </Selector>
@@ -17,12 +17,18 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area3#page9#dau1">
-          <layout:Link link="sv1#area3#page9#dau1#ln10"/>
+          <layout:Link link="sv1#area3#page9#dau1#ln101"/>
           <layout:Attribute attribute="ent1#att6"/>
           <layout:Attribute attribute="ent1#att7"/>
           <layout:Attribute attribute="ent1#att8"/>
           <layout:Attribute attribute="ent1#att9"/>
           <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Attribute attribute="ent1#att36"/>
+          <layout:Attribute attribute="ent1#att37"/>
+          <layout:Attribute attribute="ent1#att25"/>
+          <layout:Attribute attribute="ent1#att26"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -39,7 +45,11 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area3#page9#dau7"/>
+        <layout:Unit unitId="sv1#area3#page9#dau7">
+          <layout:Attribute attribute="ent13#att44"/>
+          <layout:Attribute attribute="ent13#att45"/>
+          <layout:Attribute attribute="ent13#att46"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

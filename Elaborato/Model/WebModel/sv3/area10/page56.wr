@@ -1,0 +1,75 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area10#page56" name="Dettagli Annuncio" gr:x="0" gr:y="710">
+  <ContentUnits>
+    <DataUnit id="sv3#area10#page56#dau24" name="Dettaglio Annuncio" linkOrder="sv3#area10#page56#dau24#ln121 sv3#area10#page56#dau24#ln120" gr:x="85" gr:y="0" entity="ent1" displayAttributes="ent1#att3 ent1#att11 ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att12 ent1#att37 ent1#att25 ent1#att26">
+      <Selector id="sv3#area10#page56#dau24#su83" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area10#page56#dau24#su83#kcond37" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area10#page56#dau24#ln120" name="Flow96" to="sv3#area10#opg3#dcnu2" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area10#page56#dau24#ln121" name="Flow109" to="sv3#area10#page55#meu1" type="normal" validate="true">
+        <LinkParameter id="sv3#area10#page56#dau24#ln121#par107" name="categoria_Categoria - Preselection" source="data.ent1#att31" target="sv3#area10#page55#meu1#sfld20_presel"/>
+        <LinkParameter id="sv3#area10#page56#dau24#ln121#par108" name="contratto_Contratto - Preselection" source="data.ent1#att16" target="sv3#area10#page55#meu1#sfld19_presel"/>
+        <LinkParameter id="sv3#area10#page56#dau24#ln121#par109" name="disponibile_Disponibilit&#224;" source="data.ent1#att3" target="sv3#area10#page55#meu1#fld23_slot"/>
+        <LinkParameter id="sv3#area10#page56#dau24#ln121#par110" name="AnnuncioToIndirizzo.oid_PASSING" source="data.rel11#role21_ent14#att41" passing="true"/>
+        <LinkParameter id="sv3#area10#page56#dau24#ln121#par111" name="dataPubblicazione_PASSING" source="data.ent1#att10" passing="true"/>
+      </Link>
+      <Link id="sv3#area10#page56#dau24#ln122" name="Flow121" to="sv3#area10#stu1" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area10#page56#dau24#ln129" name="Flow129" to="sv3#area10#page56#dau26" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+    <DataUnit gr:x="0" gr:y="130" id="sv3#area10#page56#dau26" name="Dettagli indirizzo" entity="ent13" displayAttributes="ent13#att44 ent13#att45 ent13#att46">
+      <Selector id="sv3#area10#page56#dau26#su107" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area10#page56#dau26#su107#rcond54" name="RoleCondition54" role="rel18#role36" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area10#page56#dau24">
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att7"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Attribute attribute="ent1#att37"/>
+          <layout:Attribute attribute="ent1#att25"/>
+          <layout:Attribute attribute="ent1#att26"/>
+          <layout:Link link="sv3#area10#page56#dau24#ln121"/>
+          <layout:Link link="sv3#area10#page56#dau24#ln120"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area10#page56#dau26">
+          <layout:Attribute attribute="ent13#att44"/>
+          <layout:Attribute attribute="ent13#att45"/>
+          <layout:Attribute attribute="ent13#att46"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

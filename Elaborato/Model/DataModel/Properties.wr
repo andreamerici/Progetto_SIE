@@ -122,10 +122,11 @@
     <RelationshipRole1 id="rel6#role11" name="FilialeToZona" maxCard="1"/>
     <RelationshipRole2 id="rel6#role12" name="ZonaToFiliale" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="380" gr:y="835" id="ent11" name="FasciaPrezzo" duration="persistent" attributeOrder="ent11#att27 ent11#att5 ent11#att16">
+  <Entity gr:x="380" gr:y="835" id="ent11" name="FasciaPrezzo" duration="persistent" attributeOrder="ent11#att27 ent11#att5 ent11#att16 ent11#att54">
     <Attribute id="ent11#att27" key="true" name="oid" type="integer"/>
     <Attribute id="ent11#att5" name="valoreMinimo" type="integer"/>
     <Attribute id="ent11#att16" name="valoreMassimo" type="integer"/>
+    <Attribute id="ent11#att54" name="nome" type="string"/>
   </Entity>
   <Relationship id="rel9" name="FasciaPrezzo_Annuncio" sourceEntity="ent11" targetEntity="ent1">
     <RelationshipRole1 id="rel9#role17" name="FasciaPrezzoToAnnuncio" maxCard="N"/>
@@ -166,9 +167,9 @@
     <RelationshipRole1 id="rel14#role27" name="FilialeToRecensione" maxCard="N"/>
     <RelationshipRole2 id="rel14#role28" name="RecensioneToFiliale" maxCard="1"/>
   </Relationship>
-  <Relationship id="rel15" name="UtenteRegistrato_Recensione" sourceEntity="ent6" targetEntity="ent17" gr:bendpoints="-12,726,-1566,46">
-    <RelationshipRole1 id="rel15#role29" name="UtenteRegistratoToRecensione" maxCard="N"/>
-    <RelationshipRole2 id="rel15#role30" name="RecensioneToUtenteRegistrato" maxCard="1"/>
+  <Relationship id="rel15" name="UtenteEsterno_Recensione" sourceEntity="ent6" targetEntity="ent17" gr:bendpoints="-12,726,-1566,46">
+    <RelationshipRole1 id="rel15#role29" name="UtenteEsternoToRecensione" maxCard="N"/>
+    <RelationshipRole2 id="rel15#role30" name="RecensioneToUtenteEsterno" maxCard="1"/>
   </Relationship>
   <Entity gr:x="1365" gr:y="175" id="ent18" name="BestReviewed" duration="persistent" derivationQuery="derived::ent2(as SuperEntity) where SuperEntity.ent2#att62 &gt;= '8'">
     <Generalization superEntity="ent2"/>

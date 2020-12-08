@@ -1,0 +1,46 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="465" gr:y="15" id="sv2#area12#page29" name="Aggiungi capo filiale">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area12#page29#enu19" name="Inserisci dati capo filiale" linkOrder="sv2#area12#page29#enu19#ln148">
+      <Field id="sv2#area12#page29#enu19#fld46" name="nome" type="string" modifiable="true"/>
+      <Field id="sv2#area12#page29#enu19#fld47" name="cognome" type="string" modifiable="true"/>
+      <Field id="sv2#area12#page29#enu19#fld48" name="data assunzione" type="string" modifiable="true"/>
+      <Field id="sv2#area12#page29#enu19#fld49" name="e-mail" type="string" modifiable="true"/>
+      <Field id="sv2#area12#page29#enu19#fld50" name="username" type="string" modifiable="true"/>
+      <Field id="sv2#area12#page29#enu19#fld51" name="password" type="string" modifiable="true"/>
+      <Link id="sv2#area12#page29#enu19#ln148" name="Flow148" to="sv2#area12#cru3" type="normal" validate="true">
+        <LinkParameter id="sv2#area12#page29#enu19#ln148#par86" name="cognome_cognome" source="sv2#area12#page29#enu19#fld47" target="sv2#area12#cru3.ent7#att33"/>
+        <LinkParameter id="sv2#area12#page29#enu19#ln148#par88" name="data assunzione_dataAssunzione" source="sv2#area12#page29#enu19#fld48" target="sv2#area12#cru3.ent7#att15"/>
+        <LinkParameter id="sv2#area12#page29#enu19#ln148#par89" name="e-mail_email" source="sv2#area12#page29#enu19#fld49" target="sv2#area12#cru3.email"/>
+        <LinkParameter id="sv2#area12#page29#enu19#ln148#par90" name="nome_nome" source="sv2#area12#page29#enu19#fld46" target="sv2#area12#cru3.ent7#att32"/>
+        <LinkParameter id="sv2#area12#page29#enu19#ln148#par91" name="password_password" source="sv2#area12#page29#enu19#fld51" target="sv2#area12#cru3.password"/>
+        <LinkParameter id="sv2#area12#page29#enu19#ln148#par92" name="password_userName" source="sv2#area12#page29#enu19#fld51" target="sv2#area12#cru3.userName"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area12#page29#enu19">
+          <layout:Field field="sv2#area12#page29#enu19#fld46"/>
+          <layout:Field field="sv2#area12#page29#enu19#fld47"/>
+          <layout:Field field="sv2#area12#page29#enu19#fld48"/>
+          <layout:Field field="sv2#area12#page29#enu19#fld49"/>
+          <layout:Field field="sv2#area12#page29#enu19#fld50"/>
+          <layout:Field field="sv2#area12#page29#enu19#fld51"/>
+          <layout:Link link="sv2#area12#page29#enu19#ln148"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

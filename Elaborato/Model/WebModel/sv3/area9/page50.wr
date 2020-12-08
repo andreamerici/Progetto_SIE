@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page50" name="Dettagli appuntamento non gestito" gr:x="755" gr:y="290">
+  <ContentUnits>
+    <DataUnit id="sv3#area9#page50#dau20" name="Dettagli" linkOrder="sv3#area9#page50#dau20#ln103" gr:x="0" gr:y="0" entity="ent8" displayAttributes="ent8#att35 ent8#att10">
+      <Selector id="sv3#area9#page50#dau20#su70" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area9#page50#dau20#su70#kcond34" name="KeyCondition11" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area9#page50#dau20#ln103" name="Flow24" to="sv3#area9#page53#dau22" type="normal" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area9#page50#dau20">
+          <layout:Link link="sv3#area9#page50#dau20#ln103"/>
+          <layout:Attribute attribute="ent8#att35"/>
+          <layout:Attribute attribute="ent8#att10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

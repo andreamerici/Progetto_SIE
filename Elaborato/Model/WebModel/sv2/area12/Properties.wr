@@ -1,0 +1,15 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="60" gr:y="40" id="sv2#area12" name="Capi filiale" landmark="true" defaultPage="sv2#area12#page10">
+  <OperationUnits>
+    <CreateUnit gr:x="775" gr:y="25" id="sv2#area12#cru3" name="Crea capo filiale" entity="ent7">
+      <OKLink id="sv2#area12#cru3#oln30" name="OKFlow30" to="sv2#area12#page10" automaticCoupling="true" gr:bendpoints="-225,118,350,108"/>
+      <KOLink id="sv2#area12#cru3#kln26" name="KOFlow26" to="sv2#area12#page74#alt4#page75" automaticCoupling="true"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="85" gr:y="370" id="sv2#area12#dlu2" name="Cancella capo filiale" entity="ent7">
+      <Selector id="sv2#area12#dlu2#su96" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area12#dlu2#su96#kcond69" name="KeyCondition69" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area12#dlu2#oln31" name="OKFlow31" to="sv2#area12#page10" automaticCoupling="true" gr:bendpoints="-125,-174,-175,171"/>
+      <KOLink id="sv2#area12#dlu2#kln32" name="KOFlow32" to="sv2#area12#page74#alt4#page76" automaticCoupling="true"/>
+    </DeleteUnit>
+  </OperationUnits>
+</Area>

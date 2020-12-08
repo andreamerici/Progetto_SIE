@@ -1,0 +1,31 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area7#page37" name="Recensioni" gr:x="710" gr:y="110">
+  <ContentUnits>
+    <MultiDataUnit id="sv4#area7#page37#mdu3" name="Recensioni" gr:x="0" gr:y="0" entity="ent17" displayAttributes="ent17#att58 ent17#att59 ent17#att60">
+      <Selector id="sv4#area7#page37#mdu3#su52" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area7#page37#mdu3#su52#rcond23" name="RoleCondition14" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+    </MultiDataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area7#page37#mdu3">
+          <layout:Attribute attribute="ent17#att58"/>
+          <layout:Attribute attribute="ent17#att59"/>
+          <layout:Attribute attribute="ent17#att60"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

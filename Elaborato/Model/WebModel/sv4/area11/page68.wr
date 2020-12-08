@@ -1,0 +1,78 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page68" name="Annunci preferiti" gr:x="510" gr:y="140">
+  <ContentUnits>
+    <SelectorUnit id="sv4#area11#page68#seu38" name="Seleziona Annunci" gr:x="0" gr:y="35" entity="ent1">
+      <Selector id="sv4#area11#page68#seu38#su115" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area11#page68#seu38#su115#rcond59" name="RoleCondition37" predicate="in" implied="false" role="rel11#role22"/>
+        <AttributesCondition id="sv4#area11#page68#seu38#su115#acond20" name="AttCondition20" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att36" value="true"/>
+      </Selector>
+      <Link id="sv4#area11#page68#seu38#ln140" name="Flow91" to="sv4#area11#page68#inu24" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <IndexUnit id="sv4#area11#page68#inu24" name="Lista Annunci Preferiti" gr:x="190" gr:y="35" entity="ent1" displayAttributes="ent1#att3 ent1#att6 ent1#att9 ent1#att37" linkOrder="sv4#area11#page68#inu24#ln144">
+      <Selector id="sv4#area11#page68#inu24#su116" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area11#page68#inu24#su116#kcond62" name="KeyCondition50" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#area11#page68#inu24#ln144" name="Flow144" to="sv4#area6#page30#dau4" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="136,-190,-604,995;481,-488,-259,697"/>
+    </IndexUnit>
+    <ScrollerUnit gr:x="105" gr:y="0" id="sv4#area11#page68#scu18" name="Scroller Annunci Preferiti" useCountQuery="false"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area11#page68#inu24">
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att37"/>
+          <layout:Link link="sv4#area11#page68#inu24#ln144"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area11#page68#scu18">
+          <layout:Link link="sv4#area11#page68#scu18First"/>
+          <layout:Link link="sv4#area11#page68#scu18Previous"/>
+          <layout:Link link="sv4#area11#page68#scu18Block"/>
+          <layout:Link link="sv4#area11#page68#scu18Next"/>
+          <layout:Link link="sv4#area11#page68#scu18Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

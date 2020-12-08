@@ -49,7 +49,10 @@
       <KOLink id="sv1#area1#lgu2#kln23" name="KOFlow23" to="sv1#area1#page36" automaticCoupling="true"/>
     </LoginUnit>
     <CreateUnit gr:x="190" gr:y="1270" id="sv1#area1#cru2" name="Aggiungi utente" entity="ent6">
-      <OKLink id="sv1#area1#cru2#oln21" name="OKFlow21" to="sv1#area1#lgu2" automaticCoupling="true"/>
+      <OKLink id="sv1#area1#cru2#oln21" name="OKFlow21" to="sv1#area1#lgu2">
+        <LinkParameter id="sv1#area1#cru2#oln21#par100" name="userName_Username" source="userNameArray" target="sv1#area1#lgu2.username"/>
+        <LinkParameter id="sv1#area1#cru2#oln21#par101" name="password_Password" source="passwordArray" target="sv1#area1#lgu2.password"/>
+      </OKLink>
       <KOLink id="sv1#area1#cru2#kln22" name="KOFlow22" to="sv1#area1#page25#enu5" automaticCoupling="true" gr:bendpoints="-141,-21,34,89"/>
     </CreateUnit>
   </OperationUnits>

@@ -1,0 +1,47 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page65" name="Annunci con appuntamento" gr:x="230" gr:y="0">
+  <ContentUnits>
+    <SelectorUnit id="sv4#area11#page65#seu36" name="Seleziona Annunci" gr:x="0" gr:y="0" entity="ent8">
+      <Selector id="sv4#area11#page65#seu36#su111" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area11#page65#seu36#su111#rcond56" name="RoleCondition36" predicate="in" implied="false" role="rel7#role13"/>
+        <RelationshipRoleCondition id="sv4#area11#page65#seu36#su111#rcond36" name="RoleCondition36" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#area11#page65#seu36#ln133" name="Flow89" to="sv4#area11#page65#mdu7" type="transport" automaticCoupling="true" validate="true"/>
+    </SelectorUnit>
+    <MultiDataUnit id="sv4#area11#page65#mdu7" name="Lista Appuntamenti" gr:x="240" gr:y="5" entity="ent8" displayAttributes="ent8#att35 ent8#att10"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area11#page65#mdu7">
+          <layout:Attribute attribute="ent8#att35"/>
+          <layout:Attribute attribute="ent8#att10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

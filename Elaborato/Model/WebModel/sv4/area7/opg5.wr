@@ -1,0 +1,41 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area7#opg5" name="Aggiungi recensione" transaction="true" gr:x="1150" gr:y="405">
+  <OperationUnits>
+    <CreateUnit id="sv4#area7#opg5#cru7" name="Nuova recensione" gr:x="25" gr:y="125" entity="ent17">
+      <OKLink id="sv4#area7#opg5#cru7#oln46" name="OKLink18" to="sv4#area7#opg5#cnu8">
+        <LinkParameter id="sv4#area7#opg5#cru7#oln46#par229" name="oid_KeyCondition36 [oid] [Recensione] [Source]" source="ent17#att57Array" target="sv4#area7#opg5#cnu8#su119#kcond65.ent17#att57"/>
+        <LinkParameter id="sv4#area7#opg5#cru7#oln46#par231" name="oid_PASSING" source="ent17#att57Array" passing="true"/>
+      </OKLink>
+      <KOLink id="sv4#area7#opg5#cru7#kln40" name="KOFlow40" to="sv4#area7#page70#mssu11" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit id="sv4#area7#opg5#cnu8" name="Connetti a utente" gr:x="0" gr:y="290" relationship="rel15#role30">
+      <SourceSelector id="sv4#area7#opg5#cnu8#su119" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area7#opg5#cnu8#su119#kcond65" name="KeyCondition36" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#area7#opg5#cnu8#su120" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area7#opg5#cnu8#su120#kcond66" name="KeyCondition37" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv4#area7#opg5#cnu8#oln47" name="OKLink19" to="sv4#area7#opg5#cnu9">
+        <LinkParameter id="sv4#area7#opg5#cnu8#oln47#par230" name="Source oid [Recensione]_KeyCondition38 [oid] [Recensione] [Source]" source="sourceent17#att57" target="sv4#area7#opg5#cnu9#su121#kcond67.ent17#att57"/>
+      </OKLink>
+      <KOLink id="sv4#area7#opg5#cnu8#kln41" name="KOFlow41" to="sv4#area7#page70#mssu11" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit id="sv4#area7#opg5#cnu9" name="Connetti a filiale" gr:x="40" gr:y="485" relationship="rel14#role28">
+      <SourceSelector id="sv4#area7#opg5#cnu9#su121" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area7#opg5#cnu9#su121#kcond67" name="KeyCondition38" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv4#area7#opg5#cnu9#su122" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area7#opg5#cnu9#su122#kcond68" name="KeyCondition39" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv4#area7#opg5#cnu9#kln42" name="KOFlow42" to="sv4#area7#page70#mssu11" automaticCoupling="true"/>
+      <OKLink id="sv4#area7#opg5#cnu9#oln48" name="OKFlow48" to="sv4#area7#page69" automaticCoupling="true"/>
+    </ConnectUnit>
+    <TimeUnit id="sv4#area7#opg5#tmu2" name="Recupera data corrente" gr:x="5" gr:y="0">
+      <KOLink id="sv4#area7#opg5#tmu2#kln39" name="KOFlow39" to="sv4#area7#page70#mssu11" automaticCoupling="true"/>
+      <OKLink id="sv4#area7#opg5#tmu2#oln25" name="OKFlow25" to="sv4#area7#opg5#cru7">
+        <LinkParameter id="sv4#area7#opg5#tmu2#oln25#par83" name="commento_PASSING_commento" sourceLinkParameter="sv4#area7#page69#enu18#ln145#par72" target="sv4#area7#opg5#cru7.ent17#att59"/>
+        <LinkParameter id="sv4#area7#opg5#tmu2#oln25#par84" name="Current/Input Date_data" source="currentDate" target="sv4#area7#opg5#cru7.ent17#att60"/>
+        <LinkParameter id="sv4#area7#opg5#tmu2#oln25#par85" name="voto_PASSING_voto" sourceLinkParameter="sv4#area7#page69#enu18#ln145#par82" target="sv4#area7#opg5#cru7.ent17#att58"/>
+      </OKLink>
+    </TimeUnit>
+  </OperationUnits>
+</OperationGroup>
