@@ -1,10 +1,10 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area7#page37" name="Lista storico appuntamenti" gr:x="0" gr:y="375">
   <ContentUnits>
-    <IndexUnit id="sv2#area7#page37#inu13" name="Lista storico" linkOrder="sv2#area7#page37#inu13#ln74" gr:x="430" gr:y="0" entity="ent10">
+    <IndexUnit id="sv2#area7#page37#inu13" name="Lista storico" linkOrder="sv2#area7#page37#inu13#ln142" gr:x="430" gr:y="0" entity="ent10">
       <Selector id="sv2#area7#page37#inu13#su57" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area7#page37#inu13#su57#rcond32" name="RoleCondition2" predicate="notIn" implied="false" role="rel8#role16"/>
       </Selector>
-      <Link id="sv2#area7#page37#inu13#ln74" name="Flow23" to="sv2#area7#page35#dau16" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area7#page37#inu13#ln142" name="Flow142" to="sv2#area7#page36#alt4#page69#dau28" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
     <GetUnit id="sv2#area7#page37#gtu6" name="utente loggato" gr:x="25" gr:y="0" contextParameters="UserCtxParam">
       <Link id="sv2#area7#page37#gtu6#ln75" name="Flow24" to="sv2#area7#page37#seu22" type="transport" automaticCoupling="true" validate="true"/>
@@ -32,7 +32,7 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area7#page37#inu13">
-          <layout:Link link="sv2#area7#page37#inu13#ln74"/>
+          <layout:Link link="sv2#area7#page37#inu13#ln142"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

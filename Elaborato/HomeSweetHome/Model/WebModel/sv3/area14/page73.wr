@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page73" name="Lista Filiali BestSeller" gr:x="425" gr:y="0">
+  <ContentUnits>
+    <IndexUnit id="sv3#area14#page73#inu23" name="Lista Filiali BestSeller" linkOrder="sv3#area14#page73#inu23#ln150" gr:x="0" gr:y="0" entity="ent19" displayAttributes="ent2#att13">
+      <Link id="sv3#area14#page73#inu23#ln150" name="Flow11" to="sv3#area14#page71#dau29" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page73#inu23">
+          <layout:Attribute attribute="ent2#att13"/>
+          <layout:Link link="sv3#area14#page73#inu23#ln150"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

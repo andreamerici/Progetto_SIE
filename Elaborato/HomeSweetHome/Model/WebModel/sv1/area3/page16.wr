@@ -1,14 +1,16 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page16" name="Homepage" linkOrder="sv1#area3#page16#ln45" gr:x="175" gr:y="300">
   <ContentUnits>
-    <IndexUnit id="sv1#area3#page16#inu4" name="Lista annunci scontati" gr:x="1080" gr:y="550" entity="ent16" displayAttributes="ent1#att3 ent1#att9">
+    <IndexUnit id="sv1#area3#page16#inu4" name="Lista annunci scontati" gr:x="1080" gr:y="550" entity="ent16" displayAttributes="ent1#att3 ent1#att9" linkOrder="sv1#area3#page16#inu4#ln18">
       <Selector id="sv1#area3#page16#inu4#su29" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area3#page16#inu4#su29#kcond4" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv1#area3#page16#inu4#ln18" name="Flow18" to="sv1#area4#page25#dau5" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="1015,-47,-105,288"/>
     </IndexUnit>
-    <IndexUnit id="sv1#area3#page16#inu5" name="Lista nuovi annunci" gr:x="1090" gr:y="685" entity="ent9" displayAttributes="ent1#att3 ent1#att6 ent1#att9">
+    <IndexUnit id="sv1#area3#page16#inu5" name="Lista nuovi annunci" gr:x="1090" gr:y="685" entity="ent9" displayAttributes="ent1#att3 ent1#att6 ent1#att9" linkOrder="sv1#area3#page16#inu5#ln20">
       <Selector id="sv1#area3#page16#inu5#su30" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area3#page16#inu5#su30#kcond6" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv1#area3#page16#inu5#ln20" name="Flow20" to="sv1#area4#page25#dau5" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="1090,-171,-25,299"/>
     </IndexUnit>
     <ScrollerUnit id="sv1#area3#page16#scu4" name="Scorri annunci scontati" linkOrder="sv1#area3#page16#scu4#ln19" gr:x="860" gr:y="550" useCountQuery="false" entity="ent16" blockFactor="1">
       <Link id="sv1#area3#page16#scu4#ln19" name="Flow2" to="sv1#area3#page16#inu4" type="automatic" automaticCoupling="true" validate="true"/>
@@ -22,9 +24,10 @@
         <AttributesCondition id="sv1#area3#page16#scu5#su32#acond6" name="AttCondition2" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att3"/>
       </Selector>
     </ScrollerUnit>
-    <EntryUnit id="sv1#area3#page16#enu5" name="Tipologia di ricerca" linkOrder="sv1#area3#page16#enu5#ln23" gr:x="55" gr:y="570">
+    <EntryUnit id="sv1#area3#page16#enu5" name="Tipologia di ricerca" linkOrder="sv1#area3#page16#enu5#ln23" gr:x="55" gr:y="570" customDescriptor="false">
       <SelectionField id="sv1#area3#page16#enu5#sfld2" name="tipologia" type="string"/>
       <Link id="sv1#area3#page16#enu5#ln23" name="Flow5" to="sv1#area3#switch1" type="normal" automaticCoupling="true" validate="true"/>
+      <Comment xml:space="preserve">La tipologia ricerca pu&#242; essere: per contratto, per categoria, per zona ed una ricerca avanzata</Comment>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -33,6 +36,7 @@
         <layout:Unit unitId="sv1#area3#page16#inu4">
           <layout:Attribute attribute="ent1#att3"/>
           <layout:Attribute attribute="ent1#att9"/>
+          <layout:Link link="sv1#area3#page16#inu4#ln18"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -53,6 +57,7 @@
           <layout:Attribute attribute="ent1#att3"/>
           <layout:Attribute attribute="ent1#att6"/>
           <layout:Attribute attribute="ent1#att9"/>
+          <layout:Link link="sv1#area3#page16#inu5#ln20"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -444,6 +449,20 @@
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
   </layout:Grid>
   <Alternative id="sv1#area3#page16#alt1" name="Ricerca" defaultPage="sv1#area3#page16#alt1#page21" gr:x="0" gr:y="0">
     <Page id="sv1#area3#page16#alt1#page17" name="Ricerca per contratto" gr:x="210" gr:y="5">
@@ -528,7 +547,7 @@
         </EntryUnit>
         <SelectorUnit id="sv1#area3#page16#alt1#page20#seu18" name="Seleziona fascia prezzo" gr:x="300" gr:y="160" entity="ent11">
           <Link id="sv1#area3#page16#alt1#page20#seu18#ln44" name="Flow1" to="sv1#area3#page16#alt1#page20#enu9" type="transport" validate="true">
-            <LinkParameter id="sv1#area3#page16#alt1#page20#seu18#ln44#par33" name="valoreMassimo_Fascia prezzo [label]" source="ent11#att51Array" target="sv1#area3#page16#alt1#page20#enu9#sfld10_label"/>
+            <LinkParameter id="sv1#area3#page16#alt1#page20#seu18#ln44#par33" name="valoreMassimo_Fascia prezzo [label]" source="ent11#att20Array" target="sv1#area3#page16#alt1#page20#enu9#sfld10_label"/>
             <LinkParameter id="sv1#area3#page16#alt1#page20#seu18#ln44#par34" name="oid_Fascia prezzo [output]" source="ent11#att25Array" target="sv1#area3#page16#alt1#page20#enu9#sfld10_output"/>
           </Link>
         </SelectorUnit>

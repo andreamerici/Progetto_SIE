@@ -1,0 +1,30 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area13#page63" name="Dettagli zona" gr:x="295" gr:y="60">
+  <ContentUnits>
+    <DataUnit id="sv3#area13#page63#dau24" name="Zona" gr:x="0" gr:y="0" entity="ent5" displayAttributes="ent5#att24 ent5#att23">
+      <Selector id="sv3#area13#page63#dau24#su106" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area13#page63#dau24#su106#rcond50" name="RoleCondition13" predicate="in" implied="false" role="rel5#role9"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area13#page63#dau24">
+          <layout:Attribute attribute="ent5#att24"/>
+          <layout:Attribute attribute="ent5#att23"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,62 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area13#page66" name="Lista annunci con pi&#249; preferenze" gr:x="0" gr:y="475">
+  <ContentUnits>
+    <IndexUnit id="sv3#area13#page66#inu19" name="Lista annunci pi&#249; preferenze" linkOrder="sv3#area13#page66#inu19#ln128" gr:x="280" gr:y="0" entity="ent15" displayAttributes="ent1#att9 ent1#att5 ent1#att4 ent1#att8">
+      <Link id="sv3#area13#page66#inu19#ln128" name="Flow12" to="sv3#area13#page67#dau25" type="normal" automaticCoupling="true" validate="true"/>
+      <Selector id="sv3#area13#page66#inu19#su111" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#page66#inu19#su111#kcond62" name="KeyCondition15" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <ScrollerUnit id="sv3#area13#page66#scu15" name="Scorri annunci con pi&#249; preferenze" linkOrder="sv3#area13#page66#scu15#ln129" gr:x="0" gr:y="0" useCountQuery="false" entity="ent15">
+      <Link id="sv3#area13#page66#scu15#ln129" name="Flow64" to="sv3#area13#page66#inu19" type="automatic" automaticCoupling="true" validate="true"/>
+      <Selector id="sv3#area13#page66#scu15#su112" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area13#page66#scu15#su112#acond19" name="AttCondition18" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att3"/>
+      </Selector>
+    </ScrollerUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area13#page66#inu19">
+          <layout:Link link="sv3#area13#page66#inu19#ln128"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att4"/>
+          <layout:Attribute attribute="ent1#att8"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area13#page66#scu15">
+          <layout:Link link="sv3#area13#page66#scu15First"/>
+          <layout:Link link="sv3#area13#page66#scu15Previous"/>
+          <layout:Link link="sv3#area13#page66#scu15Block"/>
+          <layout:Link link="sv3#area13#page66#scu15Next"/>
+          <layout:Link link="sv3#area13#page66#scu15Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,13 +1,13 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page22" name="Registrazione" gr:x="5" gr:y="1135">
   <ContentUnits>
-    <EntryUnit id="sv1#area3#page22#enu10" name="Registrazione" linkOrder="sv1#area3#page22#enu10#ln46" gr:x="0" gr:y="0">
+    <EntryUnit id="sv1#area3#page22#enu10" name="Registrazione" gr:x="0" gr:y="0" linkOrder="sv1#area3#page22#enu10#ln5">
       <Field id="sv1#area3#page22#enu10#fld7" name="Nome" type="string" modifiable="true"/>
       <Field id="sv1#area3#page22#enu10#fld8" name="Cognome" type="string" modifiable="true"/>
       <Field id="sv1#area3#page22#enu10#fld9" name="e-mail" type="string" modifiable="true"/>
       <Field id="sv1#area3#page22#enu10#fld10" name="password" type="string" modifiable="true"/>
       <Field id="sv1#area3#page22#enu10#fld11" name="telefono" type="string" modifiable="true"/>
       <Field id="sv1#area3#page22#enu10#fld12" name="data nascita" type="string" modifiable="true"/>
-      <Link id="sv1#area3#page22#enu10#ln46" name="Flow47" to="sv1#area3#lgu2" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv1#area3#page22#enu10#ln5" name="Flow5" to="sv1#area3#cru2" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -20,7 +20,7 @@
           <layout:Field field="sv1#area3#page22#enu10#fld10"/>
           <layout:Field field="sv1#area3#page22#enu10#fld11"/>
           <layout:Field field="sv1#area3#page22#enu10#fld12"/>
-          <layout:Link link="sv1#area3#page22#enu10#ln46"/>
+          <layout:Link link="sv1#area3#page22#enu10#ln5"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area15#page81" name="Modifica dati profilo" gr:x="280" gr:y="165">
+  <ContentUnits>
+    <EntryUnit id="sv4#area15#page81#enu21" name="Modifica dati profilo" linkOrder="sv4#area15#page81#enu21#ln167" gr:x="0" gr:y="0" entity="User">
+      <Field id="sv4#area15#page81#enu21#fld19" name="password" type="string" modifiable="true"/>
+      <Field id="sv4#area15#page81#enu21#fld20" name="username" type="string" modifiable="true"/>
+      <Field id="sv4#area15#page81#enu21#fld21" name="email" type="string" modifiable="true"/>
+      <Link id="sv4#area15#page81#enu21#ln167" name="Flow41" to="sv4#area15#mfu6" type="normal" validate="true">
+        <LinkParameter id="sv4#area15#page81#enu21#ln167#par191" name="Key [oid]_KeyCondition16 [oid]" source="key.userOID" target="sv4#area15#mfu6#su130#kcond75.userOID"/>
+        <LinkParameter id="sv4#area15#page81#enu21#ln167#par192" name="password_password" source="sv4#area15#page81#enu21#fld19" target="sv4#area15#mfu6.password"/>
+        <LinkParameter id="sv4#area15#page81#enu21#ln167#par193" name="Key [oid]_PASSING" source="key.userOID" passing="true"/>
+        <LinkParameter id="sv4#area15#page81#enu21#ln167#par196" name="email_email" source="sv4#area15#page81#enu21#fld21" target="sv4#area15#mfu6.email"/>
+        <LinkParameter id="sv4#area15#page81#enu21#ln167#par197" name="username_userName" source="sv4#area15#page81#enu21#fld20" target="sv4#area15#mfu6.userName"/>
+        <LinkParameter id="sv4#area15#page81#enu21#ln167#par198" name="User Object_User Object" source="entityBean" target="sv4#area15#mfu6.entityBeans"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area15#page81#enu21">
+          <layout:Field field="sv4#area15#page81#enu21#fld19"/>
+          <layout:Field field="sv4#area15#page81#enu21#fld20"/>
+          <layout:Field field="sv4#area15#page81#enu21#fld21"/>
+          <layout:Link link="sv4#area15#page81#enu21#ln167"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

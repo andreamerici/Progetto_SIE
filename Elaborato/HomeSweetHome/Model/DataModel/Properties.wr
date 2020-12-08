@@ -82,7 +82,7 @@
     <Attribute id="ent8#att15" name="dataAssunzione" type="date"/>
     <Attribute id="ent8#att62" name="foto" type="blob"/>
   </Entity>
-  <Entity gr:x="-40" gr:y="620" id="ent9" name="NuovoAnnuncio" duration="persistent">
+  <Entity gr:x="-55" gr:y="555" id="ent9" name="NuovoAnnuncio" duration="persistent">
     <Generalization superEntity="ent1"/>
   </Entity>
   <Entity gr:x="0" gr:y="330" id="ent10" name="Appuntamento" duration="persistent" attributeOrder="ent10#att32 ent10#att2 ent10#att22 ent10#att63">
@@ -91,7 +91,7 @@
     <Attribute id="ent10#att32" name="oid" type="integer" key="true"/>
     <Attribute id="ent10#att63" name="gestito" type="boolean"/>
   </Entity>
-  <Entity gr:x="-70" gr:y="565" id="ent6" name="AnnuncioPi&#249;Richiesto" duration="persistent">
+  <Entity gr:x="-85" gr:y="500" id="ent6" name="AnnuncioPi&#249;Richiesto" duration="persistent">
     <Generalization superEntity="ent1"/>
   </Entity>
   <Relationship id="rel4" name="Capo filiale_Filiale" sourceEntity="ent8" targetEntity="ent2">
@@ -108,16 +108,17 @@
   </Relationship>
   <Relationship id="rel7" name="Utente registrato_Appuntamento" sourceEntity="ent7" targetEntity="ent10">
     <RelationshipRole1 id="rel7#role13" name="UtenteEsternoToAppuntamento" maxCard="N"/>
-    <RelationshipRole2 id="rel7#role14" name="AppuntamentoToUtente registrato" maxCard="1"/>
+    <RelationshipRole2 id="rel7#role14" name="AppuntamentoToUtenteRegistrato" maxCard="1"/>
   </Relationship>
   <Relationship id="rel8" name="Appuntamento_Annuncio" sourceEntity="ent10" targetEntity="ent1">
     <RelationshipRole1 id="rel8#role15" name="AppuntamentoToAnnuncio" maxCard="1"/>
     <RelationshipRole2 id="rel8#role16" name="AnnuncioToAppuntamento" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="410" gr:y="790" id="ent11" name="FasciaPrezzo" duration="persistent" attributeOrder="ent11#att25 ent11#att27 ent11#att51">
+  <Entity gr:x="410" gr:y="790" id="ent11" name="FasciaPrezzo" duration="persistent" attributeOrder="ent11#att25 ent11#att27 ent11#att51 ent11#att20">
     <Attribute id="ent11#att25" key="true" name="oid" type="integer"/>
     <Attribute id="ent11#att27" name="valoreMinimo" type="integer"/>
     <Attribute id="ent11#att51" name="valoreMassimo" type="integer"/>
+    <Attribute id="ent11#att20" name="nome" type="string"/>
   </Entity>
   <Relationship id="rel9" name="Annuncio_Prezzo" sourceEntity="ent1" targetEntity="ent11">
     <RelationshipRole1 id="rel9#role17" name="AnnuncioToFasciaPrezzo" maxCard="1"/>
@@ -153,7 +154,7 @@
     <RelationshipRole1 id="rel12#role23" name="Indirizzo_sedeToFiliale" maxCard="1"/>
     <RelationshipRole2 id="rel12#role24" name="FilialeToIndirizzoSede" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="-65" gr:y="675" id="ent15" name="AnnuncioConPi&#249;Preferenze" duration="persistent">
+  <Entity gr:x="-80" gr:y="610" id="ent15" name="AnnuncioConPi&#249;Preferenze" duration="persistent">
     <Generalization superEntity="ent1"/>
   </Entity>
   <Entity gr:x="410" gr:y="305" id="ent17" name="Recensione" duration="persistent" attributeOrder="ent17#att54 ent17#att55 ent17#att56 ent17#att57">
@@ -168,7 +169,7 @@
   </Relationship>
   <Relationship id="rel15" name="Utente registrato_Recensione" sourceEntity="ent7" targetEntity="ent17">
     <RelationshipRole1 id="rel15#role29" name="UtenteEsternoToRecensione" maxCard="N"/>
-    <RelationshipRole2 id="rel15#role30" name="RecensioneToUtente registrato" maxCard="1"/>
+    <RelationshipRole2 id="rel15#role30" name="RecensioneToUtenteRegistrato" maxCard="1"/>
   </Relationship>
   <Entity gr:x="1020" gr:y="540" id="ent18" name="BestReviewed" duration="persistent" derivationQuery="derived::ent2(as SuperEntity) where SuperEntity.ent2#att59 &gt;= '8'">
     <Generalization superEntity="ent2"/>
@@ -178,9 +179,9 @@
   </Entity>
   <Relationship id="rel13" name="UtenteEsterno_Annuncio" sourceEntity="ent7" targetEntity="ent1">
     <RelationshipRole1 id="rel13#role25" name="UtenteEsternoToAnnuncio" maxCard="N"/>
-    <RelationshipRole2 id="rel13#role26" name="AnnuncioToUtente esterno" maxCard="N"/>
+    <RelationshipRole2 id="rel13#role26" name="AnnuncioToUtenteEsterno" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="-90" gr:y="740" id="ent16" name="AnnuncioScontato" duration="persistent" attributeOrder="ent16#att52 ent16#att53">
+  <Entity gr:x="-90" gr:y="675" id="ent16" name="AnnuncioScontato" duration="persistent" attributeOrder="ent16#att52 ent16#att53">
     <Generalization superEntity="ent1"/>
     <Attribute id="ent16#att52" name="prezzoScontato" type="integer"/>
     <Attribute id="ent16#att53" name="percentualeSconto" type="integer"/>

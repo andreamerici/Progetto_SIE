@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page39" name="Visualizza dettagli profilo" gr:x="250" gr:y="200">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page39" name="Visualizza dettagli profilo" gr:x="250" gr:y="300">
   <ContentUnits>
     <DataUnit id="sv3#area9#page39#dau20" name="Dettagli profilo" linkOrder="sv3#area9#page39#dau20#ln83 sv3#area9#page39#dau20#ln88 sv3#area9#page39#dau20#ln90 sv3#area9#page39#dau20#ln92" gr:x="0" gr:y="0" entity="ent7" displayAttributes="userName password email">
       <Selector id="sv3#area9#page39#dau20#su64" defaultPolicy="fill" booleanOperator="and">

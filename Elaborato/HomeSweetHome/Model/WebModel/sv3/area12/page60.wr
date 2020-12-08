@@ -1,0 +1,59 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page60" name="Risultati ricerca" gr:x="1485" gr:y="35">
+  <ContentUnits>
+    <IndexUnit id="sv3#area12#page60#inu17" name="Lista annunci" gr:x="155" gr:y="100" entity="ent1" displayAttributes="ent1#att3 ent1#att6 ent1#att9">
+      <Selector id="sv3#area12#page60#inu17#su97" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#page60#inu17#su97#kcond49" name="KeyCondition3" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <ScrollerUnit id="sv3#area12#page60#scu13" name="Scorri risultati" linkOrder="sv3#area12#page60#scu13#ln117" gr:x="0" gr:y="0" useCountQuery="false" entity="ent1">
+      <Selector id="sv3#area12#page60#scu13#su98" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area12#page60#scu13#su98#kcond51" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area12#page60#scu13#ln117" name="Flow6" to="sv3#area12#page60#inu17" type="automatic" automaticCoupling="true" validate="true"/>
+    </ScrollerUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page60#inu17">
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page60#scu13">
+          <layout:Link link="sv3#area12#page60#scu13First"/>
+          <layout:Link link="sv3#area12#page60#scu13Previous"/>
+          <layout:Link link="sv3#area12#page60#scu13Block"/>
+          <layout:Link link="sv3#area12#page60#scu13Next"/>
+          <layout:Link link="sv3#area12#page60#scu13Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

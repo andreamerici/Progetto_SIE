@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="100" gr:y="885" id="sv2#area2#opg1" name="Elimina Annuncio" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="100" gr:y="960" id="sv2#area2#opg1" name="Elimina Annuncio" transaction="true">
   <OperationUnits>
     <DisconnectUnit gr:x="0" gr:y="0" id="sv2#area2#opg1#dcnu1" name="Disconnetti Utenti" relationship="rel13#role26">
       <SourceSelector id="sv2#area2#opg1#dcnu1#su11" defaultPolicy="fill" booleanOperator="and">

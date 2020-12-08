@@ -1,0 +1,75 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page77" name="Scrivi una recensione" gr:x="935" gr:y="390">
+  <ContentUnits>
+    <DataUnit id="sv3#area14#page77#dau31" name="Filiale" gr:x="0" gr:y="75" entity="ent2">
+      <Selector id="sv3#area14#page77#dau31#su121" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#page77#dau31#su121#kcond68" name="KeyCondition10" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area14#page77#dau31#ln164" name="Flow164" to="sv3#opg6#cnu9" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+    <EntryUnit id="sv3#area14#page77#enu20" name="Scrivi recensione" gr:x="120" gr:y="0" linkOrder="sv3#area14#page77#enu20#ln162">
+      <Field id="sv3#area14#page77#enu20#fld17" name="commento" type="string" modifiable="true"/>
+      <Field id="sv3#area14#page77#enu20#fld18" name="voto" type="string" modifiable="true"/>
+      <Link id="sv3#area14#page77#enu20#ln162" name="Flow162" to="sv3#opg6#tmu2" type="normal" validate="true">
+        <LinkParameter id="sv3#area14#page77#enu20#ln162#par184" name="commento_PASSING" source="sv3#area14#page77#enu20#fld17" passing="true"/>
+        <LinkParameter id="sv3#area14#page77#enu20#ln162#par185" name="voto_PASSING" source="sv3#area14#page77#enu20#fld18" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <GetUnit id="sv3#area14#page77#gtu16" name="Utente corrente" gr:x="110" gr:y="95" contextParameters="UserCtxParam">
+      <Link id="sv3#area14#page77#gtu16#ln163" name="Flow163" to="sv3#opg6#cnu8" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page77#gtu16#ln163#par187" name="UserCtxParam.oid_KeyCondition37 [oid] [UtenteEsterno] [Target]" source="sv3#area14#page77#gtu16.UserCtxParam" target="sv3#opg6#cnu8#su124#kcond71.userOID"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page77#dau31"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page77#enu20">
+          <layout:Field field="sv3#area14#page77#enu20#fld17"/>
+          <layout:Field field="sv3#area14#page77#enu20#fld18"/>
+          <layout:Link link="sv3#area14#page77#enu20#ln162"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

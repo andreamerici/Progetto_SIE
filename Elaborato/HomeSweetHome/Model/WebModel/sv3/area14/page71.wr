@@ -1,0 +1,125 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page71" name="Dettaglio Filiale" landmark="false" gr:x="455" gr:y="215">
+  <ContentUnits>
+    <DataUnit id="sv3#area14#page71#dau29" name="Dettagli" linkOrder="sv3#area14#page71#dau29#ln147 sv3#area14#page71#dau29#ln157" gr:x="25" gr:y="5" entity="ent2" displayAttributes="ent2#att13 ent2#att17 ent2#att14">
+      <Selector id="sv3#area14#page71#dau29#su117" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#page71#dau29#su117#kcond66" name="KeyCondition1" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv3#area14#page71#dau29#su117#rcond53" name="RoleCondition3" predicate="in" implied="false" role="rel6#role12"/>
+      </Selector>
+      <Link id="sv3#area14#page71#dau29#ln146" name="Flow44" to="sv3#area14#page71#scu16" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page71#dau29#ln146#par183" name="FilialeToZona.oid_RoleCondition5 [oid]" source="data.rel6#role11_ent5#att23" target="sv3#area14#page71#scu16#su118#rcond54.ent5#att23"/>
+      </Link>
+      <Link id="sv3#area14#page71#dau29#ln147" name="Flow56" to="sv3#area14#page77#dau31" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area14#page71#dau29#ln148" name="Flow1" to="sv3#area14#page71#page72#inu22" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area14#page71#dau29#ln157" name="Flow157" to="sv3#page79#dau32" automaticCoupling="true" type="normal" validate="true"/>
+    </DataUnit>
+    <ScrollerUnit id="sv3#area14#page71#scu16" name="Scroller1" linkOrder="sv3#area14#page71#scu16#ln149" gr:x="0" gr:y="185" useCountQuery="false" entity="ent1">
+      <Link id="sv3#area14#page71#scu16#ln149" name="Flow13" to="sv3#area14#page71#inu21" type="automatic" automaticCoupling="true" validate="true"/>
+      <Selector id="sv3#area14#page71#scu16#su118" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area14#page71#scu16#su118#rcond54" name="RoleCondition5" predicate="in" implied="false" role="rel5#role10"/>
+      </Selector>
+    </ScrollerUnit>
+    <IndexUnit id="sv3#area14#page71#inu21" name="Lista Annunci Filiale" gr:x="10" gr:y="330" entity="ent1" linkOrder="sv3#area14#page71#inu21#ln180">
+      <Selector id="sv3#area14#page71#inu21#su119" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv3#area14#page71#inu21#su119#acond20" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att3"/>
+      </Selector>
+      <Link id="sv3#area14#page71#inu21#ln180" name="Flow180" to="sv3#area13#page67#dau25" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page71#dau29">
+          <layout:Attribute attribute="ent2#att13"/>
+          <layout:Attribute attribute="ent2#att17"/>
+          <layout:Attribute attribute="ent2#att14"/>
+          <layout:Link link="sv3#area14#page71#dau29#ln147"/>
+          <layout:Link link="sv3#area14#page71#dau29#ln157"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page71#scu16">
+          <layout:Link link="sv3#area14#page71#scu16First"/>
+          <layout:Link link="sv3#area14#page71#scu16Previous"/>
+          <layout:Link link="sv3#area14#page71#scu16Block"/>
+          <layout:Link link="sv3#area14#page71#scu16Next"/>
+          <layout:Link link="sv3#area14#page71#scu16Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page71#inu21">
+          <layout:Link link="sv3#area14#page71#inu21#ln180"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Page id="sv3#area14#page71#page72" name="Recensioni" gr:x="245" gr:y="0">
+    <ContentUnits>
+      <IndexUnit id="sv3#area14#page71#page72#inu22" name="Lista Recensioni" gr:x="0" gr:y="0" entity="ent18"/>
+    </ContentUnits>
+  </Page>
+</Page>

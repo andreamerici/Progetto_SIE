@@ -45,11 +45,16 @@
       <OKLink id="sv1#area3#switch1#oln15" name="OKFlow9" to="sv1#area3#page16#alt1#page19#enu8" code="3" automaticCoupling="true" gr:bendpoints="110,14,-766,130;861,-36,-15,74"/>
       <OKLink id="sv1#area3#switch1#oln16" name="OKFlow10" to="sv1#area3#page16#alt1#page20#enu9" code="4" automaticCoupling="true" gr:bendpoints="108,35,-1102,81"/>
     </SwitchUnit>
-    <LoginUnit id="sv1#area3#lgu1" name="Accesso login" gr:x="20" gr:y="835">
-      <KOLink id="sv1#area3#lgu1#kln8" name="KOFlow5" to="sv1#area3#page13" automaticCoupling="true" gr:bendpoints="-52,58,-27,-87"/>
-    </LoginUnit>
-    <LoginUnit id="sv1#area3#lgu2" name="Accesso registrazione" gr:x="205" gr:y="1185">
+    <LoginUnit id="sv1#area3#lgu2" name="Accesso" gr:x="300" gr:y="1175">
       <KOLink id="sv1#area3#lgu2#kln9" name="KOFlow7" to="sv1#area3#page22" automaticCoupling="true" gr:bendpoints="-109,-35,101,-10"/>
+      <KOLink id="sv1#area3#lgu2#kln2" name="KOFlow2" to="sv1#area3#page3#mssu1" automaticCoupling="true"/>
     </LoginUnit>
+    <CreateUnit gr:x="100" gr:y="1270" id="sv1#area3#cru2" name="Aggiungi utente" entity="ent7">
+      <KOLink id="sv1#area3#cru2#kln1" name="KOFlow1" to="sv1#area3#page22#enu10" automaticCoupling="true" gr:bendpoints="-163,-31,37,84"/>
+      <OKLink id="sv1#area3#cru2#oln7" name="OKFlow7" to="sv1#area3#lgu2">
+        <LinkParameter id="sv1#area3#cru2#oln7#par11" name="userName_Username" source="userNameArray" target="sv1#area3#lgu2.username"/>
+        <LinkParameter id="sv1#area3#cru2#oln7#par14" name="password_Password" source="passwordArray" target="sv1#area3#lgu2.password"/>
+      </OKLink>
+    </CreateUnit>
   </OperationUnits>
 </Area>

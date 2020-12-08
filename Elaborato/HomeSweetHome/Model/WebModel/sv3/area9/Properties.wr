@@ -1,9 +1,9 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area9" name="Profilo utente" defaultPage="sv3#area9#page39" landmark="true" gr:x="-15" gr:y="0">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area9" name="Profilo utente" defaultPage="sv3#area9#page39" landmark="true" gr:x="2190" gr:y="1245">
   <OperationUnits>
-    <GetUnit id="sv3#area9#gtu8" name="Utente loggato" gr:x="30" gr:y="85" contextParameters="UserCtxParam">
+    <GetUnit id="sv3#area9#gtu8" name="Utente loggato" gr:x="30" gr:y="185" contextParameters="UserCtxParam">
       <Link id="sv3#area9#gtu8#ln82" name="Flow39" to="sv3#area9#page39#dau20" type="transport" automaticCoupling="true" validate="true"/>
     </GetUnit>
-    <ModifyUnit id="sv3#area9#mfu3" name="Cambia dati profilo" gr:x="25" gr:y="400" entity="ent7">
+    <ModifyUnit id="sv3#area9#mfu3" name="Cambia dati profilo" gr:x="20" gr:y="500" entity="ent7">
       <Selector id="sv3#area9#mfu3#su63" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area9#mfu3#su63#kcond32" name="KeyCondition16" predicate="in" implied="false"/>
       </Selector>

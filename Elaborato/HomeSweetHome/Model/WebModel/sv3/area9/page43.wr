@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="520" gr:y="360" id="sv3#area9#page43" name="Recensioni">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="520" gr:y="460" id="sv3#area9#page43" name="Recensioni">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv3#area9#page43#seu27" name="Seleziona Recensioni" entity="ent17">
       <Selector id="sv3#area9#page43#seu27#su68" defaultPolicy="fill" booleanOperator="and">
@@ -6,7 +6,11 @@
       </Selector>
       <Link id="sv3#area9#page43#seu27#ln93" name="Flow93" to="sv3#area9#page43#mdu6" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <MultiDataUnit gr:x="235" gr:y="10" id="sv3#area9#page43#mdu6" name="Lista Recensioni" entity="ent17"/>
+    <MultiDataUnit gr:x="235" gr:y="10" id="sv3#area9#page43#mdu6" name="Lista Recensioni" entity="ent17">
+      <Selector id="sv3#area9#page43#mdu6#su138" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area9#page43#mdu6#su138#kcond80" name="KeyCondition80" predicate="in" implied="false"/>
+      </Selector>
+    </MultiDataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

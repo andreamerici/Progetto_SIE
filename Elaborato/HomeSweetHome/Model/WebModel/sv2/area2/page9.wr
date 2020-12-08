@@ -1,18 +1,12 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="580" id="sv2#area2#page9" name="Dettagli Annuncio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="655" id="sv2#area2#page9" name="Dettagli Annuncio">
   <ContentUnits>
-    <DataUnit gr:x="65" gr:y="0" id="sv2#area2#page9#dau3" name="Dettaglio Annuncio" entity="ent1" linkOrder="sv2#area2#page9#dau3#ln109">
+    <DataUnit gr:x="65" gr:y="0" id="sv2#area2#page9#dau3" name="Dettaglio Annuncio" entity="ent1" linkOrder="sv2#area2#page9#dau3#ln109 sv2#area2#page9#dau3#ln96">
       <Selector id="sv2#area2#page9#dau3#su8" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area2#page9#dau3#su8#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv2#area2#page9#dau3#ln33" name="Flow33" to="sv2#area2#page9#dau4" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv2#area2#page9#dau3#ln96" name="Flow96" to="sv2#area2#opg1#dcnu1" automaticCoupling="true" type="transport" validate="true"/>
-      <Link id="sv2#area2#page9#dau3#ln109" name="Flow109" to="sv2#area2#page10#meu4" type="normal" validate="true">
-        <LinkParameter id="sv2#area2#page9#dau3#ln109#par145" name="categoria_Categoria - Preselection" source="data.ent1#att31" target="sv2#area2#page10#meu4#sfld14_presel"/>
-        <LinkParameter id="sv2#area2#page9#dau3#ln109#par146" name="contratto_Contratto - Preselection" source="data.ent1#att16" target="sv2#area2#page10#meu4#sfld13_presel"/>
-        <LinkParameter id="sv2#area2#page9#dau3#ln109#par147" name="disponibile_Disponibilit&#224;" source="data.ent1#att3" target="sv2#area2#page10#meu4#fld55_slot"/>
-        <LinkParameter id="sv2#area2#page9#dau3#ln109#par155" name="AnnuncioToIndirizzo.oid_PASSING" source="data.rel11#role21_ent14#att41" passing="true"/>
-        <LinkParameter id="sv2#area2#page9#dau3#ln109#par176" name="dataPubblicazione_PASSING" source="data.ent1#att10" passing="true"/>
-      </Link>
+      <Link id="sv2#area2#page9#dau3#ln96" name="Flow96" to="sv2#area2#opg1#dcnu1" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area2#page9#dau3#ln109" name="Flow109" to="sv2#area2#page10#meu4" type="normal" validate="true"/>
       <Link id="sv2#area2#page9#dau3#ln121" name="Flow121" to="sv2#area2#stu1" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
     <DataUnit gr:x="0" gr:y="140" id="sv2#area2#page9#dau4" name="Dettaglio Indirizzo" entity="ent14" displayAttributes="ent14#att44 ent14#att45 ent14#att46">
@@ -26,6 +20,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area2#page9#dau3">
           <layout:Link link="sv2#area2#page9#dau3#ln109"/>
+          <layout:Link link="sv2#area2#page9#dau3#ln96"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -1,22 +1,28 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="510" gr:y="170" id="sv3#area9#page42" name="Annunci preferiti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="535" gr:y="290" id="sv3#area9#page42" name="Annunci preferiti">
   <ContentUnits>
-    <SelectorUnit gr:x="0" gr:y="5" id="sv3#area9#page42#seu26" name="Seleziona Annunci" entity="ent1">
+    <SelectorUnit gr:x="0" gr:y="0" id="sv3#area9#page42#seu26" name="Seleziona Annunci" entity="ent1">
       <Selector id="sv3#area9#page42#seu26#su66" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area9#page42#seu26#su66#rcond37" name="RoleCondition37" predicate="in" implied="false" role="rel13#role25"/>
+        <AttributesCondition id="sv3#area9#page42#seu26#su66#acond26" name="AttCondition26" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att3" value="true"/>
       </Selector>
-      <Link id="sv3#area9#page42#seu26#ln91" name="Flow91" to="sv3#area9#page42#inu14" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#area9#page42#seu26#ln183" name="Flow183" to="sv3#area9#page42#scu20" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
-    <IndexUnit gr:x="200" gr:y="0" id="sv3#area9#page42#inu14" name="Lista Annunci Preferiti" entity="ent1">
+    <IndexUnit gr:x="360" gr:y="10" id="sv3#area9#page42#inu14" name="Lista Annunci Preferiti" entity="ent1" linkOrder="sv3#area9#page42#inu14#ln139">
       <Selector id="sv3#area9#page42#inu14#su86" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area9#page42#inu14#su86#kcond50" name="KeyCondition50" predicate="in" implied="false"/>
-        <AttributesCondition id="sv3#area9#page42#inu14#su86#acond11" name="AttCondition11" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att3" value="true"/>
       </Selector>
+      <Link id="sv3#area9#page42#inu14#ln139" name="Flow139" to="sv3#area13#page67#dau25" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
+    <ScrollerUnit gr:x="205" gr:y="15" id="sv3#area9#page42#scu20" name="Scroller Annunci" useCountQuery="false" entity="ent1" linkOrder="sv3#area9#page42#scu20#ln184">
+      <Link id="sv3#area9#page42#scu20#ln184" name="Flow184" to="sv3#area9#page42#inu14" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area9#page42#inu14"/>
+        <layout:Unit unitId="sv3#area9#page42#inu14">
+          <layout:Link link="sv3#area9#page42#inu14#ln139"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
@@ -31,7 +37,15 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area9#page42#scu20">
+          <layout:Link link="sv3#area9#page42#scu20First"/>
+          <layout:Link link="sv3#area9#page42#scu20Previous"/>
+          <layout:Link link="sv3#area9#page42#scu20Block"/>
+          <layout:Link link="sv3#area9#page42#scu20Next"/>
+          <layout:Link link="sv3#area9#page42#scu20Last"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

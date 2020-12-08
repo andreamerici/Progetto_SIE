@@ -3,6 +3,7 @@
     <DataUnit gr:x="10" gr:y="65" id="sv1#area1#page2#dau1" name="Dettaglio Filiale" entity="ent2" linkOrder="sv1#area1#page2#dau1#ln38 sv1#area1#page2#dau1#ln56" displayAttributes="ent2#att13 ent2#att17 ent2#att14 ent2#att59">
       <Selector id="sv1#area1#page2#dau1#su1" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area1#page2#dau1#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv1#area1#page2#dau1#su1#rcond56" name="RoleCondition56" predicate="in" implied="false" role="rel6#role12"/>
       </Selector>
       <Link id="sv1#area1#page2#dau1#ln3" name="Flow3" to="sv1#area1#page2#scu1" type="transport" validate="true">
         <LinkParameter id="sv1#area1#page2#dau1#ln3#par26" name="FilialeToZona.oid_RoleCondition10 [oid]" source="data.rel6#role11_ent5#att23" target="sv1#area1#page2#scu1#su3#rcond10.ent5#att23"/>
@@ -16,12 +17,14 @@
       <Link id="sv1#area1#page2#scu1#ln13" name="Flow13" to="sv1#area1#page2#inu9" automaticCoupling="true" type="automatic" validate="true"/>
       <Selector id="sv1#area1#page2#scu1#su3" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area1#page2#scu1#su3#rcond10" name="RoleCondition10" predicate="in" implied="false" role="rel5#role10"/>
+        <AttributesCondition id="sv1#area1#page2#scu1#su3#acond27" name="AttCondition27" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att3" value="true"/>
       </Selector>
     </ScrollerUnit>
-    <IndexUnit gr:x="220" gr:y="245" id="sv1#area1#page2#inu9" name="Lista Annunci Filiale" entity="ent1">
+    <IndexUnit gr:x="220" gr:y="245" id="sv1#area1#page2#inu9" name="Lista Annunci Filiale" entity="ent1" linkOrder="sv1#area1#page2#inu9#ln179">
       <Selector id="sv1#area1#page2#inu9#su82" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="sv1#area1#page2#inu9#su82#acond10" name="AttCondition10" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att3" value="true"/>
+        <KeyCondition id="sv1#area1#page2#inu9#su82#kcond83" name="KeyCondition83" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv1#area1#page2#inu9#ln179" name="Flow179" to="sv1#area4#page25#dau5" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="266,-400,491,615"/>
     </IndexUnit>
     <MultiDataUnit gr:x="240" gr:y="0" id="sv1#area1#page2#mdu1" name="Orario" entity="ent12">
       <Selector id="sv1#area1#page2#mdu1#su24" defaultPolicy="fill" booleanOperator="and">
@@ -30,7 +33,6 @@
     </MultiDataUnit>
     <DataUnit gr:x="165" gr:y="125" id="sv1#area1#page2#dau6" name="Indirizzo Sede" entity="ent13">
       <Selector id="sv1#area1#page2#dau6#su23" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv1#area1#page2#dau6#su23#kcond20" name="KeyCondition20" predicate="in" implied="false"/>
         <RelationshipRoleCondition id="sv1#area1#page2#dau6#su23#rcond13" name="RoleCondition13" role="rel12#role24" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
@@ -83,7 +85,9 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area1#page2#inu9"/>
+        <layout:Unit unitId="sv1#area1#page2#inu9">
+          <layout:Link link="sv1#area1#page2#inu9#ln179"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

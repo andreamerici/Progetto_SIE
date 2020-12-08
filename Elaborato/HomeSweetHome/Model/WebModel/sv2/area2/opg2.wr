@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1420" gr:y="0" id="sv2#area2#opg2" name="Crea Annuncio" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1420" gr:y="75" id="sv2#area2#opg2" name="Crea Annuncio" transaction="true">
   <OperationUnits>
     <TimeUnit gr:x="0" gr:y="0" id="sv2#area2#opg2#tmu1" name="Data di pubblicazione">
       <OKLink id="sv2#area2#opg2#tmu1#oln33" name="OKFlow33" to="sv2#area2#opg2#cru1">

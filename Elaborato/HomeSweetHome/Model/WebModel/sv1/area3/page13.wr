@@ -1,20 +1,23 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page13" name="Login" linkOrder="sv1#area3#page13#ln6" gr:x="25" gr:y="955">
   <ContentUnits>
-    <EntryUnit id="sv1#area3#page13#enu3" name="Login" linkOrder="sv1#area3#page13#enu3#ln1" gr:x="0" gr:y="0">
+    <EntryUnit id="sv1#area3#page13#enu3" name="Login" linkOrder="sv1#area3#page13#enu3#ln17" gr:x="0" gr:y="0">
       <Field id="sv1#area3#page13#enu3#fld1" name="E-mail" type="string" modifiable="true"/>
       <Field id="sv1#area3#page13#enu3#fld6" name="Password" type="string" modifiable="true"/>
-      <Link id="sv1#area3#page13#enu3#ln1" name="Flow44" to="sv1#area3#lgu1" type="normal" validate="true" automaticCoupling="true"/>
       <Field id="sv1#area3#page13#enu3#fld59" name="UserName" type="string" modifiable="true"/>
+      <Link id="sv1#area3#page13#enu3#ln17" name="Flow17" to="sv1#area3#lgu2" type="normal" validate="true">
+        <LinkParameter id="sv1#area3#page13#enu3#ln17#par15" name="UserName_Username" source="sv1#area3#page13#enu3#fld59" target="sv1#area3#lgu2.username"/>
+        <LinkParameter id="sv1#area3#page13#enu3#ln17#par16" name="Password_Password" source="sv1#area3#page13#enu3#fld6" target="sv1#area3#lgu2.password"/>
+      </Link>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area3#page13#enu3">
-          <layout:Link link="sv1#area3#page13#enu3#ln1"/>
           <layout:Field field="sv1#area3#page13#enu3#fld1"/>
           <layout:Field field="sv1#area3#page13#enu3#fld6"/>
           <layout:Field field="sv1#area3#page13#enu3#fld59"/>
+          <layout:Link link="sv1#area3#page13#enu3#ln17"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -1,0 +1,14 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area15" name="Profilo utente" defaultPage="sv4#area15#page83" landmark="true" gr:x="85" gr:y="25">
+  <OperationUnits>
+    <GetUnit id="sv4#area15#gtu17" name="Utente loggato" gr:x="10" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv4#area15#gtu17#ln166" name="Flow39" to="sv4#area15#page83#dau34" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+    <ModifyUnit id="sv4#area15#mfu6" name="Cambia dati profilo" gr:x="310" gr:y="335" entity="User">
+      <Selector id="sv4#area15#mfu6#su130" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area15#mfu6#su130#kcond75" name="KeyCondition16" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv4#area15#mfu6#oln47" name="OKFlow2" to="sv4#area15#page83#dau34" automaticCoupling="true"/>
+      <KOLink id="sv4#area15#mfu6#kln39" name="KOFlow2" to="sv4#area15#page82#mssu15" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

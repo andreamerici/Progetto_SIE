@@ -5,7 +5,6 @@
       <Field id="sv2#area6#page31#enu11#fld23" name="data assunzione" type="string" modifiable="true"/>
       <Field id="sv2#area6#page31#enu11#fld24" name="foto" type="string" modifiable="true"/>
       <Link id="sv2#area6#page31#enu11#ln65" name="Flow41" to="sv2#area6#mfu1" type="normal" validate="true">
-        <LinkParameter id="sv2#area6#page31#enu11#ln65#par40" name="CapoFiliale Object_CapoFiliale Object" source="entityBean" target="sv2#area6#mfu1.entityBeans"/>
         <LinkParameter id="sv2#area6#page31#enu11#ln65#par43" name="Key [oid]_KeyCondition16 [oid]" source="key.userOID" target="sv2#area6#mfu1#su45#kcond22.userOID"/>
         <LinkParameter id="sv2#area6#page31#enu11#ln65#par44" name="password_password" source="sv2#area6#page31#enu11#fld22" target="sv2#area6#mfu1.password"/>
         <LinkParameter id="sv2#area6#page31#enu11#ln65#par45" name="Key [oid]_PASSING" source="key.userOID" passing="true"/>

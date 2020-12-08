@@ -1,10 +1,10 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area7#page34" name="Lista nuove richieste appuntamenti" gr:x="0" gr:y="25">
   <ContentUnits>
-    <IndexUnit id="sv2#area7#page34#inu12" name="Lista appuntamenti nuovi" gr:x="455" gr:y="0" entity="ent10" linkOrder="sv2#area7#page34#inu12#ln79">
+    <IndexUnit id="sv2#area7#page34#inu12" name="Lista appuntamenti nuovi" gr:x="455" gr:y="0" entity="ent10" linkOrder="sv2#area7#page34#inu12#ln140">
       <Selector id="sv2#area7#page34#inu12#su51" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area7#page34#inu12#su51#rcond28" name="RoleCondition7" predicate="in" implied="false" role="rel8#role16"/>
       </Selector>
-      <Link id="sv2#area7#page34#inu12#ln79" name="Flow79" to="sv2#area7#page36#dau18" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area7#page34#inu12#ln140" name="Flow140" to="sv2#area7#page36#alt4#page68#dau27" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
     <SelectorUnit id="sv2#area7#page34#seu19" name="seleziona Filiale" gr:x="0" gr:y="165" entity="ent2">
       <Selector id="sv2#area7#page34#seu19#su52" defaultPolicy="fill" booleanOperator="and">
@@ -46,7 +46,7 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area7#page34#inu12">
-          <layout:Link link="sv2#area7#page34#inu12#ln79"/>
+          <layout:Link link="sv2#area7#page34#inu12#ln140"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

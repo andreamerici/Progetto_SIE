@@ -1,0 +1,97 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page76" name="Elenco Filiali" landmark="true" gr:x="0" gr:y="120">
+  <ContentUnits>
+    <IndexUnit id="sv3#area14#page76#inu25" name="Lista Filiali" linkOrder="sv3#area14#page76#inu25#ln153" gr:x="180" gr:y="5" entity="ent2" displayAttributes="ent2#att13">
+      <Link id="sv3#area14#page76#inu25#ln153" name="Flow1" to="sv3#area14#page71#dau29" type="normal" automaticCoupling="true" validate="true"/>
+    </IndexUnit>
+    <SelectorUnit id="sv3#area14#page76#seu39" name="Seleziona Zona" gr:x="0" gr:y="110" entity="ent5">
+      <Link id="sv3#area14#page76#seu39#ln154" name="Flow2" to="sv3#area14#page76#enu19" type="transport" validate="true">
+        <LinkParameter id="sv3#area14#page76#seu39#ln154#par180" name="nome_Zona [label]" source="ent5#att24Array" target="sv3#area14#page76#enu19#sfld22_label"/>
+        <LinkParameter id="sv3#area14#page76#seu39#ln154#par181" name="oid_Zona [output]" source="ent5#att23Array" target="sv3#area14#page76#enu19#sfld22_output"/>
+        <LinkParameter id="sv3#area14#page76#seu39#ln154#par182" name="oid_PASSING" source="ent5#att23Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <EntryUnit id="sv3#area14#page76#enu19" name="Ricerca per Zona" linkOrder="sv3#area14#page76#enu19#ln155" gr:x="215" gr:y="130">
+      <Link id="sv3#area14#page76#enu19#ln155" name="Flow14" to="sv3#area14#page74#scu17" type="normal" automaticCoupling="true" validate="true"/>
+      <SelectionField id="sv3#area14#page76#enu19#sfld22" name="Zona" type="string"/>
+    </EntryUnit>
+    <ScrollerUnit gr:x="20" gr:y="0" id="sv3#area14#page76#scu18" name="Scroller Filiali" useCountQuery="false" entity="ent2" linkOrder="sv3#area14#page76#scu18#ln181">
+      <Link id="sv3#area14#page76#scu18#ln181" name="Flow181" to="sv3#area14#page76#inu25" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page76#inu25">
+          <layout:Link link="sv3#area14#page76#inu25#ln153"/>
+          <layout:Attribute attribute="ent2#att13"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page76#enu19">
+          <layout:Link link="sv3#area14#page76#enu19#ln155"/>
+          <layout:Field field="sv3#area14#page76#enu19#sfld22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page76#scu18">
+          <layout:Link link="sv3#area14#page76#scu18First"/>
+          <layout:Link link="sv3#area14#page76#scu18Previous"/>
+          <layout:Link link="sv3#area14#page76#scu18Block"/>
+          <layout:Link link="sv3#area14#page76#scu18Next"/>
+          <layout:Link link="sv3#area14#page76#scu18Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,35 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area13#page65" name="Fissa appuntamento" gr:x="875" gr:y="0">
+  <ContentUnits>
+    <EntryUnit id="sv3#area13#page65#enu18" name="Appuntamento" linkOrder="sv3#area13#page65#enu18#ln127" gr:x="0" gr:y="0">
+      <Field id="sv3#area13#page65#enu18#fld15" name="note" type="text" modifiable="true"/>
+      <Field id="sv3#area13#page65#enu18#fld16" name="data fissata" type="date" modifiable="true"/>
+      <Link id="sv3#area13#page65#enu18#ln127" name="Flow71" to="sv3#area13#opg5#cru5" type="normal" validate="true">
+        <LinkParameter id="sv3#area13#page65#enu18#ln127#par129" name="oid_PASSING" sourceLinkParameter="sv3#area13#page67#dau25#ln134#par132" passing="true"/>
+        <LinkParameter id="sv3#area13#page65#enu18#ln127#par136" name="data fissata_dataFissata" source="sv3#area13#page65#enu18#fld16" target="sv3#area13#opg5#cru5.ent10#att2"/>
+        <LinkParameter id="sv3#area13#page65#enu18#ln127#par137" name="note_note" source="sv3#area13#page65#enu18#fld15" target="sv3#area13#opg5#cru5.ent10#att22"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area13#page65#enu18">
+          <layout:Field field="sv3#area13#page65#enu18#fld15"/>
+          <layout:Field field="sv3#area13#page65#enu18#fld16"/>
+          <layout:Link link="sv3#area13#page65#enu18#ln127"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

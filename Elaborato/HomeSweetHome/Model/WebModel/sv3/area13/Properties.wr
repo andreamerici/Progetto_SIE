@@ -1,0 +1,39 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area13" name="Annuncio" landmark="true" gr:x="1950" gr:y="190">
+  <OperationUnits>
+    <ConnectUnit id="sv3#area13#cnu1" name="Connetti annuncio preferito ad utente" gr:x="845" gr:y="520" relationship="rel13#role26">
+      <SourceSelector id="sv3#area13#cnu1#su100" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#cnu1#su100#kcond53" name="KeyCondition18" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area13#cnu1#su101" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#cnu1#su101#kcond54" name="KeyCondition19" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area13#cnu1#oln39" name="OKFlow18" to="sv3#area13#page67" automaticCoupling="true"/>
+      <KOLink id="sv3#area13#cnu1#kln20" name="KOFlow14" to="sv3#area13#page62#mssu9" automaticCoupling="true"/>
+    </ConnectUnit>
+    <GetUnit id="sv3#area13#gtu14" name="Utente loggato" gr:x="1285" gr:y="580" contextParameters="UserCtxParam">
+      <Link id="sv3#area13#gtu14#ln119" name="Flow65" to="sv3#area13#cnu1" type="transport" validate="true">
+        <LinkParameter id="sv3#area13#gtu14#ln119#par95" name="UserCtxParam.oid_KeyCondition19 [oid] [UtenteEsterno] [Target]" source="sv3#area13#gtu14.UserCtxParam" target="sv3#area13#cnu1#su101#kcond54.userOID"/>
+      </Link>
+      <Link id="sv3#area13#gtu14#ln122" name="Flow68" to="sv3#area13#dcnu7" type="transport" validate="true" gr:bendpoints="-188,113,207,-52">
+        <LinkParameter id="sv3#area13#gtu14#ln122#par96" name="UserCtxParam.oid_KeyCondition21 [oid] [UtenteEsterno] [Target]" source="sv3#area13#gtu14.UserCtxParam" target="sv3#area13#dcnu7#su103#kcond56.userOID"/>
+      </Link>
+      <Link id="sv3#area13#gtu14#ln123" name="Flow69" to="sv3#area13#opg5#cnu6" type="transport" validate="true">
+        <LinkParameter id="sv3#area13#gtu14#ln123#par97" name="UserCtxParam.oid_KeyCondition24 [oid] [UtenteEsterno] [Target]" source="sv3#area13#gtu14.UserCtxParam" target="sv3#area13#opg5#cnu6#su108#kcond59.userOID"/>
+      </Link>
+    </GetUnit>
+    <DisconnectUnit id="sv3#area13#dcnu7" name="Diconnetti annuncio preferito da utente" gr:x="910" gr:y="780" relationship="rel13#role26">
+      <SourceSelector id="sv3#area13#dcnu7#su102" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#dcnu7#su102#kcond55" name="KeyCondition20" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area13#dcnu7#su103" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#dcnu7#su103#kcond56" name="KeyCondition21" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area13#dcnu7#oln40" name="OKFlow19" to="sv3#area13#page67" automaticCoupling="true" gr:bendpoints="-137,-139,38,411;-302,-276,-57,214"/>
+      <KOLink id="sv3#area13#dcnu7#kln21" name="KOFlow15" to="sv3#area13#page62#mssu9" automaticCoupling="true"/>
+    </DisconnectUnit>
+    <GetUnit id="sv3#area13#gtu15" name="Annuncio selezionato" gr:x="655" gr:y="75" contextParameters="ctx1">
+      <Link id="sv3#area13#gtu15#ln124" name="Flow80" to="sv3#area13#page67#dau25" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+    <SetUnit id="sv3#area13#stu2" name="Annuncio selezionato" gr:x="480" gr:y="75" contextParameters="ctx1"/>
+  </OperationUnits>
+</Area>

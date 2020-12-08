@@ -1,0 +1,34 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area13#opg5" name="Creazione appuntamento" transaction="true" gr:x="1045" gr:y="150">
+  <OperationUnits>
+    <CreateUnit id="sv3#area13#opg5#cru5" name="Crea appuntamento" gr:x="0" gr:y="0" entity="ent10">
+      <OKLink id="sv3#area13#opg5#cru5#oln41" name="OKFlow20" to="sv3#area13#opg5#cnu6">
+        <LinkParameter id="sv3#area13#opg5#cru5#oln41#par99" name="oid_PASSING" sourceLinkParameter="sv3#area13#page65#enu18#ln127#par129" passing="true"/>
+        <LinkParameter id="sv3#area13#opg5#cru5#oln41#par135" name="oid_KeyCondition23 [oid] [Appuntamento] [Source]" source="userOIDArray" target="sv3#area13#opg5#cnu6#su107#kcond58.ent10#att32"/>
+      </OKLink>
+      <KOLink id="sv3#area13#opg5#cru5#kln22" name="KOFlow16" to="sv3#area13#page64#mssu10" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit id="sv3#area13#opg5#cnu6" name="Connetti appuntamento ad utente" gr:x="225" gr:y="35" relationship="rel7#role14">
+      <SourceSelector id="sv3#area13#opg5#cnu6#su107" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#opg5#cnu6#su107#kcond58" name="KeyCondition23" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area13#opg5#cnu6#su108" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#opg5#cnu6#su108#kcond59" name="KeyCondition24" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv3#area13#opg5#cnu6#kln23" name="KOFlow17" to="sv3#area13#page64#mssu10" automaticCoupling="true"/>
+      <OKLink id="sv3#area13#opg5#cnu6#oln42" name="OKFlow23" to="sv3#area13#opg5#cnu7">
+        <LinkParameter id="sv3#area13#opg5#cnu6#oln42#par100" name="Source oid [Appuntamento]_KeyCondition25 [oid] [Appuntamento] [Source]" source="sourceent8#att34" target="sv3#area13#opg5#cnu7#su109#kcond60.ent8#att34"/>
+        <LinkParameter id="sv3#area13#opg5#cnu6#oln42#par101" name="oid_PASSING_KeyCondition26 [oid] [Annuncio] [Target]" sourceLinkParameter="sv3#area13#opg5#cru5#oln41#par99" target="sv3#area13#opg5#cnu7#su110#kcond61.ent1#att1"/>
+      </OKLink>
+    </ConnectUnit>
+    <ConnectUnit id="sv3#area13#opg5#cnu7" name="Connetti appuntamento ad annuncio" gr:x="530" gr:y="65" relationship="rel8#role15">
+      <SourceSelector id="sv3#area13#opg5#cnu7#su109" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#opg5#cnu7#su109#kcond60" name="KeyCondition25" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area13#opg5#cnu7#su110" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#opg5#cnu7#su110#kcond61" name="KeyCondition26" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv3#area13#opg5#cnu7#kln24" name="KOFlow18" to="sv3#area13#page64#mssu10" automaticCoupling="true"/>
+      <OKLink id="sv3#area13#opg5#cnu7#oln43" name="OKFlow24" to="sv3#area13#page67" automaticCoupling="true" gr:bendpoints="-565,153,475,163"/>
+    </ConnectUnit>
+  </OperationUnits>
+</OperationGroup>

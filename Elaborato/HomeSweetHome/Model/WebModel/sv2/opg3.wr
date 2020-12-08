@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#opg3" name="Appuntamento gestito" transaction="true" gr:x="2770" gr:y="-135">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#opg3" name="Appuntamento gestito" transaction="true" gr:x="2815" gr:y="-215">
   <OperationUnits>
     <DisconnectUnit id="sv2#opg3#dcnu5" name="Appuntamento gestito" gr:x="0" gr:y="0" relationship="rel8#role16">
       <SourceSelector id="sv2#opg3#dcnu5#su47" defaultPolicy="fill" booleanOperator="and">

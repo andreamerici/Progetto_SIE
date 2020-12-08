@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area15#page83" name="Visualizza dettagli profilo" gr:x="0" gr:y="155">
+  <ContentUnits>
+    <DataUnit id="sv4#area15#page83#dau34" name="Dettagli profilo" linkOrder="sv4#area15#page83#dau34#ln168" gr:x="0" gr:y="0" entity="User" displayAttributes="userName password email">
+      <Selector id="sv4#area15#page83#dau34#su131" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#area15#page83#dau34#su131#kcond76" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#area15#page83#dau34#ln168" name="Flow42" to="sv4#area15#page81" type="normal" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area15#page83#dau34">
+          <layout:Link link="sv4#area15#page83#dau34#ln168"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="email"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

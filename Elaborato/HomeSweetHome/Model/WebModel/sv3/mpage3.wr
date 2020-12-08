@@ -1,0 +1,12 @@
+<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#mpage3" name="Dati utente esterno" gr:x="85" gr:y="30">
+  <ContentUnits>
+    <GetUnit id="sv3#mpage3#gtu13" name="Utente loggato" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
+      <Link id="sv3#mpage3#gtu13#ln118" name="Flow34" to="sv3#mpage3#dau23" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+    <DataUnit id="sv3#mpage3#dau23" name="Benvenuto" gr:x="180" gr:y="0" entity="ent6">
+      <Selector id="sv3#mpage3#dau23#su99" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mpage3#dau23#su99#kcond52" name="KeyCondition14" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+</MasterPage>

@@ -1,7 +1,7 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page27" name="Dettagli zona" gr:x="2805" gr:y="-755">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page27" name="Dettagli zona" gr:x="2825" gr:y="-670">
   <ContentUnits>
     <DataUnit id="sv1#page27#dau9" name="Zona" gr:x="0" gr:y="0" entity="ent5" displayAttributes="ent5#att24" linkOrder="sv1#page27#dau9#ln55">
-      <Selector id="sv1#page27#dau9#su38" defaultPolicy="fill" booleanOperator="and">
+      <Selector id="sv1#page27#dau9#su38" defaultPolicy="fill" booleanOperator="or">
         <RelationshipRoleCondition id="sv1#page27#dau9#su38#rcond20" name="RoleCondition13" predicate="in" implied="false" role="rel5#role9"/>
         <RelationshipRoleCondition id="sv1#page27#dau9#su38#rcond21" name="RoleCondition21" predicate="in" implied="false" role="rel6#role11"/>
       </Selector>

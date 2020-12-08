@@ -14,6 +14,9 @@
       <Link id="sv1#area1#page1#enu1#ln14" name="Flow14" to="sv1#area1#page6#scu2" automaticCoupling="true" type="normal" validate="true"/>
       <SelectionField id="sv1#area1#page1#enu1#sfld1" name="Zona" type="string"/>
     </EntryUnit>
+    <ScrollerUnit gr:x="40" gr:y="0" id="sv1#area1#page1#scu19" name="Scroller Filiali" useCountQuery="false" linkOrder="sv1#area1#page1#scu19#ln182" entity="ent2">
+      <Link id="sv1#area1#page1#scu19#ln182" name="Flow182" to="sv1#area1#page1#inu1" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -55,7 +58,15 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page1#scu19">
+          <layout:Link link="sv1#area1#page1#scu19First"/>
+          <layout:Link link="sv1#area1#page1#scu19Previous"/>
+          <layout:Link link="sv1#area1#page1#scu19Block"/>
+          <layout:Link link="sv1#area1#page1#scu19Next"/>
+          <layout:Link link="sv1#area1#page1#scu19Last"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

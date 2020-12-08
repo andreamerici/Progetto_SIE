@@ -3,5 +3,8 @@
     <GetUnit id="sv2#area5#gtu2" name="Utente loggato" gr:x="0" gr:y="40" contextParameters="UserCtxParam">
       <Link id="sv2#area5#gtu2#ln58" name="Flow35" to="sv2#area5#page28#dau11" type="transport" automaticCoupling="true" validate="true"/>
     </GetUnit>
+    <LogoutUnit gr:x="45" gr:y="205" id="sv2#area5#lou1" name="Logout" siteView="sv1">
+      <KOLink id="sv2#area5#lou1#kln4" name="KOFlow4" to="sv2#area5#page28" automaticCoupling="true" gr:bendpoints="70,28,-240,53"/>
+    </LogoutUnit>
   </OperationUnits>
 </Area>

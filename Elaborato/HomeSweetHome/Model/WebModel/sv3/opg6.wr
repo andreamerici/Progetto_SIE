@@ -1,0 +1,41 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#opg6" name="Aggiungi recensione" transaction="true" gr:x="2055" gr:y="1950">
+  <OperationUnits>
+    <CreateUnit id="sv3#opg6#cru6" name="Nuova recensione" gr:x="25" gr:y="125" entity="ent17">
+      <OKLink id="sv3#opg6#cru6#oln44" name="OKLink18" to="sv3#opg6#cnu8">
+        <LinkParameter id="sv3#opg6#cru6#oln44#par186" name="oid_KeyCondition36 [oid] [Recensione] [Source]" source="ent17#att54Array" target="sv3#opg6#cnu8#su123#kcond70.ent17#att54"/>
+        <LinkParameter id="sv3#opg6#cru6#oln44#par188" name="oid_PASSING" source="ent17#att54Array" passing="true"/>
+      </OKLink>
+      <KOLink id="sv3#opg6#cru6#kln26" name="KOFlow26" to="sv3#page80#mssu11" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit id="sv3#opg6#cnu8" name="Connetti a utente" gr:x="0" gr:y="290" relationship="rel15#role30">
+      <SourceSelector id="sv3#opg6#cnu8#su123" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg6#cnu8#su123#kcond70" name="KeyCondition36" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#opg6#cnu8#su124" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg6#cnu8#su124#kcond71" name="KeyCondition37" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#opg6#cnu8#oln45" name="OKLink19" to="sv3#opg6#cnu9">
+        <LinkParameter id="sv3#opg6#cnu8#oln45#par189" name="oid_PASSING_KeyCondition38 [oid] [Recensione] [Source]" sourceLinkParameter="sv3#opg6#cru6#oln44#par188" target="sv3#opg6#cnu9#su125#kcond72.ent17#att54"/>
+      </OKLink>
+      <KOLink id="sv3#opg6#cnu8#kln27" name="KOFlow27" to="sv3#page80#mssu11" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit id="sv3#opg6#cnu9" name="Connetti a filiale" gr:x="40" gr:y="485" relationship="rel14#role27">
+      <SourceSelector id="sv3#opg6#cnu9#su125" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg6#cnu9#su125#kcond72" name="KeyCondition38" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#opg6#cnu9#su126" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#opg6#cnu9#su126#kcond73" name="KeyCondition39" predicate="in" implied="false"/>
+      </TargetSelector>
+      <KOLink id="sv3#opg6#cnu9#kln28" name="KOFlow28" to="sv3#page80#mssu11" automaticCoupling="true"/>
+      <OKLink id="sv3#opg6#cnu9#oln46" name="OKFlow46" to="sv3#area14#page77" automaticCoupling="true"/>
+    </ConnectUnit>
+    <TimeUnit id="sv3#opg6#tmu2" name="Recupera data corrente" gr:x="5" gr:y="0">
+      <Link id="sv3#opg6#tmu2#ln156" name="Flow60" to="sv3#opg6#cru6" type="transport" validate="true">
+        <LinkParameter id="sv3#opg6#tmu2#ln156#par143" name="Current/Input Date_data" source="currentDate" target="sv3#opg6#cru6.ent18#att58"/>
+        <LinkParameter id="sv3#opg6#tmu2#ln156#par144" name="commento_PASSING_commento" sourceLinkParameter="sv4#area5#page32#enu4#ln59#par12" target="sv3#opg6#cru6.ent18#att60"/>
+        <LinkParameter id="sv3#opg6#tmu2#ln156#par179" name="voto_PASSING_voto" sourceLinkParameter="sv4#area5#page32#enu4#ln59#par13" target="sv3#opg6#cru6.ent18#att59"/>
+      </Link>
+      <KOLink id="sv3#opg6#tmu2#kln25" name="KOFlow25" to="sv3#page80#mssu11" automaticCoupling="true"/>
+    </TimeUnit>
+  </OperationUnits>
+</OperationGroup>

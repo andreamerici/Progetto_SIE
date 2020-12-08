@@ -1,11 +1,17 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area4#page24" name="Lista annunci con pi&#249; preferenze" gr:x="0" gr:y="240">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area4#page24" name="Lista annunci con pi&#249; preferenze" gr:x="0" gr:y="230">
   <ContentUnits>
-    <IndexUnit id="sv1#area4#page24#inu11" name="Lista annunci pi&#249; preferenze" linkOrder="sv1#area4#page24#inu11#ln48" gr:x="0" gr:y="0" entity="ent15" displayAttributes="ent1#att8 ent1#att9">
+    <IndexUnit id="sv1#area4#page24#inu11" name="Lista annunci pi&#249; preferenze" linkOrder="sv1#area4#page24#inu11#ln48" gr:x="250" gr:y="0" entity="ent15" displayAttributes="ent1#att8 ent1#att9">
       <Link id="sv1#area4#page24#inu11#ln48" name="Flow12" to="sv1#area4#page25#dau5" type="normal" automaticCoupling="true" validate="true"/>
       <Selector id="sv1#area4#page24#inu11#su34" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#area4#page24#inu11#su34#acond8" name="AttCondition4" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att3"/>
       </Selector>
     </IndexUnit>
+    <ScrollerUnit gr:x="0" gr:y="0" id="sv1#area4#page24#scu9" name="Scorri annunci con pi&#249; preferenze" useCountQuery="false" entity="ent15" linkOrder="sv1#area4#page24#scu9#ln29" blockFactor="10">
+      <Selector id="sv1#area4#page24#scu9#su10" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area4#page24#scu9#su10#acond7" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att3" value="true"/>
+      </Selector>
+      <Link id="sv1#area4#page24#scu9#ln29" name="Flow29" to="sv1#area4#page24#inu11" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -14,6 +20,28 @@
           <layout:Link link="sv1#area4#page24#inu11#ln48"/>
           <layout:Attribute attribute="ent1#att8"/>
           <layout:Attribute attribute="ent1#att9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area4#page24#scu9">
+          <layout:Link link="sv1#area4#page24#scu9First"/>
+          <layout:Link link="sv1#area4#page24#scu9Previous"/>
+          <layout:Link link="sv1#area4#page24#scu9Block"/>
+          <layout:Link link="sv1#area4#page24#scu9Next"/>
+          <layout:Link link="sv1#area4#page24#scu9Last"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

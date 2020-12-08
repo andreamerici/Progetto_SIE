@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="110" gr:y="330" id="sv2#area2#page5" name="Mostra Annunci" landmark="false">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="100" gr:y="370" id="sv2#area2#page5" name="Mostra Annunci" landmark="false">
   <ContentUnits>
     <IndexUnit gr:x="350" gr:y="0" id="sv2#area2#page5#inu2" name="Lista Annunci" entity="ent1" linkOrder="sv2#area2#page5#inu2#ln12">
       <Selector id="sv2#area2#page5#inu2#su7" defaultPolicy="fill" booleanOperator="and">
@@ -49,14 +49,16 @@
           <layout:Field field="sv2#area2#page12#meu3#fld39"/>
           <layout:Field field="sv2#area2#page12#meu3#fld40"/>
           <layout:Field field="sv2#area2#page12#meu3#fld41"/>
-          <layout:Field field="sv2#area2#page12#meu3#fld42"/>
           <layout:Field field="sv2#area2#page12#meu3#fld43"/>
           <layout:Field field="sv2#area2#page12#meu3#sfld11"/>
           <layout:Field field="sv2#area2#page12#meu3#sfld12"/>
           <layout:Field field="sv2#area2#page12#meu3#fld44"/>
           <layout:Field field="sv2#area2#page12#meu3#fld45"/>
           <layout:Field field="sv2#area2#page12#meu3#fld46"/>
+          <layout:Field field="sv2#area2#page12#meu3#sfld25"/>
+          <layout:Field field="sv2#area2#page12#meu3#sfld26"/>
           <layout:Link link="sv2#area2#page12#meu3#ln102"/>
+          <layout:Link link="sv2#area2#page12#meu3#ln169"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

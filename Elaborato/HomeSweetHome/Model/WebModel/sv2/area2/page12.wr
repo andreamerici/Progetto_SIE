@@ -1,26 +1,25 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="685" gr:y="105" id="sv2#area2#page12" name="Inserisci Annuncio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="700" gr:y="0" id="sv2#area2#page12" name="Inserisci Annuncio">
   <ContentUnits>
-    <SelectorUnit gr:x="0" gr:y="0" id="sv2#area2#page12#seu10" name="Selettore Contratto" entity="ent3">
+    <SelectorUnit gr:x="10" gr:y="0" id="sv2#area2#page12#seu10" name="Selettore Contratto" entity="ent3">
       <Link id="sv2#area2#page12#seu10#ln27" name="Flow27" to="sv2#area2#page12#meu3" type="transport" validate="true">
         <LinkParameter id="sv2#area2#page12#seu10#ln27#par23" name="categoria_Contratto [label]" source="ent3#att19Array" target="sv2#area2#page12#meu3#sfld11_label"/>
         <LinkParameter id="sv2#area2#page12#seu10#ln27#par24" name="oid_Contratto [output]" source="ent3#att18Array" target="sv2#area2#page12#meu3#sfld11_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit gr:x="195" gr:y="0" id="sv2#area2#page12#seu11" name="Selettore Categoria" entity="ent20">
+    <SelectorUnit gr:x="205" gr:y="0" id="sv2#area2#page12#seu11" name="Selettore Categoria" entity="ent20">
       <Link id="sv2#area2#page12#seu11#ln28" name="Flow28" to="sv2#area2#page12#meu3" type="transport" validate="true">
         <LinkParameter id="sv2#area2#page12#seu11#ln28#par21" name="nome_Categoria [label]" source="ent20#att61Array" target="sv2#area2#page12#meu3#sfld12_label"/>
         <LinkParameter id="sv2#area2#page12#seu11#ln28#par22" name="oid_Categoria [output]" source="ent20#att60Array" target="sv2#area2#page12#meu3#sfld12_output"/>
       </Link>
     </SelectorUnit>
-    <MultiEntryUnit id="sv2#area2#page12#meu3" minLength="1" gr:x="105" gr:y="140" name="Inserisci Annuncio" linkOrder="sv2#area2#page12#meu3#ln102">
+    <MultiEntryUnit id="sv2#area2#page12#meu3" minLength="1" gr:x="115" gr:y="140" name="Inserisci Annuncio" linkOrder="sv2#area2#page12#meu3#ln102 sv2#area2#page12#meu3#ln169">
       <Field id="sv2#area2#page12#meu3#fld35" type="string" modifiable="true" name="Titolo"/>
-      <Field id="sv2#area2#page12#meu3#fld36" type="integer" modifiable="true" name="Prezzo"/>
+      <Field id="sv2#area2#page12#meu3#fld36" type="integer" modifiable="true" name="Prezzo" ajaxEventEnabled="true" ajaxEventLink="sv2#area2#page12#meu3#ln169"/>
       <Field id="sv2#area2#page12#meu3#fld37" type="integer" modifiable="true" name="Superficie"/>
       <Field id="sv2#area2#page12#meu3#fld38" type="integer" modifiable="true" name="Numero Locali"/>
       <Field id="sv2#area2#page12#meu3#fld39" type="text" modifiable="true" name="Descrizione"/>
       <Field id="sv2#area2#page12#meu3#fld40" type="blob" modifiable="true" name="Foto"/>
       <Field id="sv2#area2#page12#meu3#fld41" type="integer" modifiable="true" name="Anno Costruzione"/>
-      <Field id="sv2#area2#page12#meu3#fld42" type="integer" modifiable="true" name="Fascia Prezzo"/>
       <Field id="sv2#area2#page12#meu3#fld43" type="timestamp" preloaded="true" modifiable="false" name="Disponibilit&#224;"/>
       <SelectionField id="sv2#area2#page12#meu3#sfld11" type="string" name="Contratto"/>
       <SelectionField id="sv2#area2#page12#meu3#sfld12" type="string" name="Categoria"/>
@@ -35,15 +34,38 @@
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par77" name="Contratto_PASSING" source="sv2#area2#page12#meu3#sfld11" passing="true"/>
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par78" name="Descrizione_PASSING" source="sv2#area2#page12#meu3#fld39" passing="true"/>
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par79" name="Disponibilit&#224;_PASSING" source="sv2#area2#page12#meu3#fld43" passing="true"/>
-        <LinkParameter id="sv2#area2#page12#meu3#ln102#par80" name="Fascia Prezzo_PASSING" source="sv2#area2#page12#meu3#fld42" passing="true"/>
+        <LinkParameter id="sv2#area2#page12#meu3#ln102#par80" name="Fascia Prezzo_PASSING" source="sv2#area2#page12#meu3#sfld26" passing="true"/>
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par81" name="Foto_PASSING" source="sv2#area2#page12#meu3#fld40" passing="true"/>
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par82" name="Numero Locali_PASSING" source="sv2#area2#page12#meu3#fld38" passing="true"/>
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par83" name="Prezzo_PASSING" source="sv2#area2#page12#meu3#fld36" passing="true"/>
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par84" name="Superficie_PASSING" source="sv2#area2#page12#meu3#fld37" passing="true"/>
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par85" name="Titolo_PASSING" source="sv2#area2#page12#meu3#fld35" passing="true"/>
         <LinkParameter id="sv2#area2#page12#meu3#ln102#par86" name="Via_PASSING" source="sv2#area2#page12#meu3#fld46" passing="true"/>
+        <LinkParameter id="sv2#area2#page12#meu3#ln102#par214" name="Zona_PASSING" source="sv2#area2#page12#meu3#sfld25" passing="true"/>
       </Link>
+      <Link id="sv2#area2#page12#meu3#ln169" name="Flow169" to="sv2#area2#page12#seu41" type="normal" validate="true" gr:bendpoints="-107,49,-2,-91">
+        <LinkParameter id="sv2#area2#page12#meu3#ln169#par199" name="Prezzo_AttCondition21" source="sv2#area2#page12#meu3#fld36" target="sv2#area2#page12#seu41#su132#acond21"/>
+        <LinkParameter id="sv2#area2#page12#meu3#ln169#par200" name="Prezzo_AttCondition22" source="sv2#area2#page12#meu3#fld36" target="sv2#area2#page12#seu41#su132#acond22"/>
+      </Link>
+      <SelectionField id="sv2#area2#page12#meu3#sfld25" name="Zona" type="string"/>
+      <SelectionField id="sv2#area2#page12#meu3#sfld26" type="integer" name="Fascia Prezzo"/>
     </MultiEntryUnit>
+    <SelectorUnit gr:x="0" gr:y="255" id="sv2#area2#page12#seu41" name="Selettore Fascia Prezzo" entity="ent11">
+      <Link id="sv2#area2#page12#seu41#ln170" name="Flow170" to="sv2#area2#page12#meu3" type="transport" validate="true" gr:bendpoints="111,-56,6,69">
+        <LinkParameter id="sv2#area2#page12#seu41#ln170#par215" name="nome_Fascia Prezzo [label]" source="ent11#att20Array" target="sv2#area2#page12#meu3#sfld26_label"/>
+        <LinkParameter id="sv2#area2#page12#seu41#ln170#par216" name="oid_Fascia Prezzo [output]" source="ent11#att25Array" target="sv2#area2#page12#meu3#sfld26_output"/>
+      </Link>
+      <Selector id="sv2#area2#page12#seu41#su132" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area2#page12#seu41#su132#acond21" name="AttCondition21" predicate="gteq" booleanOperator="or" implied="false" attributes="ent11#att51"/>
+        <AttributesCondition id="sv2#area2#page12#seu41#su132#acond22" name="AttCondition22" predicate="lteq" booleanOperator="or" implied="false" attributes="ent11#att27"/>
+      </Selector>
+    </SelectorUnit>
+    <SelectorUnit gr:x="255" gr:y="270" id="sv2#area2#page12#seu42" name="Selettore Zona" entity="ent5">
+      <Link id="sv2#area2#page12#seu42#ln171" name="Flow171" to="sv2#area2#page12#meu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area2#page12#seu42#ln171#par212" name="nome_Zona [label]" source="ent5#att24Array" target="sv2#area2#page12#meu3#sfld25_label"/>
+        <LinkParameter id="sv2#area2#page12#seu42#ln171#par213" name="oid_Zona [output]" source="ent5#att23Array" target="sv2#area2#page12#meu3#sfld25_output"/>
+      </Link>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
