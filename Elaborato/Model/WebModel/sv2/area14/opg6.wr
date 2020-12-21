@@ -1,0 +1,20 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area14#opg6" name="Modifica filiale" transaction="true" gr:x="405" gr:y="880">
+  <OperationUnits>
+    <ModifyUnit id="sv2#area14#opg6#mfu6" name="Modifica filiale" gr:x="0" gr:y="90" entity="ent2">
+      <Selector id="sv2#area14#opg6#mfu6#su134" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area14#opg6#mfu6#su134#kcond76" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area14#opg6#mfu6#oln37" name="OKFlow51" to="sv2#area14#page78#dau18" automaticCoupling="true"/>
+      <KOLink id="sv2#area14#opg6#mfu6#kln43" name="KOFlow45" to="sv2#area14#page83#alt5#page86#mssu18" automaticCoupling="true" gr:bendpoints="-440,-90,-105,805;-432,-796,-97,99"/>
+    </ModifyUnit>
+    <CreateUnit id="sv2#area14#opg6#cru9" name="Modifica Indirizzo" gr:x="190" gr:y="0" entity="ent14">
+      <OKLink id="sv2#area14#opg6#cru9#oln49" name="OKFlow38" to="sv2#area14#opg6#mfu6">
+        <LinkParameter id="sv2#area14#opg6#cru9#oln49#par121" name="email_PASSING_email" sourceLinkParameter="sv2#area14#page79#meu3#ln170#par137" target="sv2#area14#opg6#mfu6.ent2#att17"/>
+        <LinkParameter id="sv2#area14#opg6#cru9#oln49#par122" name="nome_PASSING_nome" sourceLinkParameter="sv2#area14#page79#meu3#ln170#par138" target="sv2#area14#opg6#mfu6.ent2#att13"/>
+        <LinkParameter id="sv2#area14#opg6#cru9#oln49#par123" name="telefono_PASSING_telefono" sourceLinkParameter="sv2#area14#page79#meu3#ln170#par207" target="sv2#area14#opg6#mfu6.ent2#att14"/>
+        <LinkParameter id="sv2#area14#opg6#cru9#oln49#par260" name="oid_KeyCondition7 [oid]" source="ent14#att43Array" target="sv2#area14#opg6#mfu6#su134#kcond76.ent2#att2"/>
+      </OKLink>
+      <KOLink id="sv2#area14#opg6#cru9#kln54" name="KOFlow54" to="sv2#area14#page83#alt5#page86#mssu18" automaticCoupling="true" gr:bendpoints="-636,-266,-76,504;-634,-678,-74,92"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>

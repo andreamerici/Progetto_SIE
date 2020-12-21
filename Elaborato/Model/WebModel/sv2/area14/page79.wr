@@ -1,0 +1,71 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area14#page79" name="Modifica filiale" gr:x="625" gr:y="560">
+  <ContentUnits>
+    <SelectorUnit id="sv2#area14#page79#seu43" name="Seleziona capo filiale" gr:x="0" gr:y="0" entity="ent7">
+      <Link id="sv2#area14#page79#seu43#ln168" name="Flow146" to="sv2#area14#page79#meu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area14#page79#seu43#ln168#par125" name="nome_capo filiale [label]" source="ent7#att33Array" target="sv2#area14#page79#meu3#sfld26_label"/>
+        <LinkParameter id="sv2#area14#page79#seu43#ln168#par126" name="oid_capo filiale [output]" source="userOIDArray" target="sv2#area14#page79#meu3#sfld26_output"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit id="sv2#area14#page79#seu44" name="Seleziona zona" gr:x="235" gr:y="0" entity="ent5">
+      <Link id="sv2#area14#page79#seu44#ln169" name="Flow150" to="sv2#area14#page79#meu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area14#page79#seu44#ln169#par127" name="nome_zona [label]" source="ent5#att23Array" target="sv2#area14#page79#meu3#sfld27_label"/>
+        <LinkParameter id="sv2#area14#page79#seu44#ln169#par128" name="oid_zona [output]" source="ent5#att22Array" target="sv2#area14#page79#meu3#sfld27_output"/>
+      </Link>
+    </SelectorUnit>
+    <MultiEntryUnit id="sv2#area14#page79#meu3" name="Inserisci dati" linkOrder="sv2#area14#page79#meu3#ln170" gr:x="135" gr:y="145" minLength="1">
+      <SelectionField id="sv2#area14#page79#meu3#sfld26" name="capo filiale" type="string"/>
+      <SelectionField id="sv2#area14#page79#meu3#sfld27" name="zona" type="string"/>
+      <Field id="sv2#area14#page79#meu3#fld34" name="cap" type="string" modifiable="true"/>
+      <Field id="sv2#area14#page79#meu3#fld41" name="chiusura" type="string" modifiable="true"/>
+      <Field id="sv2#area14#page79#meu3#fld42" name="via" type="string" modifiable="true"/>
+      <Field id="sv2#area14#page79#meu3#fld43" name="civico" type="string" modifiable="true"/>
+      <Field id="sv2#area14#page79#meu3#fld52" name="giorno" type="string" modifiable="true"/>
+      <Link id="sv2#area14#page79#meu3#ln170" name="Flow155" to="sv2#area14#opg6#cru9" type="normal" validate="true">
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par129" name="cap_cap" source="sv2#area14#page79#meu3#fld43" target="sv2#area14#opg6#cru9.ent14#att48"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par130" name="civico_civico" source="sv2#area14#page79#meu3#fld42" target="sv2#area14#opg6#cru9.ent14#att47"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par133" name="capo filiale_PASSING" source="sv2#area14#page79#meu3#sfld26" passing="true"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par134" name="chiusura_PASSING" source="sv2#area14#page79#meu3#fld41" passing="true"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par135" name="giorno_PASSING" source="sv2#area14#page79#meu3#fld52" passing="true"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par136" name="zona_PASSING" source="sv2#area14#page79#meu3#sfld27" passing="true"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par137" name="email_PASSING" source="sv2#area14#page79#meu3#fld55" passing="true"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par138" name="nome_PASSING" source="sv2#area14#page79#meu3#fld53" passing="true"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par207" name="telefono_PASSING" source="sv2#area14#page79#meu3#fld54" passing="true"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par258" name="cap_cap" source="sv2#area14#page79#meu3#fld34" target="sv2#area14#opg6#cru9.ent14#att49"/>
+        <LinkParameter id="sv2#area14#page79#meu3#ln170#par259" name="FilialeToIndirizzo sede.oid_PASSING_Filiale.oid(IndirizzoSedeToFiliale)" sourceLinkParameter="sv2#area14#page78#dau18#ln165#par118" target="sv2#area14#opg6#cru9.rel16#role32.ent2#att2"/>
+      </Link>
+      <Field id="sv2#area14#page79#meu3#fld53" name="nome" type="string" modifiable="true"/>
+      <Field id="sv2#area14#page79#meu3#fld54" name="telefono" type="string" modifiable="true"/>
+      <Field id="sv2#area14#page79#meu3#fld55" name="email" type="string" modifiable="true"/>
+    </MultiEntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area14#page79#meu3">
+          <layout:Link link="sv2#area14#page79#meu3#ln170"/>
+          <layout:Field field="sv2#area14#page79#meu3#sfld26"/>
+          <layout:Field field="sv2#area14#page79#meu3#sfld27"/>
+          <layout:Field field="sv2#area14#page79#meu3#fld34"/>
+          <layout:Field field="sv2#area14#page79#meu3#fld41"/>
+          <layout:Field field="sv2#area14#page79#meu3#fld42"/>
+          <layout:Field field="sv2#area14#page79#meu3#fld43"/>
+          <layout:Field field="sv2#area14#page79#meu3#fld52"/>
+          <layout:Field field="sv2#area14#page79#meu3#fld53"/>
+          <layout:Field field="sv2#area14#page79#meu3#fld54"/>
+          <layout:Field field="sv2#area14#page79#meu3#fld55"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,17 +1,17 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area10#page57" name="Mostra Annunci" landmark="false" gr:x="135" gr:y="385">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area10#page57" name="Mostra Annunci della Filiale" landmark="false" gr:x="275" gr:y="385">
   <ContentUnits>
-    <IndexUnit id="sv3#area10#page57#inu23" name="Lista Annunci" linkOrder="sv3#area10#page57#inu23#ln123" gr:x="350" gr:y="0" entity="ent1" displayAttributes="ent1#att3 ent1#att6 ent1#att9 ent1#att37">
+    <IndexUnit id="sv3#area10#page57#inu23" name="Lista Annunci" linkOrder="sv3#area10#page57#inu23#ln123" gr:x="375" gr:y="0" entity="ent1" displayAttributes="ent1#att3 ent1#att6 ent1#att9 ent1#att37">
       <Selector id="sv3#area10#page57#inu23#su85" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area10#page57#inu23#su85#rcond51" name="RoleCondition6" predicate="in" implied="false" role="rel5#role10"/>
       </Selector>
       <Link id="sv3#area10#page57#inu23#ln123" name="Flow12" to="sv3#area10#page56#dau24" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-128,168,172,-152"/>
     </IndexUnit>
-    <SelectorUnit id="sv3#area10#page57#seu33" name="Selettore Filiali" gr:x="165" gr:y="0" entity="ent2">
+    <SelectorUnit id="sv3#area10#page57#seu33" name="Selettore Filiale" gr:x="190" gr:y="0" entity="ent2">
       <Selector id="sv3#area10#page57#seu33#su86" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area10#page57#seu33#su86#rcond52" name="RoleCondition5" predicate="in" implied="false" role="rel2#role3"/>
       </Selector>
       <Link id="sv3#area10#page57#seu33#ln124" name="Flow9" to="sv3#area10#page57#inu23" type="transport" validate="true">
-        <LinkParameter id="sv3#area10#page57#seu33#ln124#par112" name="FilialeToZona.oid_RoleCondition6 [oid]" source="rel6#role11_ent5#att23Array" target="sv3#area10#page57#inu23#su85#rcond51.ent5#att23"/>
+        <LinkParameter id="sv3#area10#page57#seu33#ln124#par266" name="FilialeToZona.oid_RoleCondition6 [oid]" source="rel6#role11_ent5#att22Array" target="sv3#area10#page57#inu23#su85#rcond51.ent5#att22"/>
       </Link>
     </SelectorUnit>
     <GetUnit id="sv3#area10#page57#gtu10" name="Utente loggato" gr:x="0" gr:y="10" contextParameters="UserCtxParam">

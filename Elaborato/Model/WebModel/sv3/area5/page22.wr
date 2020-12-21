@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="280" gr:y="165" id="sv3#area5#page22" name="Modifica dati profilo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="280" gr:y="130" id="sv3#area5#page22" name="Modifica dati profilo">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv3#area5#page22#enu3" name="Modifica dati profilo" entity="ent7" linkOrder="sv3#area5#page22#enu3#ln41">
       <Field id="sv3#area5#page22#enu3#fld3" name="foto" type="string" modifiable="true"/>

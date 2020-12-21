@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="465" gr:y="285" id="sv2#area12#page74" name="Pagina errore">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="490" gr:y="375" id="sv2#area12#page74" name="Pagina errore">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -71,9 +71,44 @@
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv2#area12#page74#alt4#page52">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv2#area12#page74#alt4#page52#mssu20"/>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
   </layout:Grid>
   <Alternative gr:x="0" gr:y="0" id="sv2#area12#page74#alt4" name="Messaggi di errore">
-    <Page gr:x="235" gr:y="0" id="sv2#area12#page74#alt4#page75" name="Errore aggiunta">
+    <Page gr:x="455" gr:y="5" id="sv2#area12#page74#alt4#page75" name="Errore aggiunta">
       <ContentUnits>
         <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area12#page74#alt4#page75#mssu13" name="Messaggio errore aggiunta"/>
       </ContentUnits>
@@ -81,6 +116,11 @@
     <Page gr:x="0" gr:y="0" id="sv2#area12#page74#alt4#page76" name="Errore rimozione">
       <ContentUnits>
         <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area12#page74#alt4#page76#mssu14" name="Messaggio errore rimozione"/>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="230" gr:y="0" id="sv2#area12#page74#alt4#page52" name="Errore dissociazione">
+      <ContentUnits>
+        <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area12#page74#alt4#page52#mssu20" name="Messaggio errore dissocia"/>
       </ContentUnits>
     </Page>
   </Alternative>

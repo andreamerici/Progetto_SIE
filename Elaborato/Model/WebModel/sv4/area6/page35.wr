@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="875" gr:y="0" id="sv4#area6#page35" name="Fissa appuntamento">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="945" gr:y="0" id="sv4#area6#page35" name="Fissa appuntamento">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv4#area6#page35#enu17" name="Appuntamento" linkOrder="sv4#area6#page35#enu17#ln71">
       <Field id="sv4#area6#page35#enu17#fld20" name="note" type="text" modifiable="true"/>

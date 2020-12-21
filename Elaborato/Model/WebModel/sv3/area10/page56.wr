@@ -1,10 +1,10 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area10#page56" name="Dettagli Annuncio" gr:x="0" gr:y="710">
   <ContentUnits>
-    <DataUnit id="sv3#area10#page56#dau24" name="Dettaglio Annuncio" linkOrder="sv3#area10#page56#dau24#ln121 sv3#area10#page56#dau24#ln120" gr:x="85" gr:y="0" entity="ent1" displayAttributes="ent1#att3 ent1#att11 ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att12 ent1#att37 ent1#att25 ent1#att26">
-      <Selector id="sv3#area10#page56#dau24#su83" defaultPolicy="fill" booleanOperator="and">
+    <DataUnit id="sv3#area10#page56#dau24" name="Dettaglio Annuncio" linkOrder="sv3#area10#page56#dau24#ln121 sv3#area10#page56#dau24#ln35" gr:x="235" gr:y="0" entity="ent1" displayAttributes="ent1#att3 ent1#att11 ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att12 ent1#att37 ent1#att25 ent1#att26">
+      <Selector id="sv3#area10#page56#dau24#su83" defaultPolicy="fill" booleanOperator="or">
         <KeyCondition id="sv3#area10#page56#dau24#su83#kcond37" name="KeyCondition5" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv3#area10#page56#dau24#su83#rcond63" name="RoleCondition63" predicate="in" implied="false" role="rel8#role15"/>
       </Selector>
-      <Link id="sv3#area10#page56#dau24#ln120" name="Flow96" to="sv3#area10#opg3#dcnu2" type="normal" automaticCoupling="true" validate="true"/>
       <Link id="sv3#area10#page56#dau24#ln121" name="Flow109" to="sv3#area10#page55#meu1" type="normal" validate="true">
         <LinkParameter id="sv3#area10#page56#dau24#ln121#par107" name="categoria_Categoria - Preselection" source="data.ent1#att31" target="sv3#area10#page55#meu1#sfld20_presel"/>
         <LinkParameter id="sv3#area10#page56#dau24#ln121#par108" name="contratto_Contratto - Preselection" source="data.ent1#att16" target="sv3#area10#page55#meu1#sfld19_presel"/>
@@ -14,12 +14,17 @@
       </Link>
       <Link id="sv3#area10#page56#dau24#ln122" name="Flow121" to="sv3#area10#stu1" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv3#area10#page56#dau24#ln129" name="Flow129" to="sv3#area10#page56#dau26" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#area10#page56#dau24#ln35" name="Flow35" to="sv3#area10#opg3#seu49" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#area10#page56#dau24#ln39" name="Flow39" to="sv3#area10#opg3#dcnu2" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <DataUnit gr:x="0" gr:y="130" id="sv3#area10#page56#dau26" name="Dettagli indirizzo" entity="ent13" displayAttributes="ent13#att44 ent13#att45 ent13#att46">
+    <DataUnit gr:x="135" gr:y="130" id="sv3#area10#page56#dau26" name="Dettagli indirizzo" entity="ent13" displayAttributes="ent13#att44 ent13#att45 ent13#att46">
       <Selector id="sv3#area10#page56#dau26#su107" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area10#page56#dau26#su107#rcond54" name="RoleCondition54" role="rel18#role36" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
+    <GetUnit gr:x="0" gr:y="5" id="sv3#area10#page56#gtu16" name="Annuncio Selezionato" contextParameters="ctx1">
+      <Link id="sv3#area10#page56#gtu16#ln189" name="Flow189" to="sv3#area10#page56#dau24" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -36,7 +41,7 @@
           <layout:Attribute attribute="ent1#att25"/>
           <layout:Attribute attribute="ent1#att26"/>
           <layout:Link link="sv3#area10#page56#dau24#ln121"/>
-          <layout:Link link="sv3#area10#page56#dau24#ln120"/>
+          <layout:Link link="sv3#area10#page56#dau24#ln35"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -59,6 +64,20 @@
           <layout:Attribute attribute="ent13#att46"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

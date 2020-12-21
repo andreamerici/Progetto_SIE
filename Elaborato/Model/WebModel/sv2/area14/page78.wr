@@ -1,0 +1,172 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area14#page78" name="Dettaglio Filiale" landmark="false" gr:x="1180" gr:y="875">
+  <ContentUnits>
+    <DataUnit id="sv2#area14#page78#dau18" name="Dettagli" linkOrder="sv2#area14#page78#dau18#ln164 sv2#area14#page78#dau18#ln165 sv2#area14#page78#dau18#ln166" gr:x="40" gr:y="140" entity="ent2" displayAttributes="ent2#att13 ent2#att17 ent2#att14 ent2#att62">
+      <Selector id="sv2#area14#page78#dau18#su129" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area14#page78#dau18#su129#kcond74" name="KeyCondition1" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv2#area14#page78#dau18#su129#rcond35" predicate="in" implied="false" role="rel6#role12"/>
+      </Selector>
+      <Link id="sv2#area14#page78#dau18#ln161" name="Flow44" to="sv2#area14#page78#scu20" type="transport" validate="true">
+        <LinkParameter id="sv2#area14#page78#dau18#ln161#par255" name="FilialeToZona.oid_PASSING" source="data.rel6#role11_ent5#att22" passing="true"/>
+      </Link>
+      <Link id="sv2#area14#page78#dau18#ln162" name="Flow112" to="sv2#area14#page78#dau25" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area14#page78#dau18#ln163" name="Flow113" to="sv2#area14#page78#mdu9" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area14#page78#dau18#ln164" name="Flow149" to="sv2#area14#page88#mdu10" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area14#page78#dau18#ln165" name="Flow151" to="sv2#area14#page79#meu3" type="normal" validate="true">
+        <LinkParameter id="sv2#area14#page78#dau18#ln165#par117" name="oid_PASSING" source="data.ent2#att12" passing="true"/>
+        <LinkParameter id="sv2#area14#page78#dau18#ln165#par118" name="FilialeToIndirizzo sede.oid_PASSING" source="data.rel14#role27_ent14#att41" passing="true"/>
+        <LinkParameter id="sv2#area14#page78#dau18#ln165#par119" name="FilialeToCapo filiale.oid_capo filiale - Preselection" source="data.rel2#role4_userOID" target="sv2#area14#page79#meu3#sfld26_presel"/>
+        <LinkParameter id="sv2#area14#page78#dau18#ln165#par120" name="FilialeToZona.oid_zona - Preselection" source="data.rel12#role23_ent5#att23" target="sv2#area14#page79#meu3#sfld27_presel"/>
+      </Link>
+      <Link id="sv2#area14#page78#dau18#ln166" name="Flow159" to="sv2#area14#opg7#dcnu7" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-626,-237,499,428"/>
+      <Link id="sv2#area14#page78#dau18#ln120" name="Flow120" to="sv2#area14#stu4" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+    <ScrollerUnit id="sv2#area14#page78#scu20" name="Scroller Annunci" linkOrder="sv2#area14#page78#scu20#ln167" gr:x="0" gr:y="355" useCountQuery="false" entity="ent1">
+      <Link id="sv2#area14#page78#scu20#ln167" name="Flow13" to="sv2#area14#page78#inu26" type="automatic" automaticCoupling="true" validate="true"/>
+      <Selector id="sv2#area14#page78#scu20#su130" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area14#page78#scu20#su130#rcond50" name="RoleCondition5" predicate="in" implied="false" role="rel5#role10"/>
+      </Selector>
+    </ScrollerUnit>
+    <IndexUnit id="sv2#area14#page78#inu26" name="Lista Annunci Filiale" gr:x="175" gr:y="345" entity="ent1" displayAttributes="ent1#att3 ent1#att6 ent1#att9 ent1#att37">
+      <Selector id="sv2#area14#page78#inu26#su131" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area14#page78#inu26#su131#acond24" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att36"/>
+        <KeyCondition id="sv2#area14#page78#inu26#su131#kcond89" name="KeyCondition89" predicate="in" implied="false"/>
+      </Selector>
+    </IndexUnit>
+    <DataUnit id="sv2#area14#page78#dau25" name="Indirizzo Sede" gr:x="215" gr:y="220" entity="ent14" displayAttributes="ent14#att47 ent14#att48 ent14#att49">
+      <Selector id="sv2#area14#page78#dau25#su132" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area14#page78#dau25#su132#rcond53" name="RoleCondition53" predicate="in" implied="false" role="rel16#role31"/>
+      </Selector>
+    </DataUnit>
+    <MultiDataUnit id="sv2#area14#page78#mdu9" name="Orario" gr:x="235" gr:y="70" entity="ent12" displayAttributes="ent12#att39 ent12#att40 ent12#att41">
+      <Selector id="sv2#area14#page78#mdu9#su133" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area14#page78#mdu9#su133#rcond57" name="RoleCondition12" predicate="in" implied="false" role="rel10#role19"/>
+      </Selector>
+    </MultiDataUnit>
+    <GetUnit gr:x="70" gr:y="0" id="sv2#area14#page78#gtu4" name="Filiale Selezionata" contextParameters="ctx2">
+      <Link id="sv2#area14#page78#gtu4#ln115" name="Flow115" to="sv2#area14#page78#dau18" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area14#page78#dau18">
+          <layout:Link link="sv2#area14#page78#dau18#ln164"/>
+          <layout:Link link="sv2#area14#page78#dau18#ln165"/>
+          <layout:Link link="sv2#area14#page78#dau18#ln166"/>
+          <layout:Attribute attribute="ent2#att13"/>
+          <layout:Attribute attribute="ent2#att17"/>
+          <layout:Attribute attribute="ent2#att14"/>
+          <layout:Attribute attribute="ent2#att62"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area14#page78#scu20">
+          <layout:Link link="sv2#area14#page78#scu20First"/>
+          <layout:Link link="sv2#area14#page78#scu20Previous"/>
+          <layout:Link link="sv2#area14#page78#scu20Block"/>
+          <layout:Link link="sv2#area14#page78#scu20Next"/>
+          <layout:Link link="sv2#area14#page78#scu20Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area14#page78#inu26">
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att37"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area14#page78#dau25">
+          <layout:Attribute attribute="ent14#att47"/>
+          <layout:Attribute attribute="ent14#att48"/>
+          <layout:Attribute attribute="ent14#att49"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area14#page78#mdu9">
+          <layout:Attribute attribute="ent12#att39"/>
+          <layout:Attribute attribute="ent12#att40"/>
+          <layout:Attribute attribute="ent12#att41"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

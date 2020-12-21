@@ -1,11 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1290" gr:y="30" id="sv4#area6#page34" name="Errore appuntamento">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="920" gr:y="110" id="sv3#area9#page90" name="Errore gestione appuntamento">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#area6#page34#mssu5" name="Messaggio errore"/>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#area9#page90#mssu19" name="Messaggio errore"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv4#area6#page34#mssu5"/>
+        <layout:Unit unitId="sv3#area9#page90#mssu19"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

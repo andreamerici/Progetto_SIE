@@ -1,0 +1,27 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area14#page88" name="Recensioni" gr:x="965" gr:y="1210">
+  <ContentUnits>
+    <MultiDataUnit id="sv2#area14#page88#mdu10" name="Recensioni" gr:x="0" gr:y="0" entity="ent17">
+      <Selector id="sv2#area14#page88#mdu10#su142" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area14#page88#mdu10#su142#rcond62" name="RoleCondition14" predicate="in" implied="false" role="rel14#role27"/>
+      </Selector>
+    </MultiDataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area14#page88#mdu10"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

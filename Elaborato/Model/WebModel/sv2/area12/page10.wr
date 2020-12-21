@@ -1,14 +1,26 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area12#page10" name="Lista capi filiale" linkOrder="sv2#area12#page10#ln141">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv2#area12#page10#seu39" name="Seleziona capi filiale" entity="ent7">
-      <Link id="sv2#area12#page10#seu39#ln150" name="Flow150" to="sv2#area12#page10#inu25" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv2#area12#page10#seu39#ln80" name="Flow80" to="sv2#area12#page10#enu23" type="transport" validate="true">
+        <LinkParameter id="sv2#area12#page10#seu39#ln80#par233" name="cognome_Capo filiale [label]" source="ent7#att33Array" target="sv2#area12#page10#enu23#sfld32_label"/>
+        <LinkParameter id="sv2#area12#page10#seu39#ln80#par281" name="oid_Capo filiale [output]" source="userOIDArray" target="sv2#area12#page10#enu23#sfld32_output"/>
+      </Link>
     </SelectorUnit>
-    <IndexUnit gr:x="185" gr:y="0" id="sv2#area12#page10#inu25" name="Lista capi filiale" entity="ent7" displayAttributes="ent7#att32 ent7#att33" linkOrder="sv2#area12#page10#inu25#ln153">
+    <IndexUnit gr:x="205" gr:y="110" id="sv2#area12#page10#inu25" name="Lista capi filiale" entity="ent7" displayAttributes="ent7#att32 ent7#att33" linkOrder="sv2#area12#page10#inu25#ln153">
       <Selector id="sv2#area12#page10#inu25#su112" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area12#page10#inu25#su112#kcond70" name="KeyCondition70" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv2#area12#page10#inu25#ln153" name="Flow151" to="sv2#area12#page72#dau3" type="normal" automaticCoupling="true" validate="true"/>
     </IndexUnit>
+    <EntryUnit gr:x="5" gr:y="120" id="sv2#area12#page10#enu23" name="Ricerca capi filiale " linkOrder="sv2#area12#page10#enu23#ln104">
+      <SelectionField id="sv2#area12#page10#enu23#sfld32" name="Capo filiale" type="string"/>
+      <Link id="sv2#area12#page10#enu23#ln104" name="Flow104" to="sv2#area12#page72#dau3" type="normal" validate="true">
+        <LinkParameter id="sv2#area12#page10#enu23#ln104#par232" name="Capo filiale_KeyCondition71 [oid]" source="sv2#area12#page10#enu23#sfld32" target="sv2#area12#page72#dau3#su124#kcond72.userOID"/>
+      </Link>
+    </EntryUnit>
+    <ScrollerUnit gr:x="195" gr:y="0" id="sv2#area12#page10#scu22" name="Scroller capi filiale" useCountQuery="false" entity="ent7" linkOrder="sv2#area12#page10#scu22#ln110">
+      <Link id="sv2#area12#page10#scu22#ln110" name="Flow110" to="sv2#area12#page10#inu25" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -17,6 +29,28 @@
           <layout:Attribute attribute="ent7#att32"/>
           <layout:Attribute attribute="ent7#att33"/>
           <layout:Link link="sv2#area12#page10#inu25#ln153"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area12#page10#scu22">
+          <layout:Link link="sv2#area12#page10#scu22First"/>
+          <layout:Link link="sv2#area12#page10#scu22Previous"/>
+          <layout:Link link="sv2#area12#page10#scu22Block"/>
+          <layout:Link link="sv2#area12#page10#scu22Next"/>
+          <layout:Link link="sv2#area12#page10#scu22Last"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

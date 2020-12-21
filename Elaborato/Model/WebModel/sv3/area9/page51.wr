@@ -1,10 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page51" name="Lista nuove richieste appuntamenti" gr:x="0" gr:y="40">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page51" name="Lista nuove richieste appuntamenti" gr:x="0" gr:y="0">
   <ContentUnits>
-    <IndexUnit id="sv3#area9#page51#inu21" name="Lista appuntamenti nuovi" linkOrder="sv3#area9#page51#inu21#ln104" gr:x="355" gr:y="10" entity="ent8" displayAttributes="ent8#att4">
+    <IndexUnit id="sv3#area9#page51#inu21" name="Lista appuntamenti nuovi" gr:x="360" gr:y="10" entity="ent8" displayAttributes="ent8#att35" linkOrder="sv3#area9#page51#inu21#ln193">
       <Selector id="sv3#area9#page51#inu21#su71" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area9#page51#inu21#su71#rcond40" name="RoleCondition7" predicate="in" implied="false" role="rel8#role16"/>
+        <AttributesCondition id="sv3#area9#page51#inu21#su71#acond25" name="AttCondition25" predicate="eq" booleanOperator="or" implied="false" attributes="ent8#att4" value="false"/>
       </Selector>
-      <Link id="sv3#area9#page51#inu21#ln104" name="Flow22" to="sv3#area9#page50#dau20" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area9#page51#inu21#ln193" name="Flow193" to="sv3#area9#page50#alt6#page53#dau21" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
     <SelectorUnit id="sv3#area9#page51#seu25" name="Seleziona filiale" gr:x="0" gr:y="150" entity="ent2">
       <Selector id="sv3#area9#page51#seu25#su72" defaultPolicy="fill" booleanOperator="and">
@@ -25,7 +26,9 @@
       <Link id="sv3#area9#page51#seu27#ln107" name="Flow25" to="sv3#area9#page51#inu21" type="transport" automaticCoupling="true" validate="true"/>
     </SelectorUnit>
     <GetUnit id="sv3#area9#page51#gtu7" name="Utente loggato" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
-      <Link id="sv3#area9#page51#gtu7#ln108" name="Flow24" to="sv3#area9#page51#seu25" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area9#page51#gtu7#ln108" name="Flow24" to="sv3#area9#page51#seu25" type="transport" validate="true">
+        <LinkParameter id="sv3#area9#page51#gtu7#ln108#par264" name="UserCtxParam.oid_RoleCondition3 [oid]" source="sv3#area9#page51#gtu7.UserCtxParam" target="sv3#area9#page51#seu25#su72#rcond41.userOID"/>
+      </Link>
     </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -46,8 +49,8 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area9#page51#inu21">
-          <layout:Link link="sv3#area9#page51#inu21#ln104"/>
-          <layout:Attribute attribute="ent8#att4"/>
+          <layout:Attribute attribute="ent8#att35"/>
+          <layout:Link link="sv3#area9#page51#inu21#ln193"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

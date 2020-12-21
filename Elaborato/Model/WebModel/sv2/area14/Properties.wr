@@ -1,0 +1,5 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area14" name="Gestione Filiali" landmarks="sv2#area14#page80" landmark="true" gr:x="1400" gr:y="40">
+  <OperationUnits>
+    <SetUnit gr:x="1120" gr:y="770" id="sv2#area14#stu4" name="Fialile Selezionata" contextParameters="ctx2"/>
+  </OperationUnits>
+</Area>

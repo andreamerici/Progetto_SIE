@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page63" name="Errore modifica profilo" gr:x="220" gr:y="385">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page63" name="Errore modifica profilo" gr:x="215" gr:y="450">
   <ContentUnits>
     <MultiMessageUnit id="sv4#area11#page63#mssu10" name="Messaggio errore" gr:x="0" gr:y="0"/>
   </ContentUnits>

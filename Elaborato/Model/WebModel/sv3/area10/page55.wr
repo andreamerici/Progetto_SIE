@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area10#page55" name="Modifica Annuncio" gr:x="315" gr:y="710">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area10#page55" name="Modifica Annuncio" gr:x="480" gr:y="710">
   <ContentUnits>
     <SelectorUnit id="sv3#area10#page55#seu31" name="Selettore Contratto" gr:x="0" gr:y="145" entity="ent3">
       <Link id="sv3#area10#page55#seu31#ln116" name="Flow107" to="sv3#area10#page55#meu1" type="transport" validate="true">

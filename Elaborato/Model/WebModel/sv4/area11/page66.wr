@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page66" name="Visualizza dettagli profilo" gr:x="240" gr:y="200">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page66" name="Visualizza dettagli profilo" gr:x="220" gr:y="180">
   <ContentUnits>
-    <DataUnit id="sv4#area11#page66#dau28" name="Dettagli profilo" linkOrder="sv4#area11#page66#dau28#ln135 sv4#area11#page66#dau28#ln136 sv4#area11#page66#dau28#ln137 sv4#area11#page66#dau28#ln138" gr:x="0" gr:y="0" entity="ent6" displayAttributes="userName password email">
+    <DataUnit id="sv4#area11#page66#dau28" name="Dettagli profilo" linkOrder="sv4#area11#page66#dau28#ln135 sv4#area11#page66#dau28#ln136 sv4#area11#page66#dau28#ln137 sv4#area11#page66#dau28#ln138" gr:x="165" gr:y="70" entity="ent6" displayAttributes="userName password email">
       <Selector id="sv4#area11#page66#dau28#su113" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area11#page66#dau28#su113#kcond61" name="KeyCondition12" predicate="in" implied="false"/>
       </Selector>
@@ -9,6 +9,11 @@
       <Link id="sv4#area11#page66#dau28#ln137" name="Flow90" to="sv4#area11#page68#seu38" type="normal" automaticCoupling="true" validate="true"/>
       <Link id="sv4#area11#page66#dau28#ln138" name="Flow92" to="sv4#area11#page67#seu37" type="normal" automaticCoupling="true" validate="true"/>
     </DataUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv4#area11#page66#gtu17" name="Utente loggato" contextParameters="UserCtxParam">
+      <Link id="sv4#area11#page66#gtu17#ln190" name="Flow190" to="sv4#area11#page66#dau28" type="transport" validate="true">
+        <LinkParameter id="sv4#area11#page66#gtu17#ln190#par245" name="UserCtxParam.oid_KeyCondition12 [oid]" source="sv4#area11#page66#gtu17.UserCtxParam" target="sv4#area11#page66#dau28#su113#kcond61.userOID"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -23,6 +28,20 @@
           <layout:Link link="sv4#area11#page66#dau28#ln138"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

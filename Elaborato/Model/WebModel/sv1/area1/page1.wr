@@ -4,7 +4,7 @@
       <Selector id="sv1#area1#page1#inu1#su3" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area1#page1#inu1#su3#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv1#area1#page1#inu1#ln15" name="Flow15" to="sv1#area3#page9#dau1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="945,-111,-310,514"/>
+      <Link id="sv1#area1#page1#inu1#ln15" name="Flow15" to="sv1#area3#page9#dau1" type="normal" validate="true" gr:bendpoints="945,-111,-310,514" automaticCoupling="true"/>
     </IndexUnit>
     <IndexUnit gr:x="1090" gr:y="685" id="sv1#area1#page1#inu2" name="Lista nuovi annunci" entity="ent9" displayAttributes="ent1#att3 ent1#att6 ent1#att9 ent1#att37" linkOrder="sv1#area1#page1#inu2#ln16">
       <Selector id="sv1#area1#page1#inu2#su4" defaultPolicy="fill" booleanOperator="and">

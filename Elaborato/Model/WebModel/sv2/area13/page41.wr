@@ -1,0 +1,52 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area13#page41" name="Visualizza dettagli profilo" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <DataUnit id="sv2#area13#page41#dau2" name="Dettagli profilo" linkOrder="sv2#area13#page41#dau2#ln152" gr:x="0" gr:y="110" entity="User" displayAttributes="userName password email">
+      <Selector id="sv2#area13#page41#dau2#su128" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area13#page41#dau2#su128#kcond73" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area13#page41#dau2#ln152" name="Flow42" to="sv2#area13#page71" type="normal" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <GetUnit gr:x="10" gr:y="0" id="sv2#area13#page41#gtu19" name="Utente loggato" contextParameters="UserCtxParam">
+      <Link id="sv2#area13#page41#gtu19#ln192" name="Flow192" to="sv2#area13#page41#dau2" type="transport" validate="true">
+        <LinkParameter id="sv2#area13#page41#gtu19#ln192#par246" name="UserCtxParam.oid_KeyCondition12 [oid]" source="sv2#area13#page41#gtu19.UserCtxParam" target="sv2#area13#page41#dau2#su128#kcond73.userOID"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area13#page41#dau2">
+          <layout:Link link="sv2#area13#page41#dau2#ln152"/>
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="email"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

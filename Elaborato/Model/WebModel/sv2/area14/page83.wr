@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area10#page58" name="Error Page" gr:x="895" gr:y="455">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area14#page83" name="Error Page" gr:x="0" gr:y="35">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -59,11 +59,11 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv3#area10#page58#alt3#page59">
+        <layout:SubPage pageId="sv2#area14#page83#alt5#page84">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv3#area10#page58#alt3#page59#mssu7"/>
+                <layout:Unit unitId="sv2#area14#page83#alt5#page84#mssu16"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -94,11 +94,11 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv3#area10#page58#alt3#page60">
+        <layout:SubPage pageId="sv2#area14#page83#alt5#page85">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv3#area10#page58#alt3#page60#mssu8"/>
+                <layout:Unit unitId="sv2#area14#page83#alt5#page85#mssu17"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -129,11 +129,11 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:SubPage pageId="sv3#area10#page58#alt3#page61">
+        <layout:SubPage pageId="sv2#area14#page83#alt5#page86">
           <layout:Grid containerType="grid">
             <layout:Row>
               <layout:Cell colspan="12">
-                <layout:Unit unitId="sv3#area10#page58#alt3#page61#mssu9"/>
+                <layout:Unit unitId="sv2#area14#page83#alt5#page86#mssu18"/>
               </layout:Cell>
               <layout:Cell/>
               <layout:Cell/>
@@ -163,24 +163,24 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Alternative id="sv3#area10#page58#alt3" name="Messaggi di Errore" defaultPage="sv3#area10#page58#alt3#page59" gr:x="0" gr:y="0">
-    <Page id="sv3#area10#page58#alt3#page59" name="Errore Eliminazione" gr:x="260" gr:y="0">
+  <Alternative id="sv2#area14#page83#alt5" name="Messaggi di Errore" defaultPage="sv2#area14#page83#alt5#page84" gr:x="0" gr:y="0">
+    <Page id="sv2#area14#page83#alt5#page84" name="Errore Eliminazione" gr:x="280" gr:y="0">
       <ContentUnits>
-        <MultiMessageUnit id="sv3#area10#page58#alt3#page59#mssu7" name="Messaggio Errore Eliminazione" gr:x="0" gr:y="0">
+        <MultiMessageUnit id="sv2#area14#page83#alt5#page84#mssu16" name="Messaggio Errore Eliminazione" gr:x="0" gr:y="0">
           <Message xml:space="preserve">Non &#232; stato possibile rimuovere l'annuncio selezionato</Message>
         </MultiMessageUnit>
       </ContentUnits>
     </Page>
-    <Page id="sv3#area10#page58#alt3#page60" name="Errore Inserimento" gr:x="515" gr:y="0">
+    <Page id="sv2#area14#page83#alt5#page85" name="Errore Inserimento" gr:x="590" gr:y="0">
       <ContentUnits>
-        <MultiMessageUnit id="sv3#area10#page58#alt3#page60#mssu8" name="Messaggio Errore Inserimento" gr:x="0" gr:y="0">
+        <MultiMessageUnit id="sv2#area14#page83#alt5#page85#mssu17" name="Messaggio Errore Inserimento" gr:x="0" gr:y="0">
           <Message xml:space="preserve">Non &#232; stato possibile inserire l'annuncio</Message>
         </MultiMessageUnit>
       </ContentUnits>
     </Page>
-    <Page id="sv3#area10#page58#alt3#page61" name="Errore Modifica" gr:x="0" gr:y="5">
+    <Page id="sv2#area14#page83#alt5#page86" name="Errore Modifica" gr:x="0" gr:y="0">
       <ContentUnits>
-        <MultiMessageUnit id="sv3#area10#page58#alt3#page61#mssu9" name="Messaggio Errore Modifica" gr:x="0" gr:y="0">
+        <MultiMessageUnit id="sv2#area14#page83#alt5#page86#mssu18" name="Messaggio Errore Modifica" gr:x="0" gr:y="0">
           <Message xml:space="preserve">Non &#232; stato possibile modificare l'annuncio selezionato</Message>
         </MultiMessageUnit>
       </ContentUnits>

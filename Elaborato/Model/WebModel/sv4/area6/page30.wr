@@ -1,8 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area6#page30" name="Dettagli annuncio" gr:x="580" gr:y="205">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area6#page30" name="Dettagli annuncio" gr:x="540" gr:y="100">
   <ContentUnits>
-    <DataUnit id="sv4#area6#page30#dau4" name="Annuncio" linkOrder="sv4#area6#page30#dau4#ln78 sv4#area6#page30#dau4#ln66 sv4#area6#page30#dau4#ln70 sv4#area6#page30#dau4#ln118" gr:x="0" gr:y="5" entity="ent1" displayAttributes="ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att11 ent1#att3 ent1#att12 ent1#att37 ent1#att25 ent1#att26">
-      <Selector id="sv4#area6#page30#dau4#su35" defaultPolicy="fill" booleanOperator="and">
+    <DataUnit id="sv4#area6#page30#dau4" name="Annuncio" linkOrder="sv4#area6#page30#dau4#ln78 sv4#area6#page30#dau4#ln66 sv4#area6#page30#dau4#ln70 sv4#area6#page30#dau4#ln118" gr:x="5" gr:y="120" entity="ent1" displayAttributes="ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att11 ent1#att3 ent1#att12 ent1#att37 ent1#att25 ent1#att26">
+      <Selector id="sv4#area6#page30#dau4#su35" defaultPolicy="fill" booleanOperator="or">
         <KeyCondition id="sv4#area6#page30#dau4#su35#kcond10" name="KeyCondition1" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv4#area6#page30#dau4#su35#rcond64" name="RoleCondition64" predicate="in" implied="false" role="rel8#role15"/>
       </Selector>
       <Link id="sv4#area6#page30#dau4#ln56" name="Flow33" to="sv4#area6#page30#dau9" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv4#area6#page30#dau4#ln66" name="Flow66" to="sv4#area6#dcnu1" type="normal" validate="true" gr:bendpoints="78,296,-217,-244;133,447,-162,-93">
@@ -17,11 +18,14 @@
       <Link id="sv4#area6#page30#dau4#ln79" name="Flow79" to="sv4#area6#stu2" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv4#area6#page30#dau4#ln118" name="Flow118" to="sv4#page42#dau15" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="36,448,-214,-327"/>
     </DataUnit>
-    <DataUnit id="sv4#area6#page30#dau9" name="Indirizzo" gr:x="235" gr:y="0" entity="ent13" displayAttributes="ent13#att44 ent13#att45 ent13#att46">
+    <DataUnit id="sv4#area6#page30#dau9" name="Indirizzo" gr:x="240" gr:y="115" entity="ent13" displayAttributes="ent13#att44 ent13#att45 ent13#att46">
       <Selector id="sv4#area6#page30#dau9#su36" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area6#page30#dau9#su36#rcond22" name="RoleCondition14" role="rel18#role36" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv4#area6#page30#gtu18" name="Annuncio selezionato" contextParameters="ctx1">
+      <Link id="sv4#area6#page30#gtu18#ln191" name="Flow191" to="sv4#area6#page30#dau4" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

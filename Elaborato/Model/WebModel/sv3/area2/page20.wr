@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="185" gr:y="0" id="sv3#area2#page20" name="Homepage" linkOrder="sv3#area2#page20#ln75">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="105" gr:y="0" id="sv3#area2#page20" name="Homepage" linkOrder="sv3#area2#page20#ln75">
   <ContentUnits>
-    <DataUnit gr:x="5" gr:y="0" id="sv3#area2#page20#dau5" name="Dettagli filiale di competenza" entity="ent2" displayAttributes="ent2#att13 ent2#att14 ent2#att17 ent2#att62">
+    <DataUnit gr:x="165" gr:y="0" id="sv3#area2#page20#dau5" name="Dettagli filiale di competenza" entity="ent2" displayAttributes="ent2#att13 ent2#att14 ent2#att17 ent2#att62">
       <Selector id="sv3#area2#page20#dau5#su17" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area2#page20#dau5#su17#rcond5" name="RoleCondition5" predicate="in" implied="false" role="rel2#role3"/>
       </Selector>
@@ -8,27 +8,32 @@
       <Link id="sv3#area2#page20#dau5#ln32" name="Flow32" to="sv3#area2#page20#mdu1" automaticCoupling="true" type="transport" validate="true"/>
       <Link id="sv3#area2#page20#dau5#ln36" name="Flow36" to="sv3#area2#page20#scu6" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <DataUnit gr:x="250" gr:y="20" id="sv3#area2#page20#dau6" name="Indirizzo filiale" entity="ent14" displayAttributes="ent14#att47 ent14#att48 ent14#att49">
+    <DataUnit gr:x="410" gr:y="20" id="sv3#area2#page20#dau6" name="Indirizzo filiale" entity="ent14" displayAttributes="ent14#att47 ent14#att48 ent14#att49">
       <Selector id="sv3#area2#page20#dau6#su18" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area2#page20#dau6#su18#rcond10" name="RoleCondition10" role="rel16#role31" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <MultiDataUnit gr:x="225" gr:y="135" id="sv3#area2#page20#mdu1" name="Orari filiale" entity="ent12" displayAttributes="ent12#att39 ent12#att40 ent12#att41">
+    <MultiDataUnit gr:x="385" gr:y="135" id="sv3#area2#page20#mdu1" name="Orari filiale" entity="ent12" displayAttributes="ent12#att39 ent12#att40 ent12#att41">
       <Selector id="sv3#area2#page20#mdu1#su23" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area2#page20#mdu1#su23#rcond11" name="RoleCondition11" role="rel10#role19" predicate="in" implied="false"/>
       </Selector>
     </MultiDataUnit>
-    <ScrollerUnit gr:x="0" gr:y="155" id="sv3#area2#page20#scu6" name="Scorri recensioni" useCountQuery="false" entity="ent17" linkOrder="sv3#area2#page20#scu6#ln37" blockFactor="10">
+    <ScrollerUnit gr:x="160" gr:y="155" id="sv3#area2#page20#scu6" name="Scorri recensioni" useCountQuery="false" entity="ent17" linkOrder="sv3#area2#page20#scu6#ln37" blockFactor="10">
       <Selector id="sv3#area2#page20#scu6#su24" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area2#page20#scu6#su24#rcond12" name="RoleCondition12" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
       <Link id="sv3#area2#page20#scu6#ln37" name="Flow37" to="sv3#area2#page20#mdu2" automaticCoupling="true" type="automatic" validate="true"/>
     </ScrollerUnit>
-    <MultiDataUnit gr:x="135" gr:y="285" id="sv3#area2#page20#mdu2" name="Recensioni" entity="ent17" displayAttributes="ent17#att58 ent17#att59 ent17#att60">
+    <MultiDataUnit gr:x="295" gr:y="285" id="sv3#area2#page20#mdu2" name="Recensioni" entity="ent17" displayAttributes="ent17#att58 ent17#att59 ent17#att60">
       <Selector id="sv3#area2#page20#mdu2#su27" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area2#page20#mdu2#su27#kcond17" name="KeyCondition17" predicate="in" implied="false"/>
       </Selector>
     </MultiDataUnit>
+    <GetUnit gr:x="0" gr:y="5" id="sv3#area2#page20#gtu14" name="Utente loggato" contextParameters="UserCtxParam">
+      <Link id="sv3#area2#page20#gtu14#ln187" name="Flow187" to="sv3#area2#page20#dau5" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#page20#gtu14#ln187#par239" name="UserCtxParam.oid_RoleCondition5 [oid]" source="sv3#area2#page20#gtu14.UserCtxParam" target="sv3#area2#page20#dau5#su17#rcond5.userOID"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -122,6 +127,20 @@
           <layout:Attribute attribute="ent17#att60"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

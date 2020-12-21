@@ -187,7 +187,7 @@
   </Relationship>
   <Entity gr:x="1110" gr:y="825" id="ent16" name="AnnuncioScontato" duration="persistent" attributeOrder="ent16#att55 ent16#att56">
     <Generalization superEntity="ent1"/>
-    <Attribute id="ent16#att55" name="prezzoScontato" type="integer"/>
+    <Attribute id="ent16#att55" name="prezzoVecchio" type="integer"/>
     <Attribute id="ent16#att56" name="percentualeSconto" type="integer"/>
   </Entity>
   <Relationship id="rel11" name="Annuncio_UtenteEsterno" sourceEntity="ent1" targetEntity="ent6" gr:bendpoints="-480,-78,230,237">

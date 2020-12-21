@@ -1,20 +1,68 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page50" name="Dettagli appuntamento non gestito" gr:x="755" gr:y="290">
-  <ContentUnits>
-    <DataUnit id="sv3#area9#page50#dau20" name="Dettagli" linkOrder="sv3#area9#page50#dau20#ln103" gr:x="0" gr:y="0" entity="ent8" displayAttributes="ent8#att35 ent8#att10">
-      <Selector id="sv3#area9#page50#dau20#su70" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area9#page50#dau20#su70#kcond34" name="KeyCondition11" predicate="in" implied="false"/>
-      </Selector>
-      <Link id="sv3#area9#page50#dau20#ln103" name="Flow24" to="sv3#area9#page53#dau22" type="normal" automaticCoupling="true" validate="true"/>
-    </DataUnit>
-  </ContentUnits>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page50" name="Dettagli appuntamento" gr:x="650" gr:y="260">
+  <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv3#area9#page50#dau20">
-          <layout:Link link="sv3#area9#page50#dau20#ln103"/>
-          <layout:Attribute attribute="ent8#att35"/>
-          <layout:Attribute attribute="ent8#att10"/>
-        </layout:Unit>
+        <layout:SubPage pageId="sv3#area9#page50#alt6#page53">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv3#area9#page50#alt6#page53#dau21">
+                  <layout:Link link="sv3#area9#page50#alt6#page53#dau21#ln195"/>
+                  <layout:Link link="sv3#area9#page50#alt6#page53#dau21#ln196"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#area9#page50#alt6#page82">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv3#area9#page50#alt6#page82#dau22">
+                  <layout:Link link="sv3#area9#page50#alt6#page82#dau22#ln197"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
@@ -29,4 +77,30 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Alternative gr:x="0" gr:y="0" id="sv3#area9#page50#alt6" name="Appuntamento" defaultPage="sv3#area9#page50#alt6#page82">
+    <Page gr:x="0" gr:y="0" id="sv3#area9#page50#alt6#page53" name="Dettagli appunatmento non  gestito">
+      <ContentUnits>
+        <DataUnit gr:x="0" gr:y="0" id="sv3#area9#page50#alt6#page53#dau21" name="non gestito" entity="ent8" linkOrder="sv3#area9#page50#alt6#page53#dau21#ln195 sv3#area9#page50#alt6#page53#dau21#ln196">
+          <Selector id="sv3#area9#page50#alt6#page53#dau21#su91" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv3#area9#page50#alt6#page53#dau21#su91#kcond90" name="KeyCondition90" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv3#area9#page50#alt6#page53#dau21#ln195" name="Flow195" to="sv3#area9#mfu7" type="normal" validate="true">
+            <LinkParameter id="sv3#area9#page50#alt6#page53#dau21#ln195#par262" name="true_gestito" sourceValue="true" target="sv3#area9#mfu7.ent8#att4"/>
+            <LinkParameter id="sv3#area9#page50#alt6#page53#dau21#ln195#par263" name="oid_KeyCondition92 [oid]" source="data.ent8#att34" target="sv3#area9#mfu7#su93#kcond92.ent8#att34"/>
+          </Link>
+          <Link id="sv3#area9#page50#alt6#page53#dau21#ln196" name="Flow196" to="sv3#area10#page56#dau24" automaticCoupling="true" type="normal" validate="true"/>
+        </DataUnit>
+      </ContentUnits>
+    </Page>
+    <Page gr:x="0" gr:y="150" id="sv3#area9#page50#alt6#page82" name="Dettagli appuntamento gestito">
+      <ContentUnits>
+        <DataUnit gr:x="0" gr:y="0" id="sv3#area9#page50#alt6#page82#dau22" name="gestito" entity="ent8" linkOrder="sv3#area9#page50#alt6#page82#dau22#ln197">
+          <Selector id="sv3#area9#page50#alt6#page82#dau22#su92" defaultPolicy="fill" booleanOperator="and">
+            <KeyCondition id="sv3#area9#page50#alt6#page82#dau22#su92#kcond91" name="KeyCondition91" predicate="in" implied="false"/>
+          </Selector>
+          <Link id="sv3#area9#page50#alt6#page82#dau22#ln197" name="Flow197" to="sv3#area10#page56#dau24" automaticCoupling="true" type="normal" validate="true"/>
+        </DataUnit>
+      </ContentUnits>
+    </Page>
+  </Alternative>
 </Page>

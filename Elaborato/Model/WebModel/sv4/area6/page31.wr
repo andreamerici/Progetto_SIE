@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area6#page31" name="Lista annunci con pi&#249; preferenze" gr:x="0" gr:y="475">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area6#page31" name="Lista annunci con pi&#249; preferenze" gr:x="0" gr:y="485">
   <ContentUnits>
     <IndexUnit id="sv4#area6#page31#inu9" name="Lista annunci pi&#249; preferenze" linkOrder="sv4#area6#page31#inu9#ln57" gr:x="280" gr:y="0" entity="ent15" displayAttributes="ent1#att9 ent1#att3 ent1#att6 ent1#att37">
       <Link id="sv4#area6#page31#inu9#ln57" name="Flow12" to="sv4#area6#page30#dau4" type="normal" automaticCoupling="true" validate="true"/>

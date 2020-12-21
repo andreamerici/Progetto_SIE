@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="100" gr:y="180" id="sv2#area12#page72" name="Dettagli capo filiale e filiale associata">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="105" gr:y="300" id="sv2#area12#page72" name="Dettagli capo filiale e filiale associata" linkOrder="sv2#area12#page72#ln174">
   <ContentUnits>
     <DataUnit id="sv2#area12#page72#dau3" name="Capo filiale" gr:x="0" gr:y="0" entity="ent7" linkOrder="sv2#area12#page72#dau3#ln154" displayAttributes="email ent7#att32 ent7#att33 ent7#att15 ent7#att63">
       <Selector id="sv2#area12#page72#dau3#su124" defaultPolicy="fill" booleanOperator="and">
@@ -6,11 +6,14 @@
       </Selector>
       <Link id="sv2#area12#page72#dau3#ln154" name="Flow154" to="sv2#area12#dlu2" automaticCoupling="true" type="normal" validate="true"/>
       <Link id="sv2#area12#page72#dau3#ln155" name="Flow155" to="sv2#area12#page72#dau14" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv2#area12#page72#dau3#ln178" name="Flow178" to="sv2#area12#dcnu4" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="184,-112,-236,-12"/>
     </DataUnit>
-    <DataUnit gr:x="165" gr:y="0" id="sv2#area12#page72#dau14" name="Filiale" entity="ent2" displayAttributes="ent2#att13">
+    <DataUnit gr:x="165" gr:y="0" id="sv2#area12#page72#dau14" name="Filiale" entity="ent2" displayAttributes="ent2#att13" linkOrder="sv2#area12#page72#dau14#ln150">
       <Selector id="sv2#area12#page72#dau14#su125" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area12#page72#dau14#su125#rcond21" name="RoleCondition21" predicate="in" implied="false" role="rel2#role3"/>
       </Selector>
+      <Link id="sv2#area12#page72#dau14#ln150" name="Flow150" to="sv2#area14#page78#dau18" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="1071,350,-1014,-370"/>
+      <Link id="sv2#area12#page72#dau14#ln179" name="Flow179" to="sv2#area12#dcnu4" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -41,6 +44,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area12#page72#dau14">
           <layout:Attribute attribute="ent2#att13"/>
+          <layout:Link link="sv2#area12#page72#dau14#ln150"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -56,4 +60,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv2#area12#page72#ln174" name="Flow174" to="sv2#area12#dcnu4" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

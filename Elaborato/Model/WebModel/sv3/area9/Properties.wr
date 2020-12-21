@@ -1,3 +1,11 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area9" name="Gestione appuntamenti" defaultPage="sv3#area9#page51" landmark="true" gr:x="40" gr:y="730">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area9" name="Gestione appuntamenti" defaultPage="sv3#area9#page51" landmark="true" gr:x="-85" gr:y="725">
+  <OperationUnits>
+    <ModifyUnit gr:x="695" gr:y="50" id="sv3#area9#mfu7" name="Gestione appuntamento" entity="ent8">
+      <Selector id="sv3#area9#mfu7#su93" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area9#mfu7#su93#kcond92" name="KeyCondition92" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area9#mfu7#oln64" name="OKFlow64" to="sv3#area9#page51#inu21" automaticCoupling="true"/>
+      <KOLink id="sv3#area9#mfu7#kln56" name="KOFlow56" to="sv3#area9#page90#mssu19" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
 </Area>

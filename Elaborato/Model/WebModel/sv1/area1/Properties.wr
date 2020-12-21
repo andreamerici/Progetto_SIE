@@ -4,6 +4,7 @@
       <Selector id="sv1#area1#seu2#su5" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area1#seu2#su5#rcond1" name="RoleCondition1" predicate="in" implied="false" role="rel3#role5"/>
         <AttributesCondition id="sv1#area1#seu2#su5#acond5" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att36" value="true"/>
+        <AttributesCondition id="sv1#area1#seu2#su5#acond27" name="AttCondition27" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att53" value="false"/>
       </Selector>
       <KOLink id="sv1#area1#seu2#kln1" name="KOFlow1" to="sv1#area1#page8#mssu1" automaticCoupling="true"/>
       <OKLink id="sv1#area1#seu2#oln12" name="OKFlow12" to="sv1#area1#page7#scu5" automaticCoupling="true" gr:bendpoints="56,-82,-944,-86;476,-73,-524,-77;896,-65,-104,-69"/>
@@ -12,6 +13,7 @@
       <Selector id="sv1#area1#seu5#su8" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area1#seu5#su8#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel4#role7"/>
         <AttributesCondition id="sv1#area1#seu5#su8#acond6" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att36" value="true"/>
+        <AttributesCondition id="sv1#area1#seu5#su8#acond28" name="AttCondition28" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att53" value="false"/>
       </Selector>
       <KOLink id="sv1#area1#seu5#kln3" name="KOFlow3" to="sv1#area1#page8#mssu1" automaticCoupling="true" gr:bendpoints="-79,61,486,141;-556,60,9,140"/>
       <OKLink id="sv1#area1#seu5#oln11" name="OKFlow11" to="sv1#area1#page7#scu5" automaticCoupling="true" gr:bendpoints="78,-79,-658,-79;631,-69,-105,-69"/>
@@ -20,6 +22,7 @@
       <Selector id="sv1#area1#seu6#su9" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area1#seu6#su9#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel5#role10"/>
         <AttributesCondition id="sv1#area1#seu6#su9#acond7" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att36" value="true"/>
+        <AttributesCondition id="sv1#area1#seu6#su9#acond29" name="AttCondition29" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att53" value="false"/>
       </Selector>
       <KOLink id="sv1#area1#seu6#kln4" name="KOFlow4" to="sv1#area1#page8#mssu1" automaticCoupling="true" gr:bendpoints="-34,64,756,144;-406,66,384,146;-903,77,57,127;-925,29,35,79"/>
       <OKLink id="sv1#area1#seu6#oln13" name="OKFlow13" to="sv1#area1#page7#scu5" automaticCoupling="true" gr:bendpoints="58,-78,-442,-78;386,-70,-114,-70"/>
@@ -31,6 +34,7 @@
         <RelationshipRoleCondition id="sv1#area1#seu13#su11#rcond9" name="RoleCondition9" predicate="in" implied="false" role="rel5#role10"/>
         <RelationshipRoleCondition id="sv1#area1#seu13#su11#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel9#role17"/>
         <AttributesCondition id="sv1#area1#seu13#su11#acond8" name="AttCondition8" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att36" value="true"/>
+        <AttributesCondition id="sv1#area1#seu13#su11#acond30" name="AttCondition30" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att53" value="false"/>
       </Selector>
       <KOLink id="sv1#area1#seu13#kln6" name="KOFlow6" to="sv1#area1#page8#mssu1" automaticCoupling="true" gr:bendpoints="-69,85,1201,149;-1160,68,60,128"/>
       <OKLink id="sv1#area1#seu13#oln1" name="OKFlow1" to="sv1#area1#page7#scu5" automaticCoupling="true"/>

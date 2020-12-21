@@ -1,11 +1,16 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="155" id="sv3#area5#page21" name="Visualizza dettagli profilo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area5#page21" name="Visualizza dettagli profilo">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv3#area5#page21#dau8" name="Dettagli profilo" entity="ent7" displayAttributes="userName password email ent7#att32 ent7#att33 ent7#att15 ent7#att63" linkOrder="sv3#area5#page21#dau8#ln43">
+    <DataUnit gr:x="0" gr:y="120" id="sv3#area5#page21#dau8" name="Dettagli profilo" entity="ent7" displayAttributes="userName password email ent7#att32 ent7#att33 ent7#att15 ent7#att63" linkOrder="sv3#area5#page21#dau8#ln43">
       <Selector id="sv3#area5#page21#dau8#su20" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area5#page21#dau8#su20#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv3#area5#page21#dau8#ln43" name="Flow42" to="sv3#area5#page22" type="normal" validate="true" automaticCoupling="true"/>
     </DataUnit>
+    <GetUnit gr:x="5" gr:y="0" id="sv3#area5#page21#gtu15" name="Utente loggato" contextParameters="UserCtxParam">
+      <Link id="sv3#area5#page21#gtu15#ln188" name="Flow188" to="sv3#area5#page21#dau8" type="transport" validate="true">
+        <LinkParameter id="sv3#area5#page21#gtu15#ln188#par241" name="UserCtxParam.oid_KeyCondition12 [oid]" source="sv3#area5#page21#gtu15.UserCtxParam" target="sv3#area5#page21#dau8#su20#kcond12.userOID"/>
+      </Link>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -21,6 +26,20 @@
           <layout:Link link="sv3#area5#page21#dau8#ln43"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>
