@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="645" gr:y="165" id="sv3#area5" name="Profilo utente" landmark="true" defaultPage="sv3#area5#page21">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="650" gr:y="180" id="sv3#area5" name="Profilo utente" landmark="true" defaultPage="sv3#area5#page21">
   <OperationUnits>
     <ModifyUnit gr:x="310" gr:y="300" id="sv3#area5#mfu2" name="Cambia dati profilo" entity="ent7">
       <Selector id="sv3#area5#mfu2#su26" defaultPolicy="fill" booleanOperator="and">

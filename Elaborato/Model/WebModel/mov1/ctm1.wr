@@ -1,0 +1,163 @@
+<ContentModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="260" gr:y="110" id="mov1#ctm1" name="Mostra dettagli">
+  <ContentUnits>
+    <InputCollectorUnit gr:x="110" gr:y="185" id="mov1#ctm1#icu1">
+      <InputCollectorParameter id="mov1#ctm1#icu1#icp1" name="Filiale OID"/>
+      <InputCollectorParameter id="mov1#ctm1#icu1#icp2" name="Zona OID"/>
+      <Link id="mov1#ctm1#icu1#ln131" name="Flow131" to="mov1#ctm1#dau20" type="transport" validate="true">
+        <LinkParameter id="mov1#ctm1#icu1#ln131#par210" name="Filiale OID_KeyCondition1 [oid]" source="mov1#ctm1#icu1#icp1" target="mov1#ctm1#dau20#su53#kcond32.ent2#att2"/>
+        <LinkParameter id="mov1#ctm1#icu1#ln131#par283" name="Zona OID_RoleCondition13 [oid]" source="mov1#ctm1#icu1#icp2" target="mov1#ctm1#dau20#su53#rcond24.ent5#att22"/>
+      </Link>
+    </InputCollectorUnit>
+    <OutputCollectorUnit gr:x="805" gr:y="205" id="mov1#ctm1#ocu1" name="OID annuncio selezionato">
+      <OutputCollectorParameter id="mov1#ctm1#ocu1#ocp1" name="Annuncio OID"/>
+      <OutputCollectorParameter id="mov1#ctm1#ocu1#ocp2" name="Filiale OID"/>
+    </OutputCollectorUnit>
+    <DataUnit id="mov1#ctm1#dau20" name="Dettaglio Filiale" gr:x="410" gr:y="175" entity="ent2" displayAttributes="ent2#att13 ent2#att17 ent2#att14 ent2#att62" linkOrder="mov1#ctm1#dau20#ln172">
+      <Selector id="mov1#ctm1#dau20#su53" defaultPolicy="fill" booleanOperator="or">
+        <KeyCondition id="mov1#ctm1#dau20#su53#kcond32" name="KeyCondition1" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="mov1#ctm1#dau20#su53#rcond24" name="RoleCondition13" predicate="in" implied="false" role="rel6#role12"/>
+      </Selector>
+      <Link id="mov1#ctm1#dau20#ln44" name="Flow44" to="mov1#ctm1#mdu7" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="mov1#ctm1#dau20#ln47" name="Flow47" to="mov1#ctm1#dau23" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="mov1#ctm1#dau20#ln89" name="Flow89" to="mov1#ctm1#scu12" type="transport" validate="true">
+        <LinkParameter id="mov1#ctm1#dau20#ln89#par69" name="FilialeToZona.oid_RoleCondition10 [oid]" source="data.rel6#role11_ent5#att22" target="mov1#ctm1#scu12#su70#rcond65.ent5#att22"/>
+      </Link>
+      <Link id="mov1#ctm1#dau20#ln172" name="Flow172" to="mov1#ctm1#ocu1" type="normal" validate="true" gr:bendpoints="124,-26,-361,-46;299,-28,-186,-48">
+        <LinkParameter id="mov1#ctm1#dau20#ln172#par286" name="oid_Filaile OID" source="data.ent2#att2" target="mov1#ctm1#ocu1#ocp2"/>
+      </Link>
+    </DataUnit>
+    <MultiDataUnit id="mov1#ctm1#mdu7" name="Orario" gr:x="620" gr:y="245" entity="ent12" displayAttributes="ent12#att39 ent12#att40 ent12#att41">
+      <Selector id="mov1#ctm1#mdu7#su62" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#ctm1#mdu7#su62#rcond31" name="RoleCondition12" role="rel10#role19" predicate="in" implied="false"/>
+      </Selector>
+    </MultiDataUnit>
+    <DataUnit id="mov1#ctm1#dau23" name="Indirizzo Sede" gr:x="535" gr:y="360" entity="ent14" displayAttributes="ent14#att47 ent14#att48 ent14#att49">
+      <Selector id="mov1#ctm1#dau23#su68" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#ctm1#dau23#su68#rcond36" name="RoleCondition39" role="rel16#role31" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <ScrollerUnit id="mov1#ctm1#scu12" name="Scroller Annunci" gr:x="410" gr:y="480" useCountQuery="false" entity="ent1" blockFactor="10" linkOrder="mov1#ctm1#scu12#ln54">
+      <Selector id="mov1#ctm1#scu12#su70" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#ctm1#scu12#su70#rcond65" name="RoleCondition10" predicate="in" implied="false" role="rel5#role10"/>
+        <AttributesCondition id="mov1#ctm1#scu12#su70#acond35" name="AttCondition19" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att36" value="true"/>
+      </Selector>
+      <Link id="mov1#ctm1#scu12#ln54" name="Flow54" to="mov1#ctm1#inu13" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
+    <IndexUnit id="mov1#ctm1#inu13" name="Lista Annunci Filiale" gr:x="600" gr:y="485" entity="ent1" displayAttributes="ent1#att3 ent1#att6 ent1#att9 ent1#att37" linkOrder="mov1#ctm1#inu13#ln90">
+      <Selector id="mov1#ctm1#inu13#su76" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#ctm1#inu13#su76#kcond33" name="KeyCondition57" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="mov1#ctm1#inu13#ln90" name="Flow90" to="mov1#ctm1#ocu1" type="normal" validate="true">
+        <LinkParameter id="mov1#ctm1#inu13#ln90#par74" name="oid_Annuncio OID" source="data[].ent1#att1" target="mov1#ctm1#ocu1#ocp1"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#ctm1#dau20">
+          <layout:Attribute attribute="ent2#att13"/>
+          <layout:Attribute attribute="ent2#att17"/>
+          <layout:Attribute attribute="ent2#att14"/>
+          <layout:Attribute attribute="ent2#att62"/>
+          <layout:Link link="mov1#ctm1#dau20#ln172"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#ctm1#mdu7">
+          <layout:Attribute attribute="ent12#att39"/>
+          <layout:Attribute attribute="ent12#att40"/>
+          <layout:Attribute attribute="ent12#att41"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#ctm1#dau23">
+          <layout:Attribute attribute="ent14#att47"/>
+          <layout:Attribute attribute="ent14#att48"/>
+          <layout:Attribute attribute="ent14#att49"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#ctm1#scu12">
+          <layout:Link link="mov1#ctm1#scu12First"/>
+          <layout:Link link="mov1#ctm1#scu12Previous"/>
+          <layout:Link link="mov1#ctm1#scu12Block"/>
+          <layout:Link link="mov1#ctm1#scu12Next"/>
+          <layout:Link link="mov1#ctm1#scu12Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="mov1#ctm1#inu13">
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att37"/>
+          <layout:Link link="mov1#ctm1#inu13#ln90"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</ContentModule>

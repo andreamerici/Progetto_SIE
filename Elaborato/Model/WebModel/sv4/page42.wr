@@ -5,7 +5,9 @@
         <RelationshipRoleCondition id="sv4#page42#dau15#su60#rcond28" name="RoleCondition13" predicate="in" implied="false" role="rel5#role9"/>
         <RelationshipRoleCondition id="sv4#page42#dau15#su60#rcond29" name="RoleCondition21" predicate="in" implied="false" role="rel6#role11"/>
       </Selector>
-      <Link id="sv4#page42#dau15#ln119" name="Flow119" to="sv4#area7#page40#dau12" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv4#page42#dau15#ln119" name="Flow119" to="sv4#area7#page40#miu2" type="normal" validate="true" gr:bendpoints="-10,385,-105,-310">
+        <LinkParameter id="sv4#page42#dau15#ln119#par304" name="oid_Zona OID" source="data.ent5#att22" target="mov1#ctm1#icu1#icp2"/>
+      </Link>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

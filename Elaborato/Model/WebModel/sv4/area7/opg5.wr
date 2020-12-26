@@ -1,4 +1,4 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area7#opg5" name="Aggiungi recensione" transaction="true" gr:x="1150" gr:y="405">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area7#opg5" name="Aggiungi recensione" transaction="true" gr:x="1125" gr:y="105">
   <OperationUnits>
     <CreateUnit id="sv4#area7#opg5#cru7" name="Nuova recensione" gr:x="25" gr:y="125" entity="ent17">
       <OKLink id="sv4#area7#opg5#cru7#oln46" name="OKLink18" to="sv4#area7#opg5#cnu8">

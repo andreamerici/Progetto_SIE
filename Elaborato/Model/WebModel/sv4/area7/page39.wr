@@ -1,7 +1,9 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area7#page39" name="Lista Filiali BestReviewed" gr:x="360" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area7#page39" name="Lista Filiali BestReviewed" gr:x="305" gr:y="0">
   <ContentUnits>
     <IndexUnit id="sv4#area7#page39#inu14" name="Lista Filiali BestReviewed" linkOrder="sv4#area7#page39#inu14#ln76" gr:x="0" gr:y="0" entity="ent18" displayAttributes="ent2#att13">
-      <Link id="sv4#area7#page39#inu14#ln76" name="Flow10" to="sv4#area7#page40#dau12" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv4#area7#page39#inu14#ln76" name="Flow10" to="sv4#area7#page40#miu2" type="normal" validate="true">
+        <LinkParameter id="sv4#area7#page39#inu14#ln76#par303" name="oid_Filiale OID" source="data[].ent2#att2" target="mov1#ctm1#icu1#icp1"/>
+      </Link>
     </IndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

@@ -7,6 +7,7 @@
     <DeleteUnit gr:x="75" gr:y="480" id="sv2#area12#dlu2" name="Cancella capo filiale" entity="ent7">
       <Selector id="sv2#area12#dlu2#su96" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area12#dlu2#su96#kcond69" name="KeyCondition69" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv2#area12#dlu2#su96#rcond25" name="RoleCondition25" predicate="notIn" implied="false" role="rel2#role4"/>
       </Selector>
       <OKLink id="sv2#area12#dlu2#oln31" name="OKFlow31" to="sv2#area12#page10" automaticCoupling="true" gr:bendpoints="-125,-174,-175,171"/>
       <KOLink id="sv2#area12#dlu2#kln32" name="KOFlow32" to="sv2#area12#page74#alt4#page76" automaticCoupling="true"/>

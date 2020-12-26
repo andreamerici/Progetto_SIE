@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="195" gr:y="465" id="sv3#area2#page38" name="Dettagli zona" linkOrder="sv3#area2#page38#ln82">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv3#area2#page38#dau12" name="Dettagli" entity="ent5">
+      <Selector id="sv3#area2#page38#dau12#su54" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area2#page38#dau12#su54#rcond13" name="RoleCondition13" predicate="in" implied="false" role="rel6#role11"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page38#dau12"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area2#page38#ln82" name="Flow82" to="sv3#area2#page20" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

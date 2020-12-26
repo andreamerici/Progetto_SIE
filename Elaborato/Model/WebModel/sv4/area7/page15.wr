@@ -1,21 +1,24 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area7#page15" name="Elenco Filiali" landmark="false" gr:x="0" gr:y="215">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area7#page15" name="Elenco Filiali" landmark="false" gr:x="0" gr:y="200">
   <ContentUnits>
     <IndexUnit id="sv4#area7#page15#inu12" name="Lista Filiali" linkOrder="sv4#area7#page15#inu12#ln22" gr:x="230" gr:y="0" entity="ent2" displayAttributes="ent2#att13">
-      <Link id="sv4#area7#page15#inu12#ln22" name="Flow4" to="sv4#area7#page40#dau12" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv4#area7#page15#inu12#ln22" name="Flow4" to="sv4#area7#page40#miu2" type="normal" validate="true">
+        <LinkParameter id="sv4#area7#page15#inu12#ln22#par300" name="oid_Filiale OID" source="data[].ent2#att2" target="mov1#ctm1#icu1#icp1"/>
+      </Link>
       <Selector id="sv4#area7#page15#inu12#su59" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area7#page15#inu12#su59#kcond30" name="KeyCondition30" predicate="in" implied="false"/>
       </Selector>
     </IndexUnit>
     <SelectorUnit id="sv4#area7#page15#seu23" name="Selettore Zona" customDescriptor="false" gr:x="0" gr:y="100" entity="ent5">
       <Link id="sv4#area7#page15#seu23#ln23" name="Flow2" to="sv4#area7#page15#enu2" type="transport" validate="true">
-        <LinkParameter id="sv4#area7#page15#seu23#ln23#par69" name="oid_PASSING" source="ent5#att23Array" passing="true"/>
         <LinkParameter id="sv4#area7#page15#seu23#ln23#par70" name="nome_Zona [label]" source="ent5#att23Array" target="sv4#area7#page15#enu2#sfld17_label"/>
         <LinkParameter id="sv4#area7#page15#seu23#ln23#par71" name="oid_Zona [output]" source="ent5#att22Array" target="sv4#area7#page15#enu2#sfld17_output"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit id="sv4#area7#page15#enu2" name="Ricerca per Zona" linkOrder="sv4#area7#page15#enu2#ln44" gr:x="215" gr:y="110">
-      <Link id="sv4#area7#page15#enu2#ln44" name="Flow14" to="sv4#area7#page38#scu12" type="normal" automaticCoupling="true" validate="true"/>
+    <EntryUnit id="sv4#area7#page15#enu2" name="Ricerca per Zona" gr:x="215" gr:y="110" linkOrder="sv4#area7#page15#enu2#ln181">
       <SelectionField id="sv4#area7#page15#enu2#sfld17" name="Zona" type="string"/>
+      <Link id="sv4#area7#page15#enu2#ln181" name="Flow181" to="sv4#area7#page40#miu2" type="normal" validate="true">
+        <LinkParameter id="sv4#area7#page15#enu2#ln181#par301" name="Zona_Zona OID" source="sv4#area7#page15#enu2#sfld17" target="mov1#ctm1#icu1#icp2"/>
+      </Link>
     </EntryUnit>
     <ScrollerUnit gr:x="5" gr:y="0" id="sv4#area7#page15#scu17" name="Scroller Filiali" useCountQuery="false" linkOrder="sv4#area7#page15#scu17#ln98" entity="ent2">
       <Link id="sv4#area7#page15#scu17#ln98" name="Flow98" to="sv4#area7#page15#inu12" automaticCoupling="true" type="automatic" validate="true"/>
@@ -44,8 +47,8 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv4#area7#page15#enu2">
-          <layout:Link link="sv4#area7#page15#enu2#ln44"/>
           <layout:Field field="sv4#area7#page15#enu2#sfld17"/>
+          <layout:Link link="sv4#area7#page15#enu2#ln181"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

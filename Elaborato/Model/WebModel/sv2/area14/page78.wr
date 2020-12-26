@@ -21,17 +21,11 @@
       <Link id="sv2#area14#page78#dau18#ln120" name="Flow120" to="sv2#area14#stu4" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
     <ScrollerUnit id="sv2#area14#page78#scu20" name="Scroller Annunci" linkOrder="sv2#area14#page78#scu20#ln167" gr:x="0" gr:y="355" useCountQuery="false" entity="ent1">
-      <Link id="sv2#area14#page78#scu20#ln167" name="Flow13" to="sv2#area14#page78#inu26" type="automatic" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area14#page78#scu20#ln167" name="Flow13" to="sv2#area14#page78#mdu4" type="automatic" automaticCoupling="true" validate="true"/>
       <Selector id="sv2#area14#page78#scu20#su130" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area14#page78#scu20#su130#rcond50" name="RoleCondition5" predicate="in" implied="false" role="rel5#role10"/>
       </Selector>
     </ScrollerUnit>
-    <IndexUnit id="sv2#area14#page78#inu26" name="Lista Annunci Filiale" gr:x="175" gr:y="345" entity="ent1" displayAttributes="ent1#att3 ent1#att6 ent1#att9 ent1#att37">
-      <Selector id="sv2#area14#page78#inu26#su131" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="sv2#area14#page78#inu26#su131#acond24" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att36"/>
-        <KeyCondition id="sv2#area14#page78#inu26#su131#kcond89" name="KeyCondition89" predicate="in" implied="false"/>
-      </Selector>
-    </IndexUnit>
     <DataUnit id="sv2#area14#page78#dau25" name="Indirizzo Sede" gr:x="215" gr:y="220" entity="ent14" displayAttributes="ent14#att47 ent14#att48 ent14#att49">
       <Selector id="sv2#area14#page78#dau25#su132" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area14#page78#dau25#su132#rcond53" name="RoleCondition53" predicate="in" implied="false" role="rel16#role31"/>
@@ -45,6 +39,12 @@
     <GetUnit gr:x="70" gr:y="0" id="sv2#area14#page78#gtu4" name="Filiale Selezionata" contextParameters="ctx2">
       <Link id="sv2#area14#page78#gtu4#ln115" name="Flow115" to="sv2#area14#page78#dau18" automaticCoupling="true" type="transport" validate="true"/>
     </GetUnit>
+    <MultiDataUnit id="sv2#area14#page78#mdu4" entity="ent1" displayAttributes="ent1#att3 ent1#att6 ent1#att9 ent1#att37" name="Lista Annunci Filiale" gr:x="175" gr:y="345">
+      <Selector id="sv2#area14#page78#mdu4#su55" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area14#page78#mdu4#su55#kcond31" predicate="in" implied="false" name="KeyCondition89"/>
+        <AttributesCondition id="sv2#area14#page78#mdu4#su55#acond19" attributes="ent1#att36" predicate="eq" booleanOperator="or" value="true" implied="false" name="AttCondition1"/>
+      </Selector>
+    </MultiDataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -95,7 +95,7 @@
     </layout:Row>
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv2#area14#page78#inu26">
+        <layout:Unit unitId="sv2#area14#page78#mdu4">
           <layout:Attribute attribute="ent1#att3"/>
           <layout:Attribute attribute="ent1#att6"/>
           <layout:Attribute attribute="ent1#att9"/>
