@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page80" name="Error Page" gr:x="0" gr:y="40">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page80" name="Error Page" gr:x="0" gr:y="265">
   <ContentUnits/>
   <layout:Grid containerType="grid">
     <layout:Row>

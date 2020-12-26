@@ -496,7 +496,7 @@
     </Page>
     <Page id="sv4#area1#page18#alt3#page45" name="Ricerca avanzata" gr:x="865" gr:y="0">
       <ContentUnits>
-        <SelectorUnit id="sv4#area1#page18#alt3#page45#seu27" name="Seleziona contratto" gr:x="265" gr:y="0" entity="ent3">
+        <SelectorUnit id="sv4#area1#page18#alt3#page45#seu27" name="Seleziona contratto" gr:x="300" gr:y="0" entity="ent3">
           <Link id="sv4#area1#page18#alt3#page45#seu27#ln82" name="Flow17" to="sv4#area1#page18#alt3#page45#enu16" type="transport" validate="true">
             <LinkParameter id="sv4#area1#page18#alt3#page45#seu27#ln82#par63" name="tipologia_Contratto [label]" source="ent3#att19Array" target="sv4#area1#page18#alt3#page45#enu16#sfld13_label"/>
             <LinkParameter id="sv4#area1#page18#alt3#page45#seu27#ln82#par64" name="oid_Contratto [output]" source="ent3#att18Array" target="sv4#area1#page18#alt3#page45#enu16#sfld13_output"/>

@@ -1,9 +1,9 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area7" name="Home" defaultPage="sv2#area7#page40" landmark="true" gr:x="5" gr:y="2245">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area7" name="Home" defaultPage="sv2#area7#page40" landmark="true" gr:x="-195" gr:y="895">
   <OperationUnits>
     <GetUnit id="sv2#area7#gtu1" name="Utente loggato" gr:x="0" gr:y="40" contextParameters="UserCtxParam">
       <Link id="sv2#area7#gtu1#ln72" name="Flow35" to="sv2#area7#page40#dau4" type="transport" automaticCoupling="true" validate="true"/>
     </GetUnit>
-    <LogoutUnit gr:x="5" gr:y="175" id="sv2#area7#lou1" name="Logout" siteView="sv2">
+    <LogoutUnit gr:x="5" gr:y="185" id="sv2#area7#lou1" name="Logout" siteView="sv2">
       <KOLink id="sv2#area7#lou1#kln17" name="KOFlow17" to="sv2#area7#page40" automaticCoupling="true" gr:bendpoints="86,63,-334,58"/>
     </LogoutUnit>
   </OperationUnits>

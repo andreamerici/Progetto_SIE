@@ -1,16 +1,16 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area9#page55" name="Dettagli annuncio" gr:x="580" gr:y="205">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area9#page55" name="Dettagli annuncio" gr:x="600" gr:y="145">
   <ContentUnits>
-    <DataUnit id="sv4#area9#page55#dau2" name="Annuncio" linkOrder="sv4#area9#page55#dau2#ln102 sv4#area9#page55#dau2#ln105 sv4#area9#page55#dau2#ln104 sv4#area9#page55#dau2#ln106 sv4#area9#page55#dau2#ln164" gr:x="0" gr:y="5" entity="ent1" displayAttributes="ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att11">
+    <DataUnit id="sv4#area9#page55#dau2" name="Annuncio" linkOrder="sv4#area9#page55#dau2#ln102 sv4#area9#page55#dau2#ln105 sv4#area9#page55#dau2#ln104 sv4#area9#page55#dau2#ln106 sv4#area9#page55#dau2#ln164" gr:x="5" gr:y="175" entity="ent1" displayAttributes="ent1#att6 ent1#att7 ent1#att8 ent1#att9 ent1#att11">
       <Selector id="sv4#area9#page55#dau2#su67" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#page55#dau2#su67#kcond33" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv4#area9#page55#dau2#ln102" name="Flow5" to="sv4#area9#page57#dau16" type="normal" automaticCoupling="true" validate="true"/>
       <Link id="sv4#area9#page55#dau2#ln103" name="Flow33" to="sv4#area9#page55#dau7" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv4#area9#page55#dau2#ln104" name="Flow66" to="sv4#area9#dcnu1" type="normal" validate="true" gr:bendpoints="78,296,-217,-244;133,447,-162,-93">
-        <LinkParameter id="sv4#area9#page55#dau2#ln104#par77" name="oid_KeyCondition20 [oid] [Annuncio] [Source]" source="data.ent1#att1" target="sv4#area9#dcnu1#su63#kcond30.ent1#att1"/>
+        <LinkParameter id="sv4#area9#page55#dau2#ln104#par388" name="oid_KeyCondition20 [oid] [Annuncio] [Source]" source="data.ent1#att1" target="sv4#area9#dcnu1#su63#kcond30.ent1#att1"/>
       </Link>
       <Link id="sv4#area9#page55#dau2#ln105" name="Flow78" to="sv4#area9#cnu3" type="normal" validate="true">
-        <LinkParameter id="sv4#area9#page55#dau2#ln105#par78" name="oid_KeyCondition18 [oid] [Annuncio] [Source]" source="data.ent1#att1" target="sv4#area9#cnu3#su61#kcond26.ent1#att1"/>
+        <LinkParameter id="sv4#area9#page55#dau2#ln105#par387" name="oid_KeyCondition18 [oid] [Annuncio] [Source]" source="data.ent1#att1" target="sv4#area9#cnu3#su61#kcond26.ent1#att1"/>
       </Link>
       <Link id="sv4#area9#page55#dau2#ln106" name="Flow70" to="sv4#area9#page58#enu17" type="normal" validate="true" ajaxOpenWindow="true">
         <LinkParameter id="sv4#area9#page55#dau2#ln106#par79" name="oid_PASSING" source="data.ent1#att1" passing="true"/>
@@ -18,11 +18,14 @@
       <Link id="sv4#area9#page55#dau2#ln107" name="Flow79" to="sv4#area9#stu2" type="transport" automaticCoupling="true" validate="true"/>
       <Link id="sv4#area9#page55#dau2#ln164" name="Flow164" to="sv4#page86" automaticCoupling="true" type="normal" validate="true"/>
     </DataUnit>
-    <DataUnit id="sv4#area9#page55#dau7" name="Indirizzo" gr:x="235" gr:y="0" entity="ent13" displayAttributes="ent13#att45">
+    <DataUnit id="sv4#area9#page55#dau7" name="Indirizzo" gr:x="240" gr:y="170" entity="ent13" displayAttributes="ent13#att45">
       <Selector id="sv4#area9#page55#dau7#su68" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv4#area9#page55#dau7#su68#rcond36" name="RoleCondition14" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
+    <GetUnit id="sv4#area9#page55#gtu17" name="Annuncio selezionato" gr:x="0" gr:y="0" contextParameters="ctx1">
+      <Link id="sv4#area9#page55#gtu17#ln184" name="Flow80" to="sv4#area9#page55#dau2" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

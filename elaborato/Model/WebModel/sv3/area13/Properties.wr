@@ -1,0 +1,11 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area13" name="Profilo utente" defaultPage="sv3#area13#page31" landmark="true" gr:x="2100" gr:y="10">
+  <OperationUnits>
+    <ModifyUnit id="sv3#area13#mfu6" name="Cambia dati profilo" gr:x="310" gr:y="305" entity="User">
+      <Selector id="sv3#area13#mfu6#su31" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area13#mfu6#su31#kcond9" name="KeyCondition16" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area13#mfu6#oln53" name="OKFlow2" to="sv3#area13#page31#dau13" automaticCoupling="true"/>
+      <KOLink id="sv3#area13#mfu6#kln47" name="KOFlow2" to="sv3#area13#page6#mssu17" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

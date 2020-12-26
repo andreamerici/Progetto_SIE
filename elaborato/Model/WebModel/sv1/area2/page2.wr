@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="60" gr:y="0" id="sv1#area2#page2" name="Lista annunci pi&#249; richiesti">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="0" id="sv1#area2#page2" name="Lista annunci pi&#249; richiesti">
   <ContentUnits>
     <IndexUnit gr:x="270" gr:y="0" id="sv1#area2#page2#inu6" name="lista annunci pi&#249; richiesti" entity="ent10" linkOrder="sv1#area2#page2#inu6#ln11" displayAttributes="ent1#att2 ent1#att8 ent1#att9 ent1#att5">
       <Selector id="sv1#area2#page2#inu6#su9" defaultPolicy="fill" booleanOperator="and">

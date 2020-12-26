@@ -1,43 +1,65 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1600" gr:y="5" id="sv3#area12#opg6" name="Creazione filiale" transaction="true">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1440" gr:y="20" id="sv3#area12#opg6" name="Creazione filiale" transaction="true">
   <OperationUnits>
-    <CreateUnit gr:x="20" gr:y="0" id="sv3#area12#opg6#cru7" name="Crea indirizzo" entity="ent14">
-      <OKLink id="sv3#area12#opg6#cru7#oln47" name="OKFlow47" to="sv3#area12#opg6#cru8">
-        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par208" name="Giorno_PASSING_giorno" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par181" target="sv3#area12#opg6#cru8.ent12#att34"/>
-        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par209" name="Apertura_PASSING_orarioApertura" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par175" target="sv3#area12#opg6#cru8.ent12#att29"/>
-        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par210" name="Chiusura_PASSING_orarioChiusura" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par178" target="sv3#area12#opg6#cru8.ent12#att32"/>
+    <CreateUnit gr:x="65" gr:y="0" id="sv3#area12#opg6#cru7" name="Crea indirizzo" entity="ent14">
+      <OKLink id="sv3#area12#opg6#cru7#oln47" name="OKFlow47" to="sv3#area12#cru12">
         <LinkParameter id="sv3#area12#opg6#cru7#oln47#par211" name="Email_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par180" passing="true"/>
         <LinkParameter id="sv3#area12#opg6#cru7#oln47#par212" name="Nome_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par182" passing="true"/>
         <LinkParameter id="sv3#area12#opg6#cru7#oln47#par213" name="oid_PASSING" source="ent14#att41Array" passing="true"/>
         <LinkParameter id="sv3#area12#opg6#cru7#oln47#par214" name="Telefono_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par183" passing="true"/>
-        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par188" name="oid_Filiale.oid(OrarioToFiliale)" source="ent14#att41Array" target="sv3#area12#opg6#cru8.rel11#role22.ent2#att12"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par188" name="Zona_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par185" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par215" name="Giorno_PASSING_giorno" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par181" target="sv3#area12#cru12.ent12#att34"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par216" name="Apertura_PASSING_orarioApertura" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par175" target="sv3#area12#cru12.ent12#att29"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par218" name="Chiusura_PASSING_orarioChiusura" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par178" target="sv3#area12#cru12.ent12#att32"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par227" name="apertura2_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par219" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par228" name="Apertura_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par175" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par253" name="Capo filiale_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par177" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par254" name="chiusura2_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par220" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par275" name="Chiusura_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par178" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par276" name="giorno2_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par226" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par277" name="Giorno_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par181" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par297" name="apertura3_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par286" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par298" name="apertura4_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par287" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par299" name="apertura5_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par288" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par300" name="chiusura3_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par289" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par301" name="chiusura4_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par290" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par302" name="chiusura5_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par291" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par303" name="giorno3_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par292" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par304" name="giorno4_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par293" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par305" name="giorno5_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par294" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par431" name="apertura6_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par428" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par432" name="chiusura6_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par429" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru7#oln47#par433" name="giorno6_PASSING" sourceLinkParameter="sv3#area12#page79#meu3#ln154#par430" passing="true"/>
       </OKLink>
       <KOLink id="sv3#area12#opg6#cru7#kln41" name="KOFlow41" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
     </CreateUnit>
-    <CreateUnit gr:x="25" gr:y="145" id="sv3#area12#opg6#cru8" name="Crea orario" entity="ent12">
-      <OKLink id="sv3#area12#opg6#cru8#oln46" name="OKFlow46" to="sv3#area12#opg6#cru9">
-        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par218" name="Email_PASSING_email" sourceLinkParameter="sv3#area12#opg6#cru7#oln47#par211" target="sv3#area12#opg6#cru9.ent2#att17"/>
-        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par219" name="Nome_PASSING_nome" sourceLinkParameter="sv3#area12#opg6#cru7#oln47#par212" target="sv3#area12#opg6#cru9.ent2#att13"/>
-        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par220" name="Telefono_PASSING_telefono" sourceLinkParameter="sv3#area12#opg6#cru7#oln47#par214" target="sv3#area12#opg6#cru9.ent2#att14"/>
-        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par92" name="oid_IndirizzoSede.oid(FilialeToIndirizzo sede)" source="ent12#att28Array" target="sv3#area12#opg6#cru9.rel14#role27.ent14#att41"/>
-        <LinkParameter id="sv3#area12#opg6#cru8#oln46#par93" name="oid_Orario.oid(FilialeToOrario)" source="ent12#att28Array" target="sv3#area12#opg6#cru9.rel11#role21.ent12#att28"/>
-      </OKLink>
-      <KOLink id="sv3#area12#opg6#cru8#kln42" name="KOFlow42" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
-    </CreateUnit>
-    <CreateUnit gr:x="30" gr:y="280" id="sv3#area12#opg6#cru9" name="Crea filiale" entity="ent2">
-      <OKLink id="sv3#area12#opg6#cru9#oln45" name="OKFlow45" to="sv3#area12#opg6#cnu10" automaticCoupling="true"/>
+    <CreateUnit gr:x="15" gr:y="610" id="sv3#area12#opg6#cru9" name="Crea filiale" entity="ent2">
       <KOLink id="sv3#area12#opg6#cru9#kln43" name="KOFlow43" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+      <OKLink id="sv3#area12#opg6#cru9#oln101" name="OKFlow101" to="sv3#area12#opg6#miu9">
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par427" name="oid_oid" source="ent2#att12Array" target="sv3#area12#opg6#miu9.mov2#opm4#icu12#icp18"/>
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par471" name="oid_PASSING_gioved&#236;" sourceLinkParameter="sv3#area12#opg6#cru22#oln106#par467" target="sv3#area12#opg6#miu9.mov2#opm4#icu12#icp17"/>
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par472" name="oid_PASSING_luned&#236;" sourceLinkParameter="sv3#area12#opg6#cru22#oln106#par464" target="sv3#area12#opg6#miu9.mov2#opm4#icu12#icp12"/>
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par473" name="oid_PASSING_marted&#236;" sourceLinkParameter="sv3#area12#opg6#cru22#oln106#par465" target="sv3#area12#opg6#miu9.mov2#opm4#icu12#icp13"/>
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par474" name="oid_PASSING_mercoled&#236;" sourceLinkParameter="sv3#area12#opg6#cru22#oln106#par466" target="sv3#area12#opg6#miu9.mov2#opm4#icu12#icp14"/>
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par475" name="oid_PASSING_sabato" sourceLinkParameter="sv3#area12#opg6#cru22#oln106#par470" target="sv3#area12#opg6#miu9.mov2#opm4#icu12#icp16"/>
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par483" name="oid_PASSING_venerd&#236;" sourceLinkParameter="sv3#area12#opg6#cru22#oln106#par469" target="sv3#area12#opg6#miu9.mov2#opm4#icu12#icp15"/>
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par162" name="Capo filiale_PASSING" sourceLinkParameter="sv3#area12#opg6#cru22#oln106#par93" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru9#oln101#par191" name="Zona_PASSING" sourceLinkParameter="sv3#area12#opg6#cru22#oln106#par159" passing="true"/>
+      </OKLink>
     </CreateUnit>
-    <ConnectUnit gr:x="10" gr:y="415" id="sv3#area12#opg6#cnu10" name="Connetti zona" relationship="rel12#role23">
+    <ConnectUnit gr:x="215" gr:y="785" id="sv3#area12#opg6#cnu10" name="Connetti zona" relationship="rel12#role23">
       <SourceSelector id="sv3#area12#opg6#cnu10#su117" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#opg6#cnu10#su117#kcond67" name="KeyCondition67" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv3#area12#opg6#cnu10#su118" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#opg6#cnu10#su118#kcond68" name="KeyCondition68" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv3#area12#opg6#cnu10#oln48" name="OKFlow48" to="sv3#area12#opg6#cnu12" automaticCoupling="true"/>
       <KOLink id="sv3#area12#opg6#cnu10#kln44" name="KOFlow44" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+      <OKLink id="sv3#area12#opg6#cnu10#oln31" name="OKFlow31" to="sv3#area12#opg6#cnu12">
+        <LinkParameter id="sv3#area12#opg6#cnu10#oln31#par380" name="Capo filiale_PASSING_KeyCondition72 [oid] [CapoFiliale] [Source]" sourceLinkParameter="sv3#area12#opg6#miu9#oln30#par372" target="sv3#area12#opg6#cnu12#su123#kcond72.userOID"/>
+        <LinkParameter id="sv3#area12#opg6#cnu10#oln31#par381" name="Source oid [Filiale]_KeyCondition73 [oid] [Filiale] [Target]" source="sourceent2#att12" target="sv3#area12#opg6#cnu12#su124#kcond73.ent2#att12"/>
+      </OKLink>
     </ConnectUnit>
-    <ConnectUnit gr:x="0" gr:y="580" id="sv3#area12#opg6#cnu12" name="Connetti capoFiliale" relationship="rel2#role3">
+    <ConnectUnit gr:x="0" gr:y="980" id="sv3#area12#opg6#cnu12" name="Connetti capoFiliale" relationship="rel2#role3">
       <SourceSelector id="sv3#area12#opg6#cnu12#su123" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#opg6#cnu12#su123#kcond72" name="KeyCondition72" predicate="in" implied="false"/>
       </SourceSelector>
@@ -45,6 +67,122 @@
         <KeyCondition id="sv3#area12#opg6#cnu12#su124#kcond73" name="KeyCondition73" predicate="in" implied="false"/>
       </TargetSelector>
       <OKLink id="sv3#area12#opg6#cnu12#oln49" name="OKFlow49" to="sv3#area12#page74#inu30" automaticCoupling="true"/>
+      <KOLink id="sv3#area12#opg6#cnu12#kln54" name="KOFlow54" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
     </ConnectUnit>
+    <CreateUnit gr:x="70" gr:y="160" id="sv3#area12#opg6#cru16" name="Crea marted&#236;" entity="ent12">
+      <OKLink id="sv3#area12#opg6#cru16#oln73" name="OKFlow73" to="sv3#area12#opg6#cru17">
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par315" name="giorno3_PASSING_giorno" sourceLinkParameter="sv3#area12#cru12#oln72#par312" target="sv3#area12#opg6#cru17.ent12#att34"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par316" name="apertura3_PASSING_orarioApertura" sourceLinkParameter="sv3#area12#cru12#oln72#par306" target="sv3#area12#opg6#cru17.ent12#att29"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par317" name="chiusura3_PASSING_orarioChiusura" sourceLinkParameter="sv3#area12#cru12#oln72#par309" target="sv3#area12#opg6#cru17.ent12#att32"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par318" name="apertura4_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par307" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par319" name="apertura5_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par308" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par320" name="Capo filiale_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par281" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par321" name="chiusura4_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par310" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par322" name="chiusura5_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par311" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par323" name="Email_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par282" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par324" name="giorno4_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par313" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par325" name="giorno5_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par314" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par326" name="Nome_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par283" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par327" name="oid_PASSING" source="ent12#att28Array" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par328" name="oid_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par295" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par329" name="oid_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par296" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par330" name="Telefono_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par284" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par331" name="Zona_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par285" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par437" name="apertura6_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par434" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par438" name="chiusura6_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par435" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru16#oln73#par439" name="giorno6_PASSING" sourceLinkParameter="sv3#area12#cru12#oln72#par436" passing="true"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg6#cru16#kln27" name="KOFlow27" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit gr:x="275" gr:y="240" id="sv3#area12#opg6#cru17" name="crea mercoled&#236;" entity="ent12">
+      <OKLink id="sv3#area12#opg6#cru17#oln75" name="OKFlow75" to="sv3#area12#opg6#cru18">
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par332" name="giorno4_PASSING_giorno" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par324" target="sv3#area12#opg6#cru18.ent12#att34"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par333" name="apertura4_PASSING_orarioApertura" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par318" target="sv3#area12#opg6#cru18.ent12#att29"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par334" name="chiusura4_PASSING_orarioChiusura" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par321" target="sv3#area12#opg6#cru18.ent12#att32"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par335" name="apertura5_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par319" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par336" name="Capo filiale_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par320" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par337" name="chiusura5_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par322" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par338" name="Email_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par323" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par339" name="giorno5_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par325" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par340" name="Nome_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par326" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par341" name="oid_PASSING" source="ent12#att28Array" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par342" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par327" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par343" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par328" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par344" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par329" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par345" name="Telefono_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par330" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par346" name="Zona_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par331" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par440" name="apertura6_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par437" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par441" name="chiusura6_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par438" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru17#oln75#par442" name="giorno6_PASSING" sourceLinkParameter="sv3#area12#opg6#cru16#oln73#par439" passing="true"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg6#cru17#kln28" name="KOFlow28" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit gr:x="75" gr:y="315" id="sv3#area12#opg6#cru18" name="crea gioved&#236;" entity="ent12">
+      <OKLink id="sv3#area12#opg6#cru18#oln76" name="OKFlow76" to="sv3#area12#opg6#cru19">
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par347" name="giorno5_PASSING_giorno" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par339" target="sv3#area12#opg6#cru19.ent12#att34"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par348" name="apertura5_PASSING_orarioApertura" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par335" target="sv3#area12#opg6#cru19.ent12#att29"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par349" name="chiusura5_PASSING_orarioChiusura" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par337" target="sv3#area12#opg6#cru19.ent12#att32"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par350" name="Capo filiale_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par336" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par351" name="Email_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par338" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par352" name="Nome_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par340" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par353" name="oid_PASSING" source="ent12#att28Array" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par354" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par341" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par355" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par342" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par356" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par343" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par357" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par344" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par358" name="Telefono_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par345" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par359" name="Zona_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par346" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par443" name="apertura6_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par440" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par444" name="chiusura6_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par441" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru18#oln76#par445" name="giorno6_PASSING" sourceLinkParameter="sv3#area12#opg6#cru17#oln75#par442" passing="true"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg6#cru18#kln30" name="KOFlow30" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit gr:x="285" gr:y="410" id="sv3#area12#opg6#cru19" name="crea venerd&#236;" entity="ent12">
+      <KOLink id="sv3#area12#opg6#cru19#kln42" name="KOFlow42" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+      <OKLink id="sv3#area12#opg6#cru19#oln85" name="OKFlow85" to="sv3#area12#opg6#cru22">
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par375" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par353" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par376" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par354" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par377" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par355" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par378" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par356" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par379" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par357" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par446" name="giorno6_PASSING_giorno" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par445" target="sv3#area12#opg6#cru22.ent12#att34"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par447" name="apertura6_PASSING_orarioApertura" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par443" target="sv3#area12#opg6#cru22.ent12#att29"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par448" name="chiusura6_PASSING_orarioChiusura" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par444" target="sv3#area12#opg6#cru22.ent12#att32"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par449" name="Email_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par351" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par450" name="Nome_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par352" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par451" name="Telefono_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par358" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par452" name="Zona_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par359" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par456" name="Capo filiale_PASSING" sourceLinkParameter="sv3#area12#opg6#cru18#oln76#par350" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru19#oln85#par462" name="oid_PASSING" source="ent12#att28Array" passing="true"/>
+      </OKLink>
+    </CreateUnit>
+    <ModuleInstanceUnit gr:x="210" gr:y="625" id="sv3#area12#opg6#miu9" moduleId="mov2#opm4" action="true">
+      <OKLink id="sv3#area12#opg6#miu9#oln30" name="OKFlow30" to="sv3#area12#opg6#cnu10">
+        <LinkParameter id="sv3#area12#opg6#miu9#oln30#par367" name="Zona_PASSING_KeyCondition68 [oid] [Zona] [Target]" sourceLinkParameter="sv3#area12#opg6#cru9#oln101#par191" target="sv3#area12#opg6#cnu10#su118#kcond68.ent5#att23"/>
+        <LinkParameter id="sv3#area12#opg6#miu9#oln30#par371" name="Output Port Parameter3_KeyCondition67 [oid] [Filiale] [Source]" source="mov2#opm4#okcu1#ocp3" target="sv3#area12#opg6#cnu10#su117#kcond67.ent2#att12"/>
+        <LinkParameter id="sv3#area12#opg6#miu9#oln30#par372" name="Capo filiale_PASSING" sourceLinkParameter="sv3#area12#opg6#cru9#oln101#par162" passing="true"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg6#miu9#kln63" name="KOFlow63" to="sv3#area12#page80#alt5#page82#mssu14" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <CreateUnit gr:x="60" gr:y="455" id="sv3#area12#opg6#cru22" name="Crea sabato" entity="ent12">
+      <OKLink id="sv3#area12#opg6#cru22#oln106" name="OKFlow106" to="sv3#area12#opg6#cru9">
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par457" name="Capo filiale_PASSING_CapoFiliale.oid(FilialeToCapo filiale)" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par456" target="sv3#area12#opg6#cru9.rel2#role4.userOID"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par458" name="Email_PASSING_email" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par449" target="sv3#area12#opg6#cru9.ent2#att17"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par459" name="Nome_PASSING_nome" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par450" target="sv3#area12#opg6#cru9.ent2#att13"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par460" name="Telefono_PASSING_telefono" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par451" target="sv3#area12#opg6#cru9.ent2#att14"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par461" name="Zona_PASSING_Zona.oid(FilialeToZona)" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par452" target="sv3#area12#opg6#cru9.rel12#role23.ent5#att23"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par463" name="oid_IndirizzoSede.oid(FilialeToIndirizzo sede)" source="ent12#att28Array" target="sv3#area12#opg6#cru9.rel14#role27.ent14#att41"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par464" name="oid_PASSING" source="ent12#att28Array" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par465" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par375" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par466" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par376" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par467" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par377" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par468" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par378" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par469" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par379" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par470" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par462" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par93" name="Capo filiale_PASSING" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par456" passing="true"/>
+        <LinkParameter id="sv3#area12#opg6#cru22#oln106#par159" name="Zona_PASSING" sourceLinkParameter="sv3#area12#opg6#cru19#oln85#par452" passing="true"/>
+      </OKLink>
+    </CreateUnit>
   </OperationUnits>
 </OperationGroup>

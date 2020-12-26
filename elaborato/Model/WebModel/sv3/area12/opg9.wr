@@ -1,35 +1,67 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area12#opg9" name="Elimina filiale" transaction="true" gr:x="75" gr:y="355">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area12#opg9" name="Elimina filiale" transaction="true" gr:x="155" gr:y="565">
   <OperationUnits>
-    <DeleteUnit id="sv3#area12#opg9#dlu3" name="Elimina Filiale" gr:x="830" gr:y="5" entity="ent1">
+    <DeleteUnit id="sv3#area12#opg9#dlu3" name="Elimina Filiale" gr:x="915" gr:y="0" entity="ent2">
       <Selector id="sv3#area12#opg9#dlu3#su130" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#opg9#dlu3#su130#kcond79" name="KeyCondition10" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv3#area12#opg9#dlu3#su130#rcond44" name="RoleCondition44" predicate="notIn" implied="false" role="rel2#role3"/>
       </Selector>
-      <OKLink id="sv3#area12#opg9#dlu3#oln61" name="OKFlow61" to="sv3#area12#page74#inu30" automaticCoupling="true"/>
+      <OKLink id="sv3#area12#opg9#dlu3#oln61" name="OKFlow61" to="sv3#area12#page74#inu30" automaticCoupling="true" gr:bendpoints="342,570,-524,-196"/>
       <KOLink id="sv3#area12#opg9#dlu3#kln51" name="KOFlow51" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
     </DeleteUnit>
-    <DisconnectUnit id="sv3#area12#opg9#dcnu9" name="Disconnetti Zona" gr:x="0" gr:y="0" relationship="rel12#role24">
-      <SourceSelector id="sv3#area12#opg9#dcnu9#su131" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area12#opg9#dcnu9#su131#kcond80" name="KeyCondition11" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv3#area12#opg9#dcnu9#su132" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#area12#opg9#dcnu9#su132#kcond81" name="KeyCondition12" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv3#area12#opg9#dcnu9#oln59" name="OKFlow59" to="sv3#area12#opg9#dlu4" automaticCoupling="true"/>
-      <KOLink id="sv3#area12#opg9#dcnu9#kln48" name="KOFlow48" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
-    </DisconnectUnit>
-    <DeleteUnit id="sv3#area12#opg9#dlu4" name="Elimina Indirizzo" gr:x="260" gr:y="10" entity="ent14">
+    <DeleteUnit id="sv3#area12#opg9#dlu4" name="Elimina Indirizzo" gr:x="0" gr:y="0" entity="ent14">
       <Selector id="sv3#area12#opg9#dlu4#su137" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#opg9#dlu4#su137#rcond48" name="RoleCondition40" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
-      <OKLink id="sv3#area12#opg9#dlu4#oln60" name="OKFlow60" to="sv3#area12#opg9#dlu5" automaticCoupling="true"/>
       <KOLink id="sv3#area12#opg9#dlu4#kln49" name="KOFlow49" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+      <OKLink id="sv3#area12#opg9#dlu4#oln33" name="OKFlow33" to="sv3#area12#opg9#seu36">
+        <LinkParameter id="sv3#area12#opg9#dlu4#oln33#par416" name="oid_PASSING_RoleCondition1 [oid]" sourceLinkParameter="sv3#area12#page76#dau25#ln159#par405" target="sv3#area12#opg9#seu36#su82#rcond1.ent2#att12"/>
+        <LinkParameter id="sv3#area12#opg9#dlu4#oln33#par417" name="oid_PASSING" sourceLinkParameter="sv3#area12#page76#dau25#ln159#par405" passing="true"/>
+        <LinkParameter id="sv3#area12#opg9#dlu4#oln33#par363" name="FilialeToZona.oid_PASSING" sourceLinkParameter="sv3#area12#page76#dau25#ln159#par210" passing="true"/>
+      </OKLink>
     </DeleteUnit>
-    <DeleteUnit gr:x="575" gr:y="15" id="sv3#area12#opg9#dlu5" name="Elimina orario" entity="ent12">
+    <DeleteUnit gr:x="705" gr:y="0" id="sv3#area12#opg9#dlu5" name="Elimina orario" entity="ent12">
       <Selector id="sv3#area12#opg9#dlu5#su140" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv3#area12#opg9#dlu5#su140#rcond50" role="rel11#role21" predicate="in" implied="false"/>
+        <KeyCondition id="sv3#area12#opg9#dlu5#su140#kcond46" name="KeyCondition46" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv3#area12#opg9#dlu5#oln62" name="OKFlow62" to="sv3#area12#opg9#dlu3" automaticCoupling="true"/>
       <KOLink id="sv3#area12#opg9#dlu5#kln50" name="KOFlow50" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+      <OKLink id="sv3#area12#opg9#dlu5#oln52" name="OKFlow52" to="sv3#area12#opg9#lpu1" automaticCoupling="true" gr:bendpoints="-120,38,105,32"/>
     </DeleteUnit>
+    <SelectorUnit gr:x="260" gr:y="0" id="sv3#area12#opg9#seu36" name="Seleziona orari" entity="ent12">
+      <Selector id="sv3#area12#opg9#seu36#su82" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#opg9#seu36#su82#rcond1" name="RoleCondition1" role="rel11#role21" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv3#area12#opg9#seu36#kln65" name="KOFlow65" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+      <OKLink id="sv3#area12#opg9#seu36#oln34" name="OKFlow34" to="sv3#area12#opg9#lpu1">
+        <LinkParameter id="sv3#area12#opg9#seu36#oln34#par398" name="giorno_Input Array" source="ent12#att28Array" target="sv3#area12#opg9#lpu1.array"/>
+        <LinkParameter id="sv3#area12#opg9#seu36#oln34#par360" name="oid_PASSING" source="ent12#att28Array" passing="true"/>
+        <LinkParameter id="sv3#area12#opg9#seu36#oln34#par364" name="FilialeToZona.oid_PASSING" sourceLinkParameter="sv3#area12#opg9#dlu4#oln33#par363" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit gr:x="475" gr:y="20" id="sv3#area12#opg9#lpu1" name="Itera su orari">
+      <OKLink id="sv3#area12#opg9#lpu1#oln45" name="OKFlow45" to="sv3#area12#opg9#dlu5" code="next">
+        <LinkParameter id="sv3#area12#opg9#lpu1#oln45#par361" name="oid_PASSING_KeyCondition46 [oid]" sourceLinkParameter="sv3#area12#opg9#seu36#oln34#par360" target="sv3#area12#opg9#dlu5#su140#kcond46.ent12#att28"/>
+      </OKLink>
+      <OKLink id="sv3#area12#opg9#lpu1#oln46" name="OKFlow46" to="sv3#area12#opg9#opu1" code="end">
+        <LinkParameter id="sv3#area12#opg9#lpu1#oln46#par362" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg9#seu36#oln34#par360" passing="true"/>
+        <LinkParameter id="sv3#area12#opg9#lpu1#oln46#par365" name="FilialeToZona.oid_PASSING" sourceLinkParameter="sv3#area12#opg9#seu36#oln34#par364" passing="true"/>
+      </OKLink>
+    </LoopUnit>
+    <NoOpOperationUnit gr:x="470" gr:y="170" id="sv3#area12#opg9#opu1" name="Orari eliminati">
+      <OKLink id="sv3#area12#opg9#opu1#oln48" name="OKFlow62" to="sv3#area12#opg9#seu50" gr:bendpoints="166,60,-183,30">
+        <LinkParameter id="sv3#area12#opg9#opu1#oln48#par366" name="FilialeToZona.oid_PASSING_RoleCondition62 [oid]" sourceLinkParameter="sv3#area12#opg9#lpu1#oln46#par365" target="sv3#area12#opg9#seu50#su83#rcond62.ent5#att23"/>
+        <LinkParameter id="sv3#area12#opg9#opu1#oln48#par368" name="FilialeToZona.oid_PASSING" sourceLinkParameter="sv3#area12#opg9#lpu1#oln46#par365" passing="true"/>
+        <LinkParameter id="sv3#area12#opg9#opu1#oln48#par369" name="oid_PASSING" sourceLinkParameter="sv3#area12#opg9#lpu1#oln46#par362" passing="true"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg9#opu1#kln66" name="KOFlow66" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+    </NoOpOperationUnit>
+    <SelectorUnit gr:x="725" gr:y="200" id="sv3#area12#opg9#seu50" name="Seleziona annuncio" entity="ent1">
+      <Selector id="sv3#area12#opg9#seu50#su83" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#opg9#seu50#su83#rcond62" name="RoleCondition62" predicate="notIn" implied="false" role="rel5#role9"/>
+      </Selector>
+      <OKLink id="sv3#area12#opg9#seu50#oln62" name="OKFlow62" to="sv3#area12#opg9#dlu3" gr:bendpoints="110,-88,-86,102">
+        <LinkParameter id="sv3#area12#opg9#seu50#oln62#par373" name="oid_KeyCondition10 [oid]" source="ent1#att1Array" target="sv3#area12#opg9#dlu3#su130#kcond79.ent2#att12"/>
+      </OKLink>
+      <KOLink id="sv3#area12#opg9#seu50#kln67" name="KOFlow67" to="sv3#area12#page80#alt5#page81#mssu13" automaticCoupling="true"/>
+    </SelectorUnit>
   </OperationUnits>
 </OperationGroup>

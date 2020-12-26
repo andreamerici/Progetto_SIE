@@ -1,18 +1,18 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area10#page63" name="Modifica Annuncio" gr:x="320" gr:y="650">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area10#page63" name="Modifica Annuncio" gr:x="445" gr:y="705">
   <ContentUnits>
-    <SelectorUnit id="sv2#area10#page63#seu31" name="Selettore Contratto" gr:x="0" gr:y="105" entity="ent3">
+    <SelectorUnit id="sv2#area10#page63#seu31" name="Selettore Contratto" gr:x="0" gr:y="300" entity="ent3">
       <Link id="sv2#area10#page63#seu31#ln116" name="Flow107" to="sv2#area10#page63#meu1" type="transport" validate="true">
         <LinkParameter id="sv2#area10#page63#seu31#ln116#par87" name="tipologia_Contratto [label]" source="ent3#att19Array" target="sv2#area10#page63#meu1#sfld17_label"/>
         <LinkParameter id="sv2#area10#page63#seu31#ln116#par88" name="oid_Contratto [output]" source="ent3#att18Array" target="sv2#area10#page63#meu1#sfld17_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit id="sv2#area10#page63#seu32" name="Selettore Categoria" gr:x="205" gr:y="105" entity="ent20">
+    <SelectorUnit id="sv2#area10#page63#seu32" name="Selettore Categoria" gr:x="205" gr:y="300" entity="ent20">
       <Link id="sv2#area10#page63#seu32#ln117" name="Flow108" to="sv2#area10#page63#meu1" type="transport" validate="true">
         <LinkParameter id="sv2#area10#page63#seu32#ln117#par89" name="nome_Categoria [label]" source="ent20#att61Array" target="sv2#area10#page63#meu1#sfld18_label"/>
         <LinkParameter id="sv2#area10#page63#seu32#ln117#par90" name="oid_Categoria [output]" source="ent20#att60Array" target="sv2#area10#page63#meu1#sfld18_output"/>
       </Link>
     </SelectorUnit>
-    <MultiEntryUnit id="sv2#area10#page63#meu1" name="Modifica Annuncio" linkOrder="sv2#area10#page63#meu1#ln118" gr:x="75" gr:y="0" minLength="1">
+    <MultiEntryUnit id="sv2#area10#page63#meu1" name="Modifica Annuncio" linkOrder="sv2#area10#page63#meu1#ln118 sv2#area10#page63#meu1#ln195" gr:x="80" gr:y="180" minLength="1">
       <Field id="sv2#area10#page63#meu1#fld16" name="Titolo" type="string" modifiable="true"/>
       <Field id="sv2#area10#page63#meu1#fld17" name="Prezzo" type="integer" modifiable="true"/>
       <Field id="sv2#area10#page63#meu1#fld18" name="Superficie" type="integer" modifiable="true"/>
@@ -45,7 +45,15 @@
         <LinkParameter id="sv2#area10#page63#meu1#ln118#par201" name="Civico_civico" source="sv2#area10#page63#meu1#fld26" target="sv2#area10#opg5#cru6.ent13#att43"/>
         <LinkParameter id="sv2#area10#page63#meu1#ln118#par202" name="Via_via" source="sv2#area10#page63#meu1#fld27" target="sv2#area10#opg5#cru6.ent13#att42"/>
       </Link>
+      <Link id="sv2#area10#page63#meu1#ln195" name="Flow195" to="sv2#area10#page63#seu49" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-37,-76,-168,64"/>
     </MultiEntryUnit>
+    <SelectorUnit id="sv2#area10#page63#seu49" name="Selettore Fascia Prezzo" gr:x="185" gr:y="0" entity="ent11">
+      <Selector id="sv2#area10#page63#seu49#su145" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#area10#page63#seu49#su145#acond33" name="AttCondition21" predicate="gteq" booleanOperator="or" implied="false" attributes="ent11#att44"/>
+        <AttributesCondition id="sv2#area10#page63#seu49#su145#acond34" name="AttCondition22" predicate="lteq" booleanOperator="or" implied="false" attributes="ent11#att27"/>
+      </Selector>
+      <Link id="sv2#area10#page63#seu49#ln194" name="Flow194" to="sv2#area10#page63#meu1" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -80,6 +88,7 @@
           <layout:Field field="sv2#area10#page63#meu1#fld26"/>
           <layout:Field field="sv2#area10#page63#meu1#fld27"/>
           <layout:Link link="sv2#area10#page63#meu1#ln118"/>
+          <layout:Link link="sv2#area10#page63#meu1#ln195"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

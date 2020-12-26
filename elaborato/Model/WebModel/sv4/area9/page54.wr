@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area9#page54" name="Errore annuncio preferito" gr:x="895" gr:y="615">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area9#page54" name="Errore annuncio preferito" gr:x="920" gr:y="725">
   <ContentUnits>
     <MultiMessageUnit id="sv4#area9#page54#mssu8" name="Messaggio errore" gr:x="0" gr:y="0"/>
   </ContentUnits>

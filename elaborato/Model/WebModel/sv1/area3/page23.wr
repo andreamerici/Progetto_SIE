@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page23" name="Recensioni" gr:x="715" gr:y="310">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page23" name="Recensioni" gr:x="735" gr:y="320">
   <ContentUnits>
     <IndexUnit id="sv1#area3#page23#inu16" name="Lista Recensioni" gr:x="0" gr:y="0" entity="ent18" displayAttributes="ent18#att58 ent18#att59 ent18#att60"/>
   </ContentUnits>

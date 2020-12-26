@@ -1,0 +1,46 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page92" name="Aggiungi capo filiale" gr:x="465" gr:y="50">
+  <ContentUnits>
+    <EntryUnit id="sv3#area14#page92#enu22" name="Inserisci dati capo filiale" linkOrder="sv3#area14#page92#enu22#ln169" gr:x="0" gr:y="0">
+      <Field id="sv3#area14#page92#enu22#fld69" name="nome" type="string" modifiable="true"/>
+      <Field id="sv3#area14#page92#enu22#fld70" name="cognome" type="string" modifiable="true"/>
+      <Field id="sv3#area14#page92#enu22#fld71" name="data assunzione" type="string" modifiable="true"/>
+      <Field id="sv3#area14#page92#enu22#fld72" name="e-mail" type="string" modifiable="true"/>
+      <Field id="sv3#area14#page92#enu22#fld73" name="username" type="string" modifiable="true"/>
+      <Field id="sv3#area14#page92#enu22#fld74" name="password" type="string" modifiable="true"/>
+      <Link id="sv3#area14#page92#enu22#ln169" name="Flow148" to="sv3#area14#cru13" type="normal" validate="true">
+        <LinkParameter id="sv3#area14#page92#enu22#ln169#par232" name="cognome_cognome" source="sv3#area14#page92#enu22#fld70" target="sv3#area14#cru13.ent7#att33"/>
+        <LinkParameter id="sv3#area14#page92#enu22#ln169#par234" name="data assunzione_dataAssunzione" source="sv3#area14#page92#enu22#fld71" target="sv3#area14#cru13.ent7#att15"/>
+        <LinkParameter id="sv3#area14#page92#enu22#ln169#par235" name="e-mail_email" source="sv3#area14#page92#enu22#fld72" target="sv3#area14#cru13.email"/>
+        <LinkParameter id="sv3#area14#page92#enu22#ln169#par236" name="nome_nome" source="sv3#area14#page92#enu22#fld69" target="sv3#area14#cru13.ent7#att32"/>
+        <LinkParameter id="sv3#area14#page92#enu22#ln169#par237" name="password_password" source="sv3#area14#page92#enu22#fld74" target="sv3#area14#cru13.password"/>
+        <LinkParameter id="sv3#area14#page92#enu22#ln169#par238" name="password_userName" source="sv3#area14#page92#enu22#fld74" target="sv3#area14#cru13.userName"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page92#enu22">
+          <layout:Field field="sv3#area14#page92#enu22#fld69"/>
+          <layout:Field field="sv3#area14#page92#enu22#fld70"/>
+          <layout:Field field="sv3#area14#page92#enu22#fld71"/>
+          <layout:Field field="sv3#area14#page92#enu22#fld72"/>
+          <layout:Field field="sv3#area14#page92#enu22#fld73"/>
+          <layout:Field field="sv3#area14#page92#enu22#fld74"/>
+          <layout:Link link="sv3#area14#page92#enu22#ln169"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

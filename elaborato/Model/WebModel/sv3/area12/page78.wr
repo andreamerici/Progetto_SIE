@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page78" name="Recensioni" gr:x="880" gr:y="1200">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page78" name="Recensioni" gr:x="800" gr:y="1410">
   <ContentUnits>
     <MultiDataUnit id="sv3#area12#page78#mdu7" name="Recensioni" gr:x="0" gr:y="0" entity="ent18">
       <Selector id="sv3#area12#page78#mdu7#su116" defaultPolicy="fill" booleanOperator="and">

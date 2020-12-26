@@ -1,4 +1,4 @@
-<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#mpage3" name="Dati utente esterno" gr:x="2090" gr:y="10">
+<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#mpage3" name="Dati utente esterno" gr:x="2085" gr:y="-20">
   <ContentUnits>
     <GetUnit id="sv4#mpage3#gtu10" name="Utente loggato" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
       <Link id="sv4#mpage3#gtu10#ln111" name="Flow34" to="sv4#mpage3#dau17" type="transport" automaticCoupling="true" validate="true"/>

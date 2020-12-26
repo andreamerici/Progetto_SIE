@@ -9,7 +9,7 @@
     <Attribute name="oid" id="groupOID" type="integer" key="true"/>
     <Attribute name="groupName" id="groupName" type="string"/>
   </Entity>
-  <Entity id="Module" name="Module" duration="persistent" gr:x="580" gr:y="-120" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
+  <Entity id="Module" name="Module" duration="persistent" gr:x="555" gr:y="-130" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
     <Attribute name="oid" id="moduleOID" type="integer" key="true"/>
     <Attribute name="moduleID" id="moduleID" type="string"/>
     <Attribute name="moduleName" id="moduleName" type="string"/>
@@ -52,15 +52,15 @@
     <Attribute id="ent2#att17" name="email" type="string"/>
     <Attribute id="ent2#att62" name="mediavoti" type="float" derivationQuery="calculated::avg(Self.rel16#role32(as Var1).ent18#att59)"/>
   </Entity>
-  <Entity gr:x="290" gr:y="545" id="ent3" name="Contratto" duration="persistent" attributeOrder="ent3#att18 ent3#att20">
+  <Entity gr:x="290" gr:y="530" id="ent3" name="Contratto" duration="persistent" attributeOrder="ent3#att18 ent3#att20">
     <Attribute id="ent3#att18" key="true" name="oid" type="integer"/>
     <Attribute id="ent3#att20" name="tipologia" type="string"/>
   </Entity>
-  <Entity gr:x="490" gr:y="795" id="ent4" duration="persistent" name="Categoria" attributeOrder="ent4#att21 ent4#att22">
+  <Entity gr:x="460" gr:y="780" id="ent4" duration="persistent" name="Categoria" attributeOrder="ent4#att21 ent4#att22">
     <Attribute id="ent4#att21" key="true" name="oid" type="integer"/>
     <Attribute id="ent4#att22" name="nome" type="string"/>
   </Entity>
-  <Entity gr:x="1220" gr:y="635" id="ent5" name="Zona" duration="persistent" attributeOrder="ent5#att23 ent5#att24 ent5#att25 ent5#att49 ent5#att50 ent5#att51">
+  <Entity gr:x="1220" gr:y="625" id="ent5" name="Zona" duration="persistent" attributeOrder="ent5#att23 ent5#att24 ent5#att25 ent5#att49 ent5#att50 ent5#att51">
     <Attribute id="ent5#att23" key="true" name="oid" type="integer"/>
     <Attribute id="ent5#att24" name="nome" type="string"/>
     <Attribute id="ent5#att25" name="citt&#224;" type="string"/>
@@ -88,10 +88,10 @@
     <Attribute id="ent8#att4" name="note" type="text"/>
     <Attribute id="ent8#att16" name="gestito" type="boolean"/>
   </Entity>
-  <Entity gr:x="645" gr:y="735" id="ent9" name="NuovoAnnuncio" duration="persistent" derivationQuery="derived::ent1(as SuperEntity) where SuperEntity.ent1#att10 &gt;= '30-7'">
+  <Entity gr:x="630" gr:y="730" id="ent9" name="NuovoAnnuncio" duration="persistent" derivationQuery="derived::ent1(as SuperEntity) where SuperEntity.ent1#att10 &gt;= '30-7'">
     <Generalization superEntity="ent1"/>
   </Entity>
-  <Entity gr:x="850" gr:y="735" id="ent10" name="AnnuncioPi&#249;Richiesto" duration="persistent" derivationQuery="derived::ent1(as SuperEntity) where SuperEntity.rel15#role29.ent16#att54 &gt;= '20'">
+  <Entity gr:x="845" gr:y="735" id="ent10" name="AnnuncioPi&#249;Richiesto" duration="persistent" derivationQuery="derived::ent1(as SuperEntity) where SuperEntity.rel15#role29.ent16#att54 &gt;= '20'">
     <Generalization superEntity="ent1"/>
   </Entity>
   <Relationship id="rel2" name="Capo filiale_Filiale" sourceEntity="ent7" targetEntity="ent2">
@@ -102,7 +102,7 @@
     <RelationshipRole1 id="rel3#role5" name="AnnuncioToContratto" maxCard="1"/>
     <RelationshipRole2 id="rel3#role6" name="ContrattoToAnnuncio" maxCard="N"/>
   </Relationship>
-  <Relationship id="rel4" name="Annuncio_Categoria" sourceEntity="ent1" targetEntity="ent4">
+  <Relationship id="rel4" name="Annuncio_Categoria" sourceEntity="ent1" targetEntity="ent4" gr:bendpoints="-204,188,90,-112">
     <RelationshipRole1 id="rel4#role7" name="AnnuncioToCategoria" maxCard="1"/>
     <RelationshipRole2 id="rel4#role8" name="CategoriaToAnnuncio" maxCard="N"/>
   </Relationship>
@@ -118,7 +118,7 @@
     <RelationshipRole1 id="rel9#role17" name="AppuntamentoToAnnuncio" maxCard="1"/>
     <RelationshipRole2 id="rel9#role18" name="AnnuncioToAppuntamento" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="280" gr:y="645" id="ent11" duration="persistent" name="FasciaPrezzo" attributeOrder="ent11#att15 ent11#att27 ent11#att44 ent11#att55">
+  <Entity gr:x="295" gr:y="635" id="ent11" duration="persistent" name="FasciaPrezzo" attributeOrder="ent11#att15 ent11#att27 ent11#att44 ent11#att55">
     <Attribute id="ent11#att15" key="true" name="oid" type="integer"/>
     <Attribute id="ent11#att27" name="valoreMinimo" type="integer" key="false"/>
     <Attribute id="ent11#att44" name="valoreMassimo" type="integer" key="false"/>
@@ -162,7 +162,7 @@
     <RelationshipRole1 id="rel14#role27" name="FilialeToIndirizzo sede" maxCard="1"/>
     <RelationshipRole2 id="rel14#role28" name="Indirizzo sedeToFiliale" maxCard="1"/>
   </Relationship>
-  <Entity gr:x="985" gr:y="845" id="ent15" name="AnnuncioConPi&#249;Preferenze" duration="persistent" derivationQuery="derived::ent1(as SuperEntity) where SuperEntity.rel15#role29.ent16#att55 &gt;= '10'">
+  <Entity gr:x="995" gr:y="820" id="ent15" name="AnnuncioConPi&#249;Preferenze" duration="persistent" derivationQuery="derived::ent1(as SuperEntity) where SuperEntity.rel15#role29.ent16#att55 &gt;= '10'">
     <Generalization superEntity="ent1"/>
   </Entity>
   <Entity gr:x="440" gr:y="195" id="ent18" name="Recensione" duration="persistent" attributeOrder="ent18#att57 ent18#att58 ent18#att59 ent18#att60">
@@ -189,8 +189,8 @@
     <RelationshipRole1 id="rel7#role13" name="UtenteEsternoToAnnuncio" maxCard="N"/>
     <RelationshipRole2 id="rel7#role14" name="AnnuncioToUtenteEsterno" maxCard="N"/>
   </Relationship>
-  <Entity gr:x="700" gr:y="810" id="ent16" name="AnnuncioScontato" duration="persistent" attributeOrder="ent16#att26 ent16#att53">
-    <Attribute id="ent16#att26" name="prezzoScontato" type="integer"/>
+  <Entity gr:x="695" gr:y="785" id="ent16" name="AnnuncioScontato" duration="persistent" attributeOrder="ent16#att26 ent16#att53">
+    <Attribute id="ent16#att26" name="prezzoVecchio" type="integer"/>
     <Attribute id="ent16#att53" name="percentualeSconto" type="integer"/>
     <Generalization superEntity="ent1"/>
   </Entity>

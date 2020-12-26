@@ -1,17 +1,24 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page74" name="Elenco Filiali" landmark="true" gr:x="1700" gr:y="1070">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page74" name="Elenco Filiali" landmark="true" gr:x="1755" gr:y="1300">
   <ContentUnits>
-    <IndexUnit id="sv3#area12#page74#inu30" name="Lista Filiali" gr:x="0" gr:y="0" entity="ent2" displayAttributes="ent2#att13" linkOrder="sv3#area12#page74#inu30#ln148 sv3#area12#page74#inu30#ln26">
+    <IndexUnit id="sv3#area12#page74#inu30" name="Lista Filiali" gr:x="5" gr:y="60" entity="ent2" displayAttributes="ent2#att13" linkOrder="sv3#area12#page74#inu30#ln148">
       <Link id="sv3#area12#page74#inu30#ln148" name="Flow148" to="sv3#area12#page76#dau25" automaticCoupling="true" type="normal" validate="true"/>
-      <Link id="sv3#area12#page74#inu30#ln26" name="Flow26" to="sv3#area12#page73#dau28" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
-    <SelectorUnit id="sv3#area12#page74#seu39" name="Seleziona Zona" gr:x="175" gr:y="120" entity="ent5">
+    <SelectorUnit id="sv3#area12#page74#seu39" name="Seleziona Zona" gr:x="180" gr:y="215" entity="ent5">
       <Link id="sv3#area12#page74#seu39#ln140" name="Flow2" to="sv3#area12#page74#enu19" type="transport" validate="true">
         <LinkParameter id="sv3#area12#page74#seu39#ln140#par173" name="oid_PASSING" source="ent5#att23Array" passing="true"/>
+        <LinkParameter id="sv3#area12#page74#seu39#ln140#par454" name="nome_zona [label]" source="ent5#att24Array" target="sv3#area12#page74#enu19#sfld32_label"/>
+        <LinkParameter id="sv3#area12#page74#seu39#ln140#par455" name="oid_zona [output]" source="ent5#att23Array" target="sv3#area12#page74#enu19#sfld32_output"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit id="sv3#area12#page74#enu19" name="Ricerca per Zona" gr:x="120" gr:y="5" linkOrder="sv3#area12#page74#enu19#ln142">
-      <Link id="sv3#area12#page74#enu19#ln142" name="Flow142" to="sv3#area12#page75#scu18" automaticCoupling="true" type="normal" validate="true"/>
+    <EntryUnit id="sv3#area12#page74#enu19" name="Ricerca per Zona" gr:x="155" gr:y="0" linkOrder="sv3#area12#page74#enu19#ln142">
+      <Link id="sv3#area12#page74#enu19#ln142" name="Flow142" to="sv3#area12#page76#dau25" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page74#enu19#ln142#par453" name="oid_PASSING_Zona.oid-&gt;ZonaToFiliale" target="sv3#area12#page76#dau25#su111#rcond58.ent5#att23" source="sv3#area12#page74#enu19#sfld32"/>
+      </Link>
+      <SelectionField id="sv3#area12#page74#enu19#sfld32" name="zona" type="string"/>
     </EntryUnit>
+    <ScrollerUnit id="sv3#area12#page74#scu8" name="Scroller2" gr:x="0" gr:y="220" useCountQuery="false" entity="ent2" linkOrder="sv3#area12#page74#scu8#ln65">
+      <Link id="sv3#area12#page74#scu8#ln65" name="Flow65" to="sv3#area12#page74#inu30" automaticCoupling="true" type="automatic" validate="true"/>
+    </ScrollerUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -19,7 +26,6 @@
         <layout:Unit unitId="sv3#area12#page74#inu30">
           <layout:Attribute attribute="ent2#att13"/>
           <layout:Link link="sv3#area12#page74#inu30#ln148"/>
-          <layout:Link link="sv3#area12#page74#inu30#ln26"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -38,6 +44,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area12#page74#enu19">
           <layout:Link link="sv3#area12#page74#enu19#ln142"/>
+          <layout:Field field="sv3#area12#page74#enu19#sfld32"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -53,7 +60,15 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page74#scu8">
+          <layout:Link link="sv3#area12#page74#scu8First"/>
+          <layout:Link link="sv3#area12#page74#scu8Previous"/>
+          <layout:Link link="sv3#area12#page74#scu8Block"/>
+          <layout:Link link="sv3#area12#page74#scu8Next"/>
+          <layout:Link link="sv3#area12#page74#scu8Last"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

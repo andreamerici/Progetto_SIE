@@ -1,0 +1,59 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area14#page93" name="Dettagli capo filiale e filiale associata" gr:x="30" gr:y="335" linkOrder="sv3#area14#page93#ln49">
+  <ContentUnits>
+    <DataUnit id="sv3#area14#page93#dau31" name="Capo filiale" linkOrder="sv3#area14#page93#dau31#ln170" gr:x="0" gr:y="0" entity="ent7" displayAttributes="email ent7#att63">
+      <Selector id="sv3#area14#page93#dau31#su136" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#page93#dau31#su136#kcond84" name="KeyCondition71" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area14#page93#dau31#ln170" name="Flow154" to="sv3#area14#dlu6" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area14#page93#dau31#ln171" name="Flow155" to="sv3#area14#page93#dau32" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv3#area14#page93#dau31#ln32" name="Flow32" to="sv3#area14#dcnu3" automaticCoupling="true" type="transport" validate="true" gr:bendpoints="224,-125,-366,10"/>
+    </DataUnit>
+    <DataUnit id="sv3#area14#page93#dau32" name="Filiale" gr:x="165" gr:y="0" entity="ent2" displayAttributes="ent2#att13">
+      <Selector id="sv3#area14#page93#dau32#su138" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area14#page93#dau32#su138#rcond59" name="RoleCondition21" predicate="in" implied="false" role="rel2#role3"/>
+      </Selector>
+      <Link id="sv3#area14#page93#dau32#ln33" name="Flow33" to="sv3#area14#dcnu3" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page93#dau31">
+          <layout:Link link="sv3#area14#page93#dau31#ln170"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="ent7#att63"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area14#page93#dau32">
+          <layout:Attribute attribute="ent2#att13"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#area14#page93#ln49" name="Flow49" to="sv3#area14#dcnu3" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

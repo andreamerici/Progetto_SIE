@@ -1,68 +1,48 @@
-<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area10#opg3" name="Elimina Annuncio" transaction="true" gr:x="0" gr:y="1040">
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area10#opg3" name="Elimina Annuncio" transaction="true" gr:x="70" gr:y="1205">
   <OperationUnits>
-    <DisconnectUnit id="sv2#area10#opg3#dcnu2" name="Disconnetti Utenti" gr:x="0" gr:y="5" relationship="rel7#role14">
+    <DisconnectUnit id="sv2#area10#opg3#dcnu2" name="Disconnetti Utenti" gr:x="295" gr:y="0" relationship="rel7#role14">
       <SourceSelector id="sv2#area10#opg3#dcnu2#su79" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area10#opg3#dcnu2#su79#kcond41" name="KeyCondition8" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv2#area10#opg3#dcnu2#su80" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area10#opg3#dcnu2#su80#kcond42" name="KeyCondition9" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv2#area10#opg3#dcnu2#oln28" name="OKFlow5" to="sv2#area10#opg3#dcnu3" automaticCoupling="true"/>
-      <KOLink id="sv2#area10#opg3#dcnu2#kln24" name="KOFlow46" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="1005,-196,170,279"/>
+      <KOLink id="sv2#area10#opg3#dcnu2#kln24" name="KOFlow46" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="989,-360,384,300"/>
+      <OKLink id="sv2#area10#opg3#dcnu2#oln57" name="OKFlow57" to="sv2#area10#opg3#dlu2">
+        <LinkParameter id="sv2#area10#opg3#dcnu2#oln57#par390" name="Source oid [Annuncio]_RoleCondition40 [oid]" source="sourceent1#att1" target="sv2#area10#opg3#dlu2#su88#rcond40.ent1#att1"/>
+        <LinkParameter id="sv2#area10#opg3#dcnu2#oln57#par391" name="Source oid [Annuncio]_PASSING" source="sourceent1#att1" passing="true"/>
+      </OKLink>
     </DisconnectUnit>
-    <DeleteUnit id="sv2#area10#opg3#dlu1" name="Elimina Annuncio" gr:x="1435" gr:y="25" entity="ent1">
+    <DeleteUnit id="sv2#area10#opg3#dlu1" name="Elimina Annuncio" gr:x="1075" gr:y="5" entity="ent1">
       <Selector id="sv2#area10#opg3#dlu1#su81" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area10#opg3#dlu1#su81#kcond43" name="KeyCondition10" predicate="in" implied="false"/>
       </Selector>
-      <OKLink id="sv2#area10#opg3#dlu1#oln29" name="OKFlow4" to="sv2#area10#page65#inu27" automaticCoupling="true" gr:bendpoints="42,-161,827,399"/>
-      <KOLink id="sv2#area10#opg3#dlu1#kln25" name="KOFlow38" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true"/>
+      <OKLink id="sv2#area10#opg3#dlu1#oln29" name="OKFlow4" to="sv2#area10#page65#inu27" automaticCoupling="true" gr:bendpoints="270,-368,785,612"/>
+      <KOLink id="sv2#area10#opg3#dlu1#kln25" name="KOFlow38" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="217,-325,327,330"/>
     </DeleteUnit>
-    <DisconnectUnit id="sv2#area10#opg3#dcnu3" name="Disconnetti Zona" gr:x="225" gr:y="15" relationship="rel5#role9">
-      <SourceSelector id="sv2#area10#opg3#dcnu3#su82" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area10#opg3#dcnu3#su82#kcond44" name="KeyCondition11" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv2#area10#opg3#dcnu3#su83" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area10#opg3#dcnu3#su83#kcond45" name="KeyCondition12" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv2#area10#opg3#dcnu3#oln30" name="OKFlow6" to="sv2#area10#opg3#dcnu4" automaticCoupling="true"/>
-      <KOLink id="sv2#area10#opg3#dcnu3#kln26" name="KOFlow45" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="808,-195,168,280"/>
-    </DisconnectUnit>
-    <DisconnectUnit id="sv2#area10#opg3#dcnu4" name="Disconnetti Contratto" gr:x="425" gr:y="25" relationship="rel3#role5">
-      <SourceSelector id="sv2#area10#opg3#dcnu4#su84" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area10#opg3#dcnu4#su84#kcond46" name="KeyCondition13" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv2#area10#opg3#dcnu4#su85" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area10#opg3#dcnu4#su85#kcond47" name="KeyCondition14" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv2#area10#opg3#dcnu4#oln31" name="OKFlow21" to="sv2#area10#opg3#dcnu6" automaticCoupling="true"/>
-      <KOLink id="sv2#area10#opg3#dcnu4#kln27" name="KOFlow44" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="636,-193,171,282"/>
-    </DisconnectUnit>
-    <DisconnectUnit id="sv2#area10#opg3#dcnu5" name="Disconnetti Fascia Prezzo" gr:x="890" gr:y="0" relationship="rel10#role19">
-      <SourceSelector id="sv2#area10#opg3#dcnu5#su86" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area10#opg3#dcnu5#su86#kcond48" name="KeyCondition15" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv2#area10#opg3#dcnu5#su87" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area10#opg3#dcnu5#su87#kcond49" name="KeyCondition16" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv2#area10#opg3#dcnu5#oln32" name="OKFlow23" to="sv2#area10#opg3#dlu2" automaticCoupling="true"/>
-      <KOLink id="sv2#area10#opg3#dcnu5#kln28" name="KOFlow42" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="249,-196,169,279"/>
-    </DisconnectUnit>
-    <DeleteUnit id="sv2#area10#opg3#dlu2" name="Elimina Indirizzo" gr:x="1195" gr:y="15" entity="ent13">
+    <DeleteUnit id="sv2#area10#opg3#dlu2" name="Elimina Indirizzo" gr:x="555" gr:y="10" entity="ent13">
       <Selector id="sv2#area10#opg3#dlu2#su88" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area10#opg3#dlu2#su88#rcond40" name="RoleCondition40" predicate="in" implied="false" role="rel13#role25"/>
       </Selector>
-      <OKLink id="sv2#area10#opg3#dlu2#oln33" name="OKFlow24" to="sv2#area10#opg3#dlu1" automaticCoupling="true"/>
-      <KOLink id="sv2#area10#opg3#dlu2#kln29" name="KOFlow41" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="57,-198,167,277"/>
+      <KOLink id="sv2#area10#opg3#dlu2#kln29" name="KOFlow41" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="708,-320,338,340"/>
+      <OKLink id="sv2#area10#opg3#dlu2#oln63" name="OKFlow63" to="sv2#area10#opg3#dlu7">
+        <LinkParameter id="sv2#area10#opg3#dlu2#oln63#par392" name="Source oid [Annuncio]_PASSING_RoleCondition64 [oid]" sourceLinkParameter="sv2#area10#opg3#dcnu2#oln57#par391" target="sv2#area10#opg3#dlu7#su144#rcond64.ent1#att1"/>
+        <LinkParameter id="sv2#area10#opg3#dlu2#oln63#par393" name="Source oid [Annuncio]_PASSING" sourceLinkParameter="sv2#area10#opg3#dcnu2#oln57#par391" passing="true"/>
+      </OKLink>
     </DeleteUnit>
-    <DisconnectUnit id="sv2#area10#opg3#dcnu6" name="Disconnetti Categoria" gr:x="655" gr:y="5" relationship="rel4#role7">
-      <SourceSelector id="sv2#area10#opg3#dcnu6#su89" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area10#opg3#dcnu6#su89#kcond50" name="KeyCondition34" predicate="in" implied="false"/>
-      </SourceSelector>
-      <TargetSelector id="sv2#area10#opg3#dcnu6#su90" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv2#area10#opg3#dcnu6#su90#kcond51" name="KeyCondition35" predicate="in" implied="false"/>
-      </TargetSelector>
-      <OKLink id="sv2#area10#opg3#dcnu6#oln34" name="OKFlow22" to="sv2#area10#opg3#dcnu5" automaticCoupling="true"/>
-      <KOLink id="sv2#area10#opg3#dcnu6#kln30" name="KOFlow43" to="sv2#area10#page59#alt4#page60#mssu9" automaticCoupling="true" gr:bendpoints="450,-196,170,279"/>
-    </DisconnectUnit>
+    <SelectorUnit gr:x="0" gr:y="5" id="sv2#area10#opg3#seu48" entity="ent6" name="seleziona utenti">
+      <Selector id="sv2#area10#opg3#seu48#su143" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area10#opg3#seu48#su143#rcond63" name="RoleCondition62" predicate="in" implied="false" role="rel7#role14"/>
+      </Selector>
+      <OKLink id="sv2#area10#opg3#seu48#oln58" name="OKFlow58" to="sv2#area10#opg3#dcnu2" automaticCoupling="true"/>
+    </SelectorUnit>
+    <DeleteUnit gr:x="800" gr:y="5" id="sv2#area10#opg3#dlu7" name="Elimina appuntamento" entity="ent8">
+      <Selector id="sv2#area10#opg3#dlu7#su144" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area10#opg3#dlu7#su144#rcond64" name="RoleCondition64" predicate="in" implied="false" role="rel9#role18"/>
+      </Selector>
+      <OKLink id="sv2#area10#opg3#dlu7#oln64" name="OKFlow64" to="sv2#area10#opg3#dlu1">
+        <LinkParameter id="sv2#area10#opg3#dlu7#oln64#par394" name="Source oid [Annuncio]_PASSING_KeyCondition10 [oid]" sourceLinkParameter="sv2#area10#opg3#dlu2#oln63#par393" target="sv2#area10#opg3#dlu1#su81#kcond43.ent1#att1"/>
+      </OKLink>
+    </DeleteUnit>
   </OperationUnits>
 </OperationGroup>

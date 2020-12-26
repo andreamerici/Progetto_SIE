@@ -1,9 +1,9 @@
-<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#mpage1" name="Dati capo filiale" gr:x="60" gr:y="2045">
+<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#mpage1" name="Dati capo filiale" gr:x="-195" gr:y="695">
   <ContentUnits>
     <GetUnit id="sv2#mpage1#gtu4" name="Utente loggato" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
       <Link id="sv2#mpage1#gtu4#ln77" name="Flow34" to="sv2#mpage1#dau11" type="transport" automaticCoupling="true" validate="true"/>
     </GetUnit>
-    <DataUnit id="sv2#mpage1#dau11" name="Benvenuto" gr:x="180" gr:y="0" entity="ent7">
+    <DataUnit id="sv2#mpage1#dau11" name="Benvenuto" gr:x="195" gr:y="0" entity="ent7">
       <Selector id="sv2#mpage1#dau11#su49" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#mpage1#dau11#su49#kcond21" name="KeyCondition14" predicate="in" implied="false"/>
       </Selector>

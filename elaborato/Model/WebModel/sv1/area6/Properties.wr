@@ -4,6 +4,7 @@
       <Selector id="sv1#area6#seu1#su1" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area6#seu1#su1#rcond17" name="RoleCondition1" predicate="in" implied="false" role="rel3#role6"/>
         <AttributesCondition id="sv1#area6#seu1#su1#acond7" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
+        <AttributesCondition id="sv1#area6#seu1#su1#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att54" value="false"/>
       </Selector>
       <KOLink id="sv1#area6#seu1#kln1" name="KOFlow1" to="sv1#area6#page37#mssu3" automaticCoupling="true"/>
       <OKLink id="sv1#area6#seu1#oln5" name="OKFlow12" to="sv1#area6#page35#scu7" automaticCoupling="true" gr:bendpoints="56,-82,-944,-86;476,-73,-524,-77;896,-65,-104,-69"/>
@@ -11,26 +12,29 @@
     <SelectorUnit id="sv1#area6#seu4" name="Seleziona annunci per categoria" gr:x="705" gr:y="50" entity="ent1">
       <Selector id="sv1#area6#seu4#su3" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area6#seu4#su3#rcond18" name="RoleCondition3" predicate="in" implied="false" role="rel4#role8"/>
-        <AttributesCondition id="sv1#area6#seu4#su3#acond8" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+        <AttributesCondition id="sv1#area6#seu4#su3#acond8" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
+        <AttributesCondition id="sv1#area6#seu4#su3#acond26" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att54" value="false"/>
       </Selector>
       <KOLink id="sv1#area6#seu4#kln6" name="KOFlow3" to="sv1#area6#page37#mssu3" automaticCoupling="true" gr:bendpoints="-79,61,486,141;-556,60,9,140"/>
       <OKLink id="sv1#area6#seu4#oln6" name="OKFlow11" to="sv1#area6#page35#scu7" automaticCoupling="true" gr:bendpoints="78,-79,-658,-79;631,-69,-105,-69"/>
     </SelectorUnit>
     <SelectorUnit id="sv1#area6#seu8" name="Seleziona annunci per zona" gr:x="1005" gr:y="65" entity="ent1">
       <Selector id="sv1#area6#seu8#su14" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv1#area6#seu8#su14#rcond19" name="RoleCondition4" predicate="in" implied="false"/>
-        <AttributesCondition id="sv1#area6#seu8#su14#acond9" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+        <RelationshipRoleCondition id="sv1#area6#seu8#su14#rcond19" name="RoleCondition4" predicate="in" implied="false" role="rel5#role9"/>
+        <AttributesCondition id="sv1#area6#seu8#su14#acond9" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
+        <AttributesCondition id="sv1#area6#seu8#su14#acond27" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att54" value="false"/>
       </Selector>
       <KOLink id="sv1#area6#seu8#kln7" name="KOFlow4" to="sv1#area6#page37#mssu3" automaticCoupling="true" gr:bendpoints="-34,64,756,144;-406,66,384,146;-903,77,57,127;-925,29,35,79"/>
       <OKLink id="sv1#area6#seu8#oln7" name="OKFlow13" to="sv1#area6#page35#scu7" automaticCoupling="true" gr:bendpoints="58,-78,-442,-78;386,-70,-114,-70"/>
     </SelectorUnit>
     <SelectorUnit id="sv1#area6#seu12" name="Selezione annunci avanzata" gr:x="1265" gr:y="65" entity="ent1">
       <Selector id="sv1#area6#seu12#su15" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv1#area6#seu12#su15#rcond20" name="RoleCondition7" predicate="in" implied="false"/>
-        <RelationshipRoleCondition id="sv1#area6#seu12#su15#rcond21" name="RoleCondition8" predicate="in" implied="false"/>
-        <RelationshipRoleCondition id="sv1#area6#seu12#su15#rcond22" name="RoleCondition9" predicate="in" implied="false"/>
-        <RelationshipRoleCondition id="sv1#area6#seu12#su15#rcond23" name="RoleCondition2" predicate="in" implied="false" role="rel9#role17"/>
-        <AttributesCondition id="sv1#area6#seu12#su15#acond10" name="AttCondition8" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+        <RelationshipRoleCondition id="sv1#area6#seu12#su15#rcond20" name="RoleCondition7" predicate="in" implied="false" role="rel5#role9"/>
+        <RelationshipRoleCondition id="sv1#area6#seu12#su15#rcond21" name="RoleCondition8" predicate="in" implied="false" role="rel10#role20"/>
+        <RelationshipRoleCondition id="sv1#area6#seu12#su15#rcond22" name="RoleCondition9" predicate="in" implied="false" role="rel3#role6"/>
+        <RelationshipRoleCondition id="sv1#area6#seu12#su15#rcond23" name="RoleCondition2" predicate="in" implied="false" role="rel4#role8"/>
+        <AttributesCondition id="sv1#area6#seu12#su15#acond10" name="AttCondition8" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
+        <AttributesCondition id="sv1#area6#seu12#su15#acond28" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att54" value="false"/>
       </Selector>
       <KOLink id="sv1#area6#seu12#kln9" name="KOFlow6" to="sv1#area6#page37#mssu3" automaticCoupling="true" gr:bendpoints="-69,85,1201,149;-1160,68,60,128"/>
       <OKLink id="sv1#area6#seu12#oln8" name="OKFlow1" to="sv1#area6#page35#scu7" automaticCoupling="true"/>
@@ -53,7 +57,7 @@
         <LinkParameter id="sv1#area6#cru3#oln13#par189" name="userName_Username" source="userNameArray" target="sv1#area6#lgu2.username"/>
         <LinkParameter id="sv1#area6#cru3#oln13#par190" name="password_Password" source="passwordArray" target="sv1#area6#lgu2.password"/>
       </OKLink>
-      <KOLink id="sv1#area6#cru3#kln10" name="KOFlow10" to="sv1#area6#page36#enu10" automaticCoupling="true" gr:bendpoints="-140,-29,115,51"/>
+      <KOLink id="sv1#area6#cru3#kln10" name="KOFlow10" to="sv1#area6#page36#enu10" automaticCoupling="true" gr:bendpoints="-151,-3,99,62"/>
     </CreateUnit>
   </OperationUnits>
 </Area>

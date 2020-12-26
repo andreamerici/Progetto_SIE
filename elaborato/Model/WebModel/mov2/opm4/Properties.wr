@@ -1,0 +1,134 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="95" gr:y="45" id="mov2#opm4" name="Connetti orari">
+  <OperationUnits>
+    <InputCollectorUnit id="mov2#opm4#icu12" gr:x="-25" gr:y="60">
+      <InputCollectorParameter id="mov2#opm4#icu12#icp12" name="luned&#236;"/>
+      <InputCollectorParameter id="mov2#opm4#icu12#icp13" name="marted&#236;"/>
+      <InputCollectorParameter id="mov2#opm4#icu12#icp14" name="mercoled&#236;"/>
+      <InputCollectorParameter id="mov2#opm4#icu12#icp15" name="venerd&#236;"/>
+      <InputCollectorParameter id="mov2#opm4#icu12#icp16" name="sabato"/>
+      <OKLink id="mov2#opm4#icu12#oln102" name="OKFlow102" to="mov2#opm4#pcu7">
+        <LinkParameter id="mov2#opm4#icu12#oln102#par406" name="luned&#236;_Collector Parameter24" source="mov2#opm4#icu12#icp12" target="mov2#opm4#pcu7#pcp24"/>
+        <LinkParameter id="mov2#opm4#icu12#oln102#par407" name="marted&#236;_Collector Parameter25" source="mov2#opm4#icu12#icp13" target="mov2#opm4#pcu7#pcp25"/>
+        <LinkParameter id="mov2#opm4#icu12#oln102#par408" name="mercoled&#236;_Collector Parameter26" source="mov2#opm4#icu12#icp14" target="mov2#opm4#pcu7#pcp26"/>
+        <LinkParameter id="mov2#opm4#icu12#oln102#par409" name="gioved&#236;_Collector Parameter27" source="mov2#opm4#icu12#icp17" target="mov2#opm4#pcu7#pcp27"/>
+        <LinkParameter id="mov2#opm4#icu12#oln102#par410" name="venerd&#236;_Collector Parameter28" source="mov2#opm4#icu12#icp15" target="mov2#opm4#pcu7#pcp28"/>
+        <LinkParameter id="mov2#opm4#icu12#oln102#par411" name="sabato_Collector Parameter29" source="mov2#opm4#icu12#icp16" target="mov2#opm4#pcu7#pcp29"/>
+        <LinkParameter id="mov2#opm4#icu12#oln102#par419" name="Input Port Parameter18_Collector Parameter30" source="mov2#opm4#icu12#icp18" target="mov2#opm4#pcu7#pcp30"/>
+      </OKLink>
+      <InputCollectorParameter id="mov2#opm4#icu12#icp17" name="gioved&#236;"/>
+      <InputCollectorParameter id="mov2#opm4#icu12#icp18" name="oid"/>
+    </InputCollectorUnit>
+    <ParameterCollectorUnit gr:x="295" gr:y="35" id="mov2#opm4#pcu7" name="Parameter Collector7">
+      <CollectorParameter id="mov2#opm4#pcu7#pcp24" name="Collector Parameter24"/>
+      <CollectorParameter id="mov2#opm4#pcu7#pcp25" name="Collector Parameter25"/>
+      <CollectorParameter id="mov2#opm4#pcu7#pcp26" name="Collector Parameter26"/>
+      <CollectorParameter id="mov2#opm4#pcu7#pcp27" name="Collector Parameter27"/>
+      <CollectorParameter id="mov2#opm4#pcu7#pcp28" name="Collector Parameter28"/>
+      <CollectorParameter id="mov2#opm4#pcu7#pcp29" name="Collector Parameter29"/>
+      <OKLink id="mov2#opm4#pcu7#oln103" name="OKFlow103" to="mov2#opm4#cnu15">
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par412" name="Collector Parameter24_KeyCondition51 [oid] [Orario] [Source]" source="mov2#opm4#pcu7#pcp24" target="mov2#opm4#cnu15#su87#kcond51.ent12#att28"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par413" name="Collector Parameter25_PASSING" source="mov2#opm4#pcu7#pcp25" passing="true"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par414" name="Collector Parameter26_PASSING" source="mov2#opm4#pcu7#pcp26" passing="true"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par415" name="Collector Parameter27_PASSING" source="mov2#opm4#pcu7#pcp27" passing="true"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par420" name="Collector Parameter30_KeyCondition86 [oid] [Filiale] [Target]" source="mov2#opm4#pcu7#pcp30" target="mov2#opm4#cnu15#su89#kcond86.ent2#att12"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par486" name="Collector Parameter28_PASSING" source="mov2#opm4#pcu7#pcp28" passing="true"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par487" name="Collector Parameter29_PASSING" source="mov2#opm4#pcu7#pcp29" passing="true"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par488" name="Collector Parameter30_PASSING" source="mov2#opm4#pcu7#pcp30" passing="true"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par194" name="Collector Parameter1_PASSING" source="mov2#opm4#pcu7#pcp1" passing="true"/>
+        <LinkParameter id="mov2#opm4#pcu7#oln103#par203" name="Collector Parameter2_PASSING" source="mov2#opm4#pcu7#pcp2" passing="true"/>
+      </OKLink>
+      <CollectorParameter id="mov2#opm4#pcu7#pcp30" name="Collector Parameter30"/>
+    </ParameterCollectorUnit>
+    <ConnectUnit gr:x="605" gr:y="45" id="mov2#opm4#cnu15" name="connetti luned&#236;" relationship="rel11#role22">
+      <SourceSelector id="mov2#opm4#cnu15#su87" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu15#su87#kcond51" name="KeyCondition51" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov2#opm4#cnu15#su89" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu15#su89#kcond86" name="KeyCondition86" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov2#opm4#cnu15#oln104" name="OKFlow104" to="mov2#opm4#cnu16">
+        <LinkParameter id="mov2#opm4#cnu15#oln104#par422" name="Collector Parameter26_PASSING" sourceLinkParameter="mov2#opm4#pcu7#oln103#par414" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu15#oln104#par423" name="Collector Parameter27_PASSING" sourceLinkParameter="mov2#opm4#pcu7#oln103#par415" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu15#oln104#par484" name="Collector Parameter25_PASSING_KeyCondition87 [oid] [Orario] [Source]" sourceLinkParameter="mov2#opm4#pcu7#oln103#par413" target="mov2#opm4#cnu16#su90#kcond87.ent12#att28"/>
+        <LinkParameter id="mov2#opm4#cnu15#oln104#par485" name="Target oid [Filiale]_KeyCondition88 [oid] [Filiale] [Target]" target="mov2#opm4#cnu16#su105#kcond88.ent2#att12" sourceLinkParameter="mov2#opm4#pcu7#oln103#par488"/>
+        <LinkParameter id="mov2#opm4#cnu15#oln104#par489" name="Collector Parameter28_PASSING" sourceLinkParameter="mov2#opm4#pcu7#oln103#par486" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu15#oln104#par490" name="Collector Parameter29_PASSING" sourceLinkParameter="mov2#opm4#pcu7#oln103#par487" passing="true"/>
+      </OKLink>
+      <KOLink id="mov2#opm4#cnu15#kln57" name="KOFlow57" to="mov2#opm4#kocu1" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="555" gr:y="265" id="mov2#opm4#cnu16" name="Connetti marted&#236;" relationship="rel11#role22">
+      <SourceSelector id="mov2#opm4#cnu16#su90" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu16#su90#kcond87" name="KeyCondition87" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov2#opm4#cnu16#su105" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu16#su105#kcond88" name="KeyCondition88" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov2#opm4#cnu16#oln105" name="OKFlow105" to="mov2#opm4#cnu17">
+        <LinkParameter id="mov2#opm4#cnu16#oln105#par494" name="Collector Parameter27_PASSING" sourceLinkParameter="mov2#opm4#cnu15#oln104#par423" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu16#oln105#par495" name="Collector Parameter28_PASSING" sourceLinkParameter="mov2#opm4#cnu15#oln104#par489" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu16#oln105#par496" name="Collector Parameter29_PASSING" sourceLinkParameter="mov2#opm4#cnu15#oln104#par490" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu16#oln105#par498" name="Collector Parameter26_PASSING_KeyCondition87 [oid] [Orario] [Source]" sourceLinkParameter="mov2#opm4#cnu15#oln104#par422" target="mov2#opm4#cnu17#su106#kcond89.ent12#att28"/>
+        <LinkParameter id="mov2#opm4#cnu16#oln105#par11" name="Target oid [Filiale]_KeyCondition88 [oid] [Filiale] [Target]" source="targetent2#att12" target="mov2#opm4#cnu17#su142#kcond90.ent2#att12"/>
+      </OKLink>
+      <KOLink id="mov2#opm4#cnu16#kln60" name="KOFlow60" to="mov2#opm4#kocu1" automaticCoupling="true" gr:bendpoints="198,-213,-507,37"/>
+    </ConnectUnit>
+    <ConnectUnit id="mov2#opm4#cnu17" name="Connetti mercoled&#236;" gr:x="845" gr:y="130" relationship="rel11#role22">
+      <SourceSelector id="mov2#opm4#cnu17#su106" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu17#su106#kcond89" name="KeyCondition87" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov2#opm4#cnu17#su142" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu17#su142#kcond90" name="KeyCondition88" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov2#opm4#cnu17#oln107" name="OKFlow107" to="mov2#opm4#cnu18">
+        <LinkParameter id="mov2#opm4#cnu17#oln107#par500" name="Collector Parameter27_PASSING_KeyCondition87 [oid] [Orario] [Source]" sourceLinkParameter="mov2#opm4#cnu16#oln105#par494" target="mov2#opm4#cnu18#su146#kcond91.ent12#att28"/>
+        <LinkParameter id="mov2#opm4#cnu17#oln107#par502" name="Collector Parameter28_PASSING" sourceLinkParameter="mov2#opm4#cnu16#oln105#par495" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu17#oln107#par503" name="Collector Parameter29_PASSING" sourceLinkParameter="mov2#opm4#cnu16#oln105#par496" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu17#oln107#par14" name="Target oid [Filiale]_KeyCondition88 [oid] [Filiale] [Target]" source="targetent2#att12" target="mov2#opm4#cnu18#su149#kcond92.ent2#att12"/>
+      </OKLink>
+      <KOLink id="mov2#opm4#cnu17#kln58" name="KOFlow58" to="mov2#opm4#kocu1" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit id="mov2#opm4#cnu18" name="Connetti gioved&#236;" gr:x="845" gr:y="300" relationship="rel11#role22">
+      <SourceSelector id="mov2#opm4#cnu18#su146" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu18#su146#kcond91" name="KeyCondition87" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov2#opm4#cnu18#su149" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu18#su149#kcond92" name="KeyCondition88" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov2#opm4#cnu18#oln108" name="OKFlow108" to="mov2#opm4#cnu19">
+        <LinkParameter id="mov2#opm4#cnu18#oln108#par505" name="Collector Parameter28_PASSING_KeyCondition93 [oid] [Orario] [Source]" sourceLinkParameter="mov2#opm4#cnu17#oln107#par502" target="mov2#opm4#cnu19#su150#kcond93.ent12#att28"/>
+        <LinkParameter id="mov2#opm4#cnu18#oln108#par507" name="Collector Parameter29_PASSING" sourceLinkParameter="mov2#opm4#cnu17#oln107#par503" passing="true"/>
+        <LinkParameter id="mov2#opm4#cnu18#oln108#par15" name="Target oid [Filiale]_KeyCondition94 [oid] [Filiale] [Target]" source="targetent2#att12" target="mov2#opm4#cnu19#su151#kcond94.ent2#att12"/>
+      </OKLink>
+      <KOLink id="mov2#opm4#cnu18#kln59" name="KOFlow59" to="mov2#opm4#kocu1" automaticCoupling="true"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="810" gr:y="495" id="mov2#opm4#cnu19" name="Connetti venerd&#236;" relationship="rel11#role22">
+      <SourceSelector id="mov2#opm4#cnu19#su150" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu19#su150#kcond93" name="KeyCondition93" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov2#opm4#cnu19#su151" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu19#su151#kcond94" name="KeyCondition94" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov2#opm4#cnu19#oln109" name="OKFlow109" to="mov2#opm4#cnu20">
+        <LinkParameter id="mov2#opm4#cnu19#oln109#par508" name="Collector Parameter29_PASSING_KeyCondition95 [oid] [Orario] [Source]" sourceLinkParameter="mov2#opm4#cnu18#oln108#par507" target="mov2#opm4#cnu20#su152#kcond95.ent12#att28"/>
+        <LinkParameter id="mov2#opm4#cnu19#oln109#par509" name="Target oid [Filiale]_KeyCondition96 [oid] [Filiale] [Target]" source="targetent2#att12" target="mov2#opm4#cnu20#su153#kcond96.ent2#att12"/>
+      </OKLink>
+      <KOLink id="mov2#opm4#cnu19#kln61" name="KOFlow61" to="mov2#opm4#kocu1" automaticCoupling="true" gr:bendpoints="244,-234,-206,246"/>
+    </ConnectUnit>
+    <ConnectUnit gr:x="1065" gr:y="500" id="mov2#opm4#cnu20" name="Connetti sabato" relationship="rel11#role22">
+      <SourceSelector id="mov2#opm4#cnu20#su152" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu20#su152#kcond95" name="KeyCondition95" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="mov2#opm4#cnu20#su153" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov2#opm4#cnu20#su153#kcond96" name="KeyCondition96" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="mov2#opm4#cnu20#oln28" name="OKFlow28" to="mov2#opm4#okcu1">
+        <LinkParameter id="mov2#opm4#cnu20#oln28#par370" name="Target oid [Filiale]_Output Port Parameter3" source="targetent2#att12" target="mov2#opm4#okcu1#ocp3"/>
+      </OKLink>
+      <KOLink id="mov2#opm4#cnu20#kln62" name="KOFlow62" to="mov2#opm4#kocu1" automaticCoupling="true"/>
+    </ConnectUnit>
+    <OKCollectorUnit gr:x="1235" gr:y="225" id="mov2#opm4#okcu1" name="OK Port1">
+      <OutputCollectorParameter id="mov2#opm4#okcu1#ocp3" name="oid"/>
+    </OKCollectorUnit>
+    <KOCollectorUnit gr:x="1235" gr:y="30" id="mov2#opm4#kocu1" name="KO Port1"/>
+  </OperationUnits>
+</OperationModule>

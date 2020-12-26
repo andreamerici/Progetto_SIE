@@ -1,5 +1,5 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area5" name="Filiale" landmarks="sv4#area5#page28" landmark="true" gr:x="50" gr:y="1335">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area5" name="Filiale" landmarks="sv4#area5#page28" landmark="true" gr:x="50" gr:y="1320">
   <OperationUnits>
-    <SetUnit id="sv4#area5#stu1" name="SettaFiliale" gr:x="290" gr:y="465" contextParameters="ctx2"/>
+    <SetUnit id="sv4#area5#stu1" name="SettaFiliale" gr:x="290" gr:y="480" contextParameters="ctx2"/>
   </OperationUnits>
 </Area>

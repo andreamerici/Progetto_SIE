@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page13" name="Dettaglio Filiale" landmark="false" gr:x="455" gr:y="155">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page13" name="Dettaglio Filiale" landmark="false" gr:x="475" gr:y="165">
   <ContentUnits>
     <DataUnit id="sv1#area3#page13#dau10" name="Dettagli" linkOrder="sv1#area3#page13#dau10#ln67 sv1#area3#page13#dau10#ln114" gr:x="0" gr:y="70" entity="ent2" displayAttributes="ent2#att13 ent2#att17 ent2#att14">
       <Selector id="sv1#area3#page13#dau10#su24" defaultPolicy="fill" booleanOperator="and">
@@ -24,14 +24,14 @@
       <Selector id="sv1#area3#page13#inu11#su27" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area3#page13#inu11#su27#kcond83" name="KeyCondition83" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv1#area3#page13#inu11#ln165" name="Flow165" to="sv1#area2#page4#dau1" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#area3#page13#inu11#ln165" name="Flow165" to="sv1#area2#page4#dau1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="63,-682,377,542"/>
     </IndexUnit>
     <DataUnit id="sv1#area3#page13#dau20" name="Indirizzo Sede" gr:x="235" gr:y="185" entity="ent14">
       <Selector id="sv1#area3#page13#dau20#su77" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area3#page13#dau20#su77#rcond38" name="RoleCondition13" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
     </DataUnit>
-    <MultiDataUnit id="sv1#area3#page13#mdu3" name="Orario" gr:x="205" gr:y="0" entity="ent12">
+    <MultiDataUnit id="sv1#area3#page13#mdu3" name="Orario" gr:x="265" gr:y="0" entity="ent12">
       <Selector id="sv1#area3#page13#mdu3#su78" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv1#area3#page13#mdu3#su78#rcond39" name="RoleCondition12" predicate="in" implied="false" role="rel11#role21"/>
       </Selector>

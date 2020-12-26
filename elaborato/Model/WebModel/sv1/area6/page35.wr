@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#page35" name="Risultati ricerca" gr:x="1530" gr:y="10">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#page35" name="Risultati ricerca" gr:x="1565" gr:y="5">
   <ContentUnits>
-    <IndexUnit id="sv1#area6#page35#inu5" name="Lista annunci" gr:x="190" gr:y="100" entity="ent1" displayAttributes="ent1#att6 ent1#att9" linkOrder="sv1#area6#page35#inu5#ln65">
+    <IndexUnit id="sv1#area6#page35#inu5" name="Lista annunci" gr:x="190" gr:y="85" entity="ent1" displayAttributes="ent1#att6 ent1#att9" linkOrder="sv1#area6#page35#inu5#ln193">
       <Selector id="sv1#area6#page35#inu5#su40" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area6#page35#inu5#su40#kcond11" name="KeyCondition3" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv1#area6#page35#inu5#ln65" name="Flow65" to="sv1#area2#page4#dau1" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#area6#page35#inu5#ln193" name="Flow193" to="sv1#area2#page4#dau1" automaticCoupling="true" type="normal" validate="true"/>
     </IndexUnit>
     <ScrollerUnit id="sv1#area6#page35#scu7" name="Scorri risultati" linkOrder="sv1#area6#page35#scu7#ln63" gr:x="0" gr:y="0" useCountQuery="false" entity="ent1">
       <Selector id="sv1#area6#page35#scu7#su41" defaultPolicy="fill" booleanOperator="and">
@@ -19,7 +19,7 @@
         <layout:Unit unitId="sv1#area6#page35#inu5">
           <layout:Attribute attribute="ent1#att6"/>
           <layout:Attribute attribute="ent1#att9"/>
-          <layout:Link link="sv1#area6#page35#inu5#ln65"/>
+          <layout:Link link="sv1#area6#page35#inu5#ln193"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

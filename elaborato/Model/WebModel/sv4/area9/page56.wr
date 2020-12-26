@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area9#page56" name="Lista annunci con pi&#249; preferenze" gr:x="0" gr:y="475">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area9#page56" name="Lista annunci con pi&#249; preferenze" gr:x="0" gr:y="585">
   <ContentUnits>
     <IndexUnit id="sv4#area9#page56#inu26" name="Lista annunci pi&#249; preferenze" linkOrder="sv4#area9#page56#inu26#ln108" gr:x="365" gr:y="0" entity="ent15" displayAttributes="ent1#att9 ent1#att6">
       <Link id="sv4#area9#page56#inu26#ln108" name="Flow12" to="sv4#area9#page55#dau2" type="normal" automaticCoupling="true" validate="true"/>
@@ -9,7 +9,7 @@
     <ScrollerUnit id="sv4#area9#page56#scu16" name="Scorri annunci con pi&#249; preferenze" linkOrder="sv4#area9#page56#scu16#ln109" gr:x="0" gr:y="0" useCountQuery="false" entity="ent15">
       <Link id="sv4#area9#page56#scu16#ln109" name="Flow64" to="sv4#area9#page56#inu26" type="automatic" automaticCoupling="true" validate="true"/>
       <Selector id="sv4#area9#page56#scu16#su70" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="sv4#area9#page56#scu16#su70#acond22" name="AttCondition18" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+        <AttributesCondition id="sv4#area9#page56#scu16#su70#acond22" name="AttCondition18" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
       </Selector>
     </ScrollerUnit>
   </ContentUnits>

@@ -1,42 +1,60 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="685" gr:y="560" id="sv3#area12#page84" name="Modifica filiale">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="215" gr:y="970" id="sv3#area12#page84" name="Modifica filiale">
   <ContentUnits>
-    <SelectorUnit id="sv3#area12#page84#seu42" name="Seleziona capo filiale" gr:x="0" gr:y="0" entity="ent7">
+    <SelectorUnit id="sv3#area12#page84#seu42" name="Seleziona capo filiale" gr:x="335" gr:y="5" entity="ent7">
       <Link id="sv3#area12#page84#seu42#ln146" name="Flow146" to="sv3#area12#page84#meu5" type="transport" validate="true">
         <LinkParameter id="sv3#area12#page84#seu42#ln146#par125" name="nome_capo filiale [label]" source="ent7#att36Array" target="sv3#area12#page84#meu5#sfld21_label"/>
         <LinkParameter id="sv3#area12#page84#seu42#ln146#par127" name="oid_capo filiale [output]" source="userOIDArray" target="sv3#area12#page84#meu5#sfld21_output"/>
       </Link>
     </SelectorUnit>
-    <SelectorUnit id="sv3#area12#page84#seu43" name="Seleziona zona" gr:x="235" gr:y="0" entity="ent5">
+    <SelectorUnit id="sv3#area12#page84#seu43" name="Seleziona zona" gr:x="580" gr:y="10" entity="ent5">
       <Link id="sv3#area12#page84#seu43#ln150" name="Flow150" to="sv3#area12#page84#meu5" type="transport" validate="true">
         <LinkParameter id="sv3#area12#page84#seu43#ln150#par133" name="nome_zona [label]" source="ent5#att24Array" target="sv3#area12#page84#meu5#sfld22_label"/>
         <LinkParameter id="sv3#area12#page84#seu43#ln150#par134" name="oid_zona [output]" source="ent5#att23Array" target="sv3#area12#page84#meu5#sfld22_output"/>
       </Link>
     </SelectorUnit>
-    <MultiEntryUnit gr:x="135" gr:y="145" id="sv3#area12#page84#meu5" name="Inserisci dati" minLength="1" linkOrder="sv3#area12#page84#meu5#ln155">
+    <MultiEntryUnit gr:x="475" gr:y="165" id="sv3#area12#page84#meu5" name="Inserisci dati" minLength="1" linkOrder="sv3#area12#page84#meu5#ln155">
       <SelectionField id="sv3#area12#page84#meu5#sfld21" name="capo filiale" type="string"/>
       <SelectionField id="sv3#area12#page84#meu5#sfld22" name="zona" type="string"/>
       <Field id="sv3#area12#page84#meu5#fld45" name="cap" type="string" modifiable="true"/>
-      <Field id="sv3#area12#page84#meu5#fld46" name="chiusura" type="string" modifiable="true"/>
       <Field id="sv3#area12#page84#meu5#fld47" name="via" type="string" modifiable="true"/>
       <Field id="sv3#area12#page84#meu5#fld48" name="civico" type="string" modifiable="true"/>
-      <Field id="sv3#area12#page84#meu5#fld49" name="giorno" type="string" modifiable="true"/>
-      <Link id="sv3#area12#page84#meu5#ln155" name="Flow155" to="sv3#area12#opg7#cru10" type="normal" validate="true">
-        <LinkParameter id="sv3#area12#page84#meu5#ln155#par203" name="cap_cap" source="sv3#area12#page84#meu5#fld45" target="sv3#area12#opg7#cru10.ent14#att48"/>
-        <LinkParameter id="sv3#area12#page84#meu5#ln155#par204" name="civico_civico" source="sv3#area12#page84#meu5#fld48" target="sv3#area12#opg7#cru10.ent14#att47"/>
-        <LinkParameter id="sv3#area12#page84#meu5#ln155#par205" name="FilialeToIndirizzo sede.oid_PASSING_Filiale.oid(Indirizzo sedeToFiliale)" sourceLinkParameter="sv3#area12#page76#dau25#ln151#par139" target="sv3#area12#opg7#cru10.rel14#role28.ent2#att12"/>
-        <LinkParameter id="sv3#area12#page84#meu5#ln155#par206" name="via_via" source="sv3#area12#page84#meu5#fld47" target="sv3#area12#opg7#cru10.ent14#att46"/>
+      <Link id="sv3#area12#page84#meu5#ln155" name="Flow155" to="sv3#area12#opg7#cru14" type="normal" validate="true">
         <LinkParameter id="sv3#area12#page84#meu5#ln155#par207" name="capo filiale_PASSING" source="sv3#area12#page84#meu5#sfld21" passing="true"/>
-        <LinkParameter id="sv3#area12#page84#meu5#ln155#par215" name="chiusura_PASSING" source="sv3#area12#page84#meu5#fld46" passing="true"/>
-        <LinkParameter id="sv3#area12#page84#meu5#ln155#par216" name="giorno_PASSING" source="sv3#area12#page84#meu5#fld49" passing="true"/>
         <LinkParameter id="sv3#area12#page84#meu5#ln155#par217" name="zona_PASSING" source="sv3#area12#page84#meu5#sfld22" passing="true"/>
         <LinkParameter id="sv3#area12#page84#meu5#ln155#par223" name="email_PASSING" source="sv3#area12#page84#meu5#fld61" passing="true"/>
         <LinkParameter id="sv3#area12#page84#meu5#ln155#par224" name="nome_PASSING" source="sv3#area12#page84#meu5#fld50" passing="true"/>
         <LinkParameter id="sv3#area12#page84#meu5#ln155#par225" name="telefono_PASSING" source="sv3#area12#page84#meu5#fld51" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par263" name="giorno_giorno" source="sv3#area12#page84#meu5#sfld27" target="sv3#area12#opg7#cru14.ent12#att34"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par264" name="apertura_orarioApertura" source="sv3#area12#page84#meu5#sfld28" target="sv3#area12#opg7#cru14.ent12#att29"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par265" name="chiusura_orarioChiusura" source="sv3#area12#page84#meu5#sfld29" target="sv3#area12#opg7#cru14.ent12#att32"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par266" name="cap_PASSING" source="sv3#area12#page84#meu5#fld45" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par267" name="civico_PASSING" source="sv3#area12#page84#meu5#fld48" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par268" name="FilialeToIndirizzo sede.oid_PASSING" sourceLinkParameter="sv3#area12#page76#dau25#ln151#par139" passing="true"/>
+        <LinkParameter id="sv3#area12#page84#meu5#ln155#par270" name="via_PASSING" source="sv3#area12#page84#meu5#fld47" passing="true"/>
       </Link>
       <Field id="sv3#area12#page84#meu5#fld50" name="nome" type="string" modifiable="true"/>
       <Field id="sv3#area12#page84#meu5#fld51" name="telefono" type="string" modifiable="true"/>
       <Field id="sv3#area12#page84#meu5#fld61" name="email" type="string" modifiable="true"/>
+      <SelectionField id="sv3#area12#page84#meu5#sfld27" name="giorno" type="string"/>
+      <SelectionField id="sv3#area12#page84#meu5#sfld28" name="apertura" type="string"/>
+      <SelectionField id="sv3#area12#page84#meu5#sfld29" name="chiusura" type="string"/>
     </MultiEntryUnit>
+    <MultiChoiceIndexUnit gr:x="40" gr:y="260" id="sv3#area12#page84#mciu1" name="Sceglio giorno da modificare" entity="ent12" linkOrder="sv3#area12#page84#mciu1#ln200" displayAttributes="ent12#att29 ent12#att32 ent12#att34">
+      <Link id="sv3#area12#page84#mciu1#ln200" name="Flow200" to="sv3#area12#page84#meu5" type="normal" validate="true">
+        <LinkParameter id="sv3#area12#page84#mciu1#ln200#par260" name="orarioApertura (Single Row)_apertura [output]" source="data[].ent12#att29" target="sv3#area12#page84#meu5#sfld28_output"/>
+        <LinkParameter id="sv3#area12#page84#mciu1#ln200#par261" name="orarioChiusura (Single Row)_chiusura [label]" source="data[].ent12#att32" target="sv3#area12#page84#meu5#sfld29_label"/>
+        <LinkParameter id="sv3#area12#page84#mciu1#ln200#par262" name="giorno (Single Row)_giorno [label]" source="data[].ent12#att34" target="sv3#area12#page84#meu5#sfld27_label"/>
+      </Link>
+    </MultiChoiceIndexUnit>
+    <SelectorUnit gr:x="90" gr:y="120" id="sv3#area12#page84#seu54" name="Seleziona orario" entity="ent12">
+      <Link id="sv3#area12#page84#seu54#ln199" name="Flow199" to="sv3#area12#page84#mciu1" automaticCoupling="true" type="transport" validate="true"/>
+      <Selector id="sv3#area12#page84#seu54#su148" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#area12#page84#seu54#su148#rcond66" name="RoleCondition66" role="rel11#role21" predicate="in" implied="false"/>
+      </Selector>
+    </SelectorUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv3#area12#page84#gtu19" name="Get filiale" contextParameters="ctx2">
+      <Link id="sv3#area12#page84#gtu19#ln203" name="Flow203" to="sv3#area12#page84#seu54" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -46,15 +64,51 @@
           <layout:Field field="sv3#area12#page84#meu5#sfld21"/>
           <layout:Field field="sv3#area12#page84#meu5#sfld22"/>
           <layout:Field field="sv3#area12#page84#meu5#fld45"/>
-          <layout:Field field="sv3#area12#page84#meu5#fld46"/>
           <layout:Field field="sv3#area12#page84#meu5#fld47"/>
           <layout:Field field="sv3#area12#page84#meu5#fld48"/>
-          <layout:Field field="sv3#area12#page84#meu5#fld49"/>
           <layout:Field field="sv3#area12#page84#meu5#fld50"/>
           <layout:Field field="sv3#area12#page84#meu5#fld51"/>
           <layout:Field field="sv3#area12#page84#meu5#fld61"/>
+          <layout:Field field="sv3#area12#page84#meu5#sfld27"/>
+          <layout:Field field="sv3#area12#page84#meu5#sfld28"/>
+          <layout:Field field="sv3#area12#page84#meu5#sfld29"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area12#page84#mciu1">
+          <layout:Link link="sv3#area12#page84#mciu1#ln200"/>
+          <layout:Attribute attribute="ent12#att29"/>
+          <layout:Attribute attribute="ent12#att32"/>
+          <layout:Attribute attribute="ent12#att34"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

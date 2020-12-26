@@ -29,13 +29,13 @@
       <KOLink id="sv4#opg2#cnu2#kln8" name="KOFlow6" to="sv4#page1#mssu2" automaticCoupling="true"/>
       <OKLink id="sv4#opg2#cnu2#oln4" name="OKFlow4" to="sv4#area5#page25" automaticCoupling="true"/>
     </ConnectUnit>
-    <TimeUnit gr:x="5" gr:y="0" id="sv4#opg2#tmu3" name="Recupera data corrente" linkOrder="sv4#opg2#tmu3#ln60">
-      <Link id="sv4#opg2#tmu3#ln60" name="Flow60" to="sv4#opg2#cru1" type="transport" validate="true">
-        <LinkParameter id="sv4#opg2#tmu3#ln60#par11" name="Current/Input Date_data" source="currentDate" target="sv4#opg2#cru1.ent18#att58"/>
-        <LinkParameter id="sv4#opg2#tmu3#ln60#par14" name="commento_PASSING_commento" sourceLinkParameter="sv4#area5#page32#enu4#ln59#par12" target="sv4#opg2#cru1.ent18#att60"/>
-        <LinkParameter id="sv4#opg2#tmu3#ln60#par15" name="voto_PASSING_voto" sourceLinkParameter="sv4#area5#page32#enu4#ln59#par13" target="sv4#opg2#cru1.ent18#att59"/>
-      </Link>
+    <TimeUnit gr:x="5" gr:y="0" id="sv4#opg2#tmu3" name="Recupera data corrente">
       <KOLink id="sv4#opg2#tmu3#kln3" name="KOFlow3" to="sv4#page1#mssu2" automaticCoupling="true"/>
+      <OKLink id="sv4#opg2#tmu3#oln56" name="OKFlow56" to="sv4#opg2#cru1">
+        <LinkParameter id="sv4#opg2#tmu3#oln56#par239" name="commento_PASSING_commento" sourceLinkParameter="sv4#area5#page32#enu4#ln59#par12" target="sv4#opg2#cru1.ent18#att60"/>
+        <LinkParameter id="sv4#opg2#tmu3#oln56#par240" name="Current/Input Date_data" source="currentDate" target="sv4#opg2#cru1.ent18#att58"/>
+        <LinkParameter id="sv4#opg2#tmu3#oln56#par241" name="voto_PASSING_voto" sourceLinkParameter="sv4#area5#page32#enu4#ln59#par13" target="sv4#opg2#cru1.ent18#att59"/>
+      </OKLink>
     </TimeUnit>
   </OperationUnits>
 </OperationGroup>

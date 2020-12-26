@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page20" name="Lista Filiali BestReviewed" gr:x="860" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page20" name="Lista Filiali BestReviewed" gr:x="835" gr:y="0">
   <ContentUnits>
     <IndexUnit id="sv1#area3#page20#inu13" name="Lista Filiali BestReviewed" linkOrder="sv1#area3#page20#inu13#ln36" gr:x="0" gr:y="0" entity="ent18">
       <Link id="sv1#area3#page20#inu13#ln36" name="Flow10" to="sv1#area3#page13#dau10" type="normal" automaticCoupling="true" validate="true"/>

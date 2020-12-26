@@ -1,6 +1,6 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area9" name="Annuncio" landmark="true" gr:x="2100" gr:y="275">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area9" name="Annuncio" landmark="true" gr:x="2075" gr:y="165">
   <OperationUnits>
-    <ConnectUnit id="sv4#area9#cnu3" name="Connetti annuncio preferito ad utente" gr:x="795" gr:y="475" relationship="rel11#role21">
+    <ConnectUnit id="sv4#area9#cnu3" name="Connetti annuncio preferito ad utente" gr:x="820" gr:y="585" relationship="rel7#role14">
       <SourceSelector id="sv4#area9#cnu3#su61" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#cnu3#su61#kcond26" name="KeyCondition18" predicate="in" implied="false"/>
       </SourceSelector>
@@ -10,7 +10,7 @@
       <OKLink id="sv4#area9#cnu3#oln23" name="OKFlow18" to="sv4#area9#page55" automaticCoupling="true"/>
       <KOLink id="sv4#area9#cnu3#kln19" name="KOFlow14" to="sv4#area9#page54#mssu8" automaticCoupling="true"/>
     </ConnectUnit>
-    <GetUnit id="sv4#area9#gtu7" name="Utente loggato" gr:x="1285" gr:y="580" contextParameters="UserCtxParam">
+    <GetUnit id="sv4#area9#gtu7" name="Utente loggato" gr:x="1310" gr:y="690" contextParameters="UserCtxParam">
       <Link id="sv4#area9#gtu7#ln94" name="Flow65" to="sv4#area9#cnu3" type="transport" validate="true">
         <LinkParameter id="sv4#area9#gtu7#ln94#par74" name="UserCtxParam.oid_KeyCondition19 [oid] [UtenteEsterno] [Target]" source="sv4#area9#gtu7.UserCtxParam" target="sv4#area9#cnu3#su62#kcond29.userOID"/>
       </Link>
@@ -21,7 +21,7 @@
         <LinkParameter id="sv4#area9#gtu7#ln96#par76" name="UserCtxParam.oid_KeyCondition24 [oid] [UtenteEsterno] [Target]" source="sv4#area9#gtu7.UserCtxParam" target="sv4#area9#opg1#cnu4#su72#kcond36.userOID"/>
       </Link>
     </GetUnit>
-    <DisconnectUnit id="sv4#area9#dcnu1" name="Diconnetti annuncio preferito da utente" gr:x="800" gr:y="780" relationship="rel11#role21">
+    <DisconnectUnit id="sv4#area9#dcnu1" name="Diconnetti annuncio preferito da utente" gr:x="825" gr:y="890" relationship="rel7#role14">
       <SourceSelector id="sv4#area9#dcnu1#su63" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area9#dcnu1#su63#kcond30" name="KeyCondition20" predicate="in" implied="false"/>
       </SourceSelector>
@@ -31,9 +31,6 @@
       <OKLink id="sv4#area9#dcnu1#oln24" name="OKFlow19" to="sv4#area9#page55" automaticCoupling="true" gr:bendpoints="-137,-139,38,411;-243,-457,-68,93"/>
       <KOLink id="sv4#area9#dcnu1#kln20" name="KOFlow15" to="sv4#area9#page54#mssu8" automaticCoupling="true"/>
     </DisconnectUnit>
-    <GetUnit id="sv4#area9#gtu9" name="Annuncio selezionato" gr:x="670" gr:y="50" contextParameters="ctx1">
-      <Link id="sv4#area9#gtu9#ln97" name="Flow80" to="sv4#area9#page55#dau2" type="transport" automaticCoupling="true" validate="true"/>
-    </GetUnit>
-    <SetUnit id="sv4#area9#stu2" name="Annuncio selezionato" gr:x="460" gr:y="90" contextParameters="ctx1"/>
+    <SetUnit id="sv4#area9#stu2" name="Annuncio selezionato" gr:x="400" gr:y="40" contextParameters="ctx1"/>
   </OperationUnits>
 </Area>

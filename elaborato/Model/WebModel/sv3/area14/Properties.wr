@@ -1,0 +1,25 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3#area14" name="Gestione capi filiale" defaultPage="sv3#area14#page94" landmark="true" gr:x="2060" gr:y="875">
+  <OperationUnits>
+    <CreateUnit id="sv3#area14#cru13" name="Crea capo filiale" gr:x="805" gr:y="70" entity="ent7">
+      <OKLink id="sv3#area14#cru13#oln54" name="OKFlow30" to="sv3#area14#page94" automaticCoupling="true" gr:bendpoints="-225,118,350,108"/>
+      <KOLink id="sv3#area14#cru13#kln52" name="KOFlow26" to="sv3#area14#page88#alt6#page90" automaticCoupling="true"/>
+    </CreateUnit>
+    <DeleteUnit id="sv3#area14#dlu6" name="Cancella capo filiale" gr:x="5" gr:y="560" entity="ent7">
+      <Selector id="sv3#area14#dlu6#su135" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#dlu6#su135#kcond71" name="KeyCondition69" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#area14#dlu6#oln55" name="OKFlow31" to="sv3#area14#page94" automaticCoupling="true" gr:bendpoints="-125,-174,-175,171"/>
+      <KOLink id="sv3#area14#dlu6#kln53" name="KOFlow32" to="sv3#area14#page88#alt6#page91" automaticCoupling="true"/>
+    </DeleteUnit>
+    <DisconnectUnit id="sv3#area14#dcnu3" name="Libera capo filiale da filiale" gr:x="625" gr:y="240" relationship="rel2#role3">
+      <SourceSelector id="sv3#area14#dcnu3#su6" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#dcnu3#su6#kcond44" name="KeyCondition75" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv3#area14#dcnu3#su7" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area14#dcnu3#su7#kcond45" name="KeyCondition76" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv3#area14#dcnu3#oln32" name="OKFlow32" to="sv3#area14#page94" automaticCoupling="true" gr:bendpoints="-235,-45,305,115"/>
+      <KOLink id="sv3#area14#dcnu3#kln64" name="KOFlow64" to="sv3#area14#page88#alt6#page14" automaticCoupling="true"/>
+    </DisconnectUnit>
+  </OperationUnits>
+</Area>

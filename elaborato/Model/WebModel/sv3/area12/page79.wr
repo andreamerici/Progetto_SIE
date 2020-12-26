@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1035" gr:y="0" id="sv3#area12#page79" name="Inserisci nuova filiale">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="900" gr:y="0" id="sv3#area12#page79" name="Inserisci nuova filiale">
   <ContentUnits>
     <SelectorUnit gr:x="0" gr:y="0" id="sv3#area12#page79#seu40" name="Seleziona capo filiale" entity="ent7">
       <Link id="sv3#area12#page79#seu40#ln152" name="Flow152" to="sv3#area12#page79#meu3" type="transport" validate="true">
@@ -21,9 +21,9 @@
       <Field id="sv3#area12#page79#meu3#fld55" name="Via" type="string" modifiable="true"/>
       <Field id="sv3#area12#page79#meu3#fld56" name="Civico" type="string" modifiable="true"/>
       <Field id="sv3#area12#page79#meu3#fld57" name="Cap" type="string" modifiable="true"/>
-      <Field id="sv3#area12#page79#meu3#fld58" name="Apertura" type="string" modifiable="true"/>
-      <Field id="sv3#area12#page79#meu3#fld59" name="Chiusura" type="string" modifiable="true"/>
-      <Field id="sv3#area12#page79#meu3#fld60" name="Giorno" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld58" name="Apertura1" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld59" name="Chiusura1" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld60" name="Giorno1" type="string" modifiable="true"/>
       <Link id="sv3#area12#page79#meu3#ln154" name="Flow154" to="sv3#area12#opg6#cru7" type="normal" validate="true">
         <LinkParameter id="sv3#area12#page79#meu3#ln154#par175" name="Apertura_PASSING" source="sv3#area12#page79#meu3#fld58" passing="true"/>
         <LinkParameter id="sv3#area12#page79#meu3#ln154#par177" name="Capo filiale_PASSING" source="sv3#area12#page79#meu3#sfld23" passing="true"/>
@@ -36,13 +36,44 @@
         <LinkParameter id="sv3#area12#page79#meu3#ln154#par198" name="Cap_cap" source="sv3#area12#page79#meu3#fld57" target="sv3#area12#opg6#cru7.ent14#att48"/>
         <LinkParameter id="sv3#area12#page79#meu3#ln154#par199" name="Civico_civico" source="sv3#area12#page79#meu3#fld56" target="sv3#area12#opg6#cru7.ent14#att47"/>
         <LinkParameter id="sv3#area12#page79#meu3#ln154#par200" name="Via_via" source="sv3#area12#page79#meu3#fld55" target="sv3#area12#opg6#cru7.ent14#att46"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par219" name="apertura2_PASSING" source="sv3#area12#page79#meu3#fld35" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par220" name="chiusura2_PASSING" source="sv3#area12#page79#meu3#sfld30" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par226" name="giorno2_PASSING" source="sv3#area12#page79#meu3#fld46" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par286" name="apertura3_PASSING" source="sv3#area12#page79#meu3#fld49" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par287" name="apertura4_PASSING" source="sv3#area12#page79#meu3#fld64" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par288" name="apertura5_PASSING" source="sv3#area12#page79#meu3#fld77" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par289" name="chiusura3_PASSING" source="sv3#area12#page79#meu3#fld62" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par290" name="chiusura4_PASSING" source="sv3#area12#page79#meu3#fld65" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par291" name="chiusura5_PASSING" source="sv3#area12#page79#meu3#fld78" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par292" name="giorno3_PASSING" source="sv3#area12#page79#meu3#fld63" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par293" name="giorno4_PASSING" source="sv3#area12#page79#meu3#fld75" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par294" name="giorno5_PASSING" source="sv3#area12#page79#meu3#fld76" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par428" name="apertura6_PASSING" source="sv3#area12#page79#meu3#fld83" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par429" name="chiusura6_PASSING" source="sv3#area12#page79#meu3#fld84" passing="true"/>
+        <LinkParameter id="sv3#area12#page79#meu3#ln154#par430" name="giorno6_PASSING" source="sv3#area12#page79#meu3#fld82" passing="true"/>
       </Link>
+      <Field id="sv3#area12#page79#meu3#fld35" name="apertura2" type="string" modifiable="true"/>
+      <SelectionField id="sv3#area12#page79#meu3#sfld30" name="chiusura2" type="string"/>
+      <Field id="sv3#area12#page79#meu3#fld46" name="giorno2" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld49" name="apertura3" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld62" name="chiusura3" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld63" name="giorno3" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld64" name="apertura4" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld65" name="chiusura4" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld75" name="giorno4" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld76" name="giorno5" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld77" name="apertura5" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld78" name="chiusura5" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld82" name="giorno6" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld83" name="apertura6" type="string" modifiable="true"/>
+      <Field id="sv3#area12#page79#meu3#fld84" name="chiusura6" type="string" modifiable="true"/>
     </MultiEntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area12#page79#meu3">
+          <layout:Link link="sv3#area12#page79#meu3#ln154"/>
           <layout:Field field="sv3#area12#page79#meu3#sfld23"/>
           <layout:Field field="sv3#area12#page79#meu3#sfld24"/>
           <layout:Field field="sv3#area12#page79#meu3#fld52"/>
@@ -54,7 +85,21 @@
           <layout:Field field="sv3#area12#page79#meu3#fld58"/>
           <layout:Field field="sv3#area12#page79#meu3#fld59"/>
           <layout:Field field="sv3#area12#page79#meu3#fld60"/>
-          <layout:Link link="sv3#area12#page79#meu3#ln154"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld35"/>
+          <layout:Field field="sv3#area12#page79#meu3#sfld30"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld46"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld49"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld62"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld63"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld64"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld65"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld75"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld76"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld77"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld78"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld82"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld83"/>
+          <layout:Field field="sv3#area12#page79#meu3#fld84"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

@@ -1,15 +1,15 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page21" name="Elenco Filiali" landmark="true" gr:x="0" gr:y="115">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area3#page21" name="Elenco Filiali" landmark="true" gr:x="0" gr:y="100">
   <ContentUnits>
-    <IndexUnit id="sv1#area3#page21#inu14" name="Lista Filiali" linkOrder="sv1#area3#page21#inu14#ln37" gr:x="5" gr:y="0" entity="ent2" displayAttributes="ent2#att13">
+    <IndexUnit id="sv1#area3#page21#inu14" name="Lista Filiali" linkOrder="sv1#area3#page21#inu14#ln37" gr:x="20" gr:y="0" entity="ent2" displayAttributes="ent2#att13">
       <Link id="sv1#area3#page21#inu14#ln37" name="Flow1" to="sv1#area3#page13#dau10" type="normal" automaticCoupling="true" validate="true"/>
     </IndexUnit>
-    <SelectorUnit id="sv1#area3#page21#seu2" name="Seleziona Zona" gr:x="0" gr:y="105" entity="ent5">
+    <SelectorUnit id="sv1#area3#page21#seu2" name="Seleziona Zona" gr:x="0" gr:y="140" entity="ent5">
       <Link id="sv1#area3#page21#seu2#ln40" name="Flow2" to="sv1#area3#page21#enu2" type="transport" validate="true">
         <LinkParameter id="sv1#area3#page21#seu2#ln40#par2" name="oid_PASSING" source="ent5#att23Array" passing="true"/>
       </Link>
     </SelectorUnit>
-    <EntryUnit id="sv1#area3#page21#enu2" name="Ricerca per Zona" linkOrder="sv1#area3#page21#enu2#ln41" gr:x="215" gr:y="135">
-      <Link id="sv1#area3#page21#enu2#ln41" name="Flow14" to="sv1#area3#page16#scu4" type="normal" automaticCoupling="true" validate="true"/>
+    <EntryUnit id="sv1#area3#page21#enu2" name="Ricerca per Zona" gr:x="210" gr:y="155" linkOrder="sv1#area3#page21#enu2#ln78">
+      <Link id="sv1#area3#page21#enu2#ln78" name="Flow78" to="sv1#area3#page13#dau10" automaticCoupling="true" type="normal" validate="true"/>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -35,7 +35,7 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv1#area3#page21#enu2">
-          <layout:Link link="sv1#area3#page21#enu2#ln41"/>
+          <layout:Link link="sv1#area3#page21#enu2#ln78"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

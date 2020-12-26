@@ -1,13 +1,13 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page72" name="Visualizza dettagli profilo" gr:x="250" gr:y="200">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page72" name="Visualizza dettagli profilo" gr:x="285" gr:y="225">
   <ContentUnits>
-    <DataUnit id="sv4#area11#page72#dau24" name="Dettagli profilo" linkOrder="sv4#area11#page72#dau24#ln135 sv4#area11#page72#dau24#ln136 sv4#area11#page72#dau24#ln137 sv4#area11#page72#dau24#ln138" gr:x="0" gr:y="0" entity="ent7" displayAttributes="userName password email">
+    <DataUnit id="sv4#area11#page72#dau24" name="Dettagli profilo" linkOrder="sv4#area11#page72#dau24#ln135 sv4#area11#page72#dau24#ln137 sv4#area11#page72#dau24#ln138 sv4#area11#page72#dau24#ln176" gr:x="0" gr:y="0" entity="ent6" displayAttributes="userName password email">
       <Selector id="sv4#area11#page72#dau24#su110" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv4#area11#page72#dau24#su110#kcond64" name="KeyCondition12" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv4#area11#page72#dau24#ln135" name="Flow42" to="sv4#area11#page68" type="normal" automaticCoupling="true" validate="true"/>
-      <Link id="sv4#area11#page72#dau24#ln136" name="Flow88" to="sv4#area11#page69#seu36" type="normal" automaticCoupling="true" validate="true"/>
       <Link id="sv4#area11#page72#dau24#ln137" name="Flow90" to="sv4#area11#page71#seu38" type="normal" automaticCoupling="true" validate="true"/>
       <Link id="sv4#area11#page72#dau24#ln138" name="Flow92" to="sv4#area11#page70#seu37" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv4#area11#page72#dau24#ln176" name="Flow176" to="sv4#area11#page95#seu46" automaticCoupling="true" type="normal" validate="true"/>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -18,9 +18,9 @@
           <layout:Attribute attribute="password"/>
           <layout:Attribute attribute="email"/>
           <layout:Link link="sv4#area11#page72#dau24#ln135"/>
-          <layout:Link link="sv4#area11#page72#dau24#ln136"/>
           <layout:Link link="sv4#area11#page72#dau24#ln137"/>
           <layout:Link link="sv4#area11#page72#dau24#ln138"/>
+          <layout:Link link="sv4#area11#page72#dau24#ln176"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

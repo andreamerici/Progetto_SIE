@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page76" name="Dettaglio Filiale" landmark="false" gr:x="1165" gr:y="890">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area12#page76" name="Dettaglio Filiale" landmark="false" gr:x="1120" gr:y="1305">
   <ContentUnits>
-    <DataUnit id="sv3#area12#page76#dau25" name="Dettagli" gr:x="120" gr:y="50" entity="ent2" displayAttributes="ent2#att13 ent2#att17 ent2#att14" linkOrder="sv3#area12#page76#dau25#ln149 sv3#area12#page76#dau25#ln151 sv3#area12#page76#dau25#ln159">
+    <DataUnit id="sv3#area12#page76#dau25" name="Dettagli" gr:x="60" gr:y="75" entity="ent2" displayAttributes="ent2#att13 ent2#att17 ent2#att14" linkOrder="sv3#area12#page76#dau25#ln149 sv3#area12#page76#dau25#ln151 sv3#area12#page76#dau25#ln159">
       <Selector id="sv3#area12#page76#dau25#su111" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area12#page76#dau25#su111#kcond65" name="KeyCondition1" predicate="in" implied="false"/>
         <RelationshipRoleCondition id="sv3#area12#page76#dau25#su111#rcond58" predicate="in" implied="false" role="rel12#role24"/>
@@ -17,15 +17,20 @@
         <LinkParameter id="sv3#area12#page76#dau25#ln151#par221" name="FilialeToCapo filiale.oid_capo filiale - Preselection" source="data.rel2#role4_userOID" target="sv3#area12#page84#meu5#sfld21_presel"/>
         <LinkParameter id="sv3#area12#page76#dau25#ln151#par222" name="FilialeToZona.oid_zona - Preselection" source="data.rel12#role23_ent5#att23" target="sv3#area12#page84#meu5#sfld22_presel"/>
       </Link>
-      <Link id="sv3#area12#page76#dau25#ln159" name="Flow159" to="sv3#area12#opg9#dcnu9" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv3#area12#page76#dau25#ln159" name="Flow159" to="sv3#area12#opg9#dlu4" type="normal" validate="true" gr:bendpoints="-653,-310,327,496">
+        <LinkParameter id="sv3#area12#page76#dau25#ln159#par404" name="oid_RoleCondition40 [oid]" source="data.ent2#att12" target="sv3#area12#opg9#dlu4#su137#rcond48.ent2#att12"/>
+        <LinkParameter id="sv3#area12#page76#dau25#ln159#par405" name="oid_PASSING" source="data.ent2#att12" passing="true"/>
+        <LinkParameter id="sv3#area12#page76#dau25#ln159#par210" name="FilialeToZona.oid_PASSING" source="data.rel12#role23_ent5#att23" passing="true"/>
+      </Link>
+      <Link id="sv3#area12#page76#dau25#ln202" name="Flow202" to="sv3#area12#stu4" automaticCoupling="true" type="transport" validate="true"/>
     </DataUnit>
-    <ScrollerUnit id="sv3#area12#page76#scu19" name="Scroller1" linkOrder="sv3#area12#page76#scu19#ln147" gr:x="0" gr:y="405" useCountQuery="false" entity="ent1">
+    <ScrollerUnit id="sv3#area12#page76#scu19" name="Scroller1" linkOrder="sv3#area12#page76#scu19#ln147" gr:x="0" gr:y="445" useCountQuery="false" entity="ent1">
       <Link id="sv3#area12#page76#scu19#ln147" name="Flow13" to="sv3#area12#page76#inu32" type="automatic" automaticCoupling="true" validate="true"/>
       <Selector id="sv3#area12#page76#scu19#su112" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page76#scu19#su112#rcond49" name="RoleCondition5" predicate="in" implied="false" role="rel5#role9"/>
       </Selector>
     </ScrollerUnit>
-    <IndexUnit id="sv3#area12#page76#inu32" name="Lista Annunci Filiale" gr:x="240" gr:y="410" entity="ent1">
+    <IndexUnit id="sv3#area12#page76#inu32" name="Lista Annunci Filiale" gr:x="240" gr:y="450" entity="ent1">
       <Selector id="sv3#area12#page76#inu32#su113" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv3#area12#page76#inu32#su113#acond24" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att39" value="true"/>
       </Selector>
@@ -36,7 +41,7 @@
         <RelationshipRoleCondition id="sv3#area12#page76#dau26#su114#rcond53" name="RoleCondition53" role="rel14#role27" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <MultiDataUnit id="sv3#area12#page76#mdu6" name="Orario" gr:x="335" gr:y="0" entity="ent12">
+    <MultiDataUnit id="sv3#area12#page76#mdu6" name="Orario" gr:x="285" gr:y="0" entity="ent12">
       <Selector id="sv3#area12#page76#mdu6#su115" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area12#page76#mdu6#su115#rcond51" name="RoleCondition12" predicate="in" implied="false" role="rel11#role21"/>
       </Selector>

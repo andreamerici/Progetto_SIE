@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page68" name="Modifica dati profilo" gr:x="0" gr:y="210">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv4#area11#page68" name="Modifica dati profilo" gr:x="0" gr:y="235">
   <ContentUnits>
-    <EntryUnit id="sv4#area11#page68#enu18" name="Modifica dati profilo" linkOrder="sv4#area11#page68#enu18#ln130" gr:x="0" gr:y="0" entity="ent7">
+    <EntryUnit id="sv4#area11#page68#enu18" name="Modifica dati profilo" linkOrder="sv4#area11#page68#enu18#ln130" gr:x="0" gr:y="0" entity="ent6">
       <Field id="sv4#area11#page68#enu18#fld40" name="password" type="string" modifiable="true"/>
       <Link id="sv4#area11#page68#enu18#ln130" name="Flow41" to="sv4#area11#mfu4" type="normal" validate="true">
         <LinkParameter id="sv4#area11#page68#enu18#ln130#par166" name="CapoFiliale Object_CapoFiliale Object" source="entityBean" target="sv4#area11#mfu4.entityBeans"/>

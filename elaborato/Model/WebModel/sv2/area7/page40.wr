@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area7#page40" name="Homepage" gr:x="185" gr:y="0" linkOrder="sv2#area7#page40#ln81">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area7#page40" name="Homepage" gr:x="205" gr:y="0" linkOrder="sv2#area7#page40#ln81">
   <ContentUnits>
     <DataUnit id="sv2#area7#page40#dau4" name="Dettagli filiale di competenza" gr:x="5" gr:y="0" entity="ent2" displayAttributes="ent2#att13 ent2#att14 ent2#att17 ent2#att62">
       <Selector id="sv2#area7#page40#dau4#su44" defaultPolicy="fill" booleanOperator="and">
@@ -10,21 +10,21 @@
     </DataUnit>
     <DataUnit id="sv2#area7#page40#dau6" name="Indirizzo filiale" gr:x="325" gr:y="5" entity="ent14" displayAttributes="ent14#att47 ent14#att48">
       <Selector id="sv2#area7#page40#dau6#su45" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv2#area7#page40#dau6#su45#rcond27" name="RoleCondition10" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv2#area7#page40#dau6#su45#rcond27" name="RoleCondition10" predicate="in" implied="false" role="rel14#role27"/>
       </Selector>
     </DataUnit>
     <MultiDataUnit id="sv2#area7#page40#mdu1" name="Orari filiale" gr:x="315" gr:y="155" entity="ent12">
       <Selector id="sv2#area7#page40#mdu1#su46" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv2#area7#page40#mdu1#su46#rcond28" name="RoleCondition11" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv2#area7#page40#mdu1#su46#rcond28" name="RoleCondition11" predicate="in" implied="false" role="rel11#role21"/>
       </Selector>
     </MultiDataUnit>
-    <ScrollerUnit id="sv2#area7#page40#scu9" name="Scorri recensioni" linkOrder="sv2#area7#page40#scu9#ln76" gr:x="0" gr:y="155" useCountQuery="false" blockFactor="10">
+    <ScrollerUnit id="sv2#area7#page40#scu9" name="Scorri recensioni" linkOrder="sv2#area7#page40#scu9#ln76" gr:x="0" gr:y="155" useCountQuery="false" blockFactor="10" entity="ent18">
       <Selector id="sv2#area7#page40#scu9#su47" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv2#area7#page40#scu9#su47#rcond29" name="RoleCondition12" predicate="in" implied="false"/>
+        <RelationshipRoleCondition id="sv2#area7#page40#scu9#su47#rcond29" name="RoleCondition12" predicate="in" implied="false" role="rel16#role32"/>
       </Selector>
       <Link id="sv2#area7#page40#scu9#ln76" name="Flow37" to="sv2#area7#page40#mdu2" type="automatic" automaticCoupling="true" validate="true"/>
     </ScrollerUnit>
-    <MultiDataUnit id="sv2#area7#page40#mdu2" name="Recensioni" gr:x="135" gr:y="285">
+    <MultiDataUnit id="sv2#area7#page40#mdu2" name="Recensioni" gr:x="175" gr:y="290" entity="ent18">
       <Selector id="sv2#area7#page40#mdu2#su48" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area7#page40#mdu2#su48#kcond20" name="KeyCondition17" predicate="in" implied="false"/>
       </Selector>

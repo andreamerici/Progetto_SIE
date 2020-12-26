@@ -1,11 +1,14 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area8#page43" name="Visualizza dettagli profilo" gr:x="0" gr:y="155">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area8#page43" name="Visualizza dettagli profilo" gr:x="0" gr:y="0">
   <ContentUnits>
-    <DataUnit id="sv2#area8#page43#dau15" name="Dettagli profilo" linkOrder="sv2#area8#page43#dau15#ln80" gr:x="0" gr:y="0" entity="ent7" displayAttributes="userName password email ent7#att63">
+    <DataUnit id="sv2#area8#page43#dau15" name="Dettagli profilo" linkOrder="sv2#area8#page43#dau15#ln80" gr:x="5" gr:y="110" entity="ent7" displayAttributes="userName password email ent7#att63">
       <Selector id="sv2#area8#page43#dau15#su51" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area8#page43#dau15#su51#kcond23" name="KeyCondition12" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv2#area8#page43#dau15#ln80" name="Flow42" to="sv2#area8#page42" type="normal" automaticCoupling="true" validate="true"/>
     </DataUnit>
+    <GetUnit id="sv2#area8#page43#gtu16" name="Utente loggato" gr:x="0" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv2#area8#page43#gtu16#ln183" name="Flow39" to="sv2#area8#page43#dau15" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

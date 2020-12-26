@@ -1,36 +1,40 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4#area1" name="Home" defaultPage="sv4#area1#page18" landmark="true" protected="false" gr:x="0" gr:y="0">
   <OperationUnits>
-    <SelectorUnit id="sv4#area1#seu20" name="Seleziona annunci per contratto" gr:x="365" gr:y="55" entity="ent1">
+    <SelectorUnit id="sv4#area1#seu20" name="Seleziona annunci per contratto" gr:x="265" gr:y="35" entity="ent1">
       <Selector id="sv4#area1#seu20#su19" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv4#area1#seu20#su19#rcond6" name="RoleCondition1" predicate="in" implied="false"/>
-        <AttributesCondition id="sv4#area1#seu20#su19#acond15" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+        <RelationshipRoleCondition id="sv4#area1#seu20#su19#rcond6" name="RoleCondition1" predicate="in" implied="false" role="rel3#role6"/>
+        <AttributesCondition id="sv4#area1#seu20#su19#acond15" name="AttCondition5" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
+        <AttributesCondition id="sv4#area1#seu20#su19#acond30" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att54" value="false"/>
       </Selector>
       <KOLink id="sv4#area1#seu20#kln11" name="KOFlow1" to="sv4#area1#page5#mssu6" automaticCoupling="true"/>
       <OKLink id="sv4#area1#seu20#oln1" name="OKFlow12" to="sv4#area1#page51#scu14" automaticCoupling="true" gr:bendpoints="56,-82,-944,-86;476,-73,-524,-77;896,-65,-104,-69"/>
     </SelectorUnit>
-    <SelectorUnit id="sv4#area1#seu21" name="Seleziona annunci per categoria" gr:x="710" gr:y="70" entity="ent1">
+    <SelectorUnit id="sv4#area1#seu21" name="Seleziona annunci per categoria" gr:x="600" gr:y="45" entity="ent1">
       <Selector id="sv4#area1#seu21#su23" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv4#area1#seu21#su23#rcond30" name="RoleCondition3" predicate="in" implied="false"/>
-        <AttributesCondition id="sv4#area1#seu21#su23#acond16" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+        <RelationshipRoleCondition id="sv4#area1#seu21#su23#rcond30" name="RoleCondition3" predicate="in" implied="false" role="rel4#role8"/>
+        <AttributesCondition id="sv4#area1#seu21#su23#acond16" name="AttCondition6" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
+        <AttributesCondition id="sv4#area1#seu21#su23#acond29" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att54" value="false"/>
       </Selector>
       <KOLink id="sv4#area1#seu21#kln12" name="KOFlow3" to="sv4#area1#page5#mssu6" automaticCoupling="true" gr:bendpoints="-79,61,486,141;-556,60,9,140"/>
       <OKLink id="sv4#area1#seu21#oln16" name="OKFlow11" to="sv4#area1#page51#scu14" automaticCoupling="true" gr:bendpoints="78,-79,-658,-79;631,-69,-105,-69"/>
     </SelectorUnit>
-    <SelectorUnit id="sv4#area1#seu22" name="Seleziona annunci per zona" gr:x="960" gr:y="70" entity="ent1">
+    <SelectorUnit id="sv4#area1#seu22" gr:x="940" gr:y="65" entity="ent1" name="Seleziona annunci per zona">
       <Selector id="sv4#area1#seu22#su25" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv4#area1#seu22#su25#rcond31" name="RoleCondition4" predicate="in" implied="false"/>
-        <AttributesCondition id="sv4#area1#seu22#su25#acond17" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+        <RelationshipRoleCondition id="sv4#area1#seu22#su25#rcond31" name="RoleCondition4" predicate="in" implied="false" role="rel5#role9"/>
+        <AttributesCondition id="sv4#area1#seu22#su25#acond17" name="AttCondition7" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
+        <AttributesCondition id="sv4#area1#seu22#su25#acond31" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att54" value="false"/>
       </Selector>
       <KOLink id="sv4#area1#seu22#kln13" name="KOFlow4" to="sv4#area1#page5#mssu6" automaticCoupling="true" gr:bendpoints="-34,64,756,144;-406,66,384,146;-903,77,57,127;-925,29,35,79"/>
       <OKLink id="sv4#area1#seu22#oln17" name="OKFlow13" to="sv4#area1#page51#scu14" automaticCoupling="true" gr:bendpoints="58,-78,-442,-78;386,-70,-114,-70"/>
     </SelectorUnit>
     <SelectorUnit id="sv4#area1#seu23" name="Selezione annunci avanzata" gr:x="1220" gr:y="65" entity="ent1">
       <Selector id="sv4#area1#seu23#su43" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv4#area1#seu23#su43#rcond32" name="RoleCondition7" predicate="in" implied="false"/>
-        <RelationshipRoleCondition id="sv4#area1#seu23#su43#rcond33" name="RoleCondition8" predicate="in" implied="false"/>
-        <RelationshipRoleCondition id="sv4#area1#seu23#su43#rcond34" name="RoleCondition9" predicate="in" implied="false"/>
-        <RelationshipRoleCondition id="sv4#area1#seu23#su43#rcond35" name="RoleCondition2" predicate="in" implied="false" role="rel9#role17"/>
-        <AttributesCondition id="sv4#area1#seu23#su43#acond18" name="AttCondition8" predicate="eq" booleanOperator="or" implied="false" value="true"/>
+        <RelationshipRoleCondition id="sv4#area1#seu23#su43#rcond32" name="RoleCondition7" predicate="in" implied="false" role="rel3#role6"/>
+        <RelationshipRoleCondition id="sv4#area1#seu23#su43#rcond33" name="RoleCondition8" predicate="in" implied="false" role="rel4#role8"/>
+        <RelationshipRoleCondition id="sv4#area1#seu23#su43#rcond34" name="RoleCondition9" predicate="in" implied="false" role="rel5#role9"/>
+        <RelationshipRoleCondition id="sv4#area1#seu23#su43#rcond35" name="RoleCondition2" predicate="in" implied="false" role="rel10#role20"/>
+        <AttributesCondition id="sv4#area1#seu23#su43#acond18" name="AttCondition8" predicate="eq" booleanOperator="or" implied="false" value="true" attributes="ent1#att39"/>
+        <AttributesCondition id="sv4#area1#seu23#su43#acond32" name="AttCondition1" predicate="eq" booleanOperator="or" implied="false" attributes="ent1#att54" value="false"/>
       </Selector>
       <KOLink id="sv4#area1#seu23#kln14" name="KOFlow6" to="sv4#area1#page5#mssu6" automaticCoupling="true" gr:bendpoints="-69,85,1201,149;-1160,68,60,128"/>
       <OKLink id="sv4#area1#seu23#oln18" name="OKFlow1" to="sv4#area1#page51#scu14" automaticCoupling="true"/>
